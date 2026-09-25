@@ -32,3 +32,9 @@ Le code source est distribué sous licence MIT. Les textes sont distribués sous
 L'interface anglaise est accessible sous `/en/`. Les versions françaises conservent leurs adresses existantes. Pour traduire un bulletin, ajouter un fichier dans `src/content/bulletins-en/` portant exactement le même nom que l'original français et utilisant les mêmes champs YAML, traduits. Le sélecteur FR | EN relie automatiquement les deux versions publiées. Si la traduction est absente ou en brouillon, EN est désactivé sur le bulletin français. La construction échoue si une traduction publiée n'a pas d'original français publié.
 
 Vérifier les données chiffrées, les liens de sources et les nuances méthodologiques avant de publier une traduction. Les archives, le flux RSS anglais et le sitemap sont mis à jour automatiquement. Les traductions ne déclenchent pas les annonces sociales des nouveaux bulletins français.
+
+## Posts sociaux validés
+
+Pour publier plusieurs textes expressément validés, ajouter un lot JSON dans `social/approved/` avec une liste `posts` contenant `id`, `text` et `url`. Chaque identifiant suit la forme `psi-AAAA-MM-JJ-NN` et doit rester unique. La fusion sur `main` publie uniquement les nouveaux lots, dans l'ordre, sur les deux comptes déjà configurés. Une modification d'un lot existant ne le republie pas. Les textes sont vérifiés avant envoi (300 caractères maximum, URL du bulletin), puis les publications sont relues via les API. Les identifiants Bluesky stables, les clés d'idempotence Mastodon et la recherche dans les publications récentes limitent les doublons lors d'une reprise.
+
+Prévisualiser avant validation : `node scripts/post-approved.mjs social/approved/2026-09-25.json bluesky --preview` (ou `mastodon`). Les secrets restent dans GitHub Actions et ne sont jamais inclus dans les lots.
