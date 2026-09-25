@@ -12,6 +12,8 @@ Site de veille critique consacré à la parapsychologie, à l'anomalistique et a
 
 Les deux flux peuvent aussi être exécutés manuellement depuis l'onglet Actions, en mode test ou aperçu sans publication.
 
+Pour publier un bulletin uniquement sur le site, ajouter `announce: false` à son en-tête YAML. Les scripts Bluesky et Mastodon ignorent alors ce bulletin, y compris lors d'une exécution manuelle.
+
 ## Développement local
 
 ```sh

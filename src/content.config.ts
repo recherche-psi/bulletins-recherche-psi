@@ -15,6 +15,7 @@ const bulletins = defineCollection({
     doi: z.url().optional(),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
+    announce: z.boolean().default(true),
   }),
 });
 
