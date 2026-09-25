@@ -28,6 +28,11 @@ function readField(name) {
   return value;
 }
 
+if (/^announce:\s*false\s*$/m.test(frontmatter)) {
+  console.log(`Annonce désactivée pour ce bulletin : ${file}`);
+  process.exit(0);
+}
+
 function graphemes(value) {
   return [...new Intl.Segmenter('fr', { granularity: 'grapheme' }).segment(value)]
     .map(({ segment }) => segment);
