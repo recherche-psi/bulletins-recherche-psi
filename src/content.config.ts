@@ -2,9 +2,7 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
-const bulletins = defineCollection({
-  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/bulletins' }),
-  schema: z.object({
+const schema = z.object({
     title: z.string(),
     description: z.string(),
     publishedAt: z.coerce.date(),
@@ -16,7 +14,12 @@ const bulletins = defineCollection({
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
     announce: z.boolean().default(true),
-  }),
 });
 
-export const collections = { bulletins };
+const bulletins = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/bulletins' }), schema,
+});
+const bulletinsEn = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/bulletins-en' }), schema,
+});
+export const collections = { bulletins, bulletinsEn };

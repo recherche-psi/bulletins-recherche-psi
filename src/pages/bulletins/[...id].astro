@@ -4,12 +4,13 @@ import BulletinLayout from '../../layouts/BulletinLayout.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('bulletins', ({ data }) => !data.draft);
-  return posts.map((post) => ({ params: { id: post.id }, props: { post } }));
+  const translations = new Set((await getCollection('bulletinsEn', ({ data }) => !data.draft)).map(post => post.id));
+  return posts.map((post) => ({ params: { id: post.id }, props: { post, alternatePath: translations.has(post.id) ? `en/bulletins/${post.id}/` : null } }));
 }
 
-const { post } = Astro.props;
+const { post, alternatePath } = Astro.props;
 const { Content, headings } = await render(post);
 const editUrl = `https://github.com/recherche-psi/bulletins-recherche-psi/edit/main/src/content/bulletins/${post.id}.md`;
 ---
 
-<BulletinLayout data={post.data} editUrl={editUrl} headings={headings}><Content /></BulletinLayout>
+<BulletinLayout data={post.data} editUrl={editUrl} headings={headings} alternatePath={alternatePath}><Content /></BulletinLayout>
