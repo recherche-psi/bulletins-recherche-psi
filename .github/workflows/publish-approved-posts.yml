@@ -1,0 +1,42 @@
+name: Publier les posts validés
+
+on:
+  push:
+    branches: [main]
+    paths: ['social/approved/*.json']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: approved-social-posts
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [bluesky, mastodon]
+    env:
+      BLUESKY_HANDLE: ${{ vars.BLUESKY_HANDLE }}
+      BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+      MASTODON_BASE_URL: ${{ vars.MASTODON_BASE_URL }}
+      MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+      - name: Publier les nouveaux lots approuvés
+        env:
+          PLATFORM: ${{ matrix.platform }}
+        shell: bash
+        run: |
+          while IFS= read -r file; do
+            [[ -z "$file" ]] && continue
+            node scripts/post-approved.mjs "$file" "$PLATFORM" --publish
+          done < <(git diff --diff-filter=A --name-only HEAD^ HEAD -- social/approved/ | grep -E '\.json$' || true)
