@@ -1,10 +1,11 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 
-const { data, editUrl, headings = [] } = Astro.props;
-const date = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })
+const { data, editUrl, headings = [], lang = 'fr', alternatePath = null } = Astro.props;
+const en = lang === 'en';
+const date = new Intl.DateTimeFormat(en ? 'en-GB' : 'fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })
   .format(data.publishedAt)
-  .replace(/^1 /, '1er ');
+  .replace(/^1 /, en ? '1 ' : '1er ');
 const tocSections: Array<{ slug: string; text: string; children: Array<{ slug: string; text: string }> }> = [];
 for (const heading of headings) {
   if (heading.depth === 2) {
@@ -15,22 +16,22 @@ for (const heading of headings) {
 }
 ---
 
-<BaseLayout title={data.title} description={data.description}>
+<BaseLayout title={data.title} description={data.description} lang={lang} alternatePath={alternatePath}>
   <article class="article shell-narrow">
     <header class="article-header">
-      <p class="eyebrow">Bulletin de la recherche psi · {date}</p>
+      <p class="eyebrow">{en ? 'Psi Research Bulletin' : 'Bulletin de la recherche psi'} · {date}</p>
       <h1>{data.title}</h1>
       <p class="dek">{data.description}</p>
       <dl class="metadata">
-        <div><dt>Statut</dt><dd>{data.status}</dd></div>
-        <div><dt>Lecture</dt><dd>{data.reading}</dd></div>
+        <div><dt>{en ? 'Status' : 'Statut'}</dt><dd>{data.status}</dd></div>
+        <div><dt>{en ? 'Reading' : 'Lecture'}</dt><dd>{data.reading}</dd></div>
         <div><dt>Publication</dt><dd>{data.publication}</dd></div>
       </dl>
     </header>
     {tocSections.length > 1 && (
       <nav class="toc" aria-labelledby="sommaire-titre">
-        <p class="toc-label">Plan du bulletin</p>
-        <h2 id="sommaire-titre">Sommaire</h2>
+        <p class="toc-label">{en ? 'Bulletin outline' : 'Plan du bulletin'}</p>
+        <h2 id="sommaire-titre">{en ? 'Contents' : 'Sommaire'}</h2>
         <ol>
           {tocSections.map((section) => (
             <li>
@@ -47,8 +48,8 @@ for (const heading of headings) {
     )}
     <div class="prose"><slot /></div>
     <footer class="article-actions">
-      <p>Vous avez repéré une erreur ou souhaitez préciser une formulation ?</p>
-      <a class="edit-button" href={editUrl} rel="nofollow">Modifier ce bulletin sur GitHub</a>
+      <p>{en ? 'Found an error or a passage that needs clarification?' : 'Vous avez repéré une erreur ou souhaitez préciser une formulation ?'}</p>
+      <a class="edit-button" href={editUrl} rel="nofollow">{en ? 'Edit this bulletin on GitHub' : 'Modifier ce bulletin sur GitHub'}</a>
     </footer>
   </article>
 </BaseLayout>

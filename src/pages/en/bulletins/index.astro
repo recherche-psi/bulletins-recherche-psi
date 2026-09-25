@@ -1,0 +1,29 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('bulletinsEn', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+const base = `${import.meta.env.BASE_URL}en/`;
+const formatDate = (date: Date) => new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
+  .format(date);
+---
+
+<BaseLayout lang="en" title="English bulletins" description="English-language critical reviews of psi research.">
+  <section class="page-head shell-narrow">
+    <p class="eyebrow">Archive</p>
+    <h1>English bulletins</h1>
+    <p>Self-contained reviews to read, cite and share.</p>
+    <p>Earlier issues are available in the <a href={`${import.meta.env.BASE_URL}bulletins/`} lang="en">French archive</a>. English translations will be added progressively.</p>
+  </section>
+  <section class="shell-narrow post-list">
+    {posts.map((post) => (
+      <article>
+        <p>{formatDate(post.data.publishedAt)} · {post.data.reading}</p>
+        <h2><a href={`${base}bulletins/${post.id}/`}>{post.data.title}</a></h2>
+        <p>{post.data.description}</p>
+        <ul class="tags">{post.data.tags.map((tag) => <li>{tag}</li>)}</ul>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

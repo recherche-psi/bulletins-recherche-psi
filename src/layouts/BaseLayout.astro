@@ -4,55 +4,81 @@ import '../styles/global.css';
 interface Props {
   title?: string;
   description?: string;
+  lang?: 'fr' | 'en';
+  alternatePath?: string | null;
 }
-
+const { lang = 'fr', alternatePath } = Astro.props;
+const en = lang === 'en';
+const brand = en ? 'Psi Research Bulletins' : 'Bulletins de la recherche psi';
 const {
-  title = 'Bulletins de la recherche psi',
-  description = 'Analyses critiques de publications en parapsychologie, anomalistique et sciences de la conscience.',
+  title = brand,
+  description = en ? 'Critical reviews of publications in parapsychology, anomalistics and consciousness studies.' : 'Analyses critiques de publications en parapsychologie, anomalistique et sciences de la conscience.',
 } = Astro.props;
-const pageTitle = title === 'Bulletins de la recherche psi' ? title : `${title} | Bulletins de la recherche psi`;
+const pageTitle = title === brand ? title : `${title} | ${brand}`;
 const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astro.url;
 const base = import.meta.env.BASE_URL;
+const home = `${base}${en ? 'en/' : ''}`;
+const pairs: Record<string, string> = {
+  '': 'en/', 'bulletins/': 'en/bulletins/', 'methode/': 'en/method/', 'a-propos/': 'en/about/',
+  'en/': '', 'en/bulletins/': 'bulletins/', 'en/method/': 'methode/', 'en/about/': 'a-propos/',
+};
+const relativePath = Astro.url.pathname.slice(base.length);
+const other = alternatePath !== undefined ? alternatePath : pairs[relativePath];
+const alternate = other != null ? new URL(`${base}${other}`, canonical) : null;
+const otherLang = en ? 'fr' : 'en';
 ---
-
 <!doctype html>
-<html lang="fr">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {alternate && <><link rel="alternate" hreflang={lang} href={canonical} /><link rel="alternate" hreflang={otherLang} href={alternate} /></>}
     <link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
-    <link rel="alternate" type="application/rss+xml" title="Bulletins de la recherche psi" href={`${base}rss.xml`} />
+    <link rel="alternate" type="application/rss+xml" title={brand} href={`${home}rss.xml`} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={en ? 'en_GB' : 'fr_FR'} />
+    {alternate && <meta property="og:locale:alternate" content={en ? 'fr_FR' : 'en_GB'} />}
     <meta name="twitter:card" content="summary" />
     <title>{pageTitle}</title>
   </head>
   <body>
-    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <a class="skip-link" href="#contenu">{en ? 'Skip to content' : 'Aller au contenu'}</a>
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="brand" href={base} aria-label="Accueil">
+        <a class="brand" href={home} aria-label={en ? 'Home' : 'Accueil'}>
           <span class="brand-mark" aria-hidden="true">Ψ</span>
-          <span><strong>Bulletins</strong><small>de la recherche psi</small></span>
+          <span><strong>{en ? 'Psi Research' : 'Bulletins'}</strong><small>{en ? 'Bulletins' : 'de la recherche psi'}</small></span>
         </a>
-        <nav aria-label="Navigation principale">
-          <a href={`${base}bulletins/`}>Bulletins</a>
-          <a href={`${base}methode/`}>Méthode</a>
-          <a href={`${base}a-propos/`}>À propos</a>
-          <a href={`${base}rss.xml`}>RSS</a>
-        </nav>
+        <div class="header-navigation">
+          <nav aria-label={en ? 'Main navigation' : 'Navigation principale'}>
+            <a href={`${home}bulletins/`}>Bulletins</a>
+            <a href={`${home}${en ? 'method' : 'methode'}/`}>{en ? 'Method' : 'Méthode'}</a>
+            <a href={`${home}${en ? 'about' : 'a-propos'}/`}>{en ? 'About' : 'À propos'}</a>
+            <a href={`${home}rss.xml`}>RSS</a>
+          </nav>
+          <nav class="language-switch" aria-label={en ? 'Language' : 'Langue'}>
+            {(['fr', 'en'] as const).map((code) => code === lang ? (
+              <span lang={code} aria-current="page">{code.toUpperCase()}</span>
+            ) : alternate ? (
+              <a href={alternate.pathname} lang={code} hreflang={code} aria-label={code === 'en' ? 'Read this page in English' : 'Lire cette page en français'}>{code.toUpperCase()}</a>
+            ) : (
+              <span lang={code} aria-disabled="true" title={en ? 'French translation not yet available' : 'Traduction anglaise pas encore disponible'}>{code.toUpperCase()}</span>
+            ))}
+          </nav>
+        </div>
       </div>
     </header>
     <main id="contenu"><slot /></main>
     <footer class="site-footer">
       <div class="shell footer-inner">
-        <p><strong>Bulletins de la recherche psi</strong><br />Une veille critique, documentée et indépendante.</p>
-        <p>Textes sous licence <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">CC BY 4.0</a>.<br />Code source sous licence MIT.</p>
+        <p><strong>{brand}</strong><br />{en ? 'Critical, documented and independent research monitoring.' : 'Une veille critique, documentée et indépendante.'}</p>
+        <p>{en ? 'Text licensed under' : 'Textes sous licence'} <a href={`https://creativecommons.org/licenses/by/4.0/${en ? 'deed.en' : 'deed.fr'}`}>CC BY 4.0</a>.<br />{en ? 'Source code licensed under MIT.' : 'Code source sous licence MIT.'}</p>
       </div>
     </footer>
   </body>
