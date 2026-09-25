@@ -5,7 +5,8 @@ const [file, platform, mode] = process.argv.slice(2);
 if (!file || !['bluesky', 'mastodon'].includes(platform) || !['--preview', '--publish'].includes(mode)) {
   throw new Error('Usage: node scripts/post-approved.mjs FILE bluesky|mastodon --preview|--publish');
 }
-const { posts } = JSON.parse(fs.readFileSync(file, 'utf8'));
+const { posts, platforms = ['bluesky', 'mastodon'] } = JSON.parse(fs.readFileSync(file, 'utf8'));
+if (!platforms.includes(platform)) { console.log(`No posts approved for ${platform} in this batch.`); process.exit(0); }
 if (!Array.isArray(posts) || !posts.length) throw new Error('No posts.');
 const ids = new Set();
 for (const post of posts) {
@@ -71,7 +72,7 @@ if (platform === 'bluesky') {
   if (!base?.startsWith('https://') || !token) throw new Error('Mastodon configuration missing.');
   const headers = {Authorization:`Bearer ${token}`,'Content-Type':'application/json'};
   const account = await json(`${base}/api/v1/accounts/verify_credentials`, {headers});
-  const recent = await json(`${base}/api/v1/accounts/${account.id}/statuses?limit=40`, {headers});
+  const recent = await json(`${base}/api/v1/accounts/${account.id}/statuses?limit=40`);
   const plain = value => value.replace(/<[^>]*>/g,' ').replace(/&#39;|&apos;/g,"'").replace(/&quot;/g,'"').replace(/&amp;/g,'&').replace(/\s+/g,' ').trim();
   for (const post of posts) {
     const intro = post.text.split('\n\n')[0];
@@ -81,7 +82,7 @@ if (platform === 'bluesky') {
       method:'POST', headers:{...headers,'Idempotency-Key':crypto.createHash('sha256').update(post.id).digest('hex')},
       body:JSON.stringify({status:post.text,visibility:'public',language:'fr'}),
     });
-    const verified = await json(`${base}/api/v1/statuses/${published.id}`, {headers});
+    const verified = await json(`${base}/api/v1/statuses/${published.id}`);
     if (verified.account.id !== account.id || !plain(verified.content).startsWith(intro)) throw new Error('Published post verification failed.');
     recent.unshift(verified);
     result(post.id, verified.url);
