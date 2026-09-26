@@ -115,3 +115,36 @@ h1,h2,h3 { font-family:'Source Serif 4',serif; line-height:1.08; letter-spacing:
   .header-navigation { gap:.75rem; }
   .language-switch { flex-wrap:nowrap; }
 }
+
+/* A softer editorial setting for the French and English home pages. */
+.hero {
+  padding: 6rem 0 5rem;
+  background:
+    radial-gradient(ellipse at 88% 18%, rgb(107 160 143 / 18%), transparent 58%),
+    radial-gradient(ellipse at 8% 90%, rgb(205 171 126 / 14%), transparent 52%),
+    linear-gradient(120deg, #faf7f0, #f2f3eb 65%, #edf2eb);
+}
+.hero-grid { gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+.hero h1 { font-size: clamp(2.5rem, 4.5vw, 4.2rem); line-height: 1.12; text-wrap: balance; }
+.hero-copy { max-width: 36rem; margin-bottom: .6rem; }
+.hero .button { border-radius: 4px; box-shadow: 0 3px 10px rgb(21 44 53 / 8%); }
+.hero .principles {
+  padding: .5rem 1.25rem;
+  border: 1px solid rgb(21 117 111 / 18%);
+  border-radius: 8px;
+  background: rgb(255 253 248 / 58%);
+}
+.hero .principles > :nth-last-child(-n+2) { border-bottom: 0; }
+.latest .feature-card {
+  padding: 2rem clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-top: 2px solid rgb(21 117 111 / 55%);
+  border-radius: 6px;
+  background: linear-gradient(115deg, rgb(255 253 248 / 90%), rgb(233 239 230 / 42%));
+}
+@media (max-width: 760px) {
+  .hero { padding: 3.5rem 0; }
+  .hero-grid { gap: 2.5rem; }
+  .hero h1 { font-size: clamp(2.2rem, 7vw, 3.5rem); }
+  .hero-copy { font-size: 1.2rem; }
+}
