@@ -1,36 +1,12 @@
 ---
 import { getCollection, render } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import ExplainerLayout from '../../layouts/ExplainerLayout.astro';
 export async function getStaticPaths() {
   const posts = (await getCollection('vulgarisation', ({ data }) => !data.draft)).sort((a, b) => a.data.order - b.data.order);
-  return posts.map((post, index) => ({ params: { id: post.id }, props: { post, previous: posts[index - 1], next: posts[index + 1] } }));
+  const translations = new Set((await getCollection('vulgarisationEn', ({ data }) => !data.draft)).map(post => post.id));
+  return posts.map((post, index) => ({ params: { id: post.id }, props: { post, previous: posts[index - 1], next: posts[index + 1], alternatePath: translations.has(post.id) ? `en/explainers/${post.id}/` : null } }));
 }
-const { post, previous, next } = Astro.props;
+const { post } = Astro.props;
 const { Content } = await render(post);
-const base = import.meta.env.BASE_URL;
-const date = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }).format(post.data.publishedAt);
 ---
-<BaseLayout title={post.data.title} description={post.data.description} alternatePath={null}>
-  <article class="article shell-narrow">
-    <header class="article-header">
-      <a class="text-link" href={`${base}vulgarisation/`}>← Tous les articles de vulgarisation</a>
-      <p class="eyebrow">Vulgarisation · {post.data.reading} de lecture</p>
-      <h1>{post.data.title}</h1>
-      <p class="publication-date">Publié le <time datetime={post.data.publishedAt.toISOString().slice(0, 10)}>{date}</time></p>
-    </header>
-    <div class="prose"><Content /></div>
-    <nav class="article-navigation" aria-label="Poursuivre la lecture">
-      {previous && <a href={`${base}vulgarisation/${previous.id}/`} rel="prev"><span>← Article précédent</span>{previous.data.title}</a>}
-      {next && <a href={`${base}vulgarisation/${next.id}/`} rel="next"><span>Article suivant →</span>{next.data.title}</a>}
-    </nav>
-  </article>
-</BaseLayout>
-<style>
-  .article-header { padding-top: 3rem; }
-  .article-header h1 { font-size: clamp(2.5rem, 5vw, 4rem); }
-  .publication-date { color: var(--muted); font-size: .85rem; }
-  .article-navigation { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
-  .article-navigation a { text-align: left; }
-  .article-navigation span { display: block; margin-bottom: .5rem; color: var(--teal); font-size: .75rem; }
-  @media (max-width: 600px) { .article-navigation { grid-template-columns: 1fr; } }
-</style>
+<ExplainerLayout {...Astro.props} lang="fr"><Content /></ExplainerLayout>

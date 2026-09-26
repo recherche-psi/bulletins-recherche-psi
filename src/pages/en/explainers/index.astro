@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+const posts = (await getCollection('vulgarisationEn', ({ data }) => !data.draft)).sort((a, b) => a.data.order - b.data.order);
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout lang="en" title="Explainers" description="Short, simple articles about psi research, dreams, intuitions and scientific methods.">
+  <section class="page-head shell-narrow">
+    <p class="eyebrow">Understand in a few minutes</p>
+    <h1>Psi research in simple questions</h1>
+    <p>One question, one experiment, one idea to take away. These short articles draw on the bulletins and link to the original studies for further reading.</p>
+  </section>
+  <section class="shell-narrow post-list" aria-label="Explainer articles">
+    {posts.map(post => (
+      <article>
+        <p>Article {post.data.order} · {post.data.reading} read</p>
+        <h2><a href={`${base}en/explainers/${post.id}/`}>{post.data.title}</a></h2>
+        <p>{post.data.description}</p>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

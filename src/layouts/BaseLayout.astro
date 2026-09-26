@@ -19,6 +19,7 @@ const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astro.u
 const base = import.meta.env.BASE_URL;
 const home = `${base}${en ? 'en/' : ''}`;
 const pairs: Record<string, string> = {
+  'vulgarisation/': 'en/explainers/', 'en/explainers/': 'vulgarisation/',
   '': 'en/', 'bulletins/': 'en/bulletins/', 'methode/': 'en/method/', 'a-propos/': 'en/about/',
   'en/': '', 'en/bulletins/': 'bulletins/', 'en/method/': 'methode/', 'en/about/': 'a-propos/',
 };
@@ -58,7 +59,7 @@ const otherLang = en ? 'fr' : 'en';
         <div class="header-navigation">
           <nav aria-label={en ? 'Main navigation' : 'Navigation principale'}>
             <a href={`${home}bulletins/`}>Bulletins</a>
-            <a href={`${base}vulgarisation/`} aria-current={relativePath.startsWith('vulgarisation/') ? 'page' : undefined}>{en ? 'Explainers (FR)' : 'Vulgarisation'}</a>
+            <a href={`${base}${en ? 'en/explainers' : 'vulgarisation'}/`} aria-current={relativePath.startsWith(en ? 'en/explainers/' : 'vulgarisation/') ? 'page' : undefined}>{en ? 'Explainers' : 'Vulgarisation'}</a>
             <a href={`${home}${en ? 'method' : 'methode'}/`}>{en ? 'Method' : 'Méthode'}</a>
             <a href={`${home}${en ? 'about' : 'a-propos'}/`}>{en ? 'About' : 'À propos'}</a>
             <a href={`${home}rss.xml`}>RSS</a>

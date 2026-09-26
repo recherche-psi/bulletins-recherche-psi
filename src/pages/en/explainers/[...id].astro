@@ -1,0 +1,12 @@
+---
+import { getCollection, render } from 'astro:content';
+import ExplainerLayout from '../../../layouts/ExplainerLayout.astro';
+export async function getStaticPaths() {
+  const posts = (await getCollection('vulgarisationEn', ({ data }) => !data.draft)).sort((a, b) => a.data.order - b.data.order);
+  const translations = new Set((await getCollection('vulgarisation', ({ data }) => !data.draft)).map(post => post.id));
+  return posts.map((post, index) => ({ params: { id: post.id }, props: { post, previous: posts[index - 1], next: posts[index + 1], alternatePath: translations.has(post.id) ? `vulgarisation/${post.id}/` : null } }));
+}
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<ExplainerLayout {...Astro.props} lang="en"><Content /></ExplainerLayout>

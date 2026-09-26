@@ -22,11 +22,14 @@ const bulletins = defineCollection({
 const bulletinsEn = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/bulletins-en' }), schema,
 });
-const vulgarisation = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/vulgarisation' }),
-  schema: z.object({
+const explainerSchema = z.object({
     title: z.string(), description: z.string(), publishedAt: z.coerce.date(),
     order: z.number(), reading: z.string(), draft: z.boolean().default(false),
-  }),
 });
-export const collections = { bulletins, bulletinsEn, vulgarisation };
+const vulgarisation = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/vulgarisation' }), schema: explainerSchema,
+});
+const vulgarisationEn = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/vulgarisation-en' }), schema: explainerSchema,
+});
+export const collections = { bulletins, bulletinsEn, vulgarisation, vulgarisationEn };
