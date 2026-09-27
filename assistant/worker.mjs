@@ -45,10 +45,17 @@ export default {
       }});
       if (request.method !== 'POST') return failure('method', 405);
     }
+    // Consume the bounded body before forwarding to a Durable Object. Otherwise an
+    // early refusal there can close the response while the inbound stream is still read.
+    let payload;
+    try { payload = await readSmallJSON(request); }
+    catch { return failure('invalid_request', 400); }
     try {
       // Never derive this name from visitor input and never rotate it to renew a budget.
       const stub = env.BUDGET.get(env.BUDGET.idFromName('psi-global-budget-v1'));
-      const response = await stub.fetch(request);
+      const response = await stub.fetch(new Request(request.url, {
+        method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload),
+      }));
       const headers = new Headers(response.headers);
       headers.set('Cache-Control', 'no-store');
       headers.set('X-Content-Type-Options', 'nosniff');
@@ -57,3 +64,4 @@ export default {
     } catch { return failure('unavailable'); }
   },
 };
+
