@@ -13,6 +13,7 @@ const endpoint = import.meta.env.PUBLIC_ASSISTANT_URL || '';
     <label for="question">{en ? 'Your question' : 'Votre question'}</label>
     <textarea id="question" name="question" maxlength="1200" rows="3" required disabled placeholder={en ? 'What do the recall replication studies report?' : 'Que rapportent les réplications sur le rappel de mots ?'}></textarea>
     <p id="privacy" class="note">{en ? 'Do not include personal information. Search runs in your browser. If you choose an AI answer, your question and the selected notes are sent through Cloudflare to OpenAI.' : 'Ne saisissez pas de données personnelles. La recherche s’effectue dans votre navigateur. Si vous choisissez une réponse IA, votre question et les fiches sélectionnées sont transmises via Cloudflare à OpenAI.'}</p>
+    <p class="note">{en ? 'OpenAI excludes API exchanges from model training unless data sharing is enabled. Security logs may retain their content for up to 30 days, with exceptions.' : 'OpenAI exclut les échanges API de l’entraînement, sauf partage volontaire. Des journaux de sécurité peuvent conserver leur contenu jusqu’à 30 jours, avec exceptions.'} <a href="https://developers.openai.com/api/docs/guides/your-data">{en ? 'OpenAI data policy' : 'Politique de données OpenAI'}</a>.</p>
     <div class="actions">
       <button type="submit" class="button" disabled>{en ? 'Find research notes' : 'Rechercher des fiches'}</button>
       <button type="button" class="button ai" data-generate disabled>{en ? 'Ask the AI' : 'Demander à l’IA'}</button>
