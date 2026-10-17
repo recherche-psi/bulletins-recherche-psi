@@ -14,7 +14,11 @@ Les deux flux peuvent aussi être exécutés manuellement depuis l'onglet Action
 
 Pour publier un bulletin uniquement sur le site, ajouter `announce: false` à son en-tête YAML. Les scripts Bluesky et Mastodon ignorent alors ce bulletin, y compris lors d'une exécution manuelle.
 
-## Développement local
+## Assistant documentaire
+
+Les pages `/assistant/` et `/en/assistant/` sont préparées pour une recherche dans les fiches validées et, après activation, des réponses OpenAI via un relais Cloudflare. Le corpus initial est vide et les appels API sont désactivés. La [documentation du service](assistant/README.md) décrit l'import des fiches, les conditions d'activation et le budget partagé de 5 USD par mois, avec arrêt applicatif à 4,50 USD. La variable GitHub Actions `PUBLIC_ASSISTANT_URL` ne contient que l'URL publique du relais ; aucune clé OpenAI ne doit être ajoutée au site.
+
+## Exécution locale
 
 ```sh
 npm install

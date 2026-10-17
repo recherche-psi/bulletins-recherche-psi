@@ -59,6 +59,7 @@ const otherLang = en ? 'fr' : 'en';
         <div class="header-navigation">
           <nav aria-label={en ? 'Main navigation' : 'Navigation principale'}>
             <a href={`${home}bulletins/`}>Bulletins</a>
+            <a href={`${home}assistant/`} aria-current={relativePath === `${en ? 'en/' : ''}assistant/` ? 'page' : undefined}>{en ? 'Assistant' : 'Assistant'}</a>
             <a href={`${base}${en ? 'en/explainers' : 'vulgarisation'}/`} aria-current={relativePath.startsWith(en ? 'en/explainers/' : 'vulgarisation/') ? 'page' : undefined}>{en ? 'Explainers' : 'Vulgarisation'}</a>
             <a href={`${home}${en ? 'method' : 'methode'}/`}>{en ? 'Method' : 'Méthode'}</a>
             <a href={`${home}${en ? 'about' : 'a-propos'}/`}>{en ? 'About' : 'À propos'}</a>
