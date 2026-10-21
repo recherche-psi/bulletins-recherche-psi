@@ -1,0 +1,19 @@
+---
+interface Props { chart: {title:string;axis:string;min:number;max:number;nullValue:number;ticks:number[];rows:{label:string;value:number;low:number;high:number;display:string}[];note:string}; id:string; }
+const {chart, id} = Astro.props;
+const x = (v:number) => 280 + (v-chart.min)/(chart.max-chart.min)*490;
+const height = 90+chart.rows.length*66;
+---
+<figure class="evidence-chart">
+<h2>{chart.title}</h2>
+<div class="chart-scroll" tabindex="0" role="region" aria-label="Graphique défilable sur petit écran">
+<svg viewBox={`0 0 1100 ${height}`} role="img" aria-labelledby={`${id}-title ${id}-desc`}>
+<title id={`${id}-title`}>{chart.title}</title><desc id={`${id}-desc`}>{chart.rows.map(r=>`${r.label} : ${r.display}`).join('. ')}. {chart.note}</desc>
+{chart.ticks.map(t=><><line x1={x(t)} x2={x(t)} y1="22" y2={height-48} stroke="#e0ded5"/><text x={x(t)} y={height-23} text-anchor="middle">{t.toLocaleString('fr-FR')}</text></>)}
+<line x1={x(chart.nullValue)} x2={x(chart.nullValue)} y1="15" y2={height-48} stroke="#596765" stroke-dasharray="5 4" />
+{chart.rows.map((r,i)=>{const y=44+i*66;return <g><text x="8" y={y+5}>{r.label}</text><line x1={x(r.low)} x2={x(r.high)} y1={y} y2={y} stroke="#15756f" stroke-width="3"/><line x1={x(r.low)} x2={x(r.low)} y1={y-7} y2={y+7} stroke="#15756f" stroke-width="2"/><line x1={x(r.high)} x2={x(r.high)} y1={y-7} y2={y+7} stroke="#15756f" stroke-width="2"/><circle cx={x(r.value)} cy={y} r="6" fill="#152c35"/><text x="790" y={y+5}>{r.display}</text></g>})}
+</svg></div><p class="chart-axis">{chart.axis}</p><figcaption>{chart.note}</figcaption>
+</figure>
+<style>
+figure{margin:2rem 0;padding:1.6rem;background:var(--white);border:1px solid var(--line);border-radius:8px}h2{font-size:1.5rem;margin:0 0 1rem}.chart-scroll{overflow-x:auto}svg{display:block;width:100%;min-width:780px}text{font:14px system-ui;fill:#152c35}.chart-axis{text-align:center;font-size:.85rem;margin:0 0 .7rem}figcaption{font-size:.8rem;color:var(--muted);max-width:90ch}@media print{svg{min-width:0}figure{break-inside:avoid}}
+</style>

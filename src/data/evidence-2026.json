@@ -1,0 +1,452 @@
+{
+  "version": "2026-10-21-brouillon-1",
+  "date": "21 octobre 2026",
+  "topics": [
+    {
+      "id": "ganzfeld",
+      "title": "Ganzfeld",
+      "subtitle": "Identifier une cible dans un environnement sensoriel homogène",
+      "confidence": "Modérée",
+      "direction": "Synthèse cumulative favorable",
+      "summary": "Un effet moyen positif ; sa généralisation à de nouvelles expériences reste à préciser.",
+      "question": "Le choix d'une cible dépasse-t-il le hasard lorsque l'information sensorielle ordinaire est contrôlée ? Le corpus réunit plusieurs variantes : il ne teste pas exclusivement la télépathie.",
+      "metrics": [
+        [
+          "78",
+          "études dans la synthèse"
+        ],
+        [
+          "0,074",
+          "effet standardisé pondéré"
+        ],
+        [
+          "63,8 %",
+          "hétérogénéité I²"
+        ]
+      ],
+      "rows": [
+        [
+          "Tressoldi & Storm, 2024 (v4)",
+          "Méta-analyse ; études 1974–2020",
+          "78 études, 113 effets ; 46 investigateurs principaux",
+          "ES = 0,074 ; IC 95 % [0,03 ; 0,12] ; p = 0,0009",
+          "Effet moyen positif. Les 46 investigateurs ne constituent pas nécessairement 46 laboratoires indépendants.",
+          "g1"
+        ],
+        [
+          "Milton & Wiseman, 1999",
+          "Méta-analyse de 30 études",
+          "Corpus postérieur à la première synthèse autoganzfeld",
+          "Résultat global non significatif selon leur analyse",
+          "Une synthèse défavorable à prendre en compte ; les choix d'inclusion et d'analyse ont été débattus.",
+          "g2"
+        ],
+        [
+          "Bierman, Spottiswoode & Bijl, 2016",
+          "Analyse de sensibilité aux pratiques de recherche",
+          "Simulations appliquées à un corpus ganzfeld",
+          "Inflation possible de la significativité ; effet résiduel dans les scénarios étudiés",
+          "La résistance à des scénarios simulés ne garantit pas l'absence de tout biais.",
+          "g3"
+        ],
+        [
+          "KPU, registre 1024",
+          "Projet de méta-analyse prospective",
+          "Études préenregistrées",
+          "Protocole et liste d'études consultables",
+          "Point de suivi : consolider les résultats des études enregistrées avant la validation annuelle.",
+          "g4"
+        ],
+        [
+          "Ganzfeld Project, 2026",
+          "Projet multisite ; archives de méthodes juillet 2026",
+          "Six sites ; collecte annoncée close",
+          "Plateforme, scripts et données archivés",
+          "Résultats confirmatoires à intégrer après examen du rapport dédié ; une infrastructure ouverte ne vaut pas résultat positif.",
+          "g5"
+        ]
+      ],
+      "assessment": [
+        [
+          "Résultat statistique",
+          "Favorable",
+          "La synthèse 2024 estime un effet positif dont l'intervalle fréquentiste exclut zéro."
+        ],
+        [
+          "Robustesse",
+          "Intermédiaire",
+          "Analyses de biais disponibles ; résultats variables selon les modèles. Hétérogénéité notable."
+        ],
+        [
+          "Reproductibilité",
+          "À consolider",
+          "Distinguer l'effet cumulé des réussites prédictibles dans des réplications prospectives indépendantes."
+        ],
+        [
+          "Attribution au psi",
+          "Provisoire",
+          "Une moyenne non nulle ne désigne pas à elle seule le mécanisme ; audit des contrôles et des dépendances nécessaire."
+        ]
+      ],
+      "reason": "Modérée : résultat cumulé positif et plusieurs analyses de robustesse, mais hétérogénéité et bilan prospectif encore incomplet dans ce dossier. Ce niveau est une proposition éditoriale, pas une cotation des auteurs.",
+      "next": "Une synthèse prospective indépendante, avec résultats de toutes les études enregistrées et intervalle de prédiction, pourrait renforcer ou réduire cette appréciation.",
+      "chart": {
+        "title": "Un effet moyen positif, variable selon les participants",
+        "axis": "Effet standardisé ES de la publication",
+        "min": -0.04,
+        "max": 0.22,
+        "nullValue": 0,
+        "ticks": [
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "rows": [
+          {
+            "label": "Ensemble",
+            "value": 0.074,
+            "low": 0.03,
+            "high": 0.12,
+            "display": "0,074 [0,03 ; 0,12]"
+          },
+          {
+            "label": "Participants sélectionnés",
+            "value": 0.13,
+            "low": 0.06,
+            "high": 0.2,
+            "display": "0,13 [0,06 ; 0,20]"
+          },
+          {
+            "label": "Non sélectionnés",
+            "value": 0.04,
+            "low": -0.01,
+            "high": 0.09,
+            "display": "0,04 [−0,01 ; 0,09]"
+          }
+        ],
+        "note": "IC à 95 % publiés, tableaux 2 et 4. Les deux sous-groupes appartiennent à la même synthèse : ils ne sont pas des confirmations indépendantes. Source G1."
+      },
+      "sources": [
+        {
+          "id": "g1",
+          "label": "G1 · Tressoldi, P. E. & Storm, L. (2024, version 4). Stage 2 Registered Report: Anomalous perception in a Ganzfeld condition. F1000Research, 10:234.",
+          "url": "https://doi.org/10.12688/f1000research.51746.4",
+          "status": "Article évalué ; méta-analyse préenregistrée, études sources pas toutes préenregistrées."
+        },
+        {
+          "id": "g2",
+          "label": "G2 · Milton, J. & Wiseman, R. (1999). Does Psi exist? Lack of replication of an anomalous process of information transfer. Psychological Bulletin, 125, 387–391.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/10414223/",
+          "status": "Article évalué par les pairs."
+        },
+        {
+          "id": "g3",
+          "label": "G3 · Bierman, D. J., Spottiswoode, J. P. & Bijl, A. (2016). Testing for Questionable Research Practices in a Meta-Analysis. PLOS ONE, 11, e0153049.",
+          "url": "https://doi.org/10.1371/journal.pone.0153049",
+          "status": "Article évalué par les pairs."
+        },
+        {
+          "id": "g4",
+          "label": "G4 · Koestler Parapsychology Unit. Registered studies, entrée 1024, Caroline Watt.",
+          "url": "https://koestlerunit.wordpress.com/study-registry/registered-studies/",
+          "status": "Registre de protocoles ; un enregistrement n'est pas un résultat."
+        },
+        {
+          "id": "g5",
+          "label": "G5 · Marcusson-Clavertz et al. (2026). Ganzfeld Platform, Analyses Scripts et Multisite Data : Methods Paper Archive, version du 24 juillet 2026.",
+          "url": "https://zenodo.org/records/21536040",
+          "status": "Archives ouvertes de méthodes ; données : 10.5281/zenodo.21536009 ; scripts : 10.5281/zenodo.21535905. État de la collecte : ganzfeld.study."
+        },
+        {
+          "id": "g6",
+          "label": "G6 · Ganzfeld Project. Présentation des six sites et état de la collecte.",
+          "url": "https://ganzfeld.study/",
+          "status": "Page officielle du projet, consultée le 21 octobre 2026 ; collecte annoncée close."
+        }
+      ]
+    },
+    {
+      "id": "precognition",
+      "title": "Précognition comportementale",
+      "subtitle": "Anticiper un événement aléatoire futur",
+      "confidence": "Faible",
+      "direction": "Synthèses et réplications discordantes",
+      "summary": "Une méta-analyse positive ; les tests récents du choix d'image ne reproduisent pas l'effet initial.",
+      "question": "Une réponse comportementale anticipe-t-elle un stimulus choisi ultérieurement au hasard ? Les réplications détaillées ici concernent surtout l'expérience 1 de Bem, pas toutes les formes de précognition.",
+      "metrics": [
+        [
+          "90",
+          "expériences, méta-analyse 2016"
+        ],
+        [
+          "49,89 %",
+          "réussite, TPP 2023"
+        ],
+        [
+          "50 %",
+          "niveau de hasard, choix binaire"
+        ]
+      ],
+      "rows": [
+        [
+          "Bem et al., 2016 (v2)",
+          "Méta-analyse ; plusieurs tâches",
+          "90 expériences, 33 laboratoires",
+          "g = 0,09 ; z = 6,40 ; p ≈ 1,2 × 10⁻¹⁰",
+          "Effet cumulé positif ; corpus antérieur aux projets TPP et AMP-TPP.",
+          "p1"
+        ],
+        [
+          "Kekecs et al., 2023 (TPP)",
+          "Réplication multisite préenregistrée",
+          "Expérience 1 de Bem : choix de l'emplacement d'une image",
+          "49,89 % de réussites, hasard à 50 %",
+          "L'effet initial n'est pas reproduit.",
+          "p2"
+        ],
+        [
+          "Walleczek et al., 2025 (AMP-TPP)",
+          "Trois études successives",
+          "Étude 1 : 37 836 essais critiques ; étude 2 : 127 000 ; étude 3 : 217 800",
+          "49,48 % → 49,65 % → 50,07 %",
+          "Écart négatif exploratoire, confirmé une fois (p = 0,013), puis non reproduit (p = 0,496). Ces effectifs décrivent les conditions figurées, pas tout le projet.",
+          "p3"
+        ]
+      ],
+      "assessment": [
+        [
+          "Résultat statistique",
+          "Discordant",
+          "Méta-analyse historique favorable ; résultats confirmatoires récents incompatibles avec une reproduction de l'effet initial dans le choix d'image."
+        ],
+        [
+          "Robustesse",
+          "Meilleure dans les projets récents",
+          "Préenregistrement, transparence et contrôles renforcent l'interprétation de leurs résultats, y compris nuls."
+        ],
+        [
+          "Reproductibilité",
+          "Insuffisante pour l'effet positif",
+          "Une inversion exploratoire de l'effet ne vaut pas réplication de la prédiction initiale."
+        ],
+        [
+          "Attribution au psi",
+          "Faiblement étayée ici",
+          "La conclusion porte sur les tâches examinées. Elle ne permet pas un verdict sur toute anticipation anomale."
+        ]
+      ],
+      "reason": "Faible pour un effet psi reproductible dans les tâches couvertes : le résultat historique positif ne se retrouve pas dans les principales réplications récentes du choix d'image.",
+      "next": "Séparer les familles de tâches et intégrer toutes leurs réplications préenregistrées. Fixer à l'avance le sens et l'amplitude minimale de l'effet recherché.",
+      "chart": {
+        "title": "AMP-TPP : une inversion, puis un résultat proche du hasard",
+        "axis": "Réussites (%) ; trait vertical : hasard à 50 %",
+        "min": 48.8,
+        "max": 50.8,
+        "nullValue": 50,
+        "ticks": [
+          49,
+          49.5,
+          50,
+          50.5
+        ],
+        "rows": [
+          {
+            "label": "Étude 1 · exploratoire",
+            "value": 49.48,
+            "low": 48.9704,
+            "high": 49.9896,
+            "display": "49,48 % ± 0,26 (SE)"
+          },
+          {
+            "label": "Étude 2 · confirmation",
+            "value": 49.65,
+            "low": 49.3756,
+            "high": 49.9244,
+            "display": "49,65 % ± 0,14 (SE)"
+          },
+          {
+            "label": "Étude 3 · réplication",
+            "value": 50.07,
+            "low": 49.8544,
+            "high": 50.2856,
+            "display": "50,07 % ± 0,11 (SE)"
+          }
+        ],
+        "note": "Barres : IC 95 % approximatifs calculés par moyenne ± 1,96 × erreur standard (SE) publiée et arrondie. Source P3, conditions érotiques figurées. Ce graphique n'est pas une méta-analyse."
+      },
+      "sources": [
+        {
+          "id": "p1",
+          "label": "P1 · Bem, D., Tressoldi, P., Rabeyron, T. & Duggan, M. (2016, version 2). Feeling the future: A meta-analysis of 90 experiments on the anomalous anticipation of random future events. F1000Research, 4:1188.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/26834996/",
+          "status": "Méta-analyse évaluée ; première version en 2015."
+        },
+        {
+          "id": "p2",
+          "label": "P2 · Kekecs et al. (2023). Raising the value of research studies in psychological science by increasing the credibility of research reports: the transparent Psi project. Royal Society Open Science, 10, 191375.",
+          "url": "https://doi.org/10.1098/rsos.191375",
+          "status": "Registered Report ; consulter aussi la correction liée depuis la notice PubMed 36756055."
+        },
+        {
+          "id": "p3",
+          "label": "P3 · Walleczek et al. (2025). Metascientific replication project with the advanced meta-experimental protocol of the transparent psi project procedures for testing the precognitive effect claimed by Bem. PLOS ONE, 20, e0335330.",
+          "url": "https://doi.org/10.1371/journal.pone.0335330",
+          "status": "Article évalué par les pairs ; distingue analyses confirmatoires et exploratoires."
+        }
+      ]
+    },
+    {
+      "id": "micro-pk",
+      "title": "Micro-psychokinèse",
+      "subtitle": "Intention et sorties de générateurs aléatoires",
+      "confidence": "Faible",
+      "direction": "Effet moyen peu robuste ; pistes temporelles",
+      "summary": "Le corpus LMU récent ne conclut pas à un effet moyen significatif ; des analyses temporelles restent à confirmer.",
+      "question": "Les résultats d'un générateur aléatoire varient-ils avec une intention ou une condition psychologique ? Effet moyen directionnel, dynamique temporelle et rappel subjectif constituent des hypothèses distinctes.",
+      "metrics": [
+        [
+          "34",
+          "conditions expérimentales LMU"
+        ],
+        [
+          "0,0164",
+          "effet moyen LMU"
+        ],
+        [
+          "0,0718",
+          "p de l'effet moyen LMU"
+        ]
+      ],
+      "rows": [
+        [
+          "Bösch, Steinkamp & Boller, 2006",
+          "Méta-analyse historique",
+          "380 études",
+          "Effet très petit ; forte variabilité ; relation taille d'étude / effet",
+          "Les auteurs montrent qu'un biais de publication pourrait expliquer le résultat.",
+          "m1"
+        ],
+        [
+          "Maier, Dechamps & Pflitsch, 2018",
+          "Expérience en ligne",
+          "12 571 participants",
+          "BF₀₁ = 10,07",
+          "Les données favorisent le modèle nul face à l'alternative spécifiée. Les oscillations sont exploratoires.",
+          "m2"
+        ],
+        [
+          "Dechamps, 2025 (v2)",
+          "Rapport de laboratoire, corpus déclaré complet",
+          "27 études ; 34 conditions expérimentales, 19 contrôles",
+          "ES = 0,0164 ; IC 95 % [−0,0015 ; 0,0344] ; p = 0,0718",
+          "Effet moyen non significatif au seuil 0,05. Un seul laboratoire ; conditions parfois dépendantes.",
+          "m3"
+        ],
+        [
+          "Dechamps, 2025 (v2), analyses temporelles",
+          "Mesures de variation des facteurs de Bayes",
+          "Même corpus LMU",
+          "Maximum BF : p = 0,706 ; énergie : 0,012 ; FFT : 0,036",
+          "Des signaux à étudier ; leur multiplicité et leur validation prospective doivent être évaluées séparément.",
+          "m4"
+        ],
+        [
+          "Maier, Dechamps & Rabeyron, 2026",
+          "Réplication préenregistrée ; publiée le 6 octobre",
+          "Manipulation d'effacement des données et rappel subjectif",
+          "L'effet prédit sur le rappel n'est pas reproduit",
+          "Protocole particulier : ce n'est pas un test de toutes les formes de micro-PK.",
+          "m5"
+        ]
+      ],
+      "assessment": [
+        [
+          "Résultat statistique",
+          "Fragile pour la moyenne",
+          "L'intervalle de l'effet LMU inclut zéro ; les indices temporels testent autre chose."
+        ],
+        [
+          "Robustesse",
+          "Limitée",
+          "La complétude déclarée du corpus réduit la sélection des publications, sans résoudre les dépendances ni tous les choix d'analyse."
+        ],
+        [
+          "Reproductibilité",
+          "Insuffisante",
+          "Résultats positifs locaux et échecs de réplication nécessitent un bilan par protocole."
+        ],
+        [
+          "Attribution au psi",
+          "Faiblement étayée ici",
+          "Distinguer variations du générateur, variations d'une statistique cumulative et variations de mémoire."
+        ]
+      ],
+      "reason": "Faible : effets moyens peu stables, réplications défavorables et signaux temporels qui nécessitent encore une validation indépendante ciblée.",
+      "next": "Tester prospectivement les indices temporels sur de nouvelles séries, avec simulations du modèle nul, correction de multiplicité et analyse des dépendances entre conditions.",
+      "chart": {
+        "title": "LMU : effets moyens expérimentaux et contrôles",
+        "axis": "Effet standardisé ES du rapport ; zéro = absence d'écart moyen",
+        "min": -0.035,
+        "max": 0.045,
+        "nullValue": 0,
+        "ticks": [
+          -0.02,
+          0,
+          0.02,
+          0.04
+        ],
+        "rows": [
+          {
+            "label": "Expérimental · 34 conditions",
+            "value": 0.0164,
+            "low": -0.0015,
+            "high": 0.0344,
+            "display": "0,0164 [−0,0015 ; 0,0344]"
+          },
+          {
+            "label": "Contrôle · 19 conditions",
+            "value": -0.0076,
+            "low": -0.0228,
+            "high": 0.0076,
+            "display": "−0,0076 [−0,0228 ; 0,0076]"
+          }
+        ],
+        "note": "IC à 95 % publiés dans le rapport, modèles à effets aléatoires. Source M3. Ces deux estimations séparées ne constituent pas un test direct de leur différence. Ne pas comparer leur amplitude à celle du graphique ganzfeld."
+      },
+      "sources": [
+        {
+          "id": "m1",
+          "label": "M1 · Bösch, H., Steinkamp, F. & Boller, E. (2006). Examining psychokinesis: The interaction of human intention with random number generators. Psychological Bulletin, 132, 497–523.",
+          "url": "https://doi.org/10.1037/0033-2909.132.4.497",
+          "status": "Méta-analyse évaluée par les pairs."
+        },
+        {
+          "id": "m2",
+          "label": "M2 · Maier, M. A., Dechamps, M. C. & Pflitsch, M. (2018). Intentional Observer Effects on Quantum Randomness: A Bayesian Analysis Reveals Evidence Against Micro-Psychokinesis. Frontiers in Psychology, 9, 379.",
+          "url": "https://doi.org/10.3389/fpsyg.2018.00379",
+          "status": "Article évalué par les pairs ; analyse temporelle exploratoire."
+        },
+        {
+          "id": "m3",
+          "label": "M3 · Dechamps, M. C. (2025, v2). Meta-Analysis of a Complete Micro-PK Database from the LMU Lab: Years 2016–2025. Tableaux des modèles.",
+          "url": "https://mrzdcmps.github.io/labreport/metaanalysis.html",
+          "status": "Rapport ouvert, sans évaluation traditionnelle par les pairs. Version archivée : 10.5281/zenodo.16901945."
+        },
+        {
+          "id": "m4",
+          "label": "M4 · Dechamps (2025). Discussion du rapport LMU, analyses des variations temporelles de l'évidence.",
+          "url": "https://mrzdcmps.github.io/labreport/discussion.html",
+          "status": "Même rapport et même corpus que M3, pas une confirmation indépendante."
+        },
+        {
+          "id": "m5",
+          "label": "M5 · Maier, M. A., Dechamps, M. C. & Rabeyron, T. (2026). Observer Effects on (s)Objective Reality Formation: A Failed Replication. Journal of Anomalous Experience and Cognition, 6(2), 187–208.",
+          "url": "https://doi.org/10.31156/jaex.26236",
+          "status": "Article évalué ; réplication préenregistrée."
+        }
+      ]
+    }
+  ]
+}

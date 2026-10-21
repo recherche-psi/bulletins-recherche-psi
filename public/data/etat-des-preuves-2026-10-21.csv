@@ -1,0 +1,9 @@
+version,dossier,serie,estimate,lower_95,upper_95,unit,interval_method,source
+2026-10-21-brouillon-1,ganzfeld,Ensemble,0.074,0.03,0.12,Effet standardisé ES de la publication,published confidence interval,https://doi.org/10.12688/f1000research.51746.4
+2026-10-21-brouillon-1,ganzfeld,Participants sélectionnés,0.13,0.06,0.2,Effet standardisé ES de la publication,published confidence interval,https://doi.org/10.12688/f1000research.51746.4
+2026-10-21-brouillon-1,ganzfeld,Non sélectionnés,0.04,-0.01,0.09,Effet standardisé ES de la publication,published confidence interval,https://doi.org/10.12688/f1000research.51746.4
+2026-10-21-brouillon-1,precognition,Étude 1 · exploratoire,49.48,48.9704,49.9896,Réussites (%) ; trait vertical : hasard à 50 %,approximation mean +/- 1.96*published rounded SE,https://doi.org/10.1371/journal.pone.0335330
+2026-10-21-brouillon-1,precognition,Étude 2 · confirmation,49.65,49.3756,49.9244,Réussites (%) ; trait vertical : hasard à 50 %,approximation mean +/- 1.96*published rounded SE,https://doi.org/10.1371/journal.pone.0335330
+2026-10-21-brouillon-1,precognition,Étude 3 · réplication,50.07,49.8544,50.2856,Réussites (%) ; trait vertical : hasard à 50 %,approximation mean +/- 1.96*published rounded SE,https://doi.org/10.1371/journal.pone.0335330
+2026-10-21-brouillon-1,micro-pk,Expérimental · 34 conditions,0.0164,-0.0015,0.0344,Effet standardisé ES du rapport ; zéro = absence d'écart moyen,published confidence interval,https://mrzdcmps.github.io/labreport/metaanalysis.html
+2026-10-21-brouillon-1,micro-pk,Contrôle · 19 conditions,-0.0076,-0.0228,0.0076,Effet standardisé ES du rapport ; zéro = absence d'écart moyen,published confidence interval,https://mrzdcmps.github.io/labreport/metaanalysis.html
