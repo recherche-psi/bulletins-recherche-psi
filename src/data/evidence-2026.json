@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-24-bilan-7",
+  "version": "2026-10-24-bilan-8",
   "date": "24 octobre 2026",
   "topics": [
     {
@@ -521,7 +521,10 @@
       ],
       "kind": "experimental",
       "readingGuide": [],
-      "editorialUpdated": "24 octobre 2026"
+      "editorialUpdated": "24 octobre 2026",
+      "related": [
+        "experiences-hors-corps"
+      ]
     },
     {
       "reviewed": "24 octobre 2026",
@@ -933,6 +936,9 @@
             ]
           ]
         }
+      ],
+      "related": [
+        "neurosciences-psi"
       ]
     },
     {
@@ -1211,7 +1217,10 @@
       ],
       "kind": "experimental",
       "readingGuide": [],
-      "editorialUpdated": "24 octobre 2026"
+      "editorialUpdated": "24 octobre 2026",
+      "related": [
+        "neurosciences-psi"
+      ]
     },
     {
       "id": "micro-pk",
@@ -1368,7 +1377,8 @@
       "readingGuide": [],
       "editorialUpdated": "24 octobre 2026",
       "related": [
-        "gcp"
+        "gcp",
+        "neurosciences-psi"
       ]
     },
     {
@@ -1730,6 +1740,218 @@
       "editorialUpdated": "24 octobre 2026"
     },
     {
+      "chart": null,
+      "landscape": [],
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "id": "neurosciences-psi",
+      "title": "Neurosciences et psi",
+      "subtitle": "EEG, potentiels évoqués, IRM et interventions cérébrales",
+      "direction": "Résultats contrastés selon les mesures",
+      "summary": "Des associations neuronales sont rapportées dans plusieurs protocoles, aux côtés de résultats nuls. Le dossier examine séparément activité cérébrale, performance psi et interventions sur le cerveau.",
+      "question": "Cette fiche reprend les approches du chapitre d'Acunzo : rythmes EEG associés aux performances, réponses aux cibles et aux leurres, IRM fonctionnelle, lésions frontales et stimulation magnétique. Les corrélations entre personnes isolées, le pressentiment, la médiumnité et les expériences hors du corps ont aussi leurs fiches. Les corpus se recouvrent : leurs études ne constituent pas autant de confirmations indépendantes.",
+      "handbook": "Chapitre 14, David Acunzo, « À la recherche des corrélats neuronaux du psi ». Les travaux décrits ont été confrontés à des publications originales et à la revue de 2026.",
+      "readingGuide": [
+        [
+          "Mesurer un état",
+          "L'EEG mesure une activité électrique au scalp ; les potentiels évoqués (ERP) isolent une réponse moyenne liée à un événement. L'IRM fonctionnelle mesure indirectement l'activité via un signal hémodynamique. Un corrélat décrit une association."
+        ],
+        [
+          "Tester une information",
+          "Comparer cibles et leurres, ou signal et stimulation distante, exige des contrôles sensoriels et statistiques. Une réponse cérébrale sans réussite consciente est un critère distinct, étudié comme psi implicite."
+        ],
+        [
+          "Intervenir sur le cerveau",
+          "L'IRM structurelle documente notamment les lésions. La stimulation magnétique transcrânienne répétitive (rTMS) est une intervention : son effet sur une tâche peut éclairer un mécanisme, à condition de maîtriser les autres différences entre conditions."
+        ]
+      ],
+      "metrics": [
+        [
+          "129",
+          "études dans la revue Acunzo et al. (2026)"
+        ],
+        [
+          "91 %",
+          "des études de cette revue utilisent l'EEG"
+        ],
+        [
+          "5 %",
+          "utilisent l'IRM fonctionnelle"
+        ]
+      ],
+      "resultsTitle": "Synthèses du domaine",
+      "rows": [
+        [
+          "Acunzo et al., 2026",
+          "Revue systématique et critique",
+          "143 rapports, 129 études de perception extrasensorielle explicite ou implicite",
+          "Les auteurs relèvent notamment des associations avec l'alpha et des ondes lentes négatives. Les résultats et méthodes restent hétérogènes ; petits échantillons et flexibilité analytique reviennent dans leur examen.",
+          "Synthèse qualitative, pas une taille d'effet commune. Elle englobe plusieurs dossiers du site, dont les corrélations cérébrales et le pressentiment.",
+          "np1"
+        ],
+        [
+          "Acunzo, Évrard & Rabeyron, 2013",
+          "Analyse méthodologique",
+          "Six études utilisant l'IRM fonctionnelle",
+          "Cinq études rapportaient des résultats positifs. Les auteurs discutent, selon les protocoles, indices sensoriels, ordre des blocs et contrôles expérimentaux.",
+          "Article critique, pas une nouvelle expérience. Le nombre d'études positives ne renseigne pas à lui seul sur la validité de leurs signaux.",
+          "np2"
+        ]
+      ],
+      "studyGroups": [
+        {
+          "id": "eeg-alpha-erp",
+          "title": "EEG : rythmes alpha et potentiels évoqués",
+          "intro": "L'alpha décrit un rythme d'activité ; les ERP comparent des réponses liées à des événements. Une association avec la performance et une différence entre cibles et leurres répondent à deux questions distinctes.",
+          "rows": [
+            [
+              "Rythme alpha : bilan d'Acunzo, 2025",
+              "Revue dans le manuel",
+              "Travaux historiques de choix forcé et de modification des états cérébraux",
+              "Certaines séries relient l'alpha à de meilleurs scores ESP ; d'autres études, notamment de biofeedback, ne retrouvent pas ce lien.",
+              "Résultats présentés ici d'après le chapitre, sans réexamen des données originales. L'alpha n'est pas un indicateur spécifique du psi.",
+              "np0"
+            ],
+            [
+              "McDonough, Don & Warren, 2002",
+              "Étude ERP, suite d'un programme du même laboratoire",
+              "20 participants ; 755 réponses comportementales analysées ; choix entre quatre cartes",
+              "Interaction cible × hémisphère sur l'onde lente à 150–500 ms (p ≤ 0,05), avec davantage de négativité à droite pour les cibles. Les choix conscients restent compatibles avec le hasard : 204/755, soit 27 % pour 25 % attendus.",
+              "Le signal EEG et le score comportemental sont deux critères distincts. L'article s'inscrit dans une série du même laboratoire, non dans des confirmations par plusieurs équipes.",
+              "np3"
+            ]
+          ]
+        },
+        {
+          "id": "irm-fonctionnelle",
+          "title": "IRM fonctionnelle : cibles et stimulation distante",
+          "intro": "Les contrastes du signal BOLD sont des mesures indirectes de l'activité. Leur interprétation dépend de la tâche, de l'ordre des événements et des voies ordinaires contrôlées.",
+          "rows": [
+            [
+              "Moulton & Kosslyn, 2008",
+              "Test expérimental par IRMf",
+              "Paires de personnes proches ; images cibles et leurres ; réponses du receveur dans le scanner",
+              "Pas de différence cérébrale détectée entre les conditions psi et témoins ; les réponses à la charge émotionnelle des images sont, elles, observées.",
+              "Résultat nul dans ce protocole. Il ne suffit pas à exclure tous les effets possibles dans d'autres tâches ou conditions.",
+              "np4"
+            ],
+            [
+              "Richards et al., 2005",
+              "Étude IRMf de corrélations à distance",
+              "Receveur dans le scanner ; partenaire stimulé visuellement dans une pièce distincte",
+              "Les auteurs rapportent des variations du signal chez le receveur associées à la stimulation du partenaire, avec une répétition chez un participant.",
+              "Acunzo et al. (2013) relèvent une alternance fixe des blocs malgré des durées aléatoires. Ce point doit être distingué d'une randomisation complète de l'ordre des conditions.",
+              "np5"
+            ]
+          ]
+        },
+        {
+          "id": "interventions-frontales",
+          "title": "Lésions frontales et stimulation magnétique",
+          "intro": "Ces recherches de Freedman et collègues testent l'hypothèse d'une inhibition frontale des performances psi, avec une tâche de micro-PK. L'IRM localise les lésions ; la rTMS modifie temporairement l'activité.",
+          "rows": [
+            [
+              "Freedman et al., 2018",
+              "Études de patients et IRM structurelle",
+              "Deux patients avec lésion frontale gauche ; l'un avait déjà participé aux travaux antérieurs",
+              "Effets rapportés dans la condition d'intention vers la droite sur un générateur aléatoire ; les auteurs rapprochent les zones de lésion des deux patients.",
+              "Convergence au sein d'un même programme, avec réutilisation d'un patient. Petit nombre de cas et effet directionnel : ne permet pas de généraliser à toute lésion frontale ni à toute tâche psi.",
+              "np6"
+            ],
+            [
+              "Freedman et al., 2024 (en ligne 2023)",
+              "Intervention avec groupes témoins",
+              "108 participants analysés : inhibition frontale gauche, droite ou stimulation simulée",
+              "Effet vers la droite rapporté après inhibition gauche dans l'analyse pondérée selon le temps écoulé ; l'analyse non pondérée n'est pas significative.",
+              "La dépendance à une pondération post hoc est discutée par Acunzo. La continuité du résultat directionnel avec les études de patients mérite examen ; elle ne valide pas à elle seule le modèle du cerveau-filtre.",
+              "np7"
+            ]
+          ]
+        }
+      ],
+      "openQuestion": "Quelles signatures distinguent l'état du participant, la tâche et une éventuelle acquisition d'information ?",
+      "interpretation": "Ces travaux renseignent à la fois les conditions neurophysiologiques et d'éventuelles réponses à une information inaccessible par les voies ordinaires. Une association neuronale, un résultat comportemental et un effet d'intervention apportent des éléments différents. Leurs convergences et leurs divergences doivent être examinées sans les convertir en une démonstration unique du psi ou d'un modèle de la conscience.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Associations avec certains rythmes, différences ERP et résultats IRMf positifs ou nuls. Les interventions frontales forment un programme distinct, avec des effets directionnels rapportés."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Contrôle des artefacts, nombre de comparaisons, choix des fenêtres et des régions, ordre des conditions et transparence du traitement. Une mesure instrumentale précise ne garantit pas la validité de son interprétation."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "État du participant, contexte relationnel, tâche, environnement du scanner et méthode d'analyse peuvent varier. Leur rôle doit être mesuré ; l'invoquer ne suffit pas à expliquer un écart entre études."
+        ],
+        [
+          "Portée des conclusions",
+          "Distinguer corrélat d'un vécu, discrimination d'une cible et intervention causale. Une théorie du cerveau-filtre demande des prédictions qui la départagent d'autres explications."
+        ]
+      ],
+      "next": "Définir les contrastes et les traitements avant l'analyse, publier les signaux et les contrôles, documenter les conditions vécues par les participants, puis confronter les signatures proposées à des données nouvelles. Pour la rTMS, comparer explicitement les modèles temporels et mesurer les effets de la stimulation.",
+      "related": [
+        "correlations-cerebrales",
+        "pressentiment",
+        "micro-pk",
+        "mediumnite-mentale",
+        "experiences-hors-corps"
+      ],
+      "sources": [
+        {
+          "id": "np0",
+          "label": "NP0 · Acunzo, D. (2025). Chapitre 14, « À la recherche des corrélats neuronaux du psi ». Grand manuel de parapsychologie scientifique, Dunod.",
+          "url": "https://shs.cairn.info/grand-manuel-de-parapsychologie-scientifique--9782100874682-page-555?lang=fr",
+          "status": "Chapitre lu dans la version de travail fournie ; notice éditoriale et bibliographie vérifiées. Pour le volet alpha historique, les résultats sont attribués à cette synthèse ; les articles originaux n'ont pas tous été consultés."
+        },
+        {
+          "id": "np1",
+          "label": "NP1 · Acunzo, D. J., Denton, A. H., Weiler, M. & Kelly, E. F. (2026). Neuroimaging studies of extra-sensory perception: A systematic and critical review. NeuroImage, 333, 121937.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42009267/",
+          "status": "Notice et résumé consultés. DOI : 10.1016/j.neuroimage.2026.121937. En ligne le 18 avril 2026. Pas de réanalyse des 129 études ; même revue que dans la fiche sur les corrélations cérébrales."
+        },
+        {
+          "id": "np2",
+          "label": "NP2 · Acunzo, D. J., Évrard, R. & Rabeyron, T. (2013). Anomalous experiences, psi and functional neuroimaging. Frontiers in Human Neuroscience, 7, 893.",
+          "url": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2013.00893/full",
+          "status": "Passages méthodologiques du texte intégral consultés. Article d'opinion et d'analyse critique ; DOI : 10.3389/fnhum.2013.00893."
+        },
+        {
+          "id": "np3",
+          "label": "NP3 · McDonough, B. E., Don, N. S. & Warren, C. A. (2002). Differential Event-Related Potentials to Targets and Decoys in a Guessing Task. Journal of Scientific Exploration, 16(2), 187–206.",
+          "url": "https://www.scribd.com/document/501208456/jse-16-2",
+          "status": "Résumé, méthodes et résultats consultés dans une copie numérisée du numéro original. Le taux de réussite comportementale porte sur 755 essais analysés. Pas de réanalyse des signaux."
+        },
+        {
+          "id": "np4",
+          "label": "NP4 · Moulton, S. T. & Kosslyn, S. M. (2008). Using Neuroimaging to Resolve the Psi Debate. Journal of Cognitive Neuroscience, 20(1), 182–192.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18095790/",
+          "status": "Notice et résumé consultés ; discussion mise en regard du chapitre d'Acunzo. L'interprétation générale des auteurs n'est pas confondue avec le résultat de ce protocole."
+        },
+        {
+          "id": "np5",
+          "label": "NP5 · Richards, T. L., Kozak, L., Johnson, L. C. & Standish, L. J. (2005). Replicable functional magnetic resonance imaging evidence of correlated brain signals between physically and sensory isolated subjects. Journal of Alternative and Complementary Medicine, 11(6), 955–963.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/16398586/",
+          "status": "Notice et résumé consultés. DOI : 10.1089/acm.2005.11.955. La remarque sur l'ordre des blocs provient de l'analyse critique d'Acunzo et al. (2013), référence NP2."
+        },
+        {
+          "id": "np6",
+          "label": "NP6 · Freedman et al. (2018). Mind-Matter Interactions and the Frontal Lobes of the Brain: A Novel Neurobiological Model of Psi Inhibition. Explore, 14(1), 76–85.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29169779/",
+          "status": "Résumé et extrait de discussion consultés, complétés par le manuel. DOI : 10.1016/j.explore.2017.08.003. Article paru en ligne en 2017 ; un des deux patients avait déjà été étudié."
+        },
+        {
+          "id": "np7",
+          "label": "NP7 · Freedman, M., Binns, M. A., Meltzer, J. A., Hashimi, R. & Chen, R. (2024). Enhanced mind-matter interactions following rTMS induced frontal lobe inhibition. Cortex, 172, 222–233.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/38065765/",
+          "status": "Notice, résumé et passages méthodes/résultats de l'article consultés dans une copie du PDF. DOI : 10.1016/j.cortex.2023.10.016. En ligne le 10 novembre 2023 ; datation 2024 du volume. Discussion de la pondération confrontée au chapitre d'Acunzo."
+        }
+      ]
+    },
+    {
       "id": "correlations-cerebrales",
       "title": "Corrélations cérébrales entre personnes isolées",
       "subtitle": "Examiner des associations entre signaux physiologiques à distance",
@@ -1839,6 +2061,230 @@
       "new": true,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026"
+    },
+    {
+      "chart": null,
+      "landscape": [],
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "id": "experiences-hors-corps",
+      "title": "Expériences hors du corps",
+      "subtitle": "Vécu de décorporation, cibles cachées et mesures physiologiques",
+      "direction": "Perceptions rapportées, résultats expérimentaux contrastés",
+      "summary": "Des expériences spontanées ou provoquées sont documentées, avec des observations de perception alléguée et des tests sur cibles. Les recherches sur le vécu corporel et celles sur l'information obtenue apportent des données distinctes.",
+      "question": "L'expérience hors du corps (EHC, ou OBE en anglais) désigne le sentiment de se situer hors de son corps. Elle peut survenir en dehors d'une expérience de mort imminente, notamment pendant le sommeil ou lors de tentatives volontaires. Cette fiche distingue phénoménologie, induction, enregistrement physiologique et vérification de perceptions. Les perceptions pendant une réanimation sont traitées dans le dossier EMI.",
+      "handbook": "Chapitre 13, section sur les expériences hors du corps, et chapitre 14 de David Acunzo pour les approches neuroscientifiques. Sélection complétée par les travaux de 2025 et 2026.",
+      "readingGuide": [
+        [
+          "Expérience vécue",
+          "Sentiment de décorporation, déplacement du point de vue, vision de son corps : décrire précisément ce qui est rapporté. Une illusion corporelle induite ne reproduit pas nécessairement toutes les dimensions d'une EHC spontanée."
+        ],
+        [
+          "Mesure physiologique",
+          "EEG, IRM ou mouvements oculaires peuvent documenter l'état ou le moment signalé par le participant. Un marqueur temporel n'est pas une vérification de la perception d'une cible cachée."
+        ],
+        [
+          "Information vérifiable",
+          "Comparer un récit à une cible ou à des événements documentés, avec horodatage, contrôle de l'accès et cotation indépendante. Une correspondance ne localise pas, à elle seule, la conscience hors du corps."
+        ]
+      ],
+      "metrics": [
+        [
+          "87",
+          "publications dans la revue Moix et al. (2025)"
+        ],
+        [
+          "21",
+          "participants au test de cibles Weiler et al. (2026)"
+        ],
+        [
+          "13",
+          "descriptions analysées dans ce test"
+        ]
+      ],
+      "resultsTitle": "Synthèse récente et test de cibles",
+      "rows": [
+        [
+          "Moix, Baldaccini & Isern, 2025",
+          "Revue de portée (scoping review)",
+          "87 publications de 1987 à 2024 ; six bases documentaires",
+          "Cartographie d'EHC spontanées et induites, de leurs caractéristiques et de leurs relations avec le sommeil et le rêve lucide.",
+          "Les 87 publications ne sont pas 87 tests de perception extrasensorielle. La revue ne fournit pas une estimation commune de réussite sur cibles cachées.",
+          "hc1"
+        ],
+        [
+          "Weiler, Abraham, Acunzo & Hermansson, 2026",
+          "Test de perception de cibles",
+          "21 participants ; 10 rapportent une EHC ; 13 descriptions analysées",
+          "Pas de correspondance significativement supérieure au hasard selon les tests de rang, individuellement ou pour l'ensemble des 13 descriptions. Deux descriptions spontanées de l'environnement sont rapportées séparément comme exactes.",
+          "Les correspondances spontanées ne sont pas des réussites aux cibles prévues. La cotation sémantique automatisée et le petit corpus délimitent la portée du résultat nul.",
+          "hc2"
+        ]
+      ],
+      "studyGroups": [
+        {
+          "id": "perception-historique",
+          "title": "Perception : expériences historiques",
+          "intro": "Ces études ont cherché des informations ou des effets à l'endroit où le participant disait se trouver. Les critères de réussite et les contrôles diffèrent fortement.",
+          "rows": [
+            [
+              "Tart, 1968, repris en 1998",
+              "Étude de cas « Miss Z »",
+              "Une participante ; quatre nuits ; cible de cinq chiffres hors de vue depuis le lit",
+              "Un nombre correctement identifié la quatrième nuit, accompagné d'un enregistrement EEG. Tart défend l'interprétation ESP tout en soulignant le caractère non conclusif de cette étude isolée.",
+              "Un cas et une réussite. Évaluer l'accès possible à la cible et la surveillance ; même une acquisition anormale d'information ne distingue pas perception extracorporelle et autres hypothèses psi.",
+              "hc3"
+            ],
+            [
+              "Osis & McCormick, 1980",
+              "Test de perception et de détection physique",
+              "Alex Tanous ; 197 essais utilisables en 20 séances ; dispositif optique et jauges de contrainte",
+              "Activation des jauges plus élevée dans les essais classés réussis que dans les échecs (p < 0,05 après présentation de la cible). Des différences sont aussi rapportées avant celle-ci.",
+              "Comparaison conditionnelle chez un seul participant. Les critères de perception et les mesures physiques doivent être distingués ; ce résultat ne démontre pas à lui seul un déplacement physique hors du corps.",
+              "hc4"
+            ]
+          ]
+        },
+        {
+          "id": "corps-neurosciences",
+          "title": "Induction, IRM et repérage physiologique",
+          "intro": "Ces approches éclairent la représentation du corps et l'étude en laboratoire des EHC. Leurs résultats portent sur l'expérience et son accompagnement physiologique, sans test de perception cachée dans les études ci-dessous.",
+          "rows": [
+            [
+              "Blanke et al., 2002",
+              "Stimulation électrique focale",
+              "Une patiente évaluée pour une épilepsie ; gyrus angulaire droit",
+              "Induction répétée de sensations de décorporation par stimulation électrique dans cette observation clinique.",
+              "Établit un lien entre stimulation et vécu dans ce cas ; ne suffit pas à expliquer toutes les EHC ni à trancher la véracité de perceptions rapportées ailleurs.",
+              "hc5"
+            ],
+            [
+              "Ehrsson, 2007",
+              "Manipulation visuelle et tactile",
+              "Vision du corps depuis une caméra et stimulations tactiles coordonnées",
+              "Modification expérimentale du lieu où les participants ont le sentiment de se trouver.",
+              "La manipulation sensorielle renseigne sur la localisation de soi ; son équivalence avec une EHC spontanée complète doit être examinée, dimension par dimension.",
+              "hc6"
+            ],
+            [
+              "Smith & Messier, 2014",
+              "Étude de cas par IRMf",
+              "Une participante capable d'induire volontairement une expérience extracorporelle",
+              "Différences d'activité dans des régions impliquées dans le mouvement et la représentation du corps ; diminution dans le cortex visuel.",
+              "Expérience partielle, décrite par les auteurs comme une forme inhabituelle d'imagerie kinesthésique. Un cas ne fournit pas un marqueur universel des EHC.",
+              "hc7"
+            ],
+            [
+              "Weiler, Casseb & Acunzo, 2025",
+              "Repérage par mouvements oculaires",
+              "Trois participants ; deux rapportent une EHC au laboratoire",
+              "Un participant produit le signal oculaire convenu au cours de ses trois séances, pour indiquer le début de l'expérience.",
+              "L'électro-oculographie (EOG) enregistre les yeux, pas un marqueur cérébral EEG. Elle aide à synchroniser récit et mesures, sans vérifier une sortie effective ni une perception distante.",
+              "hc8"
+            ]
+          ]
+        },
+        {
+          "id": "methodes-ehc",
+          "title": "Adapter les méthodes et documenter le contexte",
+          "intro": "Les propositions méthodologiques sont présentées à part des résultats expérimentaux : elles indiquent des conditions à étudier, sans établir d'avance leur rôle.",
+          "rows": [
+            [
+              "Weiler, Pehlivanova & Cozzolino, 2026",
+              "Proposition méthodologique",
+              "État du participant, relation avec le chercheur, intention, compétences et sens donné à l'expérience",
+              "Les auteurs proposent de mieux articuler tests de cibles et documentation d'expériences vécues, avec vérification des récits et attention au contexte.",
+              "Ce texte n'apporte pas une nouvelle série positive. Les facteurs proposés doivent être mesurés et testés ; ils ne constituent pas une explication déjà établie des résultats nuls.",
+              "hc9"
+            ]
+          ]
+        }
+      ],
+      "openQuestion": "Dans quelles conditions des descriptions consignées pendant une EHC correspondent-elles à des informations inaccessibles par les voies ordinaires ?",
+      "interpretation": "Le vécu de décorporation est un objet d'étude distinct de la véracité des perceptions qui l'accompagnent. Les résultats d'induction et de neuroimagerie éclairent certains mécanismes de représentation du corps. Les observations de perception appellent leur propre examen documentaire et expérimental ; elles ne sont ni validées ni annulées par la seule présence d'un corrélat cérébral.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Récits circonstanciés, observations historiques positives, expériences d'induction et tests de cibles sans résultat significatif. Conserver les résultats planifiés et les observations spontanées dans des catégories explicites."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Contrôler l'accès aux cibles, consigner le récit avant vérification, préciser les critères de correspondance et l'aveugle. Pour la physiologie, synchroniser les données avec l'expérience signalée et comparer des états témoins."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "EHC spontanée, liée au sommeil, volontaire ou provoquée par stimulation ne désignent pas des conditions interchangeables. Décrire les participants, le contexte et les dimensions vécues avant de comparer les résultats."
+        ],
+        [
+          "Portée des conclusions",
+          "Un mécanisme de localisation corporelle n'explique pas nécessairement l'ensemble d'un récit. Une perception vérifiée n'établirait pas, à elle seule, une séparation physique de la conscience ni la survie après la mort."
+        ]
+      ],
+      "next": "Combiner description précise du vécu, horodatage, cibles réellement inaccessibles, cotation prévue et indépendante, et mesures synchronisées. Analyser séparément les cibles prévues et les détails spontanés vérifiables ; documenter aussi les tentatives sans EHC.",
+      "related": [
+        "perceptions-emi",
+        "neurosciences-psi",
+        "vision-distance"
+      ],
+      "sources": [
+        {
+          "id": "hc1",
+          "label": "HC1 · Moix, J., Baldaccini, S. & Isern, M. (2025). Out of body experiences: Scoping review. Explore, 21(4), 103196.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40540759/",
+          "status": "Notice et résumé consultés. DOI : 10.1016/j.explore.2025.103196. En ligne le 4 juin 2025. Le corpus couvre 1987–2024 ; il ne constitue pas une méta-analyse de tests psi."
+        },
+        {
+          "id": "hc2",
+          "label": "HC2 · Weiler, M., Abraham, D., Acunzo, D. J. P. & Hermansson, N. (2026). Assessing correspondence between subjective reports and visual targets during attempted out-of-body experiences. Explore, 22(6), 103506.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42617381/",
+          "status": "Notice et résumé consultés ; DOI : 10.1016/j.explore.2026.103506. En ligne le 12 août 2026. Les 13 descriptions analysées ne doivent pas être assimilées à 13 EHC déclarées. Pas de réanalyse de la cotation sémantique."
+        },
+        {
+          "id": "hc3",
+          "label": "HC3 · Tart, C. T. (1998). Six Studies of Out-of-Body Experiences. Journal of Near-Death Studies, 17(2), 73–99.",
+          "url": "https://digital.library.unt.edu/ark:/67531/metadc799368/",
+          "status": "Passages consacrés à Miss Z consultés dans le scan original, notamment p. 81–82. Récit rétrospectif par l'auteur de son étude de 1968, A psychophysiological study of out-of-the-body experiences in a selected subject, JASPR, 62, 3–27 ; pas de nouvel examen des enregistrements."
+        },
+        {
+          "id": "hc4",
+          "label": "HC4 · Osis, K. & McCormick, D. (1980). Kinetic Effects at the Ostensible Location of an Out-of-Body Projection During Perceptual Testing. Journal of the American Society for Psychical Research, 74(3), 319–329.",
+          "url": "https://aspr.com/watch/kinetic-effects-at-ostensible-location-of-an-out-of-body-pro",
+          "status": "Résumé et passages de résultats consultés dans le texte proposé par l'ASPR. Les 197 essais proviennent d'un seul participant ; l'association aux jauges n'est pas un taux global de perception correcte."
+        },
+        {
+          "id": "hc5",
+          "label": "HC5 · Blanke, O., Ortigue, S., Landis, T. & Seeck, M. (2002). Stimulating illusory own-body perceptions. Nature, 419, 269–270.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12239558/",
+          "status": "Notice vérifiée ; résumé et passage initial consultés dans une copie déposée par une coauteure. DOI : 10.1038/419269a. Observation clinique unique."
+        },
+        {
+          "id": "hc6",
+          "label": "HC6 · Ehrsson, H. H. (2007). The experimental induction of out-of-body experiences. Science, 317(5841), 1048.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17717177/",
+          "status": "Notice et résumé consultés. DOI : 10.1126/science.1142175. Étude de manipulation sensorielle, sans test de perception extrasensorielle."
+        },
+        {
+          "id": "hc7",
+          "label": "HC7 · Smith, A. M. & Messier, C. (2014). Voluntary Out-of-Body Experience: An fMRI Study. Frontiers in Human Neuroscience, 8, 70.",
+          "url": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2014.00070/full",
+          "status": "Résumé et discussion consultés dans le texte intégral. DOI : 10.3389/fnhum.2014.00070. Les auteurs distinguent l'expérience décrite d'une EHC complète."
+        },
+        {
+          "id": "hc8",
+          "label": "HC8 · Weiler, M., Casseb, R. F. & Acunzo, D. (2025). Using Eye Movements to Signal the Onset of Self-Induced Out-of-Body Experiences (OBEs). Journal of Consciousness Studies, 32(3–4), 135–149.",
+          "url": "https://www.researchgate.net/publication/390446107_Using_Eye_Movements_to_Signal_the_Onset_of_Self-Induced_Out-of-Body_Experiences_OBEs",
+          "status": "Résumé et passages de la copie déposée par les auteurs consultés. DOI : 10.53765/20512201.32.3.135. Référence également vérifiée dans la liste de publications institutionnelle d'Acunzo."
+        },
+        {
+          "id": "hc9",
+          "label": "HC9 · Weiler, M., Pehlivanova, M. & Cozzolino, P. J. (2026). From laboratory targets to experiential authenticity: reframing the study of veridicality in OBEs. Frontiers in Psychology, 17, 1720998.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13269066/",
+          "status": "Passages historiques et méthodologiques consultés dans le texte intégral. DOI : 10.3389/fpsyg.2026.1720998. Publication le 2 juin 2026. Proposition de méthode, distincte du test de cibles publié en août (HC2)."
+        }
+      ]
     },
     {
       "id": "perceptions-emi",
