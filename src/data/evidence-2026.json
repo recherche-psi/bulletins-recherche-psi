@@ -1,14 +1,13 @@
 {
-  "version": "2026-10-24-brouillon-3",
+  "version": "2026-10-24-bilan-4",
   "date": "24 octobre 2026",
   "topics": [
     {
       "id": "ganzfeld",
       "title": "Ganzfeld",
       "subtitle": "Identifier une cible dans un environnement sensoriel homogène",
-      "confidence": "Modérée",
       "direction": "Synthèse cumulative favorable",
-      "summary": "Un effet moyen positif ; sa généralisation à de nouvelles expériences reste à préciser.",
+      "summary": "Les synthèses rapportent un écart moyen au hasard. Son amplitude varie entre études et selon les caractéristiques des protocoles.",
       "question": "Le choix d'une cible dépasse-t-il le hasard lorsque l'information sensorielle ordinaire est contrôlée ? Le corpus réunit plusieurs variantes : il ne teste pas exclusivement la télépathie.",
       "metrics": [
         [
@@ -66,30 +65,7 @@
           "g5"
         ]
       ],
-      "assessment": [
-        [
-          "Résultat statistique",
-          "Favorable",
-          "La synthèse 2024 estime un effet positif dont l'intervalle fréquentiste exclut zéro."
-        ],
-        [
-          "Robustesse",
-          "Intermédiaire",
-          "Analyses de biais disponibles ; résultats variables selon les modèles. Hétérogénéité notable."
-        ],
-        [
-          "Reproductibilité",
-          "À consolider",
-          "Distinguer l'effet cumulé des réussites prédictibles dans des réplications prospectives indépendantes."
-        ],
-        [
-          "Attribution au psi",
-          "Provisoire",
-          "Une moyenne non nulle ne désigne pas à elle seule le mécanisme ; audit des contrôles et des dépendances nécessaire."
-        ]
-      ],
-      "reason": "Modérée : résultat cumulé positif et plusieurs analyses de robustesse, mais hétérogénéité et bilan prospectif encore incomplet dans ce dossier. Ce niveau est une proposition éditoriale, pas une cotation des auteurs.",
-      "next": "Une synthèse prospective indépendante, avec résultats de toutes les études enregistrées et intervalle de prédiction, pourrait renforcer ou réduire cette appréciation.",
+      "next": "Comparer les modérateurs annoncés à l'avance, préciser les performances attendues selon les conditions et intégrer toutes les études enregistrées, y compris les résultats nuls.",
       "chart": {
         "title": "Un effet moyen positif, variable selon les participants",
         "axis": "Effet standardisé ES de la publication",
@@ -171,21 +147,41 @@
       "new": false,
       "handbook": "",
       "landscape": [],
-      "blocker": "Généralisation et réplication prospective"
+      "openQuestion": "Quelles conditions expliquent les différences entre études ?",
+      "interpretation": "Un résultat cumulé positif est documenté. L'estimation moyenne, sa robustesse et les conditions de réussite répondent à des questions distinctes ; aucune ne désigne seule un mécanisme.",
+      "profile": [
+        [
+          "Résultats observés",
+          "La synthèse 2024 estime un effet positif, avec un intervalle fréquentiste excluant zéro."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Des analyses de biais sont disponibles ; les conclusions doivent être comparées entre modèles et choix d'inclusion."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Hétérogénéité notable. La sélection des participants et les variantes du protocole sont à examiner sans attribuer automatiquement leurs différences au psi."
+        ],
+        [
+          "Portée des conclusions",
+          "Le corpus porte sur l'identification de cibles. Il ne distingue pas à lui seul télépathie, clairvoyance et précognition."
+        ]
+      ],
+      "kind": "experimental",
+      "readingGuide": [],
+      "editorialUpdated": "24 octobre 2026"
     },
     {
       "reviewed": "24 octobre 2026",
-      "new": true,
+      "new": false,
       "landscape": [],
-      "confidence": "Faible",
       "chart": null,
       "id": "choix-force",
       "title": "Perception à choix forcé",
       "group": "Perception",
       "subtitle": "Choisir une réponse parmi des cibles définies à l'avance",
-      "direction": "Petit effet cumulé, confirmation incomplète",
-      "summary": "La synthèse est positive. Les résultats prospectifs retenus ne confirment pas tous les critères annoncés.",
-      "blocker": "La stabilité de l'effet dans des protocoles prospectifs",
+      "direction": "Petit effet cumulé ; résultats prospectifs contrastés",
+      "summary": "La synthèse rapporte une moyenne positive. Dans l'étude IMI de 2025, les signaux exploratoires et les tests confirmatoires donnent des résultats différents.",
       "question": "Télépathie, clairvoyance et précognition testées par un choix entre plusieurs réponses possibles. Le corpus inclut des mesures de réussite et de temps de réaction. Il recoupe donc en partie la fiche Précognition ; leurs effectifs ne s'additionnent pas.",
       "handbook": "Chapitre 3, recherches expérimentales sur la perception extrasensorielle, notamment les protocoles à choix forcé.",
       "metrics": [
@@ -228,30 +224,7 @@
           "cf2"
         ]
       ],
-      "assessment": [
-        [
-          "Résultat statistique",
-          "Favorable, de petite amplitude",
-          "La synthèse rapporte un effet moyen positif ; son amplitude ne donne pas un taux de réussite universel."
-        ],
-        [
-          "Robustesse",
-          "À préciser",
-          "Exclusions de valeurs extrêmes et forte hétérogénéité résiduelle dans le modèle publié."
-        ],
-        [
-          "Reproductibilité",
-          "Incomplète",
-          "Dans l'étude IMI retenue, les critères confirmatoires échouent et les signaux favorables sont exploratoires."
-        ],
-        [
-          "Attribution au psi",
-          "Non établie",
-          "Il faut une réussite prospective stable, avec contrôle du tirage des cibles, des fuites et du traitement des données."
-        ]
-      ],
-      "reason": "Confiance faible proposée : la moyenne positive justifie la poursuite des tests, mais la diversité des protocoles et l'écart entre résultats exploratoires et confirmatoires limitent l'attribution à un effet reproductible.",
-      "next": "Préenregistrer un critère principal, fixer le nombre d'essais et reproduire le même protocole dans plusieurs équipes. Pour Psi@Home, tester séparément l'hypothèse suggérée par les sessions d'essai.",
+      "next": "Tester explicitement ce qui distingue les phases d'essai et les phases formelles, en fixant le critère de résultat et les contrastes avant la collecte. Comparer ensuite ces résultats entre équipes.",
       "sources": [
         {
           "id": "cf1",
@@ -265,7 +238,30 @@
           "url": "https://doi.org/10.31156/jaex.26394",
           "status": "Article évalué par les pairs, publié le 23 mai 2025. Texte intégral consulté. Étude conduite à l'IMI ; ce lien institutionnel doit être déclaré lors de la relecture."
         }
-      ]
+      ],
+      "openQuestion": "Quels paramètres distinguent les résultats cumulés des résultats prospectifs ?",
+      "interpretation": "Le dossier documente un petit effet cumulé et des écarts entre phases d'étude. Ces écarts constituent un objet d'analyse ; ils ne suffisent pas à identifier leur cause.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Effet moyen positif dans la synthèse ; critères confirmatoires non satisfaits dans les deux cohortes IMI retenues."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Les exclusions de valeurs extrêmes et l'hétérogénéité résiduelle du modèle nécessitent des analyses de sensibilité."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Réussites, temps de réaction et variance ne mesurent pas la même chose. Le contraste entre sessions d'essai et sessions formelles peut orienter une hypothèse à tester."
+        ],
+        [
+          "Portée des conclusions",
+          "Le corpus combine plusieurs tâches et modalités supposées. Un signal exploratoire ne valide pas rétroactivement une prédiction différente."
+        ]
+      ],
+      "kind": "experimental",
+      "readingGuide": [],
+      "editorialUpdated": "24 octobre 2026"
     },
     {
       "reviewed": "24 octobre 2026",
@@ -275,10 +271,8 @@
       "title": "Télépathie dans le rêve",
       "group": "Perception",
       "subtitle": "Rapprocher un récit de rêve d'une cible tenue à l'écart des sens",
-      "confidence": "Faible",
       "direction": "Signal positif, sensible à la méthode",
       "summary": "La synthèse sur le psi dans les rêves est favorable ; l'effet propre à la télépathie reste incertain.",
-      "blocker": "Pondération des études et réplications récentes",
       "question": "Les rêves correspondent-ils à une cible plus souvent que prévu par le hasard ? Les synthèses réunissent télépathie, clairvoyance et précognition : leur résultat global ne démontre pas spécifiquement la télépathie.",
       "handbook": "Mario Varvoglis, chapitre 3, section « La perception extra-sensorielle en rêve ».",
       "metrics": [
@@ -321,30 +315,7 @@
           "r3"
         ]
       ],
-      "assessment": [
-        [
-          "Résultat statistique",
-          "Favorable mais variable",
-          "L'effet global ne suffit pas à isoler un mécanisme télépathique."
-        ],
-        [
-          "Robustesse",
-          "Discutée",
-          "Pondération, exclusions et petits échantillons influencent les conclusions."
-        ],
-        [
-          "Reproductibilité",
-          "À consolider",
-          "Une réanalyse n'ajoute aucune observation indépendante. Le corpus de référence s'arrête en 2016."
-        ],
-        [
-          "Attribution au psi",
-          "Incertaine",
-          "Contrôles de la cible, datation du récit et jugement à l'aveugle à auditer."
-        ]
-      ],
-      "reason": "Confiance faible proposée : le signal historique mérite un suivi, mais la sensibilité aux analyses et le manque de confirmation récente dans cette sélection limitent l'attribution à un psi reproductible.",
-      "next": "Une réplication indépendante préenregistrée, avec récits horodatés avant révélation, cibles randomisées, juges aveugles et analyse fixée à l'avance.",
+      "next": "Actualiser le corpus, distinguer les familles de protocoles et conserver les récits horodatés avant révélation des cibles. Tester les conditions favorables proposées avec un jugement aveugle.",
       "chart": {
         "title": "Ce que change la réanalyse",
         "axis": "Corrélation pondérée r et IC à 95 %",
@@ -396,7 +367,30 @@
           "url": "https://doi.org/10.11588/ijodr.2019.1.59265",
           "status": "Commentaire publié ; notice et résumé vérifiés dans le dépôt de l'université de New England. Pas d'audit de ses calculs."
         }
-      ]
+      ],
+      "openQuestion": "Quelle part du résultat dépend des protocoles et de la méthode de synthèse ?",
+      "interpretation": "Des correspondances au-delà du hasard sont rapportées, avec des estimations sensibles à la méthode de synthèse. Le bilan concerne les rêves et les cibles, sans isoler une transmission télépathique.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Le corpus historique présente un signal positif ; l'estimation varie selon la réanalyse."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Pondération, exclusions et petits échantillons influencent les conclusions. Datation des récits et jugement aveugle sont essentiels."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Les variantes télépathiques, clairvoyantes et précognitives sont réunies dans certaines synthèses. La sélection retenue s'arrête en 2016."
+        ],
+        [
+          "Portée des conclusions",
+          "Une correspondance avec une cible doit être distinguée de l'identification de la voie d'acquisition de l'information."
+        ]
+      ],
+      "kind": "experimental",
+      "readingGuide": [],
+      "editorialUpdated": "24 octobre 2026"
     },
     {
       "reviewed": "24 octobre 2026",
@@ -406,10 +400,8 @@
       "title": "Vision à distance",
       "group": "Perception",
       "subtitle": "Décrire une cible inaccessible, avec évaluation à l'aveugle",
-      "confidence": "Faible",
       "direction": "Moyenne positive, forte hétérogénéité",
       "summary": "Une synthèse favorable, mais des protocoles très variables et des résultats récents contrastés.",
-      "blocker": "Stabilité de l'effet entre protocoles et équipes",
       "question": "Les descriptions permettent-elles d'identifier des cibles cachées ou futures ? Les protocoles de clairvoyance et de précognition doivent être distingués ; les résultats ne valident pas à eux seuls des applications pratiques.",
       "handbook": "Mario Varvoglis, chapitre 3, section sur la vision à distance ; Julia Mossbridge, chapitre 4, section sur la vision à distance précognitive.",
       "metrics": [
@@ -452,30 +444,7 @@
           "v3"
         ]
       ],
-      "assessment": [
-        [
-          "Résultat statistique",
-          "Favorable en moyenne",
-          "La méta-analyse rapporte un effet positif."
-        ],
-        [
-          "Robustesse",
-          "Hétérogénéité majeure",
-          "L'effet moyen décrit mal à lui seul une prochaine expérience."
-        ],
-        [
-          "Reproductibilité",
-          "Variable selon la tâche",
-          "Les deux expériences de 2024 ne donnent pas le même résultat global."
-        ],
-        [
-          "Attribution au psi",
-          "À consolider",
-          "L'indépendance des juges et l'absence d'indices sur les cibles sont déterminantes."
-        ]
-      ],
-      "reason": "Confiance faible proposée malgré la moyenne positive : la diversité des tâches et l'hétérogénéité extrême empêchent de déduire une performance stable et généralisable.",
-      "next": "Un protocole commun préenregistré, répété par plusieurs équipes indépendantes, avec juges aveugles, règles de correspondance fixées et prédiction de la performance attendue.",
+      "next": "Comparer des protocoles précisément décrits, fixer les règles de jugement et tester les paramètres susceptibles d'expliquer les variations. Évaluer séparément les performances utiles en application.",
       "chart": {
         "title": "Sensibilité à une valeur atypique",
         "axis": "ES standardisé selon la source et IC à 95 %",
@@ -529,13 +498,35 @@
           "url": "https://figshare.com/articles/dataset/Remote_Viewing_Meta-Analysis/22298266",
           "status": "Dépôt des auteurs ; pas de nouvel échantillon."
         }
-      ]
+      ],
+      "openQuestion": "Comment les tâches, les juges et les participants contribuent-ils aux écarts observés ?",
+      "interpretation": "La moyenne positive et la dispersion des résultats doivent être lues ensemble. Le dossier renseigne des tâches de description de cibles ; il ne donne pas une performance applicable à toute situation.",
+      "profile": [
+        [
+          "Résultats observés",
+          "La méta-analyse rapporte une moyenne positive, accompagnée d'une hétérogénéité importante."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Les règles de correspondance, l'indépendance des juges et les éventuels indices sur les cibles influencent la valeur du résultat."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Les deux expériences de 2024 retenues n'obtiennent pas le même résultat global. Les tâches et conditions doivent être comparées séparément."
+        ],
+        [
+          "Portée des conclusions",
+          "Une estimation cumulée ne valide pas toutes les applications pratiques ni un mécanisme spécifique."
+        ]
+      ],
+      "kind": "experimental",
+      "readingGuide": [],
+      "editorialUpdated": "24 octobre 2026"
     },
     {
       "reviewed": "24 octobre 2026",
-      "new": true,
+      "new": false,
       "landscape": [],
-      "confidence": "Faible",
       "chart": {
         "title": "Estimation de la synthèse 2001–2019",
         "axis": "Indice de proportion standardisé ; zéro = hasard",
@@ -565,7 +556,6 @@
       "subtitle": "Évaluer la précision d'informations en conditions aveugles",
       "direction": "Synthèse favorable, confirmation partielle",
       "summary": "Des lectures dépassent les contrôles dans plusieurs travaux. Les résultats prospectifs restent mixtes et ne déterminent pas la source de l'information.",
-      "blocker": "La reproductibilité et l'identification de la source de l'information",
       "question": "Précision de descriptions associées à des personnes décédées, évaluées à l'aveugle par leurs proches. Cette fiche ne couvre ni la médiumnité physique ni tous les arguments sur la survie. Une information exacte, même inexpliquée, ne suffit pas à départager psi des vivants et communication post-mortem.",
       "handbook": "Chapitre 8, « Aux frontières de la vie », section sur la médiumnité mentale (Maryne Mutis et Claude Berghmans).",
       "metrics": [
@@ -616,30 +606,7 @@
           "mm4"
         ]
       ],
-      "assessment": [
-        [
-          "Résultat statistique",
-          "Favorable, mais mixte",
-          "Synthèse positive et étude de 100 lectures favorable ; confirmation partielle dans la prépublication de 2024."
-        ],
-        [
-          "Robustesse",
-          "À expertiser",
-          "Il faut examiner les règles de cotation, les dépendances entre lectures et les recouvrements des échantillons."
-        ],
-        [
-          "Reproductibilité",
-          "Partielle",
-          "Les deux travaux récents retenus proviennent de la même équipe et ne sont pas une réplication externe."
-        ],
-        [
-          "Attribution au psi",
-          "Origine indéterminée",
-          "L'aveugle réduit certains échanges ordinaires ; il ne désigne pas à lui seul une source d'information."
-        ]
-      ],
-      "reason": "Confiance faible proposée : les résultats favorables justifient l'étude de la précision des lectures, mais la confirmation partielle et les questions de cotation limitent l'attribution à un psi reproductible. La survie constitue une hypothèse supplémentaire.",
-      "next": "Organiser une réplication indépendante préenregistrée avec cotation figée, contrôle des accès à l'information, analyse des lectures regroupées par médium et par défunt, et critères distinguant les hypothèses causales.",
+      "next": "Comparer les modes de cotation sur des lectures anonymisées, documenter les accès possibles à l'information et concevoir des prédictions distinguant les hypothèses causales.",
       "sources": [
         {
           "id": "mm1",
@@ -671,13 +638,35 @@
           "url": "https://figshare.com/articles/dataset/Mediumship/13311710",
           "status": "Notice du dépôt consultée. Elle distingue les fichiers RRDatabase et 100ReadingResults. Les données brutes n'ont pas été réanalysées pour cette fiche."
         }
-      ]
+      ],
+      "openQuestion": "Comment vérifier la précision des informations et en déterminer la source ?",
+      "interpretation": "Plusieurs travaux rapportent des lectures mieux reconnues que les contrôles. La précision de ces lectures, les conditions de leur obtention et leur origine sont trois questions distinctes.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Synthèse positive et étude de 100 lectures favorable ; un des trois critères principaux est confirmé dans la prépublication de 2024."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Règles de cotation, dépendances entre lectures et recouvrements des échantillons doivent être examinés."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Les deux travaux récents retenus proviennent de la même équipe. Plusieurs lectures peuvent concerner un même défunt ou un même médium."
+        ],
+        [
+          "Portée des conclusions",
+          "L'aveugle contrôle certains échanges ordinaires. Une information exacte ne départage pas, à elle seule, psi des vivants et communication post-mortem."
+        ]
+      ],
+      "kind": "experimental",
+      "readingGuide": [],
+      "editorialUpdated": "24 octobre 2026"
     },
     {
       "id": "precognition",
       "title": "Précognition comportementale",
       "subtitle": "Anticiper un événement aléatoire futur",
-      "confidence": "Faible",
       "direction": "Synthèses et réplications discordantes",
       "summary": "Une méta-analyse positive ; les tests récents du choix d'image ne reproduisent pas l'effet initial.",
       "question": "Une réponse comportementale anticipe-t-elle un stimulus choisi ultérieurement au hasard ? Les réplications détaillées ici concernent surtout l'expérience 1 de Bem, pas toutes les formes de précognition.",
@@ -721,30 +710,7 @@
           "p3"
         ]
       ],
-      "assessment": [
-        [
-          "Résultat statistique",
-          "Discordant",
-          "Méta-analyse historique favorable ; résultats confirmatoires récents incompatibles avec une reproduction de l'effet initial dans le choix d'image."
-        ],
-        [
-          "Robustesse",
-          "Meilleure dans les projets récents",
-          "Préenregistrement, transparence et contrôles renforcent l'interprétation de leurs résultats, y compris nuls."
-        ],
-        [
-          "Reproductibilité",
-          "Insuffisante pour l'effet positif",
-          "Une inversion exploratoire de l'effet ne vaut pas réplication de la prédiction initiale."
-        ],
-        [
-          "Attribution au psi",
-          "Faiblement étayée ici",
-          "La conclusion porte sur les tâches examinées. Elle ne permet pas un verdict sur toute anticipation anomale."
-        ]
-      ],
-      "reason": "Faible pour un effet psi reproductible dans les tâches couvertes : le résultat historique positif ne se retrouve pas dans les principales réplications récentes du choix d'image.",
-      "next": "Séparer les familles de tâches et intégrer toutes leurs réplications préenregistrées. Fixer à l'avance le sens et l'amplitude minimale de l'effet recherché.",
+      "next": "Séparer les familles de tâches, réunir leurs résultats prospectifs et tester les hypothèses sur le sens ou la variation des effets avec des données nouvelles.",
       "chart": {
         "title": "AMP-TPP : une inversion, puis un résultat proche du hasard",
         "axis": "Réussites (%) ; trait vertical : hasard à 50 %",
@@ -807,7 +773,29 @@
       "new": false,
       "handbook": "",
       "landscape": [],
-      "blocker": "Résultats confirmatoires discordants"
+      "openQuestion": "Quelles tâches et quelles analyses rendent compte des résultats discordants ?",
+      "interpretation": "Les synthèses historiques et les projets confirmatoires récents ne donnent pas le même bilan. La conclusion doit rester attachée aux tâches et aux prédictions effectivement examinées.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Méta-analyse historique favorable ; principales réplications récentes du choix d'image sans confirmation de l'effet positif initial."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Préenregistrement, transparence et contrôles des projets récents permettent d'interpréter leurs résultats, y compris nuls."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Les tâches de choix d'image ne couvrent pas toutes les formes de précognition. Sens de l'effet, recrutement et conditions doivent être distingués."
+        ],
+        [
+          "Portée des conclusions",
+          "Une inversion exploratoire peut suggérer une nouvelle hypothèse ; elle n'est pas une confirmation de la prédiction initiale."
+        ]
+      ],
+      "kind": "experimental",
+      "readingGuide": [],
+      "editorialUpdated": "24 octobre 2026"
     },
     {
       "reviewed": "24 octobre 2026",
@@ -817,10 +805,8 @@
       "title": "Pressentiment physiologique",
       "group": "Anticipation",
       "subtitle": "Mesurer l'activité du corps avant un stimulus aléatoire",
-      "confidence": "Faible",
       "direction": "Synthèses favorables, interprétation discutée",
       "summary": "Des différences pré-stimulus sont rapportées, y compris dans des travaux préenregistrés ; leur origine reste à établir.",
-      "blocker": "Traitement du signal et validation prospective",
       "question": "L'activité physiologique précédant un événement aléatoire permet-elle d'anticiper sa catégorie ? Ce dossier porte sur les mesures corporelles, distinctes des choix conscients étudiés dans la fiche précognition.",
       "handbook": "Julia Mossbridge, chapitre 4, section « Le pressentiment ».",
       "metrics": [
@@ -871,30 +857,7 @@
           "s4"
         ]
       ],
-      "assessment": [
-        [
-          "Résultat statistique",
-          "Favorable",
-          "L'effet reste positif dans le sous-ensemble préenregistré."
-        ],
-        [
-          "Robustesse",
-          "Hétérogène",
-          "Plusieurs signaux et traitements statistiques ; portée des corrections de biais à examiner."
-        ],
-        [
-          "Reproductibilité",
-          "À standardiser",
-          "Le préenregistrement ne remplace pas la réplication d'un même protocole par plusieurs équipes."
-        ],
-        [
-          "Attribution au psi",
-          "Discutée",
-          "Écarter les effets de séquence et les artefacts de traitement avant une interprétation précognitive."
-        ]
-      ],
-      "reason": "Confiance faible proposée : les synthèses soutiennent un signal, mais l'attribution au psi exige un contrôle prospectif des effets de séquence et du traitement physiologique.",
-      "next": "Une étude multicentrique préenregistrée qui verrouille le code avant collecte, vérifie la randomisation et teste des prédictions sur des données nouvelles.",
+      "next": "Comparer plusieurs traitements prédéfinis, simuler les artefacts possibles et tester les prédictions sur un nouvel ensemble de données dont la randomisation est auditée.",
       "chart": {
         "title": "Estimation globale et préenregistrement",
         "axis": "ES standardisé selon la source et IC à 95 %",
@@ -953,14 +916,36 @@
           "url": "https://journals.lub.lu.se/jaex/article/view/25274",
           "status": "Proposition théorique, distinguée des résultats empiriques."
         }
-      ]
+      ],
+      "openQuestion": "Quels traitements et effets de séquence expliquent le signal pré-stimulus ?",
+      "interpretation": "Les synthèses documentent des différences physiologiques avant le stimulus. Leur temporalité et leur origine nécessitent une analyse distincte du constat statistique.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Effet cumulé positif, y compris dans le sous-ensemble préenregistré de la synthèse retenue."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Filtres, correction de ligne de base, effets de séquence et multiplicité des mesures peuvent influer sur le signal estimé."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Variables physiologiques et chaînes de traitement diffèrent entre études. Les mêmes contrastes doivent être comparés avant de conclure à un accord ou à un désaccord."
+        ],
+        [
+          "Portée des conclusions",
+          "Une différence pré-stimulus ne suffit pas à établir une anticipation de l'événement : le tirage et le traitement temporel doivent être contrôlés."
+        ]
+      ],
+      "kind": "experimental",
+      "readingGuide": [],
+      "editorialUpdated": "24 octobre 2026"
     },
     {
       "id": "micro-pk",
       "title": "Micro-psychokinèse",
       "subtitle": "Intention et sorties de générateurs aléatoires",
-      "confidence": "Faible",
-      "direction": "Effet moyen peu robuste ; pistes temporelles",
+      "direction": "Effet moyen incertain ; indices temporels à examiner",
       "summary": "Le corpus LMU récent ne conclut pas à un effet moyen significatif ; des analyses temporelles restent à confirmer.",
       "question": "Les résultats d'un générateur aléatoire varient-ils avec une intention ou une condition psychologique ? Effet moyen directionnel, dynamique temporelle et rappel subjectif constituent des hypothèses distinctes.",
       "metrics": [
@@ -1019,30 +1004,7 @@
           "m5"
         ]
       ],
-      "assessment": [
-        [
-          "Résultat statistique",
-          "Fragile pour la moyenne",
-          "L'intervalle de l'effet LMU inclut zéro ; les indices temporels testent autre chose."
-        ],
-        [
-          "Robustesse",
-          "Limitée",
-          "La complétude déclarée du corpus réduit la sélection des publications, sans résoudre les dépendances ni tous les choix d'analyse."
-        ],
-        [
-          "Reproductibilité",
-          "Insuffisante",
-          "Résultats positifs locaux et échecs de réplication nécessitent un bilan par protocole."
-        ],
-        [
-          "Attribution au psi",
-          "Faiblement étayée ici",
-          "Distinguer variations du générateur, variations d'une statistique cumulative et variations de mémoire."
-        ]
-      ],
-      "reason": "Faible : effets moyens peu stables, réplications défavorables et signaux temporels qui nécessitent encore une validation indépendante ciblée.",
-      "next": "Tester prospectivement les indices temporels sur de nouvelles séries, avec simulations du modèle nul, correction de multiplicité et analyse des dépendances entre conditions.",
+      "next": "Modéliser les séries chronologiques, comparer plusieurs modèles de bruit et évaluer les prédictions temporelles sur de nouvelles données. Conserver les dépendances et la multiplicité dans l'analyse.",
       "chart": {
         "title": "LMU : effets moyens expérimentaux et contrôles",
         "axis": "Effet standardisé ES du rapport ; zéro = absence d'écart moyen",
@@ -1110,7 +1072,29 @@
       "new": false,
       "handbook": "",
       "landscape": [],
-      "blocker": "Effet moyen fragile et dépendance des séries"
+      "openQuestion": "Les variations temporelles se distinguent-elles du bruit et des dépendances des séries ?",
+      "interpretation": "L'effet moyen et la structure temporelle des séries constituent des objets différents. Le bilan de l'un ne tranche pas celui de l'autre ; chacun exige un modèle statistique explicite.",
+      "profile": [
+        [
+          "Résultats observés",
+          "L'intervalle de l'effet moyen du rapport LMU inclut zéro ; les analyses temporelles portent sur d'autres prédictions."
+        ],
+        [
+          "Robustesse méthodologique",
+          "La complétude déclarée du corpus réduit la sélection des publications. Dépendances entre conditions et choix d'analyse restent à vérifier."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Des résultats locaux positifs et des essais défavorables sont rapportés. Une dynamique dépendante du temps doit être spécifiée et testée, pas seulement décrite après coup."
+        ],
+        [
+          "Portée des conclusions",
+          "Distinguer les variations du générateur, celles d'une statistique cumulative et celles du souvenir subjectif des essais."
+        ]
+      ],
+      "kind": "experimental",
+      "readingGuide": [],
+      "editorialUpdated": "24 octobre 2026"
     },
     {
       "reviewed": "24 octobre 2026",
@@ -1126,7 +1110,7 @@
           "Essais instrumentés",
           "Tester des effets physiques",
           "Mesures, témoins, contrôles",
-          "La généralisation sans réplication"
+          "La portée au-delà des conditions testées"
         ],
         [
           "Modèles théoriques",
@@ -1139,10 +1123,8 @@
       "title": "Macro-PK et poltergeists",
       "group": "Interaction",
       "subtitle": "Distinguer les effets physiques rapportés et leur mise à l'épreuve",
-      "confidence": "Très faible",
       "direction": "Observations et essais exploratoires",
-      "summary": "Des cas et des expériences sont publiés ; leur attribution à une action psi reproductible reste très incertaine.",
-      "blocker": "Contrôles physiques et réplication indépendante",
+      "summary": "Des cas spontanés, des essais instrumentés et des modèles théoriques sont publiés. Ils documentent des mouvements rapportés et proposent des moyens d'en examiner les causes.",
       "question": "Une intention ou un contexte humain provoque-t-il un mouvement physique inexpliqué ? La fiche distingue les cas spontanés de poltergeist et les essais volontaires sur objets ; elle ne couvre pas toute la médiumnité physique.",
       "handbook": "Pascale Catala et Éric Dullin, chapitre 7, section sur les poltergeists. Le volet expérimental est complété par les publications originales.",
       "metrics": [
@@ -1189,34 +1171,11 @@
           "Proposition théorique",
           "Hypothèse « Responsive Universe »",
           "Propose des tests reliant sens des consignes et résultats physiques",
-          "Pas de nouvelle expérience confirmatoire ; ne relève pas le niveau de confiance.",
+          "Proposition théorique sans nouvelle observation ni expérience confirmatoire dans cet article.",
           "k4"
         ]
       ],
-      "assessment": [
-        [
-          "Résultat statistique",
-          "Non synthétisable ici",
-          "Pas de méta-analyse homogène vérifiée dans cette sélection."
-        ],
-        [
-          "Robustesse",
-          "Contrôles déterminants",
-          "Courants d'air, gradients thermiques, vibrations, électrostatique et interventions humaines à contrôler."
-        ],
-        [
-          "Reproductibilité",
-          "Non établie dans le corpus retenu",
-          "Aucune série confirmatoire multisite indépendante identifiée par cette recherche ciblée."
-        ],
-        [
-          "Attribution au psi",
-          "Très incertaine",
-          "L'absence d'explication identifiée dans un récit ne démontre pas une cause psychique."
-        ]
-      ],
-      "reason": "Confiance très faible proposée dans ce périmètre : les observations justifient une investigation, mais ne forment pas encore une démonstration contrôlée et reproductible d'une action psi.",
-      "next": "Des cibles instrumentées et scellées, un contrôle continu de l'environnement, des périodes témoins randomisées, une expertise en illusionnisme et une réplication indépendante préenregistrée.",
+      "next": "Renforcer les observations continues et la traçabilité matérielle ; distinguer ce qui est observé directement de ce qui est rapporté. Pour les essais instrumentés, prévoir des périodes témoins et une expertise en illusionnisme.",
       "chart": null,
       "sources": [
         {
@@ -1243,13 +1202,35 @@
           "url": "https://doi.org/10.31275/20263703",
           "status": "Article théorique ; notice éditoriale et bulletin du 2 octobre 2026 consultés."
         }
-      ]
+      ],
+      "openQuestion": "Quels contrôles permettent de départager les explications des mouvements rapportés ?",
+      "interpretation": "Les cas spontanés, les essais instrumentés et les textes théoriques apportent des informations différentes. Leur intérêt se juge à la précision des observations et aux explications qu'ils permettent effectivement d'examiner.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Cas documentés et essais exploratoires ; pas d'estimation globale homogène vérifiée dans cette sélection."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Les enregistrements doivent documenter les accès humains, les vibrations, les gradients thermiques, les courants d'air et les interactions électrostatiques."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Les événements spontanés ne se prêtent pas au même recueil que les essais volontaires. Une série d'observations indépendantes peut être informative sans répétition à volonté."
+        ],
+        [
+          "Portée des conclusions",
+          "Un mouvement inexpliqué constitue une question d'enquête ; l'attribution à une action psychique nécessite des éléments supplémentaires."
+        ]
+      ],
+      "kind": "experimental",
+      "readingGuide": [],
+      "editorialUpdated": "24 octobre 2026"
     },
     {
       "reviewed": "24 octobre 2026",
-      "new": true,
+      "new": false,
       "landscape": [],
-      "confidence": "Faible",
       "chart": null,
       "id": "influence-distance",
       "title": "Influence mentale à distance",
@@ -1257,7 +1238,6 @@
       "subtitle": "Physiologie, regard à distance et soutien de l'attention",
       "direction": "Petits effets, sensibles aux contrôles",
       "summary": "Les synthèses historiques sont favorables. Les études les mieux contrôlées et les essais récents ne donnent pas une confirmation uniforme.",
-      "blocker": "Indépendance et solidité des réplications prospectives",
       "question": "DMILS : interaction mentale directe avec un système vivant. Cette fiche porte sur la physiologie et l'attention de personnes isolées. Le regard à distance est une variante distincte ; une variation cutanée ne prouve pas une perception consciente du regard. L'intention de soin dispose d'une fiche séparée.",
       "handbook": "Chapitre 6, « L'influence à distance sur des organismes vivants » (Claude Berghmans et Renaud Evrard).",
       "metrics": [
@@ -1308,30 +1288,7 @@
           "di3"
         ]
       ],
-      "assessment": [
-        [
-          "Résultat statistique",
-          "Faiblement favorable",
-          "Les effets cumulés sont petits ; l'essai gastrique apporte un résultat principal nul et un signal exploratoire."
-        ],
-        [
-          "Robustesse",
-          "Sensible à la qualité",
-          "La sélection de meilleure qualité de 2004 ne confirme pas l'effet DMILS global."
-        ],
-        [
-          "Reproductibilité",
-          "À renforcer",
-          "L'essai de 2026 modifie plusieurs éléments du protocole antérieur : il s'agit d'une réplication conceptuelle."
-        ],
-        [
-          "Attribution au psi",
-          "Indécise",
-          "Les séries physiologiques exigent un contrôle des dérives temporelles, des traitements du signal et de la multiplicité des tests."
-        ]
-      ],
-      "reason": "Confiance faible proposée : les signaux cumulés méritent des tests ciblés, mais la sensibilité à la qualité et l'absence de confirmation uniforme empêchent de conclure à une influence reproductible.",
-      "next": "Reprendre le signal gastrique avec une fréquence définie comme critère principal, un modèle fixé avant les données et un effectif accru. Pour le regard à distance, organiser une réplication indépendante en aveugle.",
+      "next": "Préciser les variables physiologiques et les contrastes attendus, contrôler les dérives temporelles et tester le signal de fréquence comme une nouvelle prédiction. Comparer séparément les variantes du regard à distance.",
       "sources": [
         {
           "id": "di1",
@@ -1351,13 +1308,35 @@
           "url": "https://doi.org/10.31275/20263901",
           "status": "Article évalué par les pairs, publié le 29 septembre 2026. Texte intégral consulté, notamment le changement d'analyse et le tableau 4."
         }
-      ]
+      ],
+      "openQuestion": "Comment la physiologie, les conditions et les analyses contribuent-elles aux différences ?",
+      "interpretation": "Les synthèses historiques présentent de petits effets. L'étude gastrique récente distingue une prédiction non confirmée d'un signal exploratoire ; les deux résultats contribuent au bilan.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Moyennes positives dans les synthèses ; dans l'essai gastrique 2026, résultat nul sur l'amplitude et signal exploratoire sur la fréquence."
+        ],
+        [
+          "Robustesse méthodologique",
+          "La sélection DMILS de meilleure qualité de 2004 ne conserve pas le résultat significatif global. Le plan d'analyse de 2026 a été modifié."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Activité cutanée, attention et activité gastrique ne sont pas interchangeables. L'essai de 2026 reprend une question antérieure avec des modifications de protocole."
+        ],
+        [
+          "Portée des conclusions",
+          "Une covariation physiologique ne prouve ni une perception consciente du regard ni un transfert intentionnel d'information."
+        ]
+      ],
+      "kind": "experimental",
+      "readingGuide": [],
+      "editorialUpdated": "24 octobre 2026"
     },
     {
       "reviewed": "24 octobre 2026",
-      "new": true,
+      "new": false,
       "landscape": [],
-      "confidence": "Faible",
       "chart": {
         "title": "Effet biologique et sélection de qualité",
         "axis": "Corrélation pondérée r et IC à 95 %",
@@ -1394,7 +1373,6 @@
       "subtitle": "Distinguer un effet biologique d'un bénéfice clinique",
       "direction": "Résultats positifs, corpus hétérogènes",
       "summary": "Des moyennes positives sont rapportées. La qualité des études, les différences entre systèmes et les contrôles limitent l'interprétation causale.",
-      "blocker": "Masquage, indépendance des lots et attribution causale",
       "question": "Intentions de soin sans contact sur cellules, tissus, plantes, animaux ou personnes. Les systèmes biologiques de laboratoire et les essais chez l'humain sont analysés séparément. Un effet sur un organisme modèle ne démontre pas une efficacité thérapeutique ; un bénéfice clinique éventuel n'identifie pas à lui seul un mécanisme psi.",
       "handbook": "Chapitre 6, intention de soin, essais sur le vivant et questions méthodologiques.",
       "metrics": [
@@ -1437,30 +1415,7 @@
           "is2"
         ]
       ],
-      "assessment": [
-        [
-          "Résultat statistique",
-          "Favorable dans les synthèses",
-          "Les deux corpus présentent des moyennes positives, sur des échelles et cibles différentes."
-        ],
-        [
-          "Robustesse",
-          "Limitée",
-          "L'hétérogénéité et les choix de qualité pèsent sur l'interprétation. L'absence d'aveugle limite l'étude animale récente."
-        ],
-        [
-          "Reproductibilité",
-          "Insuffisamment établie",
-          "Un protocole reproductible doit définir les lots, les unités expérimentales et toutes les mesures avant la collecte."
-        ],
-        [
-          "Attribution au psi",
-          "Non isolée",
-          "Il faut exclure les différences matérielles entre traitements et les effets d'observation ou de manipulation."
-        ]
-      ],
-      "reason": "Confiance faible proposée pour l'attribution à un effet psi reproductible. Les résultats signalent des hypothèses testables, sans établir un mécanisme commun aux cellules, aux animaux et aux personnes.",
-      "next": "Faire reproduire l'étude animale par une autre équipe : flacons codés, lots indépendants, randomisation des plaques, analyse tenant compte des regroupements et données ouvertes. Évaluer séparément chaque indication clinique.",
+      "next": "Documenter la composition des traitements, coder les lots et analyser les unités expérimentales appropriées. Comparer séparément les systèmes biologiques et chaque indication clinique.",
       "sources": [
         {
           "id": "is1",
@@ -1474,7 +1429,364 @@
           "url": "https://doi.org/10.31275/20263877",
           "status": "Article évalué par les pairs, publié le 29 septembre 2026. Texte intégral consulté. Bengston déclare être le développeur de la méthode étudiée."
         }
-      ]
+      ],
+      "openQuestion": "Quelles différences matérielles ou contextuelles peuvent expliquer les effets rapportés ?",
+      "interpretation": "Des effets positifs sont rapportés sur plusieurs systèmes. Une comparaison pertinente sépare les organismes, les interventions et les critères mesurés avant de discuter un mécanisme commun.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Moyennes positives dans les deux synthèses de 2015 ; résultats différents selon la souche dans l'étude de nématodes de 2026."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Hétérogénéité et sélection selon la qualité influencent les estimations. L'étude animale récente n'est pas aveugle."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Cellules, plantes, animaux et personnes impliquent des conditions différentes. Les lots et les plaques peuvent regrouper des observations dépendantes."
+        ],
+        [
+          "Portée des conclusions",
+          "Un effet biologique ne démontre pas une efficacité thérapeutique chez l'humain. Un bénéfice clinique éventuel ne désigne pas à lui seul un mécanisme psi."
+        ]
+      ],
+      "kind": "experimental",
+      "readingGuide": [],
+      "editorialUpdated": "24 octobre 2026"
+    },
+    {
+      "id": "correlations-cerebrales",
+      "title": "Corrélations cérébrales entre personnes isolées",
+      "subtitle": "Examiner des associations entre signaux physiologiques à distance",
+      "direction": "Signaux rapportés, sensibles au traitement",
+      "summary": "Des études rapportent une association entre la stimulation d'une personne et l'EEG d'une autre. Les résultats dépendent notamment des mesures et des traitements retenus.",
+      "question": "Cette fiche porte sur les réponses EEG associées à la stimulation d'une autre personne isolée sensoriellement. Elle distingue ces travaux de l'hyperscanning pendant une interaction ordinaire et des études de perception extrasensorielle avec réponse consciente.",
+      "metrics": [
+        [
+          "6",
+          "participants dans Giroldini et al."
+        ],
+        [
+          "25",
+          "séances appariées dans cette étude"
+        ],
+        [
+          "17",
+          "paires dans Ambach (2008)"
+        ]
+      ],
+      "rows": [
+        [
+          "Acunzo et al., 2026",
+          "Revue systématique et critique de neuroimagerie ESP",
+          "143 rapports, 129 études ; corpus plus étendu que les seules corrélations interpersonnelles",
+          "Échantillons souvent petits, flexibilité analytique et contrôles des comparaisons multiples récurrents dans la discussion méthodologique.",
+          "Une cartographie qualitative des méthodes ; 129 études ne signifie pas 129 tests de corrélation entre cerveaux isolés.",
+          "cc1"
+        ],
+        [
+          "Giroldini et al., 2016 (v3)",
+          "Étude EEG et développement analytique",
+          "6 participants sélectionnés ; 25 séances appariées ; stimulation visuelle et auditive",
+          "Pas de réponse du receveur par l'analyse ERP usuelle ; signal avec une nouvelle mesure de corrélation, surtout à 9–10 Hz (p ≈ 0,002–0,003 selon la simulation).",
+          "Séances répétées chez les mêmes personnes. Sélection de bande et nouvelle analyse : résultat exploratoire à confronter à des données nouvelles.",
+          "cc2"
+        ],
+        [
+          "Ambach, 2008",
+          "Étude de réplication et examen statistique",
+          "17 paires ; comparaison de fenêtres EEG",
+          "Pas d'écart significatif après modification de la méthode statistique ; le rééchantillonnage initial pouvait surestimer les effets.",
+          "Illustre l'importance de la structure temporelle du signal et du modèle nul, au-delà du seul comptage des réplications.",
+          "cc3"
+        ]
+      ],
+      "openQuestion": "Quels signaux persistent après contrôle des artefacts et des choix d'analyse ?",
+      "interpretation": "Une association EEG n'établit ni un transfert conscient d'information ni son mécanisme. L'apport du dossier dépend de la validité du signal, de son lien temporel avec la stimulation et des voies ordinaires effectivement contrôlées.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Des analyses positives et nulles coexistent ; les mesures et fenêtres étudiées diffèrent."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Acquisition, indépendance des dispositifs, autocorrélation et comparaisons multiples doivent être examinées ensemble."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Proximité entre participants, stimulation, bande fréquentielle et méthode d'analyse varient. Une condition invoquée après coup doit ensuite être testée."
+        ],
+        [
+          "Portée des conclusions",
+          "Ces expériences portent d'abord sur une association physiologique. Elles ne suffisent pas à identifier une télépathie consciente ou une intrication quantique."
+        ]
+      ],
+      "readingGuide": [
+        [
+          "Observation",
+          "Définir le signal mesuré, sa fenêtre temporelle et l'unité indépendante : personne, paire ou séance."
+        ],
+        [
+          "Explications examinées",
+          "Documenter les voies sensorielles, les dispositifs d'acquisition, les artefacts communs et le comportement de l'analyse sur des données témoins."
+        ],
+        [
+          "Interprétation",
+          "Séparer présence d'une association, transmission d'information et hypothèse explicative."
+        ]
+      ],
+      "next": "Partager les signaux bruts et les horodatages, prévoir les bandes et fenêtres d'analyse, comparer des conditions témoins et des paires non associées en conservant l'autocorrélation, puis tester les résultats exploratoires sur de nouvelles données.",
+      "sources": [
+        {
+          "id": "cc1",
+          "label": "CC1 · Acunzo, D. J., Denton, A. H., Weiler, M. & Kelly, E. F. (2026). Neuroimaging studies of extra-sensory perception: A systematic and critical review. NeuroImage, 333, 121937.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42009267/",
+          "status": "Notice et résumé PubMed consultés ; DOI : 10.1016/j.neuroimage.2026.121937. Publication en ligne le 18 avril 2026. Pas de réanalyse des 129 études."
+        },
+        {
+          "id": "cc2",
+          "label": "CC2 · Giroldini et al. (2016, version 3). EEG correlates of social interaction at distance. F1000Research, 4:457.",
+          "url": "https://f1000research.com/articles/4-457/v3",
+          "status": "Texte intégral consulté via Europe PMC : méthodes, résultats et discussion. Les 25 séances proviennent de six participants, et non de 50 personnes distinctes. DOI : 10.12688/f1000research.6755.3."
+        },
+        {
+          "id": "cc3",
+          "label": "CC3 · Ambach, W. (2008). Correlations between the EEGs of two spatially separated subjects: a replication study. European Journal of Parapsychology, 23(2), 131–146.",
+          "url": "https://ejp.wyrdwise.com/EJP%20v23-2.pdf",
+          "status": "Résumé et première page de l'article consultés dans le numéro original ; analyse détaillée et données brutes non auditées."
+        }
+      ],
+      "handbook": "Chapitre 14, David Acunzo, études expérimentales neuro-parapsychologiques, notamment les potentiels transférés.",
+      "chart": null,
+      "landscape": [],
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026"
+    },
+    {
+      "id": "perceptions-emi",
+      "title": "Perceptions vérifiables pendant les EMI",
+      "subtitle": "Confronter les récits aux cibles, aux témoins et à la chronologie médicale",
+      "direction": "Récits corroborés et tests de cibles à distinguer",
+      "summary": "La vérification d'un récit de réanimation, l'identification d'une cible cachée et l'étude du vécu répondent à des questions différentes. Les études prospectives documentent aussi les conditions médicales de recueil.",
+      "question": "La fiche porte sur les informations rapportées au cours d'expériences de mort imminente (EMI), surtout autour d'un arrêt cardiaque. Un souvenir de réanimation n'est pas nécessairement une EMI ; une EMI n'inclut pas nécessairement une perception extérieure vérifiable.",
+      "metrics": [
+        [
+          "567",
+          "arrêts cardiaques dans AWARE II"
+        ],
+        [
+          "53",
+          "survivants dans AWARE II"
+        ],
+        [
+          "28",
+          "personnes interrogées dans AWARE II"
+        ]
+      ],
+      "rows": [
+        [
+          "Parnia et al., 2014, AWARE",
+          "Étude prospective multicentrique",
+          "2 060 arrêts cardiaques ; 140 entretiens de première phase, 101 de seconde phase",
+          "Un récit de perception de la réanimation a pu être corroboré.",
+          "Une corroboration du contexte n'est pas une identification de cible visuelle cachée. Le moment du souvenir et l'état cérébral correspondant restent des questions distinctes.",
+          "emi1"
+        ],
+        [
+          "Parnia et al., 2023, AWARE II",
+          "Étude prospective avec cibles et mesures physiologiques",
+          "567 arrêts cardiaques à l'hôpital ; 53 survivants ; 28 entretiens",
+          "Aucune cible visuelle identifiée ; une identification du stimulus auditif rapportée. Des activités EEG compatibles avec des fonctions cognitives sont observées pendant certaines réanimations.",
+          "Les 28 entretiens ne suffisent pas à définir le nombre d'essais visuels évaluables. Le stimulus auditif utilise une voie sensorielle ordinaire. Pas d'inférence générale d'absence d'activité cérébrale.",
+          "emi2"
+        ],
+        [
+          "Greyson et al., 2025",
+          "Construction et première validation de la vNDE Scale",
+          "8 critères ; 17 récits sélectionnés pour tester la cotation",
+          "Outil pour documenter notamment la chronologie, les conditions de perception et les vérifications par des tiers.",
+          "L'accord entre évaluateurs ne vérifie pas à nouveau les événements. Ici, les critères servent de repères documentaires, sans reprise de la note globale.",
+          "emi3"
+        ]
+      ],
+      "openQuestion": "Quelle information a été consignée, vérifiée et située dans le temps ?",
+      "interpretation": "Un récit corroboré mérite une analyse de ses conditions d'obtention. Il n'établit pas, à lui seul, une perception sans médiation sensorielle, une conscience indépendante du cerveau ou une survie après la mort.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Récits corroborés, données physiologiques et résultats aux cibles sont présentés séparément."
+        ],
+        [
+          "Robustesse méthodologique",
+          "La valeur d'un cas dépend du premier récit daté, des vérifications indépendantes, de l'exposition effective aux cibles et de la chronologie médicale."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "État clinique, réanimation, moment du souvenir, entretien et délai de recueil diffèrent. Ces conditions déterminent ce que le protocole permet de tester."
+        ],
+        [
+          "Portée des conclusions",
+          "Documenter un vécu et corroborer une information sont deux apports distincts ; aucune de ces étapes ne désigne seule son mécanisme."
+        ]
+      ],
+      "readingGuide": [
+        [
+          "Observation",
+          "Consigner les mots du témoin avant vérification ; distinguer cible cachée, événement médical corroboré et vécu subjectif."
+        ],
+        [
+          "Explications examinées",
+          "Établir les informations accessibles avant, pendant et après la réanimation, les échanges avec les soignants et l'incertitude temporelle."
+        ],
+        [
+          "Interprétation",
+          "Distinguer exactitude du récit, conditions de perception et hypothèses sur la conscience ou la survie."
+        ]
+      ],
+      "next": "Recueillir rapidement les récits, vérifier les faits à l'aveugle et publier les dénominateurs successifs : patients exposés aux cibles, survivants, entretiens, souvenirs pertinents et essais évaluables. Conserver les correspondances comme les erreurs.",
+      "sources": [
+        {
+          "id": "emi1",
+          "label": "EMI1 · Parnia et al. (2014). AWARE: AWAreness during REsuscitation, a prospective study. Resuscitation, 85(12), 1799–1805.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25301715/",
+          "status": "Notice et résumé consultés. DOI : 10.1016/j.resuscitation.2014.09.004. Pas d'audit indépendant du récit corroboré."
+        },
+        {
+          "id": "emi2",
+          "label": "EMI2 · Parnia et al. (2023). AWAreness during REsuscitation II: A multi-center study of consciousness and awareness in cardiac arrest. Resuscitation, 191, 109903.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37423492/",
+          "status": "Résumé PubMed et notice institutionnelle consultés. DOI : 10.1016/j.resuscitation.2023.109903. Le nombre d'entretiens n'est pas assimilé au nombre d'expositions visuelles évaluables."
+        },
+        {
+          "id": "emi3",
+          "label": "EMI3 · Greyson et al. (2025). The veridical Near-Death Experience Scale: construction and a first validation with human and artificial raters. Frontiers in Psychology, 16.",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2025.1661390/full",
+          "status": "Texte consulté : construction, résultats de cotation et limites. Publication le 16 octobre 2025 ; DOI : 10.3389/fpsyg.2025.1661390. Validation initiale sur un corpus sélectionné."
+        }
+      ],
+      "handbook": "Chapitres 8 (expériences aux frontières de la vie) et 13 (conscience et neurosciences), notamment les travaux AWARE.",
+      "chart": null,
+      "landscape": [],
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026"
+    },
+    {
+      "id": "vies-anterieures",
+      "title": "Souvenirs allégués de vies antérieures",
+      "subtitle": "Examiner les récits, leurs correspondances et leur histoire documentaire",
+      "direction": "Correspondances biographiques documentées",
+      "summary": "Le corpus rassemble surtout des enquêtes sur des enfants rapportant une autre vie. La qualité documentaire varie : récit consigné avant ou après l'identification d'une personne, contacts entre familles et accès possible aux informations.",
+      "question": "Les souvenirs sont dits allégués pour décrire ce que rapportent les personnes, sans préjuger de leur origine. La fiche distingue vérification de correspondances, suivi psychologique et hypothèse de réincarnation ; elle ne traite pas les régressions sous hypnose comme un corpus équivalent.",
+      "metrics": [
+        [
+          "78",
+          "publications dans la revue de portée"
+        ],
+        [
+          "60 %",
+          "études de cas dans cette revue"
+        ],
+        [
+          "23",
+          "adultes dans le suivi américain"
+        ]
+      ],
+      "rows": [
+        [
+          "Moraes et al., 2022 (en ligne 2021)",
+          "Revue de portée",
+          "78 publications ; 84 % des études portent sur des enfants",
+          "60 % d'études de cas ; entretiens dans 73 % des études et analyses documentaires dans 50 %.",
+          "Cartographie des travaux, sans taille d'effet globale. Ces pourcentages décrivent des méthodes pouvant se combiner ; 78 publications ne signifie pas 78 cas indépendants.",
+          "va1"
+        ],
+        [
+          "Moraes et al., 2024",
+          "Étude de cas et revue de littérature",
+          "Un enfant brésilien ; vie alléguée d'un grand-oncle décédé",
+          "13 déclarations examinées : 9 jugées correctes, 4 indéterminées par les enquêteurs.",
+          "Le lien familial rend l'accès ordinaire aux informations particulièrement important à examiner. Le décompte de correspondances n'identifie pas leur origine.",
+          "va2"
+        ],
+        [
+          "Pehlivanova et al., 2024",
+          "Suivi de cas américains",
+          "23 adultes ayant été étudiés pendant leur enfance",
+          "Enquête sur la persistance des souvenirs et leurs effets dans la vie adulte.",
+          "Documente le devenir des personnes. Ce suivi n'est pas un nouveau test de l'origine des informations biographiques.",
+          "va3"
+        ]
+      ],
+      "openQuestion": "Quelles déclarations existaient avant toute recherche de correspondance ?",
+      "interpretation": "Les correspondances doivent être examinées avec leurs traces datées, les erreurs et les voies d'information possibles. Même une correspondance demeurant inexpliquée ne permet pas, à elle seule, de choisir entre une hypothèse psi, la réincarnation ou une explication encore non identifiée.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Des enquêtes rapportent des correspondances biographiques ; d'autres travaux décrivent le vécu et le devenir des enfants."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Premier enregistrement, indépendance des témoins, recherche de candidats, accès aux informations et conservation des énoncés non confirmés sont décisifs."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Contexte culturel, liens entre familles, âge et délai d'enquête varient. Leur influence demande une analyse explicite, sans présumer qu'elle explique chaque cas."
+        ],
+        [
+          "Portée des conclusions",
+          "Une correspondance est un résultat documentaire. L'interprétation en termes de mémoire transférée, de psi ou de réincarnation demande des arguments supplémentaires."
+        ]
+      ],
+      "readingGuide": [
+        [
+          "Observation",
+          "Séparer les déclarations enregistrées avant l'identification d'une personne des éléments recueillis après la mise en relation."
+        ],
+        [
+          "Explications examinées",
+          "Retracer les contacts et les informations accessibles ; documenter suggestions, critères de correspondance et choix des candidats."
+        ],
+        [
+          "Interprétation",
+          "Distinguer information exacte, information d'origine non identifiée et hypothèse de réincarnation."
+        ]
+      ],
+      "next": "Enregistrer les déclarations avant la recherche d'une personne correspondante, conserver tous les énoncés, faire évaluer les correspondances à l'aveugle parmi plusieurs candidats et auditer les contacts entre familles. Traiter séparément le suivi du vécu et l'origine des informations.",
+      "sources": [
+        {
+          "id": "va1",
+          "label": "VA1 · Moraes, L. J., Barbosa, G. S., Castro, J. P. G. B., Tucker, J. B. & Moreira-Almeida, A. (2022). Academic studies on claimed past-life memories: A scoping review. Explore, 18(3), 371–378.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34147343/",
+          "status": "Notice et résumé consultés ; publication en ligne en 2021, numéro daté de 2022. DOI : 10.1016/j.explore.2021.05.006. Revue de portée, sans estimation méta-analytique."
+        },
+        {
+          "id": "va2",
+          "label": "VA2 · Moraes et al. (2024). Children who claim previous life memories: A case report and literature review. Explore, 20(6), 103063.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39341119/",
+          "status": "Résumé et extrait de discussion de l'éditeur consultés ; dossier d'enquête non audité. DOI : 10.1016/j.explore.2024.103063."
+        },
+        {
+          "id": "va3",
+          "label": "VA3 · Pehlivanova et al. (2024). Impact of children's purported past-life memories: a follow-up investigation of American cases. Frontiers in Psychology, 15.",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1473340/full",
+          "status": "Résumé et introduction du texte intégral consultés. DOI : 10.3389/fpsyg.2024.1473340. Suivi du vécu, distinct de la vérification des correspondances."
+        }
+      ],
+      "handbook": "Chapitre 8, expériences aux frontières de la vie et hypothèse de la survie, dont les souvenirs de vies antérieures.",
+      "chart": null,
+      "landscape": [],
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026"
     }
-  ]
+  ],
+  "schemaVersion": 2
 }
