@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-24-bilan-4",
+  "version": "2026-10-24-bilan-5",
   "date": "24 octobre 2026",
   "topics": [
     {
@@ -1094,7 +1094,10 @@
       ],
       "kind": "experimental",
       "readingGuide": [],
-      "editorialUpdated": "24 octobre 2026"
+      "editorialUpdated": "24 octobre 2026",
+      "related": [
+        "gcp"
+      ]
     },
     {
       "reviewed": "24 octobre 2026",
@@ -1786,6 +1789,140 @@
       "new": true,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026"
+    },
+    {
+      "id": "gcp",
+      "title": "Global Consciousness Project (GCP)",
+      "subtitle": "Conscience collective, sélection des événements et effet expérimentateur",
+      "direction": "Écart cumulé au modèle aléatoire ; attribution discutée",
+      "summary": "Bancel conserve le constat statistique mais conteste son attribution à une conscience globale. Il défend un effet psi lié aux personnes engagées dans l'expérience. Nelson soutient une interprétation collective.",
+      "question": "Le GCP compare les données d'un réseau de générateurs aléatoires aux périodes d'événements supposés mobiliser l'attention collective. Cette fiche porte sur le corpus historique et son interprétation, distincts des essais de micro-PK avec intention explicite et des développements du GCP 2.0.",
+      "metrics": [
+        [
+          "500",
+          "événements du corpus final"
+        ],
+        [
+          "17 ans",
+          "expérience formelle, 1998–2015"
+        ],
+        [
+          "Z = 7,31",
+          "score cumulé rapporté par Nelson (2024)"
+        ]
+      ],
+      "rows": [
+        [
+          "Bancel, 2017, analyse principale",
+          "Analyse du réseau et tests de modèles",
+          "491 événements jusqu'à mai 2015",
+          "Z cumulé ≈ 7. Le traitement XOR et la synchronisation écartent, selon Bancel, un champ simple agissant sur les bits bruts ; les tests favorisent un effet orienté vers un but.",
+          "XOR : opération logique inversant certains bits pour limiter les biais. La conclusion concerne les modèles testés ; elle ne réfute pas toute conception possible d'une conscience collective.",
+          "gcp1"
+        ],
+        [
+          "Nelson, 2017",
+          "Réponse à Bancel",
+          "Même programme ; analyses secondaires",
+          "Conteste l'obligation d'une action sur les bits bruts. Invoque notamment des structures temporelles et spatiales pour défendre un modèle de champ.",
+          "Ces observations doivent être distinguées des tests initialement annoncés. Leur compatibilité avec un modèle ne suffit pas à exclure les autres.",
+          "gcp2"
+        ],
+        [
+          "Bancel, 2017, mise au point",
+          "Analyse de la sélection des fenêtres",
+          "Périodes d'événements et données voisines",
+          "Rapporte des écarts négatifs autour des fenêtres librement choisies, absents pour les journées fixes de 24 h ; y voit une signature de sélection psi.",
+          "Rapporte aussi l'affaiblissement de structures exploratoires sur des données ultérieures. Cette argumentation sur la sélection ne doit pas être assimilée à une preuve de consultation préalable des données.",
+          "gcp3"
+        ],
+        [
+          "Nelson, 2024",
+          "Synthèse et prolongements analytiques",
+          "500 événements formels ; analyses du flux continu",
+          "Rappelle Z = 7,31 et défend des structures favorables à un modèle de champ, notamment des profils temporels obtenus par moyennage d'événements.",
+          "Les 491 événements de Bancel appartiennent au corpus de 500 : ne pas additionner les deux bilans. L'analogie avec des réponses EEG n'est pas une mesure d'activité cérébrale collective.",
+          "gcp4"
+        ]
+      ],
+      "openQuestion": "Comment départager un effet collectif d'un effet lié à la sélection des événements ?",
+      "interpretation": "La significativité cumulée, la robustesse des analyses et l'identification de la source de l'effet sont trois questions distinctes. La critique de Bancel vise l'attribution à une conscience globale ; elle ne constitue pas une explication de l'ensemble du résultat par une simple erreur statistique. Les hypothèses psi concurrentes restent à distinguer des biais ordinaires.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Un écart cumulé est rapporté dans le corpus formel. Les réanalyses portent souvent sur les mêmes données et ne constituent pas autant de confirmations indépendantes."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Examiner le registre avant consultation des données, les critères de sélection, les fenêtres et les analyses secondaires. Un score Z n'est pas une probabilité d'existence du psi."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Comparer types d'événements, horaires, dispositifs, règles de sélection et personnes définissant les tests. La stabilité d'un score cumulé n'identifie pas sa cause."
+        ],
+        [
+          "Portée des conclusions",
+          "Le débat porte sur les prédictions qui permettraient de distinguer une influence collective d'un effet associé à l'expérimentation. L'étiquette « conscience globale » ne découle pas du seul rejet du modèle aléatoire."
+        ]
+      ],
+      "readingGuide": [
+        [
+          "Observation",
+          "Séparer le test enregistré pour chaque événement des structures recherchées ensuite dans les données."
+        ],
+        [
+          "Explications examinées",
+          "Distinguer biais ordinaires de sélection et hypothèse d'une sélection psi, où le choix des événements serait lui-même informé de façon anormale."
+        ],
+        [
+          "Interprétation",
+          "Comparer des prédictions explicites : effet collectif, effet lié aux expérimentateurs ou autre explication. Définir ce qui pourrait départager ces modèles."
+        ]
+      ],
+      "next": "Prévoir des critères externes de sélection des événements, conserver les analyses annoncées avant l'accès aux données et réserver un corpus pour tester les signatures proposées. Comparer règles automatiques et choix humains avec des prédictions définies pour chaque modèle. L'automatisation seule ne garantit pas l'élimination de tout effet expérimentateur.",
+      "sources": [
+        {
+          "id": "gcp1",
+          "label": "GCP1 · Bancel, P. A. (2017). Searching for Global Consciousness: A 17-Year Exploration. Explore, 13(2), 94–101.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28279629/",
+          "status": "Notice vérifiée ; texte de l'auteur consulté sur ResearchGate, notamment protocole, traitement XOR, tests de modèles et discussion. DOI : 10.1016/j.explore.2016.12.003. Suppléments et données brutes non réanalysés."
+        },
+        {
+          "id": "gcp2",
+          "label": "GCP2 · Nelson, R. (2017). Weighting the Parameters, a Response to Bancel's « Searching for Global Consciousness: A Seventeen Year Exploration ». Explore, 13(2), 102–105.",
+          "url": "https://journalofnonlocality.org/index.php/jnonlocality/article/download/71/71/251",
+          "status": "Texte de la réponse consulté dans sa reprise par le Journal of Nonlocality ; référence Explore vérifiée dans PubMed. DOI : 10.1016/j.explore.2016.12.002."
+        },
+        {
+          "id": "gcp3",
+          "label": "GCP3 · Bancel, P. A. (2017). Determining that the GCP is a goal-oriented effect: a short history. Journal of Nonlocality, 5(1).",
+          "url": "https://journalofnonlocality.org/index.php/jnonlocality/article/download/70/70",
+          "status": "Texte intégral consulté. Mise au point de l'auteur sur les structures exploratoires, les données voisines des événements et la sélection des fenêtres. Ce texte est distinct de sa lettre à Explore (GCP5)."
+        },
+        {
+          "id": "gcp4",
+          "label": "GCP4 · Nelson, R. D. (2024). Global Consciousness: Manifesting Meaningful Structure in Random Data. Journal of Anomalous Experience and Cognition, 4(2), 149–173.",
+          "url": "https://journals.lub.lu.se/jaex/article/view/25553",
+          "status": "Résumé et sections du texte intégral sur le corpus et les prolongements analytiques consultés. Article publié le 27 novembre 2024 ; DOI : 10.31156/jaex.25553. Les études citées dans cette synthèse n'ont pas toutes été expertisées séparément ici."
+        },
+        {
+          "id": "gcp5",
+          "label": "GCP5 · Bancel, P. A. (2017). Response to Nelson's Weighing the Parameters. Explore, 13(2), 106–107.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28283445/",
+          "status": "Lettre en réponse identifiée et référence vérifiée dans PubMed ; texte intégral non consulté. DOI : 10.1016/j.explore.2017.01.001. Les arguments de Bancel présentés dans la fiche proviennent de GCP1 et GCP3."
+        }
+      ],
+      "handbook": "Peter Bancel et Mario Varvoglis, chapitre 5, « La micro-psychocinèse », section consacrée au psi implicite et au GCP. La fiche confronte ce cadrage aux publications originales et aux réponses de Nelson.",
+      "chart": null,
+      "landscape": [],
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "related": [
+        "micro-pk"
+      ]
     }
   ],
   "schemaVersion": 2
