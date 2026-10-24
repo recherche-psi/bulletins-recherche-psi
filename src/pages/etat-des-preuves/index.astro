@@ -9,7 +9,7 @@ const groups = [
   {name:'Interaction', description:'Intention, systèmes physiques et organismes vivants'},
 ];
 ---
-<BaseLayout title="État des preuves en recherche psi" description={`${data.topics.length} dossiers : bilans empiriques, conditions d'obtention et questions ouvertes. Une lecture des résultats sans note globale.`} alternatePath={null}>
+<BaseLayout title="État des preuves en recherche psi" description={`${data.topics.length} dossiers : bilans empiriques, conditions d'obtention et questions ouvertes.`} alternatePath={null}>
 <div class="shell evidence">
   <header class="mast">
     <p class="eyebrow">Espace chercheurs · Édition pilote 2026</p>
@@ -21,7 +21,7 @@ const groups = [
 
   <section id="dossiers" class="directory">
     <div class="section-heading"><h2>En un regard</h2><span class="small">Ouvrir une fiche pour les données et les sources</span></div>
-    <p class="small reading-note">Chaque dossier distingue <strong>résultats, robustesse, conditions d'obtention et portée des conclusions</strong>. Ces dimensions ne sont pas réunies en une note. Les questions proposées sont illustratives. <a href="#grille">Comprendre cette lecture</a>.</p>
+    <p class="small reading-note">Chaque dossier distingue <strong>résultats, robustesse, conditions d'obtention et portée des conclusions</strong>. Les questions proposées sont illustratives. <a href="#grille">Comprendre cette lecture</a>.</p>
     {groups.map(group => <div class="dossier-group">
       <h3>{group.name}<span>{group.description}</span></h3>
       <div class="table-scroll directory-table"><table class="comparison">
@@ -49,11 +49,11 @@ const groups = [
         <td data-label="Exemple de question ouverte">{t.openQuestion}</td>
       </tr>)}</tbody>
     </table></div>
-    <p class="small">Une observation, sa vérification et une hypothèse sur son origine sont des propositions distinctes. Aucun score commun n'est calculé entre ces dossiers.</p>
+    <p class="small">Une observation, sa vérification et une hypothèse sur son origine sont des propositions distinctes.</p>
   </section>
 
   <section id="grille">
-    <h2>Quatre dimensions, sans note globale</h2>
+    <h2>Quatre dimensions de lecture</h2>
     <p class="small">La reproductibilité est examinée avec les conditions d'obtention et la variabilité. Elle contribue à la lecture du dossier sans résumer, à elle seule, sa valeur probante.</p>
     <details><summary>Les quatre dimensions de chaque fiche</summary>
       <div class="table-scroll"><table class="profile-table"><thead><tr><th scope="col">Dimension</th><th scope="col">Ce qui est examiné</th></tr></thead><tbody>
@@ -66,7 +66,7 @@ const groups = [
     <details><summary>Quelle place pour les réplications ?</summary>
       <p>Un résultat reproduit précise la stabilité d'une observation dans certaines conditions ; il n'en désigne pas nécessairement la cause. Un résultat non reproduit peut renseigner sur un effet, un protocole ou une variabilité. Son apport dépend notamment de la précision du test et de la comparabilité des conditions.</p>
       <p>La dépendance au contexte est une hypothèse à étudier. Elle ne suffit pas à expliquer après coup un résultat nul : ses prédictions doivent pouvoir être mises à l'épreuve. Les divergences entre études restent visibles dans chaque fiche.</p>
-      <p class="small">Repère méthodologique général : <a href="https://www.ncbi.nlm.nih.gov/books/NBK547524/">National Academies, <em>Reproducibility and Replicability in Science</em> (2019), chapitre 5</a>. Cette lecture descriptive est une proposition éditoriale à discuter, sans cotation validée collectivement.</p>
+      <p class="small">Repère méthodologique général : <a href="https://www.ncbi.nlm.nih.gov/books/NBK547524/">National Academies, <em>Reproducibility and Replicability in Science</em> (2019), chapitre 5</a>.</p>
     </details>
   </section>
 
@@ -77,13 +77,7 @@ const groups = [
       <p><a href={`${base}data/etat-des-preuves-2026-10-24-v7.json`} download>Version actuelle, 15 dossiers (JSON)</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v7.csv`} download>Données des graphiques (CSV)</a></p>
       <p>Version 6, 15 dossiers, 24 octobre : volet GCP 2.0 et clarification de la sélection psi selon Bancel. <a href={`${base}data/etat-des-preuves-2026-10-24-v6.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v6.csv`} download>CSV</a>.</p>
       <p>Version 5, 15 dossiers, 24 octobre : ajout du GCP historique et des analyses de Bancel ; intitulé « exemple de question ouverte ». <a href={`${base}data/etat-des-preuves-2026-10-24-v5.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v5.csv`} download>CSV</a>.</p>
-      <p>Version 4, 14 dossiers, 24 octobre : passage au bilan empirique et aux quatre dimensions descriptives ; ajout des corrélations cérébrales, des EMI et des vies antérieures. <a href={`${base}data/etat-des-preuves-2026-10-24-v4.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v4.csv`} download>CSV</a>.</p>
-      <p>Les versions 1 à 3 conservent l'ancienne grille pour documenter l'évolution éditoriale :</p>
-      <ul>
-        <li>Version 3, 11 dossiers, 24 octobre : <a href={`${base}data/etat-des-preuves-2026-10-24-v3.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v3.csv`} download>CSV</a>.</li>
-        <li>Version 2, 7 dossiers, 24 octobre : <a href={`${base}data/etat-des-preuves-2026-10-24.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24.csv`} download>CSV</a>.</li>
-        <li>Édition initiale, 3 dossiers, 21 octobre : <a href={`${base}data/etat-des-preuves-2026-10-21.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-21.csv`} download>CSV</a>.</li>
-      </ul>
+      <p>Version 4, 14 dossiers, 24 octobre : ajout des corrélations cérébrales, des EMI et des vies antérieures. <a href={`${base}data/etat-des-preuves-2026-10-24-v4.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v4.csv`} download>CSV</a>.</p>
     </details>
     <details><summary>Sources, périmètre et limites de cette sélection</summary>
       <p>Le <a href="https://www.dunod.com/sciences-humaines-et-sociales/grand-manuel-parapsychologie-scientifique">Grand manuel de parapsychologie scientifique</a> (Évrard, Berghmans et Rabeyron, dir., Dunod, 2025) sert de point de départ : chapitres 3, 4, 5, 6, 7, 8, 13 et 14. Les fiches renvoient aux études originales et distinguent résultats, réanalyses, commentaires et propositions théoriques.</p>
