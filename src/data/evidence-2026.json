@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-24-brouillon-2",
+  "version": "2026-10-24-brouillon-3",
   "date": "24 octobre 2026",
   "topics": [
     {
@@ -177,6 +177,100 @@
       "reviewed": "24 octobre 2026",
       "new": true,
       "landscape": [],
+      "confidence": "Faible",
+      "chart": null,
+      "id": "choix-force",
+      "title": "Perception à choix forcé",
+      "group": "Perception",
+      "subtitle": "Choisir une réponse parmi des cibles définies à l'avance",
+      "direction": "Petit effet cumulé, confirmation incomplète",
+      "summary": "La synthèse est positive. Les résultats prospectifs retenus ne confirment pas tous les critères annoncés.",
+      "blocker": "La stabilité de l'effet dans des protocoles prospectifs",
+      "question": "Télépathie, clairvoyance et précognition testées par un choix entre plusieurs réponses possibles. Le corpus inclut des mesures de réussite et de temps de réaction. Il recoupe donc en partie la fiche Précognition ; leurs effectifs ne s'additionnent pas.",
+      "handbook": "Chapitre 3, recherches expérimentales sur la perception extrasensorielle, notamment les protocoles à choix forcé.",
+      "metrics": [
+        [
+          "141",
+          "unités de la synthèse après exclusions"
+        ],
+        [
+          "0,02",
+          "ES moyen rapporté"
+        ],
+        [
+          "160",
+          "sessions formelles, étude IMI 2025"
+        ]
+      ],
+      "rows": [
+        [
+          "Storm & Tressoldi, 2023",
+          "Méta-analyse ; 1987–2022",
+          "141 expériences, conditions ou traitements après exclusions",
+          "ES = 0,02 ; IC 95 % [0,009 ; 0,02] ; I² = 97,1 % (tableau 3)",
+          "Le résumé parle d'une base homogène après exclusions ; le modèle du tableau 3 conserve une forte hétérogénéité. Sensibilité aux choix d'analyse à expertiser.",
+          "cf1"
+        ],
+        [
+          "Bancel et al., 2025",
+          "Étude préenregistrée ; Psi@Home, IMI",
+          "Deux cohortes ; 80 sessions formelles chacune",
+          "L'augmentation de variance, critère confirmatoire, n'est confirmée dans aucune cohorte",
+          "Le protocole cible la variance des scores ; ce n'est pas un test de toutes les variantes du choix forcé.",
+          "cf2"
+        ],
+        [
+          "Bancel et al., 2025",
+          "Résultats exploratoires du même projet",
+          "90 sessions d'essai avant la phase formelle",
+          "Variance accrue : p = 0,000031 ; dans la phase formelle, différence de variance entre cohortes : p = 0,032",
+          "Signaux exploratoires. Les sessions d'essai ne remplacent pas la confirmation préenregistrée.",
+          "cf2"
+        ]
+      ],
+      "assessment": [
+        [
+          "Résultat statistique",
+          "Favorable, de petite amplitude",
+          "La synthèse rapporte un effet moyen positif ; son amplitude ne donne pas un taux de réussite universel."
+        ],
+        [
+          "Robustesse",
+          "À préciser",
+          "Exclusions de valeurs extrêmes et forte hétérogénéité résiduelle dans le modèle publié."
+        ],
+        [
+          "Reproductibilité",
+          "Incomplète",
+          "Dans l'étude IMI retenue, les critères confirmatoires échouent et les signaux favorables sont exploratoires."
+        ],
+        [
+          "Attribution au psi",
+          "Non établie",
+          "Il faut une réussite prospective stable, avec contrôle du tirage des cibles, des fuites et du traitement des données."
+        ]
+      ],
+      "reason": "Confiance faible proposée : la moyenne positive justifie la poursuite des tests, mais la diversité des protocoles et l'écart entre résultats exploratoires et confirmatoires limitent l'attribution à un effet reproductible.",
+      "next": "Préenregistrer un critère principal, fixer le nombre d'essais et reproduire le même protocole dans plusieurs équipes. Pour Psi@Home, tester séparément l'hypothèse suggérée par les sessions d'essai.",
+      "sources": [
+        {
+          "id": "cf1",
+          "label": "Storm & Tressoldi (2023). Assessing 36 Years of the Forced Choice Design in Extra Sensory Perception Research. JSE, 37(3), 517–535.",
+          "url": "https://doi.org/10.31275/20232967",
+          "status": "Article évalué par les pairs. Texte intégral consulté, notamment le tableau 3 et les exclusions. Les bornes publiées sont arrondies."
+        },
+        {
+          "id": "cf2",
+          "label": "Bancel, Varvoglis, Boban & Bensahra (2025). A Forced-choice Precognition Experiment with Selected Cohorts. JAEX, 5(1), 14–46.",
+          "url": "https://doi.org/10.31156/jaex.26394",
+          "status": "Article évalué par les pairs, publié le 23 mai 2025. Texte intégral consulté. Étude conduite à l'IMI ; ce lien institutionnel doit être déclaré lors de la relecture."
+        }
+      ]
+    },
+    {
+      "reviewed": "24 octobre 2026",
+      "new": false,
+      "landscape": [],
       "id": "telepathie-reve",
       "title": "Télépathie dans le rêve",
       "group": "Perception",
@@ -306,7 +400,7 @@
     },
     {
       "reviewed": "24 octobre 2026",
-      "new": true,
+      "new": false,
       "landscape": [],
       "id": "vision-distance",
       "title": "Vision à distance",
@@ -434,6 +528,148 @@
           "label": "Tressoldi & Katz (2023). Remote Viewing Meta-Analysis : base, matériel et code.",
           "url": "https://figshare.com/articles/dataset/Remote_Viewing_Meta-Analysis/22298266",
           "status": "Dépôt des auteurs ; pas de nouvel échantillon."
+        }
+      ]
+    },
+    {
+      "reviewed": "24 octobre 2026",
+      "new": true,
+      "landscape": [],
+      "confidence": "Faible",
+      "chart": {
+        "title": "Estimation de la synthèse 2001–2019",
+        "axis": "Indice de proportion standardisé ; zéro = hasard",
+        "min": 0,
+        "max": 0.3,
+        "nullValue": 0,
+        "ticks": [
+          0,
+          0.1,
+          0.2,
+          0.3
+        ],
+        "rows": [
+          {
+            "label": "18 expériences",
+            "value": 0.18,
+            "low": 0.12,
+            "high": 0.25,
+            "display": "0,18 [0,12 ; 0,25]"
+          }
+        ],
+        "note": "Sarraf et al. (2021), estimation et IC à 95 % rapportés dans le résumé. Cet indice n'est pas un taux de réussite de 18 % et ne mesure pas une probabilité de survie."
+      },
+      "id": "mediumnite-mentale",
+      "title": "Médiumnité mentale",
+      "group": "Perception",
+      "subtitle": "Évaluer la précision d'informations en conditions aveugles",
+      "direction": "Synthèse favorable, confirmation partielle",
+      "summary": "Des lectures dépassent les contrôles dans plusieurs travaux. Les résultats prospectifs restent mixtes et ne déterminent pas la source de l'information.",
+      "blocker": "La reproductibilité et l'identification de la source de l'information",
+      "question": "Précision de descriptions associées à des personnes décédées, évaluées à l'aveugle par leurs proches. Cette fiche ne couvre ni la médiumnité physique ni tous les arguments sur la survie. Une information exacte, même inexpliquée, ne suffit pas à départager psi des vivants et communication post-mortem.",
+      "handbook": "Chapitre 8, « Aux frontières de la vie », section sur la médiumnité mentale (Maryne Mutis et Claude Berghmans).",
+      "metrics": [
+        [
+          "18",
+          "expériences de la méta-analyse"
+        ],
+        [
+          "65 %",
+          "identifications sur 100 lectures, étude 2022"
+        ],
+        [
+          "34/64",
+          "identifications dans la prépublication 2024"
+        ]
+      ],
+      "rows": [
+        [
+          "Sarraf et al., 2021",
+          "Méta-analyse ; études 2001–2019",
+          "18 expériences issues de 14 articles",
+          "Indice de proportion standardisé : 0,18 au-dessus du hasard ; IC 95 % [0,12 ; 0,25]",
+          "Résultat positif, avec deux tests de biais favorables rapportés. Ces tests ne garantissent pas l'absence de biais.",
+          "mm1"
+        ],
+        [
+          "Tressoldi et al., 2022 / 2025",
+          "Triple aveugle ; en ligne 2022, numéro 2025",
+          "28 médiums ; 100 lectures",
+          "65 % de lectures identifiées ; trois indices favorables aux lectures cibles",
+          "L'identification mesure une discrimination entre lectures. Elle ne tranche pas l'origine des informations.",
+          "mm2"
+        ],
+        [
+          "Tressoldi et al., 2024",
+          "Stage 2 ; prépublication, version du 22 février",
+          "64 lectures ; protocole annoncé en Stage 1",
+          "34/64 identifiées (53,1 %). Seule la note globale confirme l'un des trois critères principaux",
+          "Mêmes chercheurs que l'étude précédente. Plusieurs lectures concernent un même défunt ; recrutement modifié et analyse supplémentaire déclarés.",
+          "mm3"
+        ],
+        [
+          "O'Keeffe & Wiseman, 2005",
+          "Test contrôlé et discussion méthodologique",
+          "Médiums professionnels ; contrôle des biais de procédure",
+          "Résultats ne soutenant pas la capacité testée",
+          "Repère historique de résultat défavorable, pas une nouvelle réplication postérieure à la méta-analyse.",
+          "mm4"
+        ]
+      ],
+      "assessment": [
+        [
+          "Résultat statistique",
+          "Favorable, mais mixte",
+          "Synthèse positive et étude de 100 lectures favorable ; confirmation partielle dans la prépublication de 2024."
+        ],
+        [
+          "Robustesse",
+          "À expertiser",
+          "Il faut examiner les règles de cotation, les dépendances entre lectures et les recouvrements des échantillons."
+        ],
+        [
+          "Reproductibilité",
+          "Partielle",
+          "Les deux travaux récents retenus proviennent de la même équipe et ne sont pas une réplication externe."
+        ],
+        [
+          "Attribution au psi",
+          "Origine indéterminée",
+          "L'aveugle réduit certains échanges ordinaires ; il ne désigne pas à lui seul une source d'information."
+        ]
+      ],
+      "reason": "Confiance faible proposée : les résultats favorables justifient l'étude de la précision des lectures, mais la confirmation partielle et les questions de cotation limitent l'attribution à un psi reproductible. La survie constitue une hypothèse supplémentaire.",
+      "next": "Organiser une réplication indépendante préenregistrée avec cotation figée, contrôle des accès à l'information, analyse des lectures regroupées par médium et par défunt, et critères distinguant les hypothèses causales.",
+      "sources": [
+        {
+          "id": "mm1",
+          "label": "Sarraf, Woodley of Menie & Tressoldi (2021). Anomalous information reception by mediums: A meta-analysis of the scientific evidence. Explore, 17(5), 396–402.",
+          "url": "https://doi.org/10.1016/j.explore.2020.04.002",
+          "status": "Article évalué par les pairs, en ligne en juillet 2020. Résumé PubMed consulté ; le graphique reprend uniquement son estimation publiée."
+        },
+        {
+          "id": "mm2",
+          "label": "Tressoldi, Liberale & Sinesio (2025 ; en ligne 2022). Is There Someone in the Hereafter? Mediumship Accuracy of 100 Readings. OMEGA, 91(2), 955–963.",
+          "url": "https://doi.org/10.1177/00302228221146376",
+          "status": "Article évalué par les pairs. Résumé et dates de publication consultés chez l'éditeur. La parution en numéro en 2025 n'est pas une nouvelle collecte."
+        },
+        {
+          "id": "mm3",
+          "label": "Tressoldi, Liberale & Sinesio (2024). Stage 2 Registered Report: Testing mediumship accuracy with a triple-blind protocol.",
+          "url": "https://osf.io/preprints/psyarxiv/a756f",
+          "status": "Prépublication. Texte intégral de la version du 22 février 2024 consulté dans la copie déposée par les auteurs sur Academia ; statut de publication finale non établi ici."
+        },
+        {
+          "id": "mm4",
+          "label": "O'Keeffe & Wiseman (2005). Testing alleged mediumship: methods and results. British Journal of Psychology, 96, 165–179.",
+          "url": "https://doi.org/10.1348/000712605X36361",
+          "status": "Article évalué par les pairs. Résumé PubMed consulté ; pas de réanalyse des données."
+        },
+        {
+          "id": "mm5",
+          "label": "Tressoldi et al. Mediumship : données et documents de plusieurs protocoles.",
+          "url": "https://figshare.com/articles/dataset/Mediumship/13311710",
+          "status": "Notice du dépôt consultée. Elle distingue les fichiers RRDatabase et 100ReadingResults. Les données brutes n'ont pas été réanalysées pour cette fiche."
         }
       ]
     },
@@ -575,7 +811,7 @@
     },
     {
       "reviewed": "24 octobre 2026",
-      "new": true,
+      "new": false,
       "landscape": [],
       "id": "pressentiment",
       "title": "Pressentiment physiologique",
@@ -878,7 +1114,7 @@
     },
     {
       "reviewed": "24 octobre 2026",
-      "new": true,
+      "new": false,
       "landscape": [
         [
           "Cas spontanés",
@@ -1006,6 +1242,237 @@
           "label": "Graboi (2026). Responsive Universe Hypothesis for Macro-PK. JSE, 40(3), 412–428.",
           "url": "https://doi.org/10.31275/20263703",
           "status": "Article théorique ; notice éditoriale et bulletin du 2 octobre 2026 consultés."
+        }
+      ]
+    },
+    {
+      "reviewed": "24 octobre 2026",
+      "new": true,
+      "landscape": [],
+      "confidence": "Faible",
+      "chart": null,
+      "id": "influence-distance",
+      "title": "Influence mentale à distance",
+      "group": "Interaction",
+      "subtitle": "Physiologie, regard à distance et soutien de l'attention",
+      "direction": "Petits effets, sensibles aux contrôles",
+      "summary": "Les synthèses historiques sont favorables. Les études les mieux contrôlées et les essais récents ne donnent pas une confirmation uniforme.",
+      "blocker": "Indépendance et solidité des réplications prospectives",
+      "question": "DMILS : interaction mentale directe avec un système vivant. Cette fiche porte sur la physiologie et l'attention de personnes isolées. Le regard à distance est une variante distincte ; une variation cutanée ne prouve pas une perception consciente du regard. L'intention de soin dispose d'une fiche séparée.",
+      "handbook": "Chapitre 6, « L'influence à distance sur des organismes vivants » (Claude Berghmans et Renaud Evrard).",
+      "metrics": [
+        [
+          "36",
+          "études DMILS dans la synthèse 2004"
+        ],
+        [
+          "15",
+          "études de regard à distance, 2004"
+        ],
+        [
+          "30",
+          "paires dans l'essai gastrique 2026"
+        ]
+      ],
+      "rows": [
+        [
+          "Schmidt et al., 2004",
+          "Méta-analyse DMILS",
+          "36 études ; activité électrodermale",
+          "d = 0,11 ; p = 0,001. Sélection des 7 études de meilleure qualité : d = 0,05 ; p = 0,50",
+          "Le résultat global ne se maintient pas au seuil conventionnel dans cette sélection plus restreinte.",
+          "di1"
+        ],
+        [
+          "Schmidt et al., 2004",
+          "Regard à distance",
+          "15 études ; activité électrodermale de la personne observée",
+          "d = 0,13 ; p = 0,01",
+          "Corpus distinct du DMILS général. Les auteurs signalent un manque de réplications indépendantes.",
+          "di1"
+        ],
+        [
+          "Schmidt, 2012",
+          "Méta-analyse du soutien de l'attention",
+          "11 études ; 576 sessions",
+          "d = 0,11 ; p = 0,03",
+          "Mesure comportementale, distincte des variables physiologiques ; 576 sessions ne signifie pas 576 personnes.",
+          "di2"
+        ],
+        [
+          "Yount et al., 2026",
+          "Réplication conceptuelle ; groupe factice",
+          "30 paires ; 15 par condition ; électrogastrographie",
+          "Amplitude : p = 0,631. Fréquence exploratoire : p = 0,048 pour l'interaction condition × période",
+          "Hypothèse sur l'amplitude non confirmée. Plan d'analyse modifié ; signal de fréquence à répliquer prospectivement.",
+          "di3"
+        ]
+      ],
+      "assessment": [
+        [
+          "Résultat statistique",
+          "Faiblement favorable",
+          "Les effets cumulés sont petits ; l'essai gastrique apporte un résultat principal nul et un signal exploratoire."
+        ],
+        [
+          "Robustesse",
+          "Sensible à la qualité",
+          "La sélection de meilleure qualité de 2004 ne confirme pas l'effet DMILS global."
+        ],
+        [
+          "Reproductibilité",
+          "À renforcer",
+          "L'essai de 2026 modifie plusieurs éléments du protocole antérieur : il s'agit d'une réplication conceptuelle."
+        ],
+        [
+          "Attribution au psi",
+          "Indécise",
+          "Les séries physiologiques exigent un contrôle des dérives temporelles, des traitements du signal et de la multiplicité des tests."
+        ]
+      ],
+      "reason": "Confiance faible proposée : les signaux cumulés méritent des tests ciblés, mais la sensibilité à la qualité et l'absence de confirmation uniforme empêchent de conclure à une influence reproductible.",
+      "next": "Reprendre le signal gastrique avec une fréquence définie comme critère principal, un modèle fixé avant les données et un effectif accru. Pour le regard à distance, organiser une réplication indépendante en aveugle.",
+      "sources": [
+        {
+          "id": "di1",
+          "label": "Schmidt, Schneider, Utts & Walach (2004). Distant intentionality and the feeling of being stared at: two meta-analyses. British Journal of Psychology, 95, 235–247.",
+          "url": "https://doi.org/10.1348/000712604773952449",
+          "status": "Article évalué par les pairs. Résumé PubMed consulté ; pas de nouvel audit des études individuelles."
+        },
+        {
+          "id": "di2",
+          "label": "Schmidt (2012). Can We Help Just by Good Intentions? A Meta-Analysis of Experiments on Distant Intention Effects. JACM, 18(6), 529–533.",
+          "url": "https://doi.org/10.1089/acm.2011.0321",
+          "status": "Article évalué par les pairs. Résumé et notice de publication consultés."
+        },
+        {
+          "id": "di3",
+          "label": "Yount et al. (2026). Investigating Remote Electrogastrogram Modulation Via Emotional and Eating Stimuli: A Sham-Controlled Pilot Study. JSE, 40(3), 352–364.",
+          "url": "https://doi.org/10.31275/20263901",
+          "status": "Article évalué par les pairs, publié le 29 septembre 2026. Texte intégral consulté, notamment le changement d'analyse et le tableau 4."
+        }
+      ]
+    },
+    {
+      "reviewed": "24 octobre 2026",
+      "new": true,
+      "landscape": [],
+      "confidence": "Faible",
+      "chart": {
+        "title": "Effet biologique et sélection de qualité",
+        "axis": "Corrélation pondérée r et IC à 95 %",
+        "min": 0,
+        "max": 0.3,
+        "nullValue": 0,
+        "ticks": [
+          0,
+          0.1,
+          0.2,
+          0.3
+        ],
+        "rows": [
+          {
+            "label": "Systèmes biologiques · 49 études",
+            "value": 0.258,
+            "low": 0.239,
+            "high": 0.278,
+            "display": "0,258 [0,239 ; 0,278]"
+          },
+          {
+            "label": "Seuil de qualité · 22 études",
+            "value": 0.115,
+            "low": 0.09,
+            "high": 0.141,
+            "display": "0,115 [0,090 ; 0,141]"
+          }
+        ],
+        "note": "Roe et al. (2015), résultats de la première méta-analyse. Les 22 études sont incluses dans les 49. IC publiés pour la moyenne pondérée ; ils ne décrivent pas la variabilité entre études ni un bénéfice thérapeutique."
+      },
+      "id": "intention-soin",
+      "title": "Intention de soin et systèmes biologiques",
+      "group": "Interaction",
+      "subtitle": "Distinguer un effet biologique d'un bénéfice clinique",
+      "direction": "Résultats positifs, corpus hétérogènes",
+      "summary": "Des moyennes positives sont rapportées. La qualité des études, les différences entre systèmes et les contrôles limitent l'interprétation causale.",
+      "blocker": "Masquage, indépendance des lots et attribution causale",
+      "question": "Intentions de soin sans contact sur cellules, tissus, plantes, animaux ou personnes. Les systèmes biologiques de laboratoire et les essais chez l'humain sont analysés séparément. Un effet sur un organisme modèle ne démontre pas une efficacité thérapeutique ; un bénéfice clinique éventuel n'identifie pas à lui seul un mécanisme psi.",
+      "handbook": "Chapitre 6, intention de soin, essais sur le vivant et questions méthodologiques.",
+      "metrics": [
+        [
+          "49",
+          "études hors essais sur personnes, 2015"
+        ],
+        [
+          "22",
+          "de ces études au seuil de qualité"
+        ],
+        [
+          "57",
+          "études distinctes chez l'humain, 2015"
+        ]
+      ],
+      "rows": [
+        [
+          "Roe, Sonnex & Roxburgh, 2015",
+          "Méta-analyse de systèmes biologiques",
+          "49 études ; animaux, plantes, cellules ou tissus",
+          "r = 0,258 ; après seuil de qualité, 22 études : r = 0,115",
+          "Forte hétérogénéité et asymétrie du graphique de publication. La réduction de l'effet accompagne la sélection de qualité.",
+          "is1"
+        ],
+        [
+          "Roe, Sonnex & Roxburgh, 2015",
+          "Méta-analyse chez l'humain",
+          "57 études ; 27 au seuil de qualité",
+          "r = 0,203 ; sélection de qualité : r = 0,224",
+          "Interventions et critères différents. Ces moyennes ne mesurent pas un bénéfice clinique commun ni un mécanisme psi.",
+          "is1"
+        ],
+        [
+          "Beseme et al., 2026",
+          "Étude sur C. elegans",
+          "Eaux préparées, comparées à une eau témoin",
+          "Chez le mutant daf-16 : survie moyenne de 12,77 à 15,29 ou 15,55 jours ; pas d'effet significatif chez les vers sauvages",
+          "Étude non aveugle. Dénominateurs discordants entre tableau et figure ; indépendance des vers d'une même plaque à vérifier.",
+          "is2"
+        ]
+      ],
+      "assessment": [
+        [
+          "Résultat statistique",
+          "Favorable dans les synthèses",
+          "Les deux corpus présentent des moyennes positives, sur des échelles et cibles différentes."
+        ],
+        [
+          "Robustesse",
+          "Limitée",
+          "L'hétérogénéité et les choix de qualité pèsent sur l'interprétation. L'absence d'aveugle limite l'étude animale récente."
+        ],
+        [
+          "Reproductibilité",
+          "Insuffisamment établie",
+          "Un protocole reproductible doit définir les lots, les unités expérimentales et toutes les mesures avant la collecte."
+        ],
+        [
+          "Attribution au psi",
+          "Non isolée",
+          "Il faut exclure les différences matérielles entre traitements et les effets d'observation ou de manipulation."
+        ]
+      ],
+      "reason": "Confiance faible proposée pour l'attribution à un effet psi reproductible. Les résultats signalent des hypothèses testables, sans établir un mécanisme commun aux cellules, aux animaux et aux personnes.",
+      "next": "Faire reproduire l'étude animale par une autre équipe : flacons codés, lots indépendants, randomisation des plaques, analyse tenant compte des regroupements et données ouvertes. Évaluer séparément chaque indication clinique.",
+      "sources": [
+        {
+          "id": "is1",
+          "label": "Roe, Sonnex & Roxburgh (2015). Two Meta-Analyses of Noncontact Healing Studies. Explore, 11(1), 11–23.",
+          "url": "https://doi.org/10.1016/j.explore.2014.10.001",
+          "status": "Article évalué par les pairs ; en ligne en octobre 2014, numéro de 2015. Texte intégral consulté. Les corpus biologiques et humains restent séparés."
+        },
+        {
+          "id": "is2",
+          "label": "Beseme, Lins, Bengston, Nies & McMichael (2026). C. elegans Survival Analysis: A New Path to Test Storage and Scalability of Healing Intention. JSE, 40(3), 295–302.",
+          "url": "https://doi.org/10.31275/20263877",
+          "status": "Article évalué par les pairs, publié le 29 septembre 2026. Texte intégral consulté. Bengston déclare être le développeur de la méthode étudiée."
         }
       ]
     }

@@ -4,19 +4,19 @@ import data from '../../data/evidence-2026.json';
 import '../../styles/evidence.css';
 const base = import.meta.env.BASE_URL;
 const groups = [
-  {name:'Perception', description:'Cibles cachées et correspondances'},
+  {name:'Perception', description:'Cibles cachées, descriptions et correspondances'},
   {name:'Anticipation', description:'Événements futurs et signaux pré-stimulus'},
-  {name:'Interaction', description:'Intention et systèmes physiques'},
+  {name:'Interaction', description:'Intention, systèmes physiques et organismes vivants'},
 ];
 const confidenceClass = (level:string) => level === 'Modérée' ? 'moderate' : level === 'Très faible' ? 'very-low' : 'low';
 ---
-<BaseLayout title="État des preuves en recherche psi" description="Sept dossiers : synthèses, réplications et confiance proposée. Ganzfeld, rêve, vision à distance, précognition, pressentiment, micro-PK et macro-PK." alternatePath={null}>
+<BaseLayout title="État des preuves en recherche psi" description={`${data.topics.length} dossiers : synthèses, réplications et confiance proposée sur la perception, l'anticipation et l'interaction psi.`} alternatePath={null}>
 <div class="shell evidence">
   <header class="mast">
     <p class="eyebrow">Espace chercheurs · Édition pilote 2026</p>
     <h1>État des preuves<br/><em>en recherche psi</em></h1>
-    <p class="intro">Sept dossiers pour comparer les résultats et leur reproductibilité.</p>
-    <p class="meta">Mise à jour : {data.date} · Quatre nouveaux dossiers</p>
+    <p class="intro">{data.topics.length} dossiers pour comparer les résultats et leur reproductibilité.</p>
+    <p class="meta">Mise à jour : {data.date} · {data.topics.filter(t=>t.new).length} nouveaux dossiers</p>
   </header>
   <nav class="jump" aria-label="Sommaire"><a href="#dossiers">Les dossiers</a><a href="#grille">Lire les niveaux</a><a href="#edition">Éditions et méthode</a></nav>
 
@@ -60,13 +60,15 @@ const confidenceClass = (level:string) => level === 'Modérée' ? 'moderate' : l
 
   <section id="edition">
     <h2>Éditions et méthode</h2>
-    <details><summary>Ce qui change le 24 octobre 2026</summary>
-      <p>Ajout de quatre dossiers : rêve, vision à distance, pressentiment et macro-PK. Les trois premières appréciations sont conservées ; leur dernière vérification reste datée du 21 octobre. La vue d'ensemble est resserrée, sans répétition des fiches.</p>
-      <p><a href={`${base}data/etat-des-preuves-2026-10-24.json`} download>Instantané du 24 octobre (JSON)</a> · <a href={`${base}data/etat-des-preuves-2026-10-24.csv`} download>Données des graphiques (CSV)</a></p>
+    <details><summary>Derniers ajouts et archives</summary>
+      <p>24 octobre 2026, version 3 : ajout du choix forcé, de l'influence mentale à distance, de l'intention de soin et de la médiumnité mentale. Quatre fiches avec sources, limites et justification de la confiance proposée.</p>
+      <p><a href={`${base}data/etat-des-preuves-2026-10-24-v3.json`} download>Version actuelle, 11 dossiers (JSON)</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v3.csv`} download>Données des graphiques (CSV)</a></p>
+      <p>24 octobre 2026, version 2 : ajout du rêve, de la vision à distance, du pressentiment et de la macro-PK. Archive de 7 dossiers : <a href={`${base}data/etat-des-preuves-2026-10-24.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24.csv`} download>CSV</a>.</p>
       <p>Édition initiale, trois dossiers, 21 octobre 2026 : <a href={`${base}data/etat-des-preuves-2026-10-21.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-21.csv`} download>CSV</a>.</p>
     </details>
     <details><summary>Sources, périmètre et limites de cette sélection</summary>
-      <p>Le <a href="https://www.dunod.com/sciences-humaines-et-sociales/grand-manuel-parapsychologie-scientifique">Grand manuel de parapsychologie scientifique</a> (Évrard, Berghmans et Rabeyron, dir., Dunod, 2025) sert de point de départ : chapitres 3, 4 et 7. Les fiches renvoient aux études originales et distinguent résultats, réanalyses, commentaires et propositions théoriques.</p>
+      <p>Le <a href="https://www.dunod.com/sciences-humaines-et-sociales/grand-manuel-parapsychologie-scientifique">Grand manuel de parapsychologie scientifique</a> (Évrard, Berghmans et Rabeyron, dir., Dunod, 2025) sert de point de départ : chapitres 3, 4, 6, 7 et 8. Les fiches renvoient aux études originales et distinguent résultats, réanalyses, commentaires et propositions théoriques.</p>
+      <p>Pour les quatre derniers dossiers, recherche ciblée le 24 octobre 2026 : « forced choice ESP meta-analysis preregistered », « DMILS distant intention meta-analysis replication », « noncontact healing meta-analysis » et « mediumship accuracy registered report ». Vérification dans JSE, JAEX, PubMed, les notices des éditeurs et les dépôts des auteurs. Les prépublications sont identifiées comme telles. Les niveaux de consultation et les dates sont précisés dans chaque fiche.</p>
       <p>Recherche ciblée le 24 octobre 2026 : « dream ESP meta-analysis replication », « remote viewing meta-analysis replication », « presentiment meta-analysis preregistered », « macro psychokinesis replication », complétées par les noms et références du manuel. Sources consultées : IJoDR et dépôts universitaires, JSE, JAEX, F1000Research/Europe PMC, Frontiers et dépôts des auteurs. Chaque référence précise le niveau de consultation, résumé ou texte intégral.</p>
       <p>Pour les trois fiches initiales : recherche du 21 octobre 2026 via PubMed/Europe PMC, F1000Research, PLOS, Frontiers, JAEX, registre KPU et rapport LMU, sur les méta-analyses et réplications de ganzfeld, précognition et micro-PK.</p>
       <p>Sélection documentée, pas encore une revue systématique exhaustive. Pas de nouvelle méta-analyse ni de double lecture indépendante. « Non identifié » décrit les limites de cette recherche et ne signifie pas qu'un travail n'existe pas. Les archives du manuel ne sont pas diffusées ici.</p>
