@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-24-bilan-5",
+  "version": "2026-10-24-bilan-6",
   "date": "24 octobre 2026",
   "topics": [
     {
@@ -1793,14 +1793,14 @@
     {
       "id": "gcp",
       "title": "Global Consciousness Project (GCP)",
-      "subtitle": "Conscience collective, sélection des événements et effet expérimentateur",
-      "direction": "Écart cumulé au modèle aléatoire ; attribution discutée",
-      "summary": "Bancel conserve le constat statistique mais conteste son attribution à une conscience globale. Il défend un effet psi lié aux personnes engagées dans l'expérience. Nelson soutient une interprétation collective.",
-      "question": "Le GCP compare les données d'un réseau de générateurs aléatoires aux périodes d'événements supposés mobiliser l'attention collective. Cette fiche porte sur le corpus historique et son interprétation, distincts des essais de micro-PK avec intention explicite et des développements du GCP 2.0.",
+      "subtitle": "GCP historique et GCP 2.0 : résultats, sélection psi et interprétation collective",
+      "direction": "Résultats historiques et nouvelles données à distinguer",
+      "summary": "Bancel propose une sélection psi des fenêtres d'analyse pour expliquer le résultat historique ; Nelson défend une interprétation collective. Le GCP 2.0 renouvelle le dispositif et publie des résultats exploratoires.",
+      "question": "Deux programmes sont distingués : l'expérience formelle historique de 1998–2015, suivie de réanalyses, et le GCP 2.0, déjà actif lors de sa présentation scientifique en 2023. La clôture des 500 événements en 2015 ne marque pas la fin des recherches GCP. Les essais de micro-PK avec intention explicite restent traités dans leur propre fiche.",
       "metrics": [
         [
           "500",
-          "événements du corpus final"
+          "événements du corpus historique"
         ],
         [
           "17 ans",
@@ -1808,7 +1808,7 @@
         ],
         [
           "Z = 7,31",
-          "score cumulé rapporté par Nelson (2024)"
+          "corpus historique, Nelson (2024)"
         ]
       ],
       "rows": [
@@ -1816,7 +1816,7 @@
           "Bancel, 2017, analyse principale",
           "Analyse du réseau et tests de modèles",
           "491 événements jusqu'à mai 2015",
-          "Z cumulé ≈ 7. Le traitement XOR et la synchronisation écartent, selon Bancel, un champ simple agissant sur les bits bruts ; les tests favorisent un effet orienté vers un but.",
+          "Z cumulé ≈ 7. Le traitement XOR et la synchronisation écartent, selon Bancel, un champ simple agissant sur les bits bruts ; les tests favorisent un effet psi orienté vers un but.",
           "XOR : opération logique inversant certains bits pour limiter les biais. La conclusion concerne les modèles testés ; elle ne réfute pas toute conception possible d'une conscience collective.",
           "gcp1"
         ],
@@ -1833,7 +1833,7 @@
           "Analyse de la sélection des fenêtres",
           "Périodes d'événements et données voisines",
           "Rapporte des écarts négatifs autour des fenêtres librement choisies, absents pour les journées fixes de 24 h ; y voit une signature de sélection psi.",
-          "Rapporte aussi l'affaiblissement de structures exploratoires sur des données ultérieures. Cette argumentation sur la sélection ne doit pas être assimilée à une preuve de consultation préalable des données.",
+          "La sélection psi désigne ici des choix supposés guidés par une information anomale. Elle ne suppose ni consultation préalable des résultats, ni modification physique des générateurs.",
           "gcp3"
         ],
         [
@@ -1845,12 +1845,12 @@
           "gcp4"
         ]
       ],
-      "openQuestion": "Comment départager un effet collectif d'un effet lié à la sélection des événements ?",
-      "interpretation": "La significativité cumulée, la robustesse des analyses et l'identification de la source de l'effet sont trois questions distinctes. La critique de Bancel vise l'attribution à une conscience globale ; elle ne constitue pas une explication de l'ensemble du résultat par une simple erreur statistique. Les hypothèses psi concurrentes restent à distinguer des biais ordinaires.",
+      "openQuestion": "Quels protocoles distingueraient influence collective, sélection psi et biais ordinaires ?",
+      "interpretation": "Chez Bancel, l'effet expérimentateur est une hypothèse psi. Les personnes engagées dans l'étude pourraient choisir des événements et des bornes temporelles favorables grâce à une information anomale, sans nécessairement modifier les générateurs. Ce mécanisme se distingue d'un biais statistique ordinaire. Le GCP 2.0 apporte d'autres données ; ni le score historique ni les conclusions de Bancel ne s'y transfèrent automatiquement.",
       "profile": [
         [
           "Résultats observés",
-          "Un écart cumulé est rapporté dans le corpus formel. Les réanalyses portent souvent sur les mêmes données et ne constituent pas autant de confirmations indépendantes."
+          "Un écart cumulé est rapporté dans le corpus historique. Le GCP 2.0 rapporte notamment une corrélation entre réseaux local et mondial pendant des méditations ; les deux statistiques portent sur des protocoles différents."
         ],
         [
           "Robustesse méthodologique",
@@ -1862,24 +1862,24 @@
         ],
         [
           "Portée des conclusions",
-          "Le débat porte sur les prédictions qui permettraient de distinguer une influence collective d'un effet associé à l'expérimentation. L'étiquette « conscience globale » ne découle pas du seul rejet du modèle aléatoire."
+          "Comparer les prédictions d'une influence collective, d'une sélection psi par les personnes engagées et des biais ordinaires. Une corrélation entre indicateurs de réseaux ne mesure pas directement une conscience collective."
         ]
       ],
       "readingGuide": [
         [
           "Observation",
-          "Séparer le test enregistré pour chaque événement des structures recherchées ensuite dans les données."
+          "Distinguer le résultat statistique, les conditions de sélection des données et l'explication de l'écart observé."
         ],
         [
-          "Explications examinées",
-          "Distinguer biais ordinaires de sélection et hypothèse d'une sélection psi, où le choix des événements serait lui-même informé de façon anormale."
+          "Sélection psi selon Bancel",
+          "Les choix d'événements et de fenêtres seraient guidés par une information psi vers des fluctuations favorables. Une action physique sur les générateurs n'est pas nécessaire dans ce modèle."
         ],
         [
-          "Interprétation",
-          "Comparer des prédictions explicites : effet collectif, effet lié aux expérimentateurs ou autre explication. Définir ce qui pourrait départager ces modèles."
+          "Biais ordinaires de sélection",
+          "Choisir après consultation des résultats, essayer plusieurs fenêtres ou retenir les seuls tests favorables peut produire un biais sans psi. Ce mécanisme est distinct de l'hypothèse de Bancel."
         ]
       ],
-      "next": "Prévoir des critères externes de sélection des événements, conserver les analyses annoncées avant l'accès aux données et réserver un corpus pour tester les signatures proposées. Comparer règles automatiques et choix humains avec des prédictions définies pour chaque modèle. L'automatisation seule ne garantit pas l'élimination de tout effet expérimentateur.",
+      "next": "Définir à l'avance les événements, les fenêtres et les analyses, puis comparer choix humains et critères externes avec des prédictions propres à chaque modèle. Pour le GCP 2.0, documenter aussi la séparation des réseaux local et mondial et les périodes témoins. Le préenregistrement réduit certains biais ordinaires ; il n'exclut pas, par définition, une hypothèse de sélection psi.",
       "sources": [
         {
           "id": "gcp1",
@@ -1910,6 +1910,18 @@
           "label": "GCP5 · Bancel, P. A. (2017). Response to Nelson's Weighing the Parameters. Explore, 13(2), 106–107.",
           "url": "https://pubmed.ncbi.nlm.nih.gov/28283445/",
           "status": "Lettre en réponse identifiée et référence vérifiée dans PubMed ; texte intégral non consulté. DOI : 10.1016/j.explore.2017.01.001. Les arguments de Bancel présentés dans la fiche proviennent de GCP1 et GCP3."
+        },
+        {
+          "id": "gcp6",
+          "label": "GCP6 · Plonka, N., McCraty, R., van der Westhuyzen, L., & Edwards, S. D. (2023). Global Consciousness Project 2.0: A First Look. Dialogo, 10(1), 37–49.",
+          "url": "https://www.heartmath.org/assets/uploads/2024/01/global-consciousness-project-2.pdf",
+          "status": "Notice, résumé et passages du texte intégral sur le dispositif consultés. Publication le 15 décembre 2023 ; DOI : 10.51917/dialogo.2023.10.1.2. Les études historiques citées dans cet article ne constituent pas des résultats du GCP 2.0."
+        },
+        {
+          "id": "gcp7",
+          "label": "GCP7 · Plonka, N., Davies, S., Atkinson, M., Crowe, K., Dispenza, J., & McCraty, R. (2026). Correlations between onsite and global networks of random number generators during group healing meditations. Explore, 22(2), 103312.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41485440/",
+          "status": "Notice et résumé consultés dans PubMed ; texte intégral non évalué pour cette fiche. Publication anticipée le 27 décembre 2025, numéro de mars–avril 2026 ; DOI : 10.1016/j.explore.2025.103312. Données du premier semestre 2024 ; statistiques reprises du résumé, sans réanalyse."
         }
       ],
       "handbook": "Peter Bancel et Mario Varvoglis, chapitre 5, « La micro-psychocinèse », section consacrée au psi implicite et au GCP. La fiche confronte ce cadrage aux publications originales et aux réponses de Nelson.",
@@ -1922,8 +1934,33 @@
       "editorialUpdated": "24 octobre 2026",
       "related": [
         "micro-pk"
-      ]
+      ],
+      "resultsTitle": "GCP historique : résultats et débat Bancel–Nelson",
+      "followup": {
+        "id": "gcp-2",
+        "title": "GCP 2.0 : dispositif renouvelé et résultats récents",
+        "intro": "Le nouveau programme est porté par HeartMath. Les sources ci-dessous décrivent son dispositif et une étude exploratoire ; elles ne constituent pas une nouvelle estimation du résultat cumulé historique.",
+        "rows": [
+          [
+            "Plonka et al., 2023",
+            "Présentation du programme et du dispositif",
+            "Réseau actif en 2023 ; appareils à quatre générateurs indépendants",
+            "Décrit des appareils NextGen et des mesures supplémentaires de leur fonctionnement électronique.",
+            "Le déploiement visé de 1 000 appareils est un objectif annoncé, pas un effectif vérifié ici. Cet article de présentation ne remplace pas une évaluation des résultats du nouveau réseau.",
+            "gcp6"
+          ],
+          [
+            "Plonka et al., 2026",
+            "Étude exploratoire ; données de 2024",
+            "15 méditations ; 40 générateurs locaux comparés au réseau mondial",
+            "Corrélation moyenne de 0,27 (p < 0,01) entre les indicateurs de cohérence des réseaux local et mondial pendant les méditations étudiées.",
+            "Résultat rapporté dans le résumé. Il porte sur des indicateurs calculés à partir des générateurs, pas sur une mesure directe de conscience collective. Le résumé ne suffit pas à auditer l'analyse.",
+            "gcp7"
+          ]
+        ],
+        "question": "Les protocoles du GCP 2.0 permettent-ils de départager influence collective, effets liés aux personnes engagées et explications ordinaires ?"
+      }
     }
   ],
-  "schemaVersion": 2
+  "schemaVersion": 3
 }
