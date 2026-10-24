@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-24-bilan-9",
+  "version": "2026-10-24-bilan-10",
   "date": "24 octobre 2026",
   "topics": [
     {
@@ -1006,7 +1006,8 @@
         "neurosciences-psi",
         "xenoglossie",
         "vision-distance",
-        "fin-de-vie"
+        "fin-de-vie",
+        "clinique-experiences-exceptionnelles"
       ]
     },
     {
@@ -2304,7 +2305,8 @@
       "related": [
         "perceptions-emi",
         "neurosciences-psi",
-        "vision-distance"
+        "vision-distance",
+        "clinique-experiences-exceptionnelles"
       ],
       "sources": [
         {
@@ -2474,7 +2476,8 @@
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "related": [
-        "fin-de-vie"
+        "fin-de-vie",
+        "clinique-experiences-exceptionnelles"
       ]
     },
     {
@@ -2879,7 +2882,7 @@
       "kind": "experimental",
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "resultsTitle": "Études et documents retenus"
@@ -3047,7 +3050,7 @@
       "kind": "experimental",
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "resultsTitle": "Études et documents retenus"
@@ -3159,7 +3162,7 @@
       "kind": "experimental",
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "resultsTitle": "Études et documents retenus"
@@ -3275,7 +3278,7 @@
       ],
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "searchTerms": "field REG fieldreg GNA terrain concert rituel groupe local Nelson Bierman",
@@ -3399,7 +3402,7 @@
       ],
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "searchTerms": "anpsi animal chien Jaytee oiseaux planaires Alvarez Duval Montredon Chauvin",
@@ -3517,11 +3520,12 @@
       "related": [
         "perceptions-emi",
         "neurosciences-psi",
-        "mediumnite-mentale"
+        "mediumnite-mentale",
+        "clinique-experiences-exceptionnelles"
       ],
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "studyGroups": [
@@ -3693,7 +3697,7 @@
       ],
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "searchTerms": "xenoglossie reactive responsive recitative langues competences non apprises unlearned skills syndrome savant cryptomnesie Stevenson",
@@ -3832,7 +3836,7 @@
       "chart": null,
       "landscape": [],
       "metrics": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "sources": [
@@ -3919,6 +3923,252 @@
       ],
       "searchTerms": "hypnose hypnosis meditation mouton chevre sheep goat croyances personnalite declin elusivite information pragmatique Lucadou matrices correlation Lawrence Stanford Stein",
       "resultsTitle": "Études et documents retenus"
+    },
+    {
+      "id": "clinique-experiences-exceptionnelles",
+      "title": "Clinique des expériences exceptionnelles",
+      "group": "Clinique",
+      "kind": "clinical",
+      "subtitle": "Accompagnements et résultats : détresse, intégration du vécu et qualité de vie.",
+      "direction": "Des bénéfices rapportés, une évaluation comparative encore limitée",
+      "summary": "Les consultations spécialisées documentent les besoins et les processus thérapeutiques. Quelques études mesurent les changements après accompagnement ; les corpus voisins apportent des essais et une méta-analyse, avec des populations et des objectifs distincts.",
+      "question": "Quels accompagnements aident les personnes à vivre avec leurs expériences exceptionnelles ? La fiche porte sur les bénéfices cliniques, leur durée et les effets indésirables. Elle distingue les évaluations directes, les travaux qualitatifs et les recherches voisines sur les perceptions inhabituelles ou le deuil. Une expérience exceptionnelle ne suffit pas à définir un trouble ; l'évaluation porte sur les besoins de la personne. L'évolution clinique ne tranche pas l'origine de l'expérience.",
+      "handbook": "Chapitre 9, Approche clinique du psi, par Renaud Evrard et Thomas Rabeyron : centres de consultation, modèles d'accompagnement et enjeux d'évaluation. Complété par les publications originales ci-dessous.",
+      "metrics": [],
+      "chart": null,
+      "landscape": [],
+      "readingGuide": [
+        [
+          "Vécu et besoins",
+          "Les entretiens et dossiers cliniques décrivent les difficultés, les attentes et l'expérience des consultations."
+        ],
+        [
+          "Évolution clinique",
+          "Les mesures répétées renseignent sur les changements de détresse, d'intégration et de fonctionnement, ainsi que sur leur maintien."
+        ],
+        [
+          "Effet du traitement",
+          "Un comparateur aide à distinguer l'effet du dispositif de l'évolution spontanée, des attentes et des bénéfices communs de l'accompagnement."
+        ]
+      ],
+      "resultsTitle": "Évaluations directes de l'accompagnement",
+      "rows": [
+        [
+          "Parra & Corbetta, 2014",
+          "Groupe humaniste ; mesures avant et après",
+          "20 personnes évaluées sur 41 recrutées ; séances hebdomadaires pendant cinq mois",
+          "Amélioration de la satisfaction émotionnelle, de la compréhension des expériences et du sentiment d'être écouté. Pas de changement significatif de l'intégration dans la vie (p = 0,655), ni de l'item d'émotion désagréable (p = 0,631).",
+          "Sans groupe témoin ; questionnaire exploratoire et échantillon final réduit. Le résumé évoque une baisse du malaise, mais le tableau distingue des résultats positifs et nuls : satisfaction et détresse ne sont pas interchangeables.",
+          "clin-parra-2014"
+        ],
+        [
+          "Scimeca, 2024",
+          "Étude de cas avec mesures psychométriques ; EMDR",
+          "Une patiente souffrant de douleurs et d'un souvenir vécu comme un acte de sorcellerie",
+          "Réduction rapportée de la détresse, de plusieurs symptômes et de la douleur subjective après le travail thérapeutique.",
+          "Cas unique, sans comparaison ; résumé consulté. Cette observation ne permet pas d'estimer un effet moyen ni de généraliser à l'ensemble des expériences exceptionnelles.",
+          "clin-scimeca-2024"
+        ]
+      ],
+      "studyGroups": [
+        {
+          "id": "consultations-processus",
+          "title": "Consultations spécialisées : besoins et processus cliniques",
+          "intro": "Ces travaux renseignent les pratiques, l'accès à l'aide et la relation thérapeutique. Un nombre de consultations ne constitue pas un nombre de traitements évalués avec des critères de résultat.",
+          "rows": [
+            [
+              "Rabeyron, 2022",
+              "Modèle psychodynamique et pratique du CIRCEE",
+              "450 thérapies rapportées entre mars 2016 et mars 2021",
+              "Exploration phénoménologique, inscription subjective et intégration du vécu. Soulagement observé qualitativement chez des consultants.",
+              "Les 450 thérapies sont un bilan d'activité, pas un échantillon d'efficacité suivi systématiquement. L'article appelle à des évaluations avec échelles et suivi à distance.",
+              "clin-rabeyron-2022"
+            ],
+            [
+              "Roxburgh & Evenden, 2016 : clients",
+              "Entretiens qualitatifs",
+              "8 clients ayant évoqué une expérience inhabituelle en consultation",
+              "Importance d'une écoute informée et sans jugement ; difficultés lorsque la personne se sent ridiculisée, rejetée ou pathologisée.",
+              "Résultats sur le vécu des consultations et les obstacles à l'aide. Pas de mesure comparative de l'évolution des symptômes ni de taux d'efficacité.",
+              "clin-roxburgh-clients-2016"
+            ],
+            [
+              "Roxburgh & Evenden, 2016 : thérapeutes",
+              "Entretiens qualitatifs",
+              "8 thérapeutes ayant accompagné au moins un client rapportant une expérience inhabituelle",
+              "Réticence des clients à parler ; intérêt d'explorer le sens du vécu sans imposer une explication et besoin de formation des professionnels.",
+              "Point de vue des thérapeutes. Il ne remplace pas une évaluation des résultats par les personnes accompagnées.",
+              "clin-roxburgh-therapists-2016"
+            ],
+            [
+              "Belz-Merk & Fach, 2005",
+              "Analyse descriptive des consultations de l'IGPP",
+              "858 dossiers pris en charge entre 1996 et 2000",
+              "Description des caractéristiques sociales, des difficultés biopsychosociales et des profils d'expériences ; mise en évidence de besoins de consultation spécifiques.",
+              "Étude des personnes qui consultent et de leurs besoins. Les 858 dossiers ne sont pas 858 traitements dont l'efficacité serait démontrée.",
+              "clin-belz-fach-2005"
+            ],
+            [
+              "Fach, 2024",
+              "Analyse de plans et études de cas",
+              "12 cas ; vidéos de consultations, éléments biographiques et questionnaires",
+              "Analyse des relations entre vécus exceptionnels, besoins d'autonomie et d'attachement, et modes de gestion des conflits.",
+              "Travail sur les processus cliniques et leur interprétation, sans essai comparatif d'efficacité. Présentation institutionnelle consultée ; thèse originale non consultée.",
+              "clin-fach-2024"
+            ]
+          ]
+        },
+        {
+          "id": "corpus-cliniques-voisins",
+          "title": "Corpus voisins : perceptions inhabituelles et deuil",
+          "intro": "Les populations et les objectifs de ces études ne recouvrent pas tout le champ des expériences exceptionnelles. La psychoéducation scolaire concerne une population générale ; l'IADC est une thérapie du deuil au cours de laquelle une expérience de communication avec un défunt peut survenir.",
+          "rows": [
+            [
+              "Soneson et al., 2020",
+              "Revue systématique et méta-analyse",
+              "27 publications portant sur 21 études ; adultes avec expériences dites psychotiques, sans trouble psychotique constitué",
+              "Les thérapies cognitives et comportementales réduisent modestement la détresse par rapport aux soins habituels : différence moyenne standardisée = −0,24 ; IC 95 % [−0,37 ; −0,10]. Pas de supériorité significative sur les autres critères agrégés pour cette comparaison.",
+              "Corpus cliniquement défini, à ne pas assimiler à toute expérience exceptionnelle. Résultats dépendants des critères et des comparateurs ; publications et études ne sont pas des unités équivalentes.",
+              "clin-soneson-2020"
+            ],
+            [
+              "Radez, Johns & Waite, 2024",
+              "Psychoéducation ; essai randomisé par classe",
+              "223 adolescents de 12–13 ans dans un établissement ; une séance, suivi à un mois ; 190 réponses complètes selon le résumé",
+              "Appréciations plus positives des perceptions inhabituelles que dans le groupe recevant une séance de bien-être général ; effet maintenu à un mois. Pas de différence significative d'intention de demander de l'aide (p = 0,26).",
+              "Intervention universelle, sans sélection pour une souffrance clinique. Les représentations et les intentions ne sont pas des mesures de rétablissement ni de recours effectif aux soins.",
+              "clin-radez-2024"
+            ],
+            [
+              "Nehmy et al., 2026",
+              "IADC : groupe unique avec période d'attente préalable",
+              "45 adultes recrutés, 43 ayant terminé ; deux séances de 90 minutes ; un mois d'attente puis suivi à un mois",
+              "Baisse des scores de deuil et de tristesse : amplitudes standardisées d = 1,56 et 1,33 chez les mêmes participants. Une communication avec un défunt est rapportée par 34 sur 43 ; sa survenue ne modère pas significativement l'amélioration des deux critères principaux.",
+              "Pas de groupe parallèle randomisé ni de comparateur actif. Ces d mesurent un changement avant/après, pas un avantage sur une autre thérapie. Le sous-groupe sans communication est petit (9 personnes). L'effet clinique ne démontre pas la nature du contact.",
+              "clin-nehmy-2026"
+            ]
+          ]
+        }
+      ],
+      "clinicalOutcomes": [
+        [
+          "Détresse et symptômes",
+          "Peur, anxiété, symptômes associés et retentissement : échelles adaptées, mesures avant et après."
+        ],
+        [
+          "Intégration et autonomie",
+          "Possibilité de donner sens au vécu, de vivre avec lui et de retrouver une capacité de décision."
+        ],
+        [
+          "Qualité de vie et relations",
+          "Sommeil, activités quotidiennes, relations sociales et fonctionnement professionnel."
+        ],
+        [
+          "Acceptabilité",
+          "Satisfaction, sentiment d'être entendu, abandons et raisons de l'arrêt ; à distinguer d'un bénéfice clinique."
+        ],
+        [
+          "Effets indésirables",
+          "Aggravation de la détresse, sentiment de disqualification ou autres difficultés survenues pendant l'accompagnement."
+        ],
+        [
+          "Durée des bénéfices",
+          "Suivi après la fin des séances, recours à d'autres soins et évolution des difficultés initiales."
+        ]
+      ],
+      "interpretation": "Il existe des résultats cliniques documentés, mais ils portent sur des objets différents : vécu de la consultation, compréhension de l'expérience, détresse ou symptômes. Les améliorations observées sans comparateur renseignent l'évolution des personnes sans isoler l'effet propre du traitement. Les essais et la méta-analyse des corpus voisins complètent cette lecture sous réserve de préciser à qui et à quoi leurs résultats s'appliquent. L'objectif clinique se définit avec la personne ; la disparition de l'expérience n'est pas un critère universel de réussite.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Des bénéfices sont rapportés sur la satisfaction, la compréhension et certains symptômes ; des critères restent inchangés. Les études de processus renseignent la manière dont l'accompagnement est vécu."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Examiner le comparateur, la validité des mesures, les abandons, les soins concomitants et le suivi. Distinguer satisfaction, amélioration clinique et effet attribuable à une méthode."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Type d'expérience, souffrance initiale, attentes, contexte culturel, formation du thérapeute, modalité et durée de l'accompagnement peuvent influer sur les résultats."
+        ],
+        [
+          "Portée des conclusions",
+          "Les bénéfices cliniques doivent être interprétés pour la population et les critères étudiés. Ils ne tranchent pas l'origine psi d'une expérience et ne démontrent pas à eux seuls la supériorité d'une approche."
+        ]
+      ],
+      "openQuestion": "Quels accompagnements améliorent durablement la vie des personnes, pour quels vécus et au-delà des bénéfices communs d'une écoute attentive ?",
+      "next": "Définir avec les personnes les objectifs et les critères de changement ; mener des suivis prospectifs, documenter les abandons et les effets indésirables, puis comparer des accompagnements crédibles. Décrire les bénéfices à plusieurs mois et les conditions dans lesquelles ils apparaissent.",
+      "sources": [
+        {
+          "id": "clin-parra-2014",
+          "label": "Parra, A., & Corbetta, J. M. (2014). Examen de post-efecto para experiencias anómalo/paranormales con un abordaje humanista. Psicogente, 17(32), 397–405.",
+          "url": "https://www.researchgate.net/publication/317497655_EXAMEN_DE_POST-EFECTO_PARA_EXPERIENCIAS_ANOMALOPARANORMALES_CON_UN_ABORDAJE_HUMANISTA",
+          "status": "Texte publié déposé par l'auteur consulté, notamment méthodes et tableau 3. Le résumé et les résultats détaillés ne décrivent pas de façon identique la détresse. Une version anglaise déposée par les auteurs précise le caractère exploratoire du questionnaire, sans validation ni fidélité établies. Les tests sont annoncés unilatéraux."
+        },
+        {
+          "id": "clin-scimeca-2024",
+          "label": "Scimeca, G. (2024). Eye Movement Desensitization and Reprocessing of Maleficium: Case Study of a 'Cursed' Woman Suffering From Unexplained Pain. Clinical Case Studies, 23(6).",
+          "url": "https://journals.sagepub.com/doi/10.1177/15346501241275202",
+          "status": "Notice et résumé original consultés chez l'éditeur ; texte intégral non consulté. DOI : 10.1177/15346501241275202. Publication en ligne le 17 août 2024."
+        },
+        {
+          "id": "clin-rabeyron-2022",
+          "label": "Rabeyron, T. (2022). When the Truth Is Out There: Counseling People Who Report Anomalous Experiences. Frontiers in Psychology, 12, 693707.",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2021.693707/full",
+          "status": "Texte consulté, notamment présentation du service, modèle clinique et conclusion. DOI : 10.3389/fpsyg.2021.693707. Publication le 4 janvier 2022 dans le volume millésimé 2021. Le nombre de thérapies rapporté n'est pas un résultat d'efficacité."
+        },
+        {
+          "id": "clin-roxburgh-clients-2016",
+          "label": "Roxburgh, E. C., & Evenden, R. E. (2016). 'Most people think you're a fruit loop': Clients' experiences of seeking support for anomalous experiences. Counselling and Psychotherapy Research.",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/capr.12077",
+          "status": "Résumé original consulté ; texte intégral non consulté. DOI : 10.1002/capr.12077. Entretiens avec huit clients."
+        },
+        {
+          "id": "clin-roxburgh-therapists-2016",
+          "label": "Roxburgh, E. C., & Evenden, R. E. (2016). 'They daren't tell people': therapists' experiences of working with clients who report anomalous experiences. European Journal of Psychotherapy & Counselling, 18(2), 123–141.",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/13642537.2016.1170059",
+          "status": "Résumé original de l'éditeur et notice du dépôt universitaire consultés ; texte intégral non consulté. DOI : 10.1080/13642537.2016.1170059. Entretiens avec huit thérapeutes, distincts de l'étude des clients."
+        },
+        {
+          "id": "clin-belz-fach-2005",
+          "label": "Belz-Merk, M., & Fach, W. (2005). Beratung und Hilfe für Menschen mit außergewöhnlichen Erfahrungen. Psychotherapie · Psychosomatik · Medizinische Psychologie, 55(5), 256–265.",
+          "url": "https://doi.org/10.1055/s-2004-834682",
+          "status": "Notice et résumé original reproduits sur ResearchGate consultés ; texte intégral non consulté. Analyse descriptive de 858 dossiers, distincte d'un essai thérapeutique."
+        },
+        {
+          "id": "clin-fach-2024",
+          "label": "Fach, W. (2024). Das Spektrum des Außergewöhnlichen. Thèse, Université de Berne ; présentation des études de cas par l'IGPP.",
+          "url": "https://igpp.de/en/research-project/plan-analytical-studies-on-exceptional-experiences/",
+          "status": "Présentation institutionnelle des méthodes et des résultats consultée, avec lien vers la thèse. Thèse originale non consultée. Douze cas analysés ; la page présente aussi les travaux antérieurs de Belz et Berger (2008)."
+        },
+        {
+          "id": "clin-soneson-2020",
+          "label": "Soneson et al. (2020). Psychological interventions for people with psychotic experiences: A systematic review and meta-analysis of controlled and uncontrolled effectiveness and economic studies. Australian & New Zealand Journal of Psychiatry, 54(7), 673–695.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7324911/",
+          "status": "Résumé et passages des méthodes, résultats et discussion consultés. DOI : 10.1177/0004867420913118. Vingt-sept publications correspondent à vingt et une études. Le résultat de détresse présenté concerne les TCC comparées aux soins habituels."
+        },
+        {
+          "id": "clin-radez-2024",
+          "label": "Radez, J., Johns, L., & Waite, F. (2024). Understanding unusual sensory experiences: a randomised experimental study of a school-based intervention for adolescents. Child and Adolescent Mental Health, 29(1), 14–21.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36959519/",
+          "status": "Notice et résumé original consultés ; article identifié dans le dépôt de l'Université d'Oxford. DOI : 10.1111/camh.12651. Publication en ligne le 23 mars 2023, volume de 2024. Le résumé indique 190 réponses complètes ; pas de réanalyse des données."
+        },
+        {
+          "id": "clin-nehmy-2026",
+          "label": "Nehmy, T. J., Daniels, J., Williamson, P., Stegall-Rodriguez, S. E., & St Germain-Sehr, N. R. (2026). Efficacy of Induced After Death Communication Therapy for Grief: A Single-Group Wait-List Controlled Trial. OMEGA.",
+          "url": "https://journals.sagepub.com/doi/10.1177/00302228261418413",
+          "status": "Texte consulté, notamment méthodes, tableaux et analyses de la survenue d'une communication. DOI : 10.1177/00302228261418413. Publication le 23 janvier 2026. Les tailles d'effet utilisent l'écart-type combiné des deux mesures initiales ; elles ne sont pas des différences entre groupes. Deux auteurs déclarent une pratique rémunérée de l'IADC, sans rémunération liée à cette étude."
+        }
+      ],
+      "related": [
+        "experiences-hors-corps",
+        "perceptions-emi",
+        "mediumnite-mentale",
+        "fin-de-vie"
+      ],
+      "searchTerms": "psychotherapie clinique accompagnement counselling counseling therapie experiences exceptionnelles CIRCEE IGPP Rabeyron Evrard Belz Fach Roxburgh Evenden Parra Corbetta Scimeca EMDR TCC CBT Soneson Radez Nehmy IADC deuil souffrance detresse integration qualite de vie",
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026"
     }
   ],
   "schemaVersion": 4

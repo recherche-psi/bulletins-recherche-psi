@@ -4,6 +4,7 @@ import data from '../../data/evidence-2026.json';
 import EvidenceDirectory from '../../components/EvidenceDirectory.astro';
 import '../../styles/evidence.css';
 const base = import.meta.env.BASE_URL;
+const newTopicsCount = data.topics.filter(t=>t.new).length;
 const groups = [
   {name:'Perception', id:'perception', description:'Cibles, rêve, médiumnité, regard et psi animal'},
   {name:'Anticipation', id:'anticipation', description:'Événements futurs et signaux pré-stimulus'},
@@ -16,9 +17,9 @@ const groups = [
     <p class="eyebrow">Espace chercheurs · Édition pilote 2026</p>
     <h1>État des preuves<br/><em>en recherche psi</em></h1>
     <p class="intro">{data.topics.length} dossiers pour lire les résultats, leurs conditions et leur portée.</p>
-    <p class="meta">Mise à jour : {data.date} · {data.topics.filter(t=>t.new).length} nouveaux dossiers</p>
+    <p class="meta">Mise à jour : {data.date} · {newTopicsCount} {newTopicsCount===1?'nouveau dossier':'nouveaux dossiers'}</p>
   </header>
-  <nav class="jump" aria-label="Sommaire"><a href="#dossiers">Les dossiers</a><a href="#lecture-specifique">Lecture spécifique</a><a href="#transversal">Conditions et modérateurs</a><a href="#grille">Comment lire</a><a href="#edition">Éditions et méthode</a></nav>
+  <nav class="jump" aria-label="Sommaire"><a href="#dossiers">Les dossiers</a><a href="#lecture-specifique">Lecture spécifique</a><a href="#clinique">Clinique</a><a href="#transversal">Conditions et modérateurs</a><a href="#grille">Comment lire</a><a href="#edition">Éditions et méthode</a></nav>
 
   <section id="dossiers" class="directory">
     <div class="section-heading"><h2>En un regard</h2><span class="small">Ouvrir une fiche pour les données et les sources</span></div>
@@ -32,6 +33,9 @@ const groups = [
       {groups.map(group => <EvidenceDirectory id={`groupe-${group.id}`} title={group.name} description={group.description} topics={data.topics.filter(t=>t.group===group.name)} open={group.name==='Perception'}/>)}
       <div id="lecture-specifique" class="directory-section" data-directory-section>
         <EvidenceDirectory id="groupe-specifique" title="Dossiers à lecture spécifique" description="Neurosciences, expériences exceptionnelles et données de terrain" topics={data.topics.filter(t=>t.kind==='specific')}/>
+      </div>
+      <div id="clinique" class="directory-section" data-directory-section>
+        <EvidenceDirectory id="groupe-clinique" title="Accompagnements cliniques" description="Détresse, intégration du vécu et résultats des accompagnements" topics={data.topics.filter(t=>t.kind==='clinical')}/>
       </div>
       <div id="transversal" class="directory-section" data-directory-section>
         <EvidenceDirectory id="groupe-transversal" title="Conditions d'obtention et modérateurs" description="Hypnose, méditation, croyances et évolution des effets" topics={data.topics.filter(t=>String(t.group)==='Transversal')}/>
@@ -62,8 +66,9 @@ const groups = [
   <section id="edition">
     <h2>Éditions et méthode</h2>
     <details><summary>Derniers ajouts et archives</summary>
-      <p><strong>24 octobre 2026, version 9 :</strong> rétro-PK, double fente, détection consciente du regard, FieldREG, psi animal, expériences de fin de vie et xénoglossie. Une fiche transversale traite les états de conscience et les modérateurs ; la psychométrie et l'archéologie intuitive complètent la vision à distance.</p>
-      <p><a href={`${base}data/etat-des-preuves-2026-10-24-v9.json`} download>Version actuelle, {data.topics.length} dossiers (JSON)</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v9.csv`} download>Données des graphiques (CSV)</a></p>
+      <p><strong>24 octobre 2026, version 10 :</strong> clinique des expériences exceptionnelles : évaluations des accompagnements, recherches sur les consultations et corpus voisins. Une entrée dédiée distingue les résultats cliniques de la recherche sur les phénomènes psi.</p>
+      <p><a href={`${base}data/etat-des-preuves-2026-10-24-v10.json`} download>Version actuelle, {data.topics.length} dossiers (JSON)</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v10.csv`} download>Données des graphiques (CSV)</a></p>
+      <p>Version 9, 25 dossiers, 24 octobre : rétro-PK, double fente, détection consciente du regard, FieldREG, psi animal, fin de vie, xénoglossie et conditions d'obtention ; volet psychométrie et archéologie intuitive. <a href={`${base}data/etat-des-preuves-2026-10-24-v9.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v9.csv`} download>CSV</a>.</p>
       <p>Version 8, 17 dossiers, 24 octobre : expériences hors du corps et neurosciences du psi, à partir du manuel et de publications de 2025–2026. <a href={`${base}data/etat-des-preuves-2026-10-24-v8.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v8.csv`} download>CSV</a>.</p>
       <p>Version 7, 15 dossiers, 24 octobre : médiumnité complétée par les protocoles avec sitters, Schwartz, Beischel, les recherches brésiliennes et l'étude de la transe. <a href={`${base}data/etat-des-preuves-2026-10-24-v7.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v7.csv`} download>CSV</a>.</p>
       <p>Version 6, 15 dossiers, 24 octobre : volet GCP 2.0 et clarification de la sélection psi selon Bancel. <a href={`${base}data/etat-des-preuves-2026-10-24-v6.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v6.csv`} download>CSV</a>.</p>
@@ -71,7 +76,8 @@ const groups = [
       <p>Version 4, 14 dossiers, 24 octobre : ajout des corrélations cérébrales, des EMI et des vies antérieures. <a href={`${base}data/etat-des-preuves-2026-10-24-v4.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v4.csv`} download>CSV</a>.</p>
     </details>
     <details><summary>Sources, périmètre et limites de cette sélection</summary>
-      <p>Le <a href="https://www.dunod.com/sciences-humaines-et-sociales/grand-manuel-parapsychologie-scientifique">Grand manuel de parapsychologie scientifique</a> (Évrard, Berghmans et Rabeyron, dir., Dunod, 2025) sert de point de départ : chapitres 3, 4, 5, 6, 7, 8, 13 et 14. Les fiches renvoient aux études originales et distinguent résultats, réanalyses, commentaires et propositions théoriques.</p>
+      <p>Le <a href="https://www.dunod.com/sciences-humaines-et-sociales/grand-manuel-parapsychologie-scientifique">Grand manuel de parapsychologie scientifique</a> (Évrard, Berghmans et Rabeyron, dir., Dunod, 2025) sert de point de départ : chapitres 3, 4, 5, 6, 7, 8, 9, 13 et 14. Les fiches renvoient aux études originales et distinguent résultats, réanalyses, commentaires et propositions théoriques.</p>
+      <p>Pour la clinique des expériences exceptionnelles, recherches ciblées du 24 octobre 2026 sur « anomalous experiences », « exceptional experiences », « clinical parapsychology », « counselling », « therapy outcomes » et « evaluation », ainsi que sur l'IGPP et le CIRCEE. Le chapitre 9 du manuel et les articles identifiés orientent la recherche. Les évaluations directes sont distinguées des études qualitatives, des bilans d'activité et des corpus voisins sur les perceptions inhabituelles ou le deuil. Les bénéfices cliniques ne sont pas des tests de la nature psi d'une expérience.</p>
       <p>Pour les trois premiers dossiers à lecture spécifique, recherche ciblée le 24 octobre 2026 : « isolated EEG correlations systematic review », « AWARE II veridical near-death experiences » et « claimed past-life memories scoping review », complétée par les références du manuel. Vérification via PubMed, Europe PMC, F1000Research, Frontiers, les archives des revues et les dépôts universitaires. La revue de neuroimagerie parue en 2026 et l'outil documentaire vNDE de 2025 sont inclus.</p>
       <p>Pour les ajouts de la version 9, recherches ciblées du 24 octobre 2026 sur « retro-PK », « double slit », « conscious staring », « FieldREG », « animal psi », « terminal lucidity », « xenoglossy », « hypnosis ESP », « meditation ESP », « sheep-goat », « correlation matrix » et « psychometry ». Les fiches distinguent synthèse quantitative, essai contrôlé, observation de terrain, étude de cas et proposition théorique. Une donnée enregistrée à l'avance ne constitue pas un préenregistrement du protocole ; ce dernier n'est mentionné que lorsqu'il est documenté.</p>
       <p>Pour les EHC et les neurosciences, recherche ciblée du 24 octobre 2026 à partir des chapitres 13 et 14 : « out-of-body experiences », « visual targets », « EEG », « event-related potentials », « fMRI » et « frontal inhibition », complétés par les noms d'Acunzo et de Freedman. Vérification dans PubMed, Frontiers, les textes des auteurs, l'ASPR et les dépôts universitaires. Les références précisent si le résumé, des passages ou le texte intégral ont été consultés.</p>
