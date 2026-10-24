@@ -5,6 +5,8 @@ import EvidenceDirectory from '../../components/EvidenceDirectory.astro';
 import '../../styles/evidence.css';
 const base = import.meta.env.BASE_URL;
 const newTopicsCount = data.topics.filter(t=>t.new).length;
+const survivalIds = ['perceptions-emi', 'vies-anterieures', 'fin-de-vie', 'xenoglossie', 'contacts-defunts', 'mediumnite-physique', 'tests-prospectifs-survie', 'marques-naissance'];
+const specificTopics = data.topics.filter(t=>t.kind==='specific' && String(t.group)!=='Transversal');
 const groups = [
   {name:'Perception', id:'perception', description:'Cibles, rêve, médiumnité, regard et psi animal'},
   {name:'Anticipation', id:'anticipation', description:'Événements futurs et signaux pré-stimulus'},
@@ -19,10 +21,10 @@ const groups = [
     <p class="intro">{data.topics.length} dossiers pour lire les résultats, leurs conditions et leur portée.</p>
     <p class="meta">Mise à jour : {data.date} · {newTopicsCount} {newTopicsCount===1?'nouveau dossier':'nouveaux dossiers'}</p>
   </header>
-  <nav class="jump" aria-label="Sommaire"><a href="#dossiers">Les dossiers</a><a href="#lecture-specifique">Lecture spécifique</a><a href="#clinique">Clinique</a><a href="#transversal">Conditions et modérateurs</a><a href="#grille">Comment lire</a><a href="#edition">Éditions et méthode</a></nav>
+  <nav class="jump" aria-label="Sommaire"><a href="#dossiers">Les dossiers</a><a href="#lecture-specifique">Lecture spécifique</a><a href="#clinique">Clinique</a><a href="#transversal">Approches transversales</a><a href="#veille">Pistes à suivre</a><a href="#grille">Comment lire</a><a href="#edition">Éditions et méthode</a></nav>
 
   <section id="dossiers" class="directory">
-    <div class="section-heading"><h2>En un regard</h2><span class="small">Ouvrir une fiche pour les données et les sources</span></div>
+    <div class="section-heading"><h2>Explorer les dossiers</h2><span class="small">Choisir un thème ou rechercher un mot-clé</span></div>
     <p class="small reading-note">Chaque dossier distingue <strong>résultats, robustesse, conditions d'obtention et portée des conclusions</strong>. Les questions proposées sont illustratives. <a href="#grille">Comprendre cette lecture</a>.</p>
     <div class="directory-tools" id="directory-tools" hidden>
       <label for="topic-search">Rechercher un dossier, un thème ou un auteur</label>
@@ -30,19 +32,33 @@ const groups = [
       <div class="directory-actions"><span id="topic-count" role="status" aria-live="polite">{data.topics.length} dossiers</span><button type="button" id="expand-topics">Tout ouvrir</button><button type="button" id="collapse-topics">Tout replier</button></div>
     </div>
     <div id="topic-directory">
-      {groups.map(group => <EvidenceDirectory id={`groupe-${group.id}`} title={group.name} description={group.description} topics={data.topics.filter(t=>t.group===group.name)} open={group.name==='Perception'}/>)}
+      {groups.map(group => <EvidenceDirectory id={`groupe-${group.id}`} title={group.name} description={group.description} topics={data.topics.filter(t=>t.group===group.name)}/>)}
       <div id="lecture-specifique" class="directory-section" data-directory-section>
-        <EvidenceDirectory id="groupe-specifique" title="Dossiers à lecture spécifique" description="Neurosciences, expériences exceptionnelles et données de terrain" topics={data.topics.filter(t=>t.kind==='specific')}/>
+        <EvidenceDirectory id="groupe-survie" title="Survie, deuil et médiumnité physique" description="Observations, vérifications documentaires et tests de survie" topics={specificTopics.filter(t=>survivalIds.includes(t.id))}/>
+        <EvidenceDirectory id="groupe-specifique" title="Terrain, vécu et mesures instrumentales" description="Expériences exceptionnelles, neurosciences et dispositifs de mesure" topics={specificTopics.filter(t=>!survivalIds.includes(t.id))}/>
       </div>
       <div id="clinique" class="directory-section" data-directory-section>
         <EvidenceDirectory id="groupe-clinique" title="Accompagnements cliniques" description="Détresse, intégration du vécu et résultats des accompagnements" topics={data.topics.filter(t=>t.kind==='clinical')}/>
       </div>
       <div id="transversal" class="directory-section" data-directory-section>
-        <EvidenceDirectory id="groupe-transversal" title="Conditions d'obtention et modérateurs" description="Hypnose, méditation, croyances et évolution des effets" topics={data.topics.filter(t=>String(t.group)==='Transversal')}/>
+        <EvidenceDirectory id="groupe-transversal" title="Approches transversales" description="Conditions, expérimentateurs, enquêtes et profils d'expérience" topics={data.topics.filter(t=>String(t.group)==='Transversal')}/>
       </div>
     </div>
     <p class="small" id="no-topics" hidden>Aucun dossier ne correspond à cette recherche. Essayer un terme plus court ou un autre nom.</p>
     <p class="small">Les corpus peuvent se recouvrir. Les effets des différentes fiches ne doivent pas être additionnés ni comparés sans tenir compte de leurs échelles.</p>
+  </section>
+
+  <section id="veille">
+    <h2>Pistes à suivre</h2>
+    <p class="small">{data.watchlist.length} pistes pour compléter les dossiers ou en ouvrir de nouveaux. Le statut indique les documents retrouvés, sans présumer qu'une étude se poursuit.</p>
+    <details><summary>Registre KPU et programmes des centres de recherche</summary>
+      <p class="small">Repérage du 24 octobre 2026 dans le <a href={data.registryReview.url}>registre KPU</a>, jusqu'à l'entrée 1107 du 30 septembre 2026. Un enregistrement ne constitue pas une approbation de la KPU ni un résultat.</p>
+      <div class="table-scroll"><table class="studies">
+        <thead><tr><th scope="col">Piste / registre</th><th scope="col">Document retrouvé</th><th scope="col">Prochaine vérification</th><th scope="col">Dossier associé</th></tr></thead>
+        <tbody>{data.watchlist.map(w=><tr><th scope="row"><a href={w.url}>{w.title}</a><small>{w.registry}</small></th><td data-label="Document retrouvé">{w.status}</td><td data-label="Prochaine vérification">{w.note}</td><td data-label="Dossier associé"><a href={`${base}etat-des-preuves/${w.related}/`}>{data.topics.find(t=>t.id===w.related)?.title}</a></td></tr>)}</tbody>
+      </table></div>
+      <p class="small">Les publications déjà exploitées figurent dans les fiches. Les annulations, les résultats nuls et les résultats non retrouvés sont des statuts distincts.</p>
+    </details>
   </section>
 
   <section id="grille">
@@ -66,8 +82,9 @@ const groups = [
   <section id="edition">
     <h2>Éditions et méthode</h2>
     <details><summary>Derniers ajouts et archives</summary>
-      <p><strong>24 octobre 2026, version 10 révisée :</strong> clinique des expériences exceptionnelles : évaluations des accompagnements, recherches sur les consultations et corpus voisins. Une entrée dédiée distingue les résultats cliniques de la recherche sur les phénomènes psi.</p>
-      <p><a href={`${base}data/etat-des-preuves-2026-10-24-v10.json`} download>Version actuelle, {data.topics.length} dossiers (JSON)</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v10.csv`} download>Données des graphiques (CSV)</a></p>
+      <p><strong>24 octobre 2026, version 11 :</strong> {newTopicsCount} dossiers ajoutés. Extension aux corpus de terrain, aux études de survie, aux états de conscience et aux programmes repérés dans le registre KPU et les centres de recherche. Ganzfeld : réanalyses et échanges de 2026, dont Bierman et Spottiswoode et la prépublication avec Bancel et Bartoš.</p>
+      <p><a href={`${base}data/etat-des-preuves-2026-10-24-v11.json`} download>Version actuelle, {data.topics.length} dossiers et veille (JSON)</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v11.csv`} download>Données des graphiques (CSV)</a></p>
+      <p>Version 10 révisée, 26 dossiers, 24 octobre : clinique des expériences exceptionnelles et évaluations des accompagnements. <a href={`${base}data/etat-des-preuves-2026-10-24-v10.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v10.csv`} download>CSV</a>.</p>
       <p>Version 9, 25 dossiers, 24 octobre : rétro-PK, double fente, détection consciente du regard, FieldREG, psi animal, fin de vie, xénoglossie et conditions d'obtention ; volet psychométrie et archéologie intuitive. <a href={`${base}data/etat-des-preuves-2026-10-24-v9.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v9.csv`} download>CSV</a>.</p>
       <p class="small">Les fichiers JSON des versions 9 et 10 ont été révisés le 24 octobre 2026 : sélection de références corrigée et synthèses ajustées dans les dossiers concernés. Les données des graphiques sont inchangées.</p>
       <p>Version 8, 17 dossiers, 24 octobre : expériences hors du corps et neurosciences du psi, à partir du manuel et de publications de 2025–2026. <a href={`${base}data/etat-des-preuves-2026-10-24-v8.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v8.csv`} download>CSV</a>.</p>
@@ -77,6 +94,9 @@ const groups = [
       <p>Version 4, 14 dossiers, 24 octobre : ajout des corrélations cérébrales, des EMI et des vies antérieures. <a href={`${base}data/etat-des-preuves-2026-10-24-v4.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v4.csv`} download>CSV</a>.</p>
     </details>
     <details><summary>Sources, périmètre et limites de cette sélection</summary>
+      <p>Version 11 : recherche ciblée le 24 octobre 2026 dans les publications et ressources de la PA, de la SPR, d'IONS, de l'IGPP, du registre KPU, de l'Université de Virginie (DOPS), du Rhine Research Center et de Northampton. Le répertoire Duke sert aussi à retrouver des articles. Le Rhine est une institution distincte de Duke. Les pages de centres et les résumés de congrès orientent la recherche ; leur statut est indiqué lorsqu'ils constituent la seule source consultée.</p>
+      <p>Les nouvelles entrées isolent un corpus ou des contrôles propres. Les observations de vécu, les vérifications de cas, les mesures instrumentales et les tests d'information psi restent distingués. Un même échantillon réanalysé ou décrit dans plusieurs publications n'est pas compté comme plusieurs confirmations.</p>
+      <p>La veille KPU relie chaque protocole retenu à ses résultats lorsqu'ils sont accessibles. L'enregistrement d'une étude, la publication de ses résultats et le respect du plan d'analyse constituent trois vérifications distinctes. L'absence de lien vers des résultats dans le registre n'établit pas que ceux-ci n'existent pas ailleurs.</p>
       <p>Le <a href="https://www.dunod.com/sciences-humaines-et-sociales/grand-manuel-parapsychologie-scientifique">Grand manuel de parapsychologie scientifique</a> (Évrard, Berghmans et Rabeyron, dir., Dunod, 2025) sert de point de départ : chapitres 3, 4, 5, 6, 7, 8, 9, 13 et 14. Les fiches renvoient aux études originales et distinguent résultats, réanalyses, commentaires et propositions théoriques.</p>
       <p>Pour la clinique des expériences exceptionnelles, recherches ciblées du 24 octobre 2026 sur « anomalous experiences », « exceptional experiences », « clinical parapsychology », « counselling », « therapy outcomes » et « evaluation », ainsi que sur l'IGPP et le CIRCEE. Le chapitre 9 du manuel et les articles identifiés orientent la recherche. Les évaluations directes sont distinguées des études qualitatives, des bilans d'activité et des corpus voisins sur les perceptions inhabituelles ou le deuil. Les bénéfices cliniques ne sont pas des tests de la nature psi d'une expérience.</p>
       <p>Pour les trois premiers dossiers à lecture spécifique, recherche ciblée le 24 octobre 2026 : « isolated EEG correlations systematic review », « AWARE II veridical near-death experiences » et « claimed past-life memories scoping review », complétée par les références du manuel. Vérification via PubMed, Europe PMC, F1000Research, Frontiers, les archives des revues et les dépôts universitaires. La revue de neuroimagerie parue en 2026 et l'outil documentaire vNDE de 2025 sont inclus.</p>

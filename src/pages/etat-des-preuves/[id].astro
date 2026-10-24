@@ -25,10 +25,10 @@ const relatedTopics=data.topics.filter(o=>o.id!==t.id&&(relatedIds.length?relate
   <div class="dossier-summary"><span class="summary-label">Bilan empirique</span><p><strong>{t.direction}.</strong> {t.summary}</p></div>
   <details class="scope"><summary>Quel est le périmètre de cette fiche ?</summary><p>{t.question}</p>{t.handbook && <p class="small">Point de départ dans le <a href="https://www.dunod.com/sciences-humaines-et-sociales/grand-manuel-parapsychologie-scientifique">Grand manuel de parapsychologie scientifique</a> (Dunod, 2025) : {t.handbook} Repères relevés dans la version de travail consultée.</p>}</details>
   <nav class="jump" aria-label="Sommaire de la fiche"><a href="#resultats">{followup?'GCP historique':'Résultats'}</a>{followup && <a href={`#${followup.id}`}>GCP 2.0</a>}{studyGroups.length>0 && <a href="#programmes">{t.id==='mediumnite-mentale'?'Sitters et Brésil':'Études par approche'}</a>}{clinicalOutcomes.length>0 && <a href="#criteres-cliniques">Critères cliniques</a>}<a href="#lecture">Lecture du dossier</a><a href="#sources">Sources</a></nav>
-  {t.readingGuide.length>0 && <section class="reading-guide" aria-labelledby="guide-title"><h2 id="guide-title">Trois plans à distinguer</h2><div class="table-scroll"><table class="profile-table"><caption class="sr-only">Lecture adaptée à ce dossier</caption><tbody>{t.readingGuide.map(r=><tr><th scope="row">{r[0]}</th><td>{r[1]}</td></tr>)}</tbody></table></div></section>}
+  {t.readingGuide.length>0 && <section class="reading-guide" aria-labelledby="guide-title"><h2 id="guide-title">Plans à distinguer</h2><div class="table-scroll"><table class="profile-table"><caption class="sr-only">Lecture adaptée à ce dossier</caption><tbody>{t.readingGuide.map(r=><tr><th scope="row">{r[0]}</th><td>{r[1]}</td></tr>)}</tbody></table></div></section>}
   {t.metrics.length>0 && <div class="cards metrics">{t.metrics.map(([value,label])=><div class="card stat"><strong>{value}</strong><span>{label}</span></div>)}</div>}
   {t.chart && <EvidenceChart chart={t.chart} id={t.id}/>}
-  {t.landscape.length>0 && <section class="evidence-map"><h2>Trois types de documents</h2><div class="table-scroll"><table class="studies"><thead><tr><th scope="col">Corpus</th><th scope="col">Apport</th><th scope="col">Matériau</th><th scope="col">Ce qu'il ne suffit pas à établir</th></tr></thead><tbody>{t.landscape.map(r=><tr><th scope="row">{r[0]}</th><td data-label="Apport">{r[1]}</td><td data-label="Matériau">{r[2]}</td><td data-label="Ce qui reste à établir">{r[3]}</td></tr>)}</tbody></table></div><p class="small">Pas de graphique de taille d'effet : les sources retenues ne permettent pas une estimation globale comparable.</p></section>}
+  {t.landscape.length>0 && <section class="evidence-map"><h2>Types de documents</h2><div class="table-scroll"><table class="studies"><thead><tr><th scope="col">Corpus</th><th scope="col">Apport</th><th scope="col">Matériau</th><th scope="col">Ce qu'il ne suffit pas à établir</th></tr></thead><tbody>{t.landscape.map(r=><tr><th scope="row">{r[0]}</th><td data-label="Apport">{r[1]}</td><td data-label="Matériau">{r[2]}</td><td data-label="Ce qui reste à établir">{r[3]}</td></tr>)}</tbody></table></div><p class="small">Pas de graphique de taille d'effet : les sources retenues ne permettent pas une estimation globale comparable.</p></section>}
   <section id="resultats"><h2>{resultsTitle??(t.chart?'Synthèses et résultats':'Études et documents retenus')}</h2><EvidenceStudyTable rows={t.rows}/></section>
   {followup && <section id={followup.id} aria-labelledby={`${followup.id}-title`}><h2 id={`${followup.id}-title`}>{followup.title}</h2><p>{followup.intro}</p><EvidenceStudyTable rows={followup.rows}/><p class="small"><strong>Exemple de question ouverte :</strong> {followup.question}</p></section>}
   {studyGroups.length>0 && <section id="programmes"><h2>Programmes et approches complémentaires</h2><p class="small">Ouvrir un volet pour consulter les études, leurs résultats et leurs limites.</p>{studyGroups.map(g=><details id={g.id}><summary>{g.title} <span class="small">· {g.rows.length} {g.rows.length===1?'repère':'repères'}</span></summary><p>{g.intro}</p><EvidenceStudyTable rows={g.rows}/></details>)}</section>}
@@ -39,3 +39,21 @@ const relatedTopics=data.topics.filter(o=>o.id!==t.id&&(relatedIds.length?relate
   <nav class="jump" aria-label="Dossiers associés"><a href={`${base}etat-des-preuves/`}>← Vue d'ensemble</a>{relatedTopics.map(o=><a href={`${base}etat-des-preuves/${o.id}/`}>{o.title} →</a>)}</nav>
 </article>
 </BaseLayout>
+
+<script>
+  const revealReference = () => {
+    if (!window.location.hash) return;
+    let id: string;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
+    const target = document.getElementById(id);
+    if (!target) return;
+    let parent = target.parentElement;
+    while (parent) {
+      if (parent instanceof HTMLDetailsElement) parent.open = true;
+      parent = parent.parentElement;
+    }
+    target.scrollIntoView({ block: 'start' });
+  };
+  window.addEventListener('hashchange', revealReference);
+  revealReference();
+</script>

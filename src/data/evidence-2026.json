@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-24-bilan-10-revision-1",
+  "version": "2026-10-24-bilan-11",
   "date": "24 octobre 2026",
   "topics": [
     {
@@ -7,7 +7,7 @@
       "title": "Ganzfeld",
       "subtitle": "Identifier une cible dans un environnement sensoriel homogène",
       "direction": "Synthèse cumulative favorable",
-      "summary": "Les synthèses rapportent un écart moyen au hasard. Son amplitude varie entre études et selon les caractéristiques des protocoles.",
+      "summary": "La synthèse cumulative et une réanalyse bayésienne prépubliée en 2026 soutiennent un effet moyen. Les interprétations dépendent des données, des contrôles et des modèles statistiques.",
       "question": "Le choix d'une cible dépasse-t-il le hasard lorsque l'information sensorielle ordinaire est contrôlée ? Le corpus réunit plusieurs variantes : il ne teste pas exclusivement la télépathie.",
       "metrics": [
         [
@@ -63,9 +63,17 @@
           "Plateforme, scripts et données archivés",
           "Résultats confirmatoires à intégrer après examen du rapport dédié ; une infrastructure ouverte ne vaut pas résultat positif.",
           "g5"
+        ],
+        [
+          "Bierman, Spottiswoode, Bancel et Bartoš (2026)",
+          "Prépublication, réanalyse des biais",
+          "113 entrées de la base Ganzfeld existante.",
+          "Après correction de l'erreur standard : BF₁₀ = 14,2 pour l'effet ; BF₁₀ = 0,30 pour le biais ; Egger p = 0,89.",
+          "Modèles distincts pour effet et biais. Ces résultats ne sont ni une nouvelle réplication, ni une probabilité du psi.",
+          "biais-bierman-2026"
         ]
       ],
-      "next": "Comparer les modérateurs annoncés à l'avance, préciser les performances attendues selon les conditions et intégrer toutes les études enregistrées, y compris les résultats nuls.",
+      "next": "Examiner les résultats confirmatoires des programmes prospectifs, vérifier les erreurs standards et comparer les modèles de biais sur une base documentée. Suivre la publication et les réponses à la prépublication de Bierman et coll. (2026).",
       "chart": {
         "title": "Un effet moyen positif, variable selon les participants",
         "axis": "Effet standardisé ES de la publication",
@@ -140,15 +148,45 @@
           "label": "G6 · Ganzfeld Project. Présentation des six sites et état de la collecte.",
           "url": "https://ganzfeld.study/",
           "status": "Page officielle du projet, consultée le 21 octobre 2026 ; collecte annoncée close."
+        },
+        {
+          "id": "biais-bierman-2026",
+          "label": "Bierman, Spottiswoode, Bancel et Bartoš (août 2026), Is Publication Bias in Psi Research Really a Myth?, DOI 10.13140/RG.2.2.31850.89282",
+          "url": "https://www.researchgate.net/publication/413685917_Is_Publication_Bias_in_Psi_Research_Really_a_Myth_A_Statistical_Comment_on_Tressoldi_Storm_2026",
+          "status": "Prépublication déposée par un auteur le 27 août 2026 ; texte, sections 3.2 à 3.5 et tableaux consultés. Pas de validation éditoriale identifiée. Les chiffres RoBMA du corpus RV complet divergent entre texte et tableau 2 ; cette fiche ne les reprend pas."
+        },
+        {
+          "id": "declin-bierman-2026",
+          "label": "Bierman et Spottiswoode (2026), The Decline of Effect Size in Psi Research, JSE 40(2), 268–273, DOI 10.31275/20264003",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/4003/2610",
+          "status": "Texte indexé du PDF de la revue consulté, notamment tableaux 1 à 4. Réanalyse de bases existantes ; aucun nouvel échantillon Ganzfeld."
+        },
+        {
+          "id": "declin-reponse-2026",
+          "label": "Tressoldi et Storm (2026), Response to Bierman and Spottiswoode (2026), JSE 40(2), 274–277, DOI 10.31275/20264041",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/4041/2603",
+          "status": "Texte indexé du PDF de la revue consulté, dont tableau 1 et annexe. Réponse et réanalyses ; pas de réplication indépendante."
+        },
+        {
+          "id": "biais-tressoldi-2026",
+          "label": "Tressoldi et Storm (2026), The Myth of Publication Bias in Psi Research: A Comparison Between Parapsychology and Mainstream Psychology, JSE 40(2), 232–240",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/3793/2602",
+          "status": "Résumé et passages indexés du texte publié consultés ; DOI 10.31275/20263793. Comparaison exploratoire de proportions de résultats non significatifs, discutée par Bierman et coll. (2026)."
+        },
+        {
+          "id": "g-storm-2026",
+          "label": "Storm (2026), Questions about Questionable Research Practices, JAEX 6(1), 92–102, DOI 10.31156/jaex.27502",
+          "url": "https://journals.lub.lu.se/jaex/article/view/27502",
+          "status": "Résumé original et passages indexés du PDF consultés. Commentaire méthodologique sur Bierman et coll. (2016), sans nouveaux essais."
         }
       ],
-      "reviewed": "21 octobre 2026",
+      "reviewed": "24 octobre 2026",
       "group": "Perception",
       "new": false,
       "handbook": "",
       "landscape": [],
       "openQuestion": "Quelles conditions expliquent les différences entre études ?",
-      "interpretation": "Un résultat cumulé positif est documenté. L'estimation moyenne, sa robustesse et les conditions de réussite répondent à des questions distinctes ; aucune ne désigne seule un mécanisme.",
+      "interpretation": "Un résultat cumulé positif est documenté. L'estimation moyenne, sa robustesse et les conditions de réussite répondent à des questions distinctes ; aucune ne désigne seule un mécanisme. Les réanalyses de 2026 doivent être lues séparément : absence de déclin Ganzfeld détecté dans l'étude publiée de Bierman et Spottiswoode ; soutien bayésien à l'effet après correction de l'erreur standard dans la prépublication à quatre auteurs. Aucun de ces textes n'ajoute de participants à la base.",
       "profile": [
         [
           "Résultats observés",
@@ -156,7 +194,7 @@
         ],
         [
           "Robustesse méthodologique",
-          "Des analyses de biais sont disponibles ; les conclusions doivent être comparées entre modèles et choix d'inclusion."
+          "Des analyses de biais sont disponibles ; les conclusions doivent être comparées entre modèles et choix d'inclusion. Les diagnostics de biais sont sensibles au calcul des erreurs standards, comme l'illustre la prépublication de 2026."
         ],
         [
           "Variabilité et conditions d'obtention",
@@ -171,7 +209,50 @@
       "readingGuide": [],
       "editorialUpdated": "24 octobre 2026",
       "related": [
+        "telepathie-telecommunications",
         "conditions-moderateurs"
+      ],
+      "searchTerms": "Bierman Biermann Spottiswoode Bancel Bartos 2026 RoBMA biais publication declin ganzfeld",
+      "studyGroups": [
+        {
+          "id": "debats-2026",
+          "title": "Déclin, biais de publication et pratiques de recherche : échanges de 2026",
+          "intro": "Ces textes réanalysent ou discutent des données déjà incluses dans le dossier. Le déclin temporel, la relation à la taille des études et le biais de publication sont des questions distinctes.",
+          "rows": [
+            [
+              "Bierman et Spottiswoode (2026)",
+              "Réanalyses, tableaux 1 et 2",
+              "Ganzfeld, 1974–2020 ; 113 entrées d'effet, pas 113 nouvelles études indépendantes.",
+              "Pas de déclin Ganzfeld détecté : année, ρ = −0,05, p = 0,30 ; nombre d'essais, ρ = −0,02, p = 0,42 (tests unilatéraux).",
+              "Les conclusions transversales ne se transposent pas à chaque protocole. Le nombre d'essais ne définit pas à lui seul la puissance.",
+              "declin-bierman-2026"
+            ],
+            [
+              "Tressoldi et Storm (2026)",
+              "Réponse et méta-régression",
+              "Réanalyse intégrant le nombre d'essais.",
+              "Ganzfeld : pente = 0,001, p = 0,29 ; pas de déclin statistiquement détecté.",
+              "Désaccord sur la généralisation du déclin et sur la méthode ; mêmes bases, pas des confirmations indépendantes.",
+              "declin-reponse-2026"
+            ],
+            [
+              "Tressoldi et Storm (2026)",
+              "Comparaison des résultats publiés",
+              "Corpus ESP et études du registre KPU.",
+              "Les auteurs observent davantage de résultats non significatifs publiés qu'en psychologie générale.",
+              "La comparaison des taux n'isole pas la puissance ni le processus de sélection ; voir la prépublication de Bierman et coll. citée plus haut.",
+              "biais-tressoldi-2026"
+            ],
+            [
+              "Storm (2026)",
+              "Commentaire sur les simulations de 2016",
+              "Hypothèses et traitement du corpus Ganzfeld.",
+              "Conteste plusieurs choix des simulations de pratiques de recherche discutables.",
+              "Le débat porte sur les modèles et leurs hypothèses ; il ne fournit pas de nouveaux essais.",
+              "g-storm-2026"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -411,7 +492,7 @@
       "group": "Perception",
       "subtitle": "Décrire une cible inaccessible, avec évaluation à l'aveugle",
       "direction": "Moyenne positive, forte hétérogénéité",
-      "summary": "Une synthèse favorable, mais des protocoles très variables et des résultats récents contrastés.",
+      "summary": "La synthèse publiée rapporte une moyenne positive. Une réanalyse prépubliée en 2026 identifie des biais et des conclusions sensibles au modèle. Les protocoles restent très hétérogènes.",
       "question": "Les descriptions permettent-elles d'identifier des cibles cachées ou futures ? Les protocoles de clairvoyance et de précognition doivent être distingués ; les résultats ne valident pas à eux seuls des applications pratiques. La lecture d'objets et les applications archéologiques sont présentées dans un volet distinct.",
       "handbook": "Mario Varvoglis, chapitre 3, section sur la vision à distance ; Julia Mossbridge, chapitre 4, section sur la vision à distance précognitive.",
       "metrics": [
@@ -434,7 +515,7 @@
           "Méta-analyse ; 1974–2022",
           "36 études ; 40 effets, puis 39 après exclusion",
           "ES = 0,34 ; IC 95 % [0,22 ; 0,45] après exclusion ; I² = 100 %",
-          "Hétérogénéité extrême. Les analyses de biais restent favorables, sans garantir l'absence de biais.",
+          "Hétérogénéité extrême. Les diagnostics de biais de cette publication sont réexaminés dans la prépublication de 2026 ci-dessous.",
           "v1"
         ],
         [
@@ -452,6 +533,14 @@
           "Matériel et analyses déposés sur Figshare",
           "Permet une réanalyse ; ne constitue pas une réplication indépendante.",
           "v3"
+        ],
+        [
+          "Bierman, Spottiswoode, Bancel et Bartoš (2026)",
+          "Prépublication, correction des erreurs standards",
+          "Base de Tressoldi et Katz ; analyses à 40 et 39 entrées.",
+          "Biais détectés ; sur les 39 entrées des auteurs, RoBMA BF₁₀ = 0,21 pour l'effet, tandis que PEESE conserve un effet positif.",
+          "Conclusions sensibles au modèle et aux exclusions ; incohérence chiffrée pour le corpus complet signalée dans la référence.",
+          "biais-bierman-2026"
         ]
       ],
       "next": "Comparer des protocoles précisément décrits, fixer les règles de jugement et tester les paramètres susceptibles d'expliquer les variations. Évaluer séparément les performances utiles en application.",
@@ -519,10 +608,16 @@
           "label": "Schwartz (2019), localisation et reconstitution d'une structure à Marea, JSE 33(3), 451-480",
           "url": "https://journalofscientificexploration.org/index.php/jse/article/view/1479",
           "status": "Résumé de l'éditeur et passages du PDF intégral consultés. Récit publié en 2019 d'un travail historique présenté dès 1980 ; ne pas dater l'expérience de 2019."
+        },
+        {
+          "id": "biais-bierman-2026",
+          "label": "Bierman, Spottiswoode, Bancel et Bartoš (août 2026), Is Publication Bias in Psi Research Really a Myth?, DOI 10.13140/RG.2.2.31850.89282",
+          "url": "https://www.researchgate.net/publication/413685917_Is_Publication_Bias_in_Psi_Research_Really_a_Myth_A_Statistical_Comment_on_Tressoldi_Storm_2026",
+          "status": "Prépublication déposée par un auteur le 27 août 2026 ; texte, sections 3.2 à 3.5 et tableaux consultés. Pas de validation éditoriale identifiée. Les chiffres RoBMA du corpus RV complet divergent entre texte et tableau 2 ; cette fiche ne les reprend pas."
         }
       ],
       "openQuestion": "Comment les tâches, les juges et les participants contribuent-ils aux écarts observés ?",
-      "interpretation": "La moyenne positive et la dispersion des résultats doivent être lues ensemble. Le dossier renseigne des tâches de description de cibles ; il ne donne pas une performance applicable à toute situation.",
+      "interpretation": "La moyenne positive et la dispersion des résultats doivent être lues ensemble. Le dossier renseigne des tâches de description de cibles ; il ne donne pas une performance applicable à toute situation. La réanalyse prépubliée de 2026 remet en discussion les diagnostics de biais. Les divergences entre modèles restent visibles ; les calculs n'ont pas été reproduits pour cette fiche.",
       "profile": [
         [
           "Résultats observés",
@@ -545,8 +640,8 @@
       "readingGuide": [],
       "editorialUpdated": "24 octobre 2026",
       "related": [
-        "experiences-hors-corps",
-        "mediumnite-mentale",
+        "vision-distance-associative",
+        "ganzfeld",
         "conditions-moderateurs"
       ],
       "studyGroups": [
@@ -989,11 +1084,12 @@
         }
       ],
       "related": [
+        "mediumnite-physique",
+        "contacts-defunts",
         "neurosciences-psi",
         "xenoglossie",
         "vision-distance",
-        "fin-de-vie",
-        "clinique-experiences-exceptionnelles"
+        "fin-de-vie"
       ]
     },
     {
@@ -1099,6 +1195,12 @@
           "label": "P3 · Walleczek et al. (2025). Metascientific replication project with the advanced meta-experimental protocol of the transparent psi project procedures for testing the precognitive effect claimed by Bem. PLOS ONE, 20, e0335330.",
           "url": "https://doi.org/10.1371/journal.pone.0335330",
           "status": "Article évalué par les pairs ; distingue analyses confirmatoires et exploratoires."
+        },
+        {
+          "id": "first-sight-pa2025",
+          "label": "Roe et coll. (2025), test de First Sight, PA Abstracts of Presented Papers, p. 132–135 ; KPU 1080",
+          "url": "https://s3.us-east-1.amazonaws.com/Proceedings/2025/2025%20PA%20Abstracts%20of%20Presented%20Papers.pdf",
+          "status": "Résumé étendu de congrès et protocole KPU consultés. Aucun article final identifié dans cette recherche ; les résultats détaillés du second essai ne sont pas disponibles dans le document consulté."
         }
       ],
       "reviewed": "21 octobre 2026",
@@ -1128,7 +1230,25 @@
       ],
       "kind": "experimental",
       "readingGuide": [],
-      "editorialUpdated": "24 octobre 2026"
+      "editorialUpdated": "24 octobre 2026",
+      "studyGroups": [
+        {
+          "id": "first-sight",
+          "title": "Psi implicite et First Sight",
+          "intro": "Ce programme teste des prédictions issues d'une théorie du psi implicite avec des tâches d'amorçage ou de préférence.",
+          "rows": [
+            [
+              "Roe et coll., PA 2025 ; KPU 1080",
+              "Résumé de congrès, étude enregistrée",
+              "Amorçage rétroactif de type Bem.",
+              "Amorçage principal non significatif ; association exploratoire avec la croyance en l'ESP, p = 0,04.",
+              "Pas de correction de multiplicité pour cette association. Résumé de congrès ; les études KPU 1091 et 1099 demandent un suivi séparé.",
+              "first-sight-pa2025"
+            ]
+          ]
+        }
+      ],
+      "related": []
     },
     {
       "reviewed": "24 octobre 2026",
@@ -1571,7 +1691,10 @@
       ],
       "kind": "experimental",
       "readingGuide": [],
-      "editorialUpdated": "24 octobre 2026"
+      "editorialUpdated": "24 octobre 2026",
+      "related": [
+        "mediumnite-physique"
+      ]
     },
     {
       "reviewed": "24 octobre 2026",
@@ -1801,7 +1924,8 @@
       ],
       "kind": "experimental",
       "readingGuide": [],
-      "editorialUpdated": "24 octobre 2026"
+      "editorialUpdated": "24 octobre 2026",
+      "related": []
     },
     {
       "chart": null,
@@ -2124,7 +2248,8 @@
       "kind": "specific",
       "new": false,
       "reviewed": "24 octobre 2026",
-      "editorialUpdated": "24 octobre 2026"
+      "editorialUpdated": "24 octobre 2026",
+      "related": []
     },
     {
       "chart": null,
@@ -2289,6 +2414,7 @@
       ],
       "next": "Combiner description précise du vécu, horodatage, cibles réellement inaccessibles, cotation prévue et indépendante, et mesures synchronisées. Analyser séparément les cibles prévues et les détails spontanés vérifiables ; documenter aussi les tentatives sans EHC.",
       "related": [
+        "paralysie-sommeil-presences",
         "perceptions-emi",
         "neurosciences-psi",
         "vision-distance",
@@ -2511,6 +2637,14 @@
           "Enquête sur la persistance des souvenirs et leurs effets dans la vie adulte.",
           "Documente le devenir des personnes. Ce suivi n'est pas un nouveau test de l'origine des informations biographiques.",
           "va3"
+        ],
+        [
+          "Sadeghi, Pehlivanova & Cozzolino, 2026",
+          "Analyse observationnelle de dossiers UVA",
+          "1 678 dossiers avec personne décédée identifiée, selon le communiqué institutionnel.",
+          "L'équipe rapporte une association entre caractère inattendu du décès et intervalle plus court avant la naissance ; intervalle médian annoncé : 16 mois.",
+          "Comparaison interne à un fichier de cas. L'association ne démontre pas une cause ni la réincarnation ; article intégral à examiner pour les données manquantes et les analyses détaillées.",
+          "va2026"
         ]
       ],
       "openQuestion": "Quelles déclarations existaient avant toute recherche de correspondance ?",
@@ -2566,6 +2700,12 @@
           "label": "VA3 · Pehlivanova et al. (2024). Impact of children's purported past-life memories: a follow-up investigation of American cases. Frontiers in Psychology, 15.",
           "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1473340/full",
           "status": "Résumé et introduction du texte intégral consultés. DOI : 10.3389/fpsyg.2024.1473340. Suivi du vécu, distinct de la vérification des correspondances."
+        },
+        {
+          "id": "va2026",
+          "label": "Sadeghi, S., Pehlivanova, M. & Cozzolino, P. J. (2026). Analyse des intervalles entre décès et naissance dans les récits de vies antérieures. Psychology of Consciousness: Theory, Research, and Practice. DOI : 10.1037/cns0000493.",
+          "url": "https://www.uvahealth.com/news/surprising-pattern-emerges-in-reincarnation-reports",
+          "status": "Communiqué primaire UVA du 19 octobre 2026 et annonce DOPS consultés ; article APA identifié mais texte intégral inaccessible lors de cette vérification. Les détails statistiques ci-dessous proviennent du compte rendu institutionnel, pas d'une réanalyse."
         }
       ],
       "handbook": "Chapitre 8, expériences aux frontières de la vie et hypothèse de la survie, dont les souvenirs de vies antérieures.",
@@ -2577,7 +2717,8 @@
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "related": [
-        "xenoglossie"
+        "xenoglossie",
+        "marques-naissance"
       ]
     },
     {
@@ -3769,6 +3910,37 @@
           ]
         },
         {
+          "id": "declin-2026",
+          "title": "Déclin entre études : débat publié de 2024–2026",
+          "intro": "L'évolution avec l'année de publication et celle avec l'ordre des publications ne mesurent pas exactement la même chose. Ces réanalyses recoupent les bases des autres fiches.",
+          "rows": [
+            [
+              "Tressoldi et Storm (2024)",
+              "Réanalyse de cinq protocoles",
+              "Bases de méta-analyses ESP.",
+              "Une seule pente significative dans l'analyse principale ; les auteurs contestent un déclin généralisé.",
+              "La conclusion dépend du périmètre et du modèle.",
+              "declin-tressoldi-2024"
+            ],
+            [
+              "Bierman et Spottiswoode (2026)",
+              "Extension à dix protocoles",
+              "874 entrées de bases existantes ; corrélations de rang.",
+              "Sept protocoles présentent un déclin temporel significatif dans leur analyse initiale ; le Ganzfeld n'en fait pas partie.",
+              "Les bases couvrent des périodes différentes ; pas dix corpus actuels homogènes.",
+              "declin-bierman-2026"
+            ],
+            [
+              "Tressoldi et Storm (2026)",
+              "Réponse et analyse avec covariable",
+              "Nombre d'essais pris en compte ; comparaison des méthodes.",
+              "Les auteurs maintiennent leur désaccord avec la généralisation et soulignent l'ancienneté des bases PK.",
+              "Les résultats par protocole sont à examiner ; une baisse ne désigne pas automatiquement son mécanisme.",
+              "declin-reponse-2026"
+            ]
+          ]
+        },
+        {
           "id": "declin-matrices",
           "title": "Déclin, élusivité et matrices de corrélation",
           "intro": "Une baisse de performance est une observation ; l'élusivité et les modèles de non-transmission sont des propositions explicatives. Le modèle de l'information pragmatique de von Lucadou appartient à cette discussion théorique.",
@@ -3796,6 +3968,21 @@
               "Excès de corrélations rapporté avec Random.org ; résultat non significatif avec le générateur pseudo-aléatoire.",
               "Une différence de significativité ne suffit pas à établir une différence entre générateurs. Version prépubliée, protocole différent des essais précédents.",
               "moderateurs-flores-2024"
+            ]
+          ]
+        },
+        {
+          "id": "pratiques-rapportees",
+          "title": "Pratiques et expérience des participants",
+          "intro": "Les entretiens décrivent les conditions jugées favorables ; les essais contrôlés doivent en évaluer les effets.",
+          "rows": [
+            [
+              "Daw, Roe & Cooper, 2023",
+              "Étude qualitative des conditions perçues",
+              "7 personnes pratiquant professionnellement des activités présentées comme psi.",
+              "Les entretiens décrivent les effets que ces personnes attribuent au jeûne et au végétarisme.",
+              "Il s'agit de représentations et de pratiques rapportées, sans test de performance ni démonstration d'un bénéfice de ces pratiques.",
+              "cm-daw2023"
             ]
           ]
         }
@@ -3879,6 +4066,30 @@
           "label": "Flores et Rapazote-Flores (2024), Mind and Matter Correlated in a Matrix, Qeios, prépublication v2",
           "url": "https://www.qeios.com/read/0PAHC2.2",
           "status": "Statut de prépublication v2 vérifié chez Qeios ; résumé et passages d'une copie déposée par les auteurs consultés. Ne pas présenter comme article validé par une revue."
+        },
+        {
+          "id": "declin-tressoldi-2024",
+          "label": "Tressoldi et Storm (2024), The Myth of the Decline Effect in Psi Research: The Empirical Evidence, JSE 38(3), 461–465",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/3313",
+          "status": "Résumé original consulté ; DOI 10.31275/20243313. Voir aussi la réanalyse et la réponse de 2026."
+        },
+        {
+          "id": "declin-bierman-2026",
+          "label": "Bierman et Spottiswoode (2026), The Decline of Effect Size in Psi Research, JSE 40(2), 268–273, DOI 10.31275/20264003",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/4003/2610",
+          "status": "Texte indexé du PDF de la revue consulté, notamment tableaux 1 à 4. Réanalyse de bases existantes ; aucun nouvel échantillon Ganzfeld."
+        },
+        {
+          "id": "declin-reponse-2026",
+          "label": "Tressoldi et Storm (2026), Response to Bierman and Spottiswoode (2026), JSE 40(2), 274–277, DOI 10.31275/20264041",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/4041/2603",
+          "status": "Texte indexé du PDF de la revue consulté, dont tableau 1 et annexe. Réponse et réanalyses ; pas de réplication indépendante."
+        },
+        {
+          "id": "cm-daw2023",
+          "label": "Daw, M., Roe, C. & Cooper, C. E. (2023). How fasting and vegetarianism is perceived to support psi among adepts. The Journal of Transpersonal Psychology, 55(1).",
+          "url": "https://pure.northampton.ac.uk/en/publications/how-fasting-and-vegetarianism-is-perceived-to-support-psi-among-a/",
+          "status": "Notice institutionnelle et résumé consultés. Analyse thématique de sept entretiens, publiée le 25 octobre 2023 ; pas de mesure expérimentale d'une amélioration du psi."
         }
       ],
       "handbook": "Chapitres 3 et 5 pour les conditions d'obtention ; références du manuel complétées par les études et synthèses citées.",
@@ -3901,13 +4112,14 @@
         ]
       ],
       "related": [
+        "imagerie-guidee-psi",
+        "effets-experimentateur",
         "ganzfeld",
         "telepathie-reve",
         "micro-pk",
-        "neurosciences-psi",
-        "choix-force"
+        "neurosciences-psi"
       ],
-      "searchTerms": "hypnose hypnosis meditation mouton chevre sheep goat croyances personnalite declin elusivite information pragmatique Lucadou matrices correlation Lawrence Stanford Stein",
+      "searchTerms": "hypnose hypnosis meditation mouton chevre sheep goat croyances personnalite declin elusivite information pragmatique Lucadou matrices correlation Lawrence Stanford Stein Bierman Spottiswoode 2026",
       "resultsTitle": "Études et documents retenus"
     },
     {
@@ -4138,11 +4350,2203 @@
         "fin-de-vie"
       ],
       "searchTerms": "psychotherapie clinique accompagnement counselling counseling therapie experiences exceptionnelles CIRCEE IGPP Rabeyron Evrard Belz Fach Roxburgh Evenden Scimeca EMDR TCC CBT Soneson Radez Nehmy IADC deuil souffrance detresse integration qualite de vie",
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026"
+    },
+    {
+      "id": "contacts-defunts",
+      "title": "Contacts spontanés avec les défunts (ADC)",
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "subtitle": "Présences, rêves et perceptions rapportés après un décès : expérience, effets et vérification.",
+      "direction": "Vécus documentés ; interprétations à distinguer",
+      "summary": "Un corpus d'enquêtes et de synthèses décrit les contacts ressentis avec un défunt, sans intervention d'un médium. Leur réalité comme expérience et leur effet sur le deuil sont des questions distinctes de l'origine des informations reçues.",
+      "question": "Quelles formes prennent ces expériences spontanées, quelles conséquences ont-elles et quels éléments peuvent être vérifiés indépendamment ? Les contacts induits en thérapie relèvent du dossier clinique.",
+      "metrics": [
+        [
+          "14",
+          "études dans la synthèse qualitative de 2026"
+        ],
+        [
+          "1 004",
+          "répondants sélectionnés dans l'enquête de 2021"
+        ]
+      ],
+      "rows": [
+        [
+          "Sweeney et al., 2026",
+          "Revue systématique qualitative",
+          "14 études ; 1 971 participants selon les auteurs",
+          "Les récits associent maintien du lien, recherche de sens, réconfort et parfois conflit. Le contexte social et culturel intervient dans leur intégration.",
+          "Synthèse du vécu et de ses conséquences ; aucun effet thérapeutique causal ni transfert d'information psi n'est testé.",
+          "adc1"
+        ],
+        [
+          "Elsaesser et al., 2021",
+          "Enquête internationale en ligne",
+          "1 004 répondants ; questionnaire de 194 items ; trois langues",
+          "Expériences de sommeil, perceptions sensorielles et sentiment de présence ; les répondants décrivent souvent un vécu réconfortant et significatif.",
+          "Recrutement ciblé de personnes ayant vécu un ADC. Ne mesure pas sa fréquence en population générale et ne vérifie pas une communication externe.",
+          "adc2"
+        ]
+      ],
+      "openQuestion": "Les récits contenant une information précise, consignée avant sa confirmation, se distinguent-ils des autres ADC par leur contexte ou leur contenu ?",
+      "interpretation": "Le terme ADC désigne ici un contact perçu, sans décider de son mécanisme. Un effet bénéfique rapporté mérite d'être étudié sans constituer à lui seul une validation de la survie. Les résultats sur le deuil ne se substituent pas à une enquête sur les informations éventuellement inconnues du témoin.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Les enquêtes décrivent des expériences parfois durables et généralement importantes pour leurs témoins. Réconfort et détresse doivent être documentés séparément."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Distinguer enquête de population, recrutement spécialisé, entretien et vérification d'un cas. Les réanalyses d'un même questionnaire ne sont pas des confirmations indépendantes."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Lien avec le défunt, délai depuis le décès, sommeil ou veille, culture, croyances et réactions de l'entourage peuvent modifier la description et les conséquences du vécu."
+        ],
+        [
+          "Portée des conclusions",
+          "Ces travaux renseignent surtout la phénoménologie et le deuil. Établir un contenu inaccessible par des voies ordinaires exige un protocole documentaire supplémentaire."
+        ]
+      ],
+      "readingGuide": [
+        [
+          "Observation",
+          "Recueillir le récit sans réduire d'emblée l'expérience à un symptôme ou à une preuve de survie."
+        ],
+        [
+          "Vérification",
+          "Pour une information nouvelle, dater le premier récit, les connaissances antérieures et la confirmation indépendante."
+        ],
+        [
+          "Interprétation",
+          "Séparer mécanisme de l'expérience, sens personnel et effet sur le deuil."
+        ]
+      ],
+      "next": "Associer suivis prospectifs du deuil, diversité des recrutements et enregistrement daté des éventuelles informations vérifiables ; distinguer amélioration rapportée et résultat clinique mesuré.",
+      "sources": [
+        {
+          "id": "adc1",
+          "label": "ADC1 · Sweeney, S., Ryan, P., Leahy, D. & Deering, H. (2026). The impact of after-death communications on grief and meaning-making among the bereaved: A qualitative systematic review. Death Studies.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41689509/",
+          "status": "Notice et résumé consultés. Publication en ligne le 14 février 2026 ; DOI : 10.1080/07481187.2026.2626550. Texte intégral non consulté ; sélection détaillée des études non réévaluée."
+        },
+        {
+          "id": "adc2",
+          "label": "ADC2 · Elsaesser, E., Roe, C. A., Cooper, C. E. & Lorimer, D. (2021). The phenomenology and impact of hallucinations concerning the deceased. BJPsych Open, 7(5).",
+          "url": "https://pure.northampton.ac.uk/en/publications/the-phenomenology-and-impact-of-hallucinations-concerning-the-dec/",
+          "status": "Notice institutionnelle et résumé consultés. Publication le 16 août 2021 ; DOI : 10.1192/bjo.2021.960. Résultats déclaratifs, sans réanalyse des réponses individuelles."
+        },
+        {
+          "id": "adc3",
+          "label": "ADC3 · Rees, W. D. (1971). The Hallucinations of Widowhood. British Medical Journal, 4(5778), 37–41.",
+          "url": "https://www.bmj.com/content/4/5778/37",
+          "status": "Notice et résumé de l'article original consultés. DOI : 10.1136/bmj.4.5778.37. Échantillon géographique de 227 veuves et 66 veufs ; aucune extrapolation à l'ensemble de la population."
+        },
+        {
+          "id": "adc4",
+          "label": "ADC4 · Kamp, K. S. et al. (2020). Sensory and Quasi-Sensory Experiences of the Deceased in Bereavement: An Interdisciplinary and Integrative Review. Schizophrenia Bulletin, 46(6), 1367–1381.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33099644/",
+          "status": "Notice, résumé et références accessibles consultés. DOI : 10.1093/schbul/sbaa113. Revue interdisciplinaire ; texte intégral non consulté."
+        },
+        {
+          "id": "adc5",
+          "label": "ADC5 · Penberthy, J. K. et al. (2026, en ligne en 2023). Description and Impact of Encounters With Deceased Partners or Spouses. OMEGA, 92(3), 1487–1504.",
+          "url": "https://pure.northampton.ac.uk/ws/files/68405852/Penberthy_etal_SAGE_2023_Description_and_Impact_of_Encounters_With_Deceased_Partners_or_Spouses.pdf",
+          "status": "Manuscrit institutionnel : résumé, méthodes et tableaux consultés ; dates vérifiées auprès de l'éditeur. DOI : 10.1177/00302228231207900. En ligne le 20 octobre 2023, numéro de février 2026. Sous-échantillon anglophone de l'enquête internationale, sans nouveau recrutement indépendant."
+        },
+        {
+          "id": "adc-funeral-cooper",
+          "label": "Cooper, C. E. (2024 ; numéro daté 2023). Exceptional experiences in the funeral industry. Journal of the Society for Psychical Research, 87(953), 224–237.",
+          "url": "https://pure.northampton.ac.uk/en/publications/exceptional-experiences-in-the-funeral-industry/",
+          "status": "Résumé et notice institutionnelle consultés. Numéro portant octobre 2023, distribué en juin 2024. Synthèse de travaux antérieurs, notamment McMahon (1987), et appel à poursuivre les enquêtes ; pas une nouvelle étude contrôlée."
+        }
+      ],
+      "handbook": "",
+      "related": [
+        "mediumnite-mentale",
+        "fin-de-vie",
+        "clinique-experiences-exceptionnelles"
+      ],
+      "chart": null,
+      "landscape": [],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "resultsTitle": "Enquêtes et synthèses retenues",
+      "studyGroups": [
+        {
+          "id": "adc-population-clinique",
+          "title": "Population, contexte clinique et deuil du partenaire",
+          "intro": "Les recrutements et les objectifs diffèrent. Les effectifs ci-dessous ne s'additionnent pas aux synthèses qui peuvent reprendre ces études.",
+          "rows": [
+            [
+              "Rees, 1971",
+              "Entretiens dans une zone définie du pays de Galles",
+              "293 personnes veuves ; 80,7 % des personnes veuves résidentes",
+              "Près de la moitié rapportent une perception ou une illusion liée au conjoint décédé, parfois plusieurs années après le décès.",
+              "Échantillon local et contexte historique précis ; entretien rétrospectif sans vérification d'une source externe.",
+              "adc3"
+            ],
+            [
+              "Kamp et al., 2020",
+              "Revue intégrative interdisciplinaire",
+              "Phénoménologie, facteurs associés, culture et retentissement",
+              "La revue juge la plupart des expériences bénignes et souligne leur contexte biographique et relationnel.",
+              "Ni méta-analyse de résultats psi ni critère diagnostique individuel. Une expérience pénible nécessite une évaluation propre.",
+              "adc4"
+            ],
+            [
+              "Penberthy et al., 2023/2026",
+              "Analyse secondaire menée avec l'Université de Virginie",
+              "70 répondants anglophones évoquant un partenaire décédé",
+              "40 % rapportent moins de tristesse après l'expérience ; 41,4 % ne rapportent pas de changement sur ce point.",
+              "Sous-échantillon de l'enquête internationale, réponses rétrospectives et absence de groupe comparateur. Pas un essai thérapeutique ni une réplication indépendante.",
+              "adc5"
+            ]
+          ]
+        },
+        {
+          "id": "metiers-funeraires",
+          "title": "Expériences des professionnels funéraires",
+          "intro": "Un contexte distinct des perceptions rapportées par les proches en deuil.",
+          "rows": [
+            [
+              "Cooper, 2024 (numéro daté 2023)",
+              "Synthèse sur les métiers funéraires",
+              "Travaux antérieurs, dont la thèse de McMahon (1987).",
+              "Le texte distingue les expériences de professionnels qui connaissaient rarement le défunt des contacts rapportés par des proches endeuillés.",
+              "Corpus décrit comme limité par l'auteur ; pas de nouvelle mesure de prévalence ni de test établissant un contact avec un défunt.",
+              "adc-funeral-cooper"
+            ]
+          ]
+        }
+      ],
+      "searchTerms": "ADC after death communication contacts spontanes defunts deuil presence Rees Elsaesser Kamp Sweeney Penberthy Virginia"
+    },
+    {
+      "id": "apparitions-hantises",
+      "title": "Apparitions et lieux réputés hantés",
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "subtitle": "Récits localisés, environnement physique et attentes des témoins.",
+      "direction": "Expériences localisées ; explications encore discutées",
+      "summary": "Les enquêtes de terrain confrontent récits, emplacement des expériences et environnement. Les manipulations en laboratoire testent certains mécanismes proposés, sans couvrir toutes les formes d'apparition.",
+      "question": "Pourquoi certaines expériences se concentrent-elles dans certains lieux ? Cette sélection porte surtout sur les hantises localisées ; les mouvements d'objets et poltergeists ont leur propre dossier.",
+      "metrics": [
+        [
+          "66",
+          "études examinées dans la revue environnementale de 2020"
+        ],
+        [
+          "79",
+          "participants au laboratoire Haunt"
+        ]
+      ],
+      "rows": [
+        [
+          "Dagnall et al., 2020",
+          "Revue critique des variables environnementales",
+          "66 études ; six familles de variables",
+          "Résultats principalement nuls ou inconstants pour les facteurs examinés. La revue recommande d'étudier conjointement lieux et caractéristiques des témoins.",
+          "Méthodes hétérogènes ; aucune explication physique unique ne ressort. Une absence d'explication environnementale ne démontre pas une présence autonome.",
+          "han1"
+        ],
+        [
+          "Wiseman et al., 2003",
+          "Deux enquêtes de terrain",
+          "Hampton Court et voûtes de South Bridge à Édimbourg",
+          "Les expériences se concentrent dans des secteurs déjà réputés hantés ; associations avec certaines mesures environnementales, sans lien avec la connaissance préalable de leur réputation.",
+          "Corrélations de terrain : elles ne suffisent pas à identifier une cause ni à généraliser à tous les cas.",
+          "han2"
+        ],
+        [
+          "French et al., 2009",
+          "Manipulation de champs électromagnétiques et d'infrasons",
+          "79 participants ; 50 minutes ; quatre conditions d'exposition",
+          "Le nombre d'expériences inhabituelles n'est pas lié à la condition expérimentale. Les auteurs discutent la contribution de la suggestion.",
+          "Tous les participants étaient avertis que des sensations pouvaient survenir. L'étude teste des expositions précises, pas l'ensemble des lieux hantés ni une manipulation différentielle de la suggestion.",
+          "han3"
+        ]
+      ],
+      "openQuestion": "Des visiteurs ignorant l'histoire d'un lieu signalent-ils les mêmes détails spécifiques avant tout échange entre témoins, et ces concordances persistent-elles dans des lieux témoins comparables ?",
+      "interpretation": "La convergence de récits justifie une enquête ; sa signification dépend de leur indépendance, de leur précision et de leur chronologie. Les tests d'infrasons ou de champs magnétiques examinent des hypothèses particulières. Leurs résultats, positifs ou nuls, ne règlent pas à eux seuls la question de l'origine des apparitions.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Des enquêtes trouvent une concentration spatiale des expériences. Les tentatives d'explication par des variables physiques donnent des résultats variables selon les mesures et les protocoles."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Comparer lieux réputés hantés et lieux témoins, masquer leur histoire, recueillir les récits séparément et distinguer corrélation de terrain et manipulation expérimentale."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Éclairage, acoustique, attente, familiarité avec les récits locaux, durée d'exposition et caractéristiques des visiteurs peuvent interagir."
+        ],
+        [
+          "Portée des conclusions",
+          "Décrire un vécu, identifier un facteur environnemental et établir une apparition indépendante du témoin constituent trois objectifs différents."
+        ]
+      ],
+      "readingGuide": [
+        [
+          "Observation",
+          "Consigner séparément ce qui a été perçu, raconté par autrui et déduit après l'événement."
+        ],
+        [
+          "Vérification",
+          "Rechercher des documents antérieurs aux échanges, des enregistrements et des comparaisons avec des sites témoins."
+        ],
+        [
+          "Interprétation",
+          "Tester des mécanismes précis sans transformer une explication locale ou une absence d'explication en conclusion universelle."
+        ]
+      ],
+      "next": "Préenregistrer des enquêtes multisites associant récits indépendants, mesures environnementales synchronisées et lieux témoins ; publier aussi les visites sans événement.",
+      "sources": [
+        {
+          "id": "han1",
+          "label": "HAN1 · Dagnall, N. et al. (2020). Things That Go Bump in the Literature: An Environmental Appraisal of Haunted Houses. Frontiers in Psychology, 11, 1328.",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.01328/full",
+          "status": "Résumé et passages de la discussion du texte intégral consultés. Publication le 12 juin 2020 ; DOI : 10.3389/fpsyg.2020.01328. Revue critique, sans effet psi agrégé."
+        },
+        {
+          "id": "han2",
+          "label": "HAN2 · Wiseman, R., Watt, C., Stevens, P., Greening, E. & O'Keeffe, C. (2003). An investigation into alleged hauntings. British Journal of Psychology, 94(2), 195–211.",
+          "url": "https://uhra.herts.ac.uk/id/eprint/22901/",
+          "status": "Notice institutionnelle et résumé original consultés ; texte intégral non consulté. DOI : 10.1348/000712603321661886. Article du numéro de mai 2003 ; la date de dépôt numérique ne constitue pas une nouvelle publication."
+        },
+        {
+          "id": "han3",
+          "label": "HAN3 · French, C. C., Haque, U., Bunton-Stasyshyn, R. & Davis, R. (2009). The Haunt project: An attempt to build a haunted room by manipulating complex electromagnetic fields and infrasound. Cortex, 45(5), 619–629.",
+          "url": "https://haque.co.uk/work/haunt/HauntProject.pdf",
+          "status": "PDF original déposé par un auteur : résumé et présentation du protocole consultés. DOI : 10.1016/j.cortex.2007.10.011. Publication en ligne en 2008 ; numéro de 2009."
+        },
+        {
+          "id": "han4",
+          "label": "HAN4 · Jinks, T. (2026). The Phenomenology of Haunts: An Assessment of Bottom-Up versus Top-Down Perspectives on Three Supernatural Australian Locations. Congrès PA/AIPR, p. 23–26.",
+          "url": "https://parapsychological.org/wp-content/uploads/2026/07/2026-PA-AIPR-Abstracts-of-Presented-Papers-Web.pdf",
+          "status": "Résumé développé original consulté : objectifs, méthodes, résultats et discussion. Communication présidentielle AIPR au congrès des 13–16 août 2026 ; ne constitue pas un article expérimental complet."
+        }
+      ],
+      "handbook": "",
+      "related": [
+        "macro-pk",
+        "experiences-hors-corps",
+        "clinique-experiences-exceptionnelles"
+      ],
+      "chart": null,
+      "landscape": [],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "resultsTitle": "Terrain, laboratoire et synthèse critique",
+      "studyGroups": [
+        {
+          "id": "hantises-veille-2026",
+          "title": "Communication de 2026",
+          "intro": "Cette étude exploratoire complète le corpus publié ; son statut et son périmètre doivent rester visibles.",
+          "rows": [
+            [
+              "Jinks, PA/AIPR 2026",
+              "Comparaison exploratoire de trois lieux australiens",
+              "Récits locaux et observations environnementales ; Southern Blue Mountains",
+              "L'auteur décrit des récits différents dans des environnements géophysiques similaires. L'absence de différences nettes empêche l'analyse de corrélation prévue.",
+              "Enquête informelle sur trois sites, dont des phénomènes débordent la définition habituelle de hantise. L'interprétation en termes d'entités autonomes reste celle de l'auteur, sans démonstration expérimentale.",
+              "han4"
+            ]
+          ]
+        }
+      ],
+      "searchTerms": "apparitions hantises fantomes lieux hantes haunting haunted house environnement infrasons champs magnetiques Wiseman French Dagnall Jinks PA AIPR"
+    },
+    {
+      "id": "mediumnite-physique",
+      "title": "Médiumnité physique",
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "subtitle": "Apports, matérialisations et manifestations de séance : archives, contrôles et expérience des participants.",
+      "direction": "Corpus historique et enquêtes contemporaines à séparer",
+      "summary": "Ce dossier distingue l'étude des manifestations physiques alléguées de celle du vécu des personnes assistant aux séances. Les récits historiques, les traces matérielles et les observations actuelles requièrent des contrôles différents.",
+      "question": "Quelles manifestations de séance sont documentées, dans quelles conditions de contrôle, et que renseignent les enquêtes auprès des participants ? Les lectures d'informations relèvent de la médiumnité mentale ; les poltergeists sont traités en macro-PK.",
+      "metrics": [
+        [
+          "21",
+          "participants interrogés dans l'étude IONS de 2026"
+        ],
+        [
+          "1928–1938",
+          "période des recherches historiques réexaminées en 2019"
+        ]
+      ],
+      "rows": [
+        [
+          "Wahbeh et al., 2026",
+          "Entretiens qualitatifs après des séances publiques",
+          "21 participants ; séances de février à juillet 2024",
+          "Quinze thèmes décrivent les perceptions, le contexte rituel, les interprétations, les effets émotionnels et les doutes des participants.",
+          "Étude du vécu, sans vérification de l'authenticité physique. Participants volontaires, souvent expérimentés ; récits parfois issus des mêmes séances.",
+          "mph1"
+        ],
+        [
+          "Nahm, 2019",
+          "Réexamen historique des recherches de Chengery Pap",
+          "Archives publiées des séances et apports de 1928–1938 ; comparaison avec les observations de Fodor",
+          "Le réexamen restitue les phénomènes rapportés et met en évidence des lacunes de contrôle qui fragilisent leur attribution à une cause inhabituelle.",
+          "Évaluation documentaire rétrospective ; l'authenticité des apports de Lajos Pap reste contestée. Pas une nouvelle série expérimentale.",
+          "mph2"
+        ]
+      ],
+      "openQuestion": "Peut-on documenter une manifestation physique avec une surveillance continue et indépendante de la pièce, des objets et des participants, en conservant l'intégralité des séances et des données ?",
+      "interpretation": "Une expérience marquante en séance ne certifie pas son mécanisme physique. Inversement, un cas de trucage documenté ne suffit pas à classer tous les dossiers historiques. Chaque cas doit être examiné selon les contrôles effectivement réalisés, les traces conservées et les explications concurrentes testables.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Les archives décrivent apports et matérialisations ; les enquêtes actuelles décrivent aussi leurs effets sur les participants. Ces deux types de résultats ne sont pas interchangeables."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Les enjeux comprennent la continuité de l'observation, l'accès à la pièce, le contrôle des objets, la traçabilité des prélèvements et l'expertise en illusionnisme."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Obscurité, disposition des participants, familiarité du groupe, interventions du médium et restrictions d'enregistrement peuvent modifier à la fois le vécu et la possibilité de vérification."
+        ],
+        [
+          "Portée des conclusions",
+          "Un objet ou une image conservés demandent une chaîne de provenance. Même une anomalie physique établie ne désignerait pas automatiquement l'identité ou la nature de son agent."
+        ]
+      ],
+      "readingGuide": [
+        [
+          "Observation",
+          "Distinguer perception directe, récit collectif et enregistrement instrumental."
+        ],
+        [
+          "Vérification",
+          "Examiner les contrôles réellement maintenus pendant le phénomène, les manipulations possibles et la provenance des traces."
+        ],
+        [
+          "Interprétation",
+          "Séparer existence d'une anomalie, mécanisme physique et attribution à un défunt."
+        ]
+      ],
+      "next": "Numériser les protocoles historiques et leurs objections ; pour de nouvelles études, convenir avant les séances de contrôles continus, d'une expertise indépendante et de la publication des observations négatives.",
+      "sources": [
+        {
+          "id": "mph1",
+          "label": "MPH1 · Wahbeh, H., Gallo, J., Lightheart, O. & Rodrigues, S. (2026). Subjective Experiences of Sitters in Public Physical Mediumship Séances. Journal of the Society for Psychical Research, 90(4), 225–251.",
+          "url": "https://jspr.spr.ac.uk/index.php/jspr/article/download/57/82",
+          "status": "PDF original : résumé, méthodes, résultats et limites consultés. DOI : 10.63499/qskyra20. Vingt et un entretiens ; les questionnaires de recrutement ne sont pas analysés comme résultats d'efficacité."
+        },
+        {
+          "id": "mph2",
+          "label": "MPH2 · Nahm, M. (2019). Out of thin air? Apport studies performed between 1928 and 1938 by Elemér Chengery Pap. Journal of Scientific Exploration, 33(4), 661–705.",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/1575/967",
+          "status": "Résumé, introduction et description du corpus historique consultés dans le PDF original. DOI : 10.31275/2019/1575. Les archives hongroises originales n'ont pas été réexaminées pour cette fiche."
+        },
+        {
+          "id": "mph3",
+          "label": "MPH3 · Nahm, M. (2016). Further Comments about Kai Mügge's Alleged Mediumship and Recent Developments. Journal of Scientific Exploration, 30(1), 56–62.",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/1015/665",
+          "status": "Commentaire original consulté, notamment la documentation photographique invoquée, la comparaison des récits et les arguments sur les artifices matériels. Objections attribuées à l'auteur ; les pièces originales ne sont pas réexpertisées ici."
+        },
+        {
+          "id": "mph4",
+          "label": "MPH4 · Nahm, M. (2023). Phenomena of Franek Kluski's mediumship and the significance of materialisations for the survival question. Proceedings of the Society for Psychical Research, 61(225), 10–39.",
+          "url": "https://igpp.de/en/research-project/historical-studies-on-physical-mediumship/",
+          "status": "Référence et appartenance au programme historique vérifiées sur le site de l'IGPP. Texte de l'article non consulté ; aucun résultat détaillé ni jugement sur les contrôles de Kluski n'en est tiré ici."
+        }
+      ],
+      "handbook": "",
+      "related": [
+        "mediumnite-mentale",
+        "macro-pk",
+        "clinique-experiences-exceptionnelles"
+      ],
+      "chart": null,
+      "landscape": [],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "resultsTitle": "Études contemporaines et réexamen des archives",
+      "studyGroups": [
+        {
+          "id": "mediumnite-physique-controles",
+          "title": "Contrôles et périmètre documentaire",
+          "intro": "Une objection circonstanciée porte sur un cas. Une référence historique repérée ne vaut pas examen de ses pièces.",
+          "rows": [
+            [
+              "Nahm, 2016",
+              "Analyse critique d'un dossier contemporain",
+              "Séances du Felix Experimental Group ; photographies et récits confrontés",
+              "Nahm décrit des indices matériels de trucage et des écarts entre comptes rendus contemporains et récits ultérieurs.",
+              "Commentaire sur un cas nommé, avec des pièces de nature différente. Ses conclusions ne doivent pas être étendues automatiquement à tout le corpus.",
+              "mph3"
+            ],
+            [
+              "Nahm, 2023 : Kluski",
+              "Référence historique signalée par l'IGPP",
+              "Étude consacrée aux phénomènes et à l'interprétation des matérialisations",
+              "Repère documentaire pour compléter l'examen des archives de Kluski.",
+              "Texte intégral non consulté : cette entrée n'est pas comptée comme une vérification favorable ou défavorable des phénomènes.",
+              "mph4"
+            ]
+          ]
+        }
+      ],
+      "searchTerms": "mediumnite physique apports materialisations ectoplasme seances sitters IONS Wahbeh Nahm Kluski Chengery Pap controles"
+    },
+    {
+      "metrics": [
+        [
+          "43",
+          "participants des séries critiques de Munich"
+        ],
+        [
+          "843",
+          "essais de ces séries, selon Enright"
+        ],
+        [
+          "3",
+          "tests sur carte distingués dans la revue Hansen"
+        ]
+      ],
+      "rows": [
+        [
+          "Hansen, 1982",
+          "Revue expérimentale historique",
+          "Tests de terrain, cibles cachées et recherche sur carte",
+          "Les résultats et les contrôles sont hétérogènes. Parmi trois tests sur carte jugés particulièrement bien conduits, un seul produit un résultat significatif, qualifié de marginal par l'auteur.",
+          "Revue narrative, sans estimation combinée. Les travaux de Cadoret, Osis et Foulkes sont consultés ici à travers cette synthèse.",
+          "rad1"
+        ],
+        [
+          "Betz, 1995",
+          "Prospection hydrogéologique de terrain",
+          "Projets GTZ en zones sèches, avec radiesthésistes sélectionnés",
+          "L'auteur rapporte des succès de forage qu'il estime difficiles à expliquer par les méthodes conventionnelles et propose une utilisation complémentaire de la radiesthésie.",
+          "Un rendement de forage doit être comparé à un niveau de référence adapté au terrain. Il ne mesure pas directement un effet psi ; la sélection des sites et les informations disponibles comptent.",
+          "rad2"
+        ],
+        [
+          "Enright, 1995 et 1999",
+          "Réanalyse des expériences de Munich",
+          "43 participants ; 843 essais critiques répartis en 104 séries",
+          "Enright conteste l'interprétation positive des expérimentateurs : les performances sélectionnées et les méthodes statistiques employées ne démontrent pas, selon sa réanalyse, une capacité de localisation.",
+          "Désaccord sur l'analyse d'un même jeu de données. Le texte consulté est l'exposé de 1999 par l'auteur de la critique, qui renvoie aux articles de 1995 et 1996.",
+          "rad3"
+        ],
+        [
+          "Huttunen, Niinimaa et Myllylä, 2012",
+          "Réanalyse et hypothèse biophysique",
+          "Réactions comparées à pied et en véhicule aux vitres occultées",
+          "Les auteurs rapportent des correspondances entre lieux de réaction dans certains sites et proposent une influence des radiofréquences ambiantes.",
+          "Le résumé ne rapporte pas de test prospectif établissant ce mécanisme. Une sensibilité physique éventuelle et une acquisition extrasensorielle sont des hypothèses distinctes.",
+          "rad5"
+        ]
+      ],
+      "profile": [
+        [
+          "Résultats observés",
+          "Succès de terrain revendiqués, essais contrôlés positifs ou nuls, et controverse statistique sur Munich. Les types de cibles et d'indicateurs diffèrent."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Aveugle de l'opérateur et du relevé, dissimulation des indices géologiques ou sensoriels, randomisation, critère de réussite et sélection des séries à expliciter."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Praticien, familiarité avec le terrain, instrument et nature de la cible peuvent être étudiés comme modérateurs. Les sélectionner après connaissance du résultat modifie la portée du test."
+        ],
+        [
+          "Portée des conclusions",
+          "Une localisation correcte n'identifie pas son mécanisme. La recherche sur carte réduit certaines interactions avec le terrain mais doit aussi contrôler les informations fournies par la carte."
+        ]
+      ],
+      "readingGuide": [
+        [
+          "Mouvement",
+          "Comment le geste et le déplacement de l'instrument sont-ils produits et enregistrés ?"
+        ],
+        [
+          "Information",
+          "La localisation est-elle plus exacte qu'une stratégie de référence définie avant le test ?"
+        ],
+        [
+          "Mécanisme",
+          "Quels indices sensoriels, connaissances du terrain ou effets physiques restent possibles ?"
+        ]
+      ],
+      "sources": [
+        {
+          "id": "rad1",
+          "label": "RAD1 · Hansen, G. P. (1982). Dowsing: A Review of Experimental Research. Journal of the Society for Psychical Research, 51(792), 343–367.",
+          "url": "https://www.tricksterbook.com/ArticlesOnline/Dowsing.htm",
+          "status": "Passages de la revue originale consultés dans la version indexée du site de l'auteur, notamment les tests sur carte et leur bilan. L'ouverture directe du site a échoué."
+        },
+        {
+          "id": "rad2",
+          "label": "RAD2 · Betz, H.-D. (1995). Unconventional Water Detection: Field Test of the Dowsing Technique in Dry Zones: Part 1. Journal of Scientific Exploration, 9(1), 1–43.",
+          "url": "https://geobiologia.cl/files/journal_of_%20scientific_exploration.pdf",
+          "status": "Résumé original et passages indexés du PDF consultés. Accès direct au PDF indisponible lors de la vérification ; aucune vérification exhaustive des données de forage."
+        },
+        {
+          "id": "rad3",
+          "label": "RAD3 · Enright, J. T. (1999). Testing Dowsing: The Failure of the Munich Experiments. Skeptical Inquirer, 23(1). Voir aussi Water dowsing: The Scheunen experiments (1995), Naturwissenschaften, 82, 360–369, doi:10.1007/BF01134560.",
+          "url": "https://skepticalinquirer.org/1999/01/testing-dowsing-the-failure-of-the-munich-experiments/",
+          "status": "Texte de 1999 consulté, avec description du protocole et de la réanalyse par son auteur. Notice de l'article de 1995 vérifiée, mais texte intégral de 1995 non obtenu."
+        },
+        {
+          "id": "rad4",
+          "label": "RAD4 · Betz, H.-D., Kulzer, R., König, H. L., Tritschler, J. & Wagner, H. (1996). Dowsing reviewed: the effect persists. Naturwissenschaften, 83, 272–275.",
+          "url": "https://doi.org/10.1007/BF01149600",
+          "status": "Notice de l'éditeur et références consultées ; texte intégral non obtenu. Source mentionnée pour documenter la réponse, sans chiffrer ses résultats."
+        },
+        {
+          "id": "rad5",
+          "label": "RAD5 · Huttunen, P., Niinimaa, A. & Myllylä, R. (2012). Dowsing can be interfered with by radio frequency radiation. Pathophysiology, 19(2), 89–94.",
+          "url": "https://doi.org/10.1016/j.pathophys.2012.01.004",
+          "status": "Résumé original consulté dans les notices PubMed et éditeur indexées. L'hypothèse radiofréquence est présentée comme proposition des auteurs, sans validation indépendante ici."
+        }
+      ],
+      "handbook": "",
+      "related": [
+        "vision-distance",
+        "choix-force",
+        "conditions-moderateurs"
+      ],
+      "chart": null,
+      "landscape": [],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "resultsTitle": "Études et documents retenus",
+      "id": "radiesthesie",
+      "title": "Radiesthésie : terrain et carte",
+      "group": "Perception",
+      "kind": "experimental",
+      "subtitle": "Localiser une cible cachée avec une baguette ou un pendule : que montrent les tests ?",
+      "direction": "Résultats favorables et nuls, avec des désaccords sur leur analyse",
+      "summary": "La prospection sur place, les cibles contrôlées et la recherche sur carte posent des problèmes différents. Les succès de forage et les mouvements de l'instrument ne suffisent pas, seuls, à identifier une acquisition d'information par psi.",
+      "question": "Cette fiche distingue la radiesthésie sur le terrain, les tests de localisation en aveugle et la radiesthésie sur carte. Elle examine l'exactitude des informations obtenues ; les usages diagnostiques et les affirmations sanitaires ne sont pas évalués ici.",
+      "studyGroups": [
+        {
+          "id": "radiesthesie-debat-munich",
+          "title": "Le débat sur les expériences de Munich",
+          "intro": "La réponse des expérimentateurs doit être signalée avec son niveau d'accès, sans lui attribuer une analyse détaillée non consultée.",
+          "rows": [
+            [
+              "Betz et al., 1996",
+              "Réponse à Enright",
+              "Correspondance scientifique dans Naturwissenschaften",
+              "Les auteurs maintiennent une lecture positive des expériences dans une réponse intitulée Dowsing reviewed: the effect persists.",
+              "Notice et références consultées ; texte intégral non obtenu. Cette entrée documente l'existence de la réponse et ne constitue pas une validation de son argument statistique.",
+              "rad4"
+            ]
+          ]
+        }
+      ],
+      "openQuestion": "Un protocole arrêté à l'avance, accepté par les praticiens et évalué en aveugle distingue-t-il une information exacte des indices du terrain et des stratégies ordinaires de réponse ?",
+      "interpretation": "Le mouvement de la baguette, la réussite d'une localisation et l'origine de l'information constituent trois questions distinctes. Les résultats favorables méritent une analyse de leurs contrôles ; les résultats nuls doivent être rapportés avec les conditions testées. Les documents retenus ne permettent pas de calculer une taille d'effet unique pour l'ensemble de la radiesthésie.",
+      "next": "Publier toutes les localisations et erreurs, comparer des critères annoncés à l'avance et dissocier terrain, cible contrôlée et carte. Une collaboration entre praticiens, hydrogéologues et analystes permettrait de fixer des conditions de test interprétables.",
+      "searchTerms": "radiesthésie radiesthesie sourcier pendule baguette dowsing carte map water Hansen Betz Enright Cadoret Osis Foulkes Duke"
+    },
+    {
+      "metrics": [
+        [
+          "81",
+          "séances de la tentative EVP publiée en 2001"
+        ],
+        [
+          "347",
+          "applications examinées dans l'étude de 2025"
+        ],
+        [
+          "61",
+          "auditeurs dans la réplication perceptive de 2022"
+        ]
+      ],
+      "rows": [
+        [
+          "Barušs, 2001",
+          "Tentative de reproduction en laboratoire",
+          "81 séances ; environ 60 h 11 min de son enregistré",
+          "Quelques sons ressemblent à des voix, mais aucun n'est jugé assez distinctif pour être qualifié d'anomalie.",
+          "Résultat négatif dans les conditions employées. La présence d'une forme vocale et celle d'un message d'origine inconnue doivent être distinguées.",
+          "tci1"
+        ],
+        [
+          "Barušs, 2007",
+          "Générateurs de texte et présence d'une médium",
+          "26 séances ; 715 activations ; 11 réponses oui/non vérifiables parmi 49",
+          "9 réponses vérifiables sur 11 sont correctes ; l'auteur rapporte p ≈ 0,042 après prise en compte du biais oui/non. Les chaînes de caractères ne montrent pas d'anomalie identifiable.",
+          "Les questions n'étaient pas fixées à l'avance ; presque toutes les réponses vérifiables viennent de la dernière séance. Signal exploratoire, sans identification de sa source.",
+          "tci2"
+        ],
+        [
+          "Barušs et al., 2025",
+          "Exploration d'applications mobiles",
+          "347 applications examinées ; 20 Apple et 30 Android retenues pour approfondissement",
+          "Les auteurs décrivent des échanges vocaux apparemment pertinents. Ils ne trouvent pas d'événement jugé anormal avec les générateurs de mots ou d'images.",
+          "Les auteurs indiquent ne pas pouvoir exclure la paréidolie, ni départager leur interprétation de l'hypothèse psi impliquant des personnes vivantes. Absence de test confirmatoire établissant une communication avec un défunt.",
+          "tci3"
+        ]
+      ],
+      "profile": [
+        [
+          "Résultats observés",
+          "Résultats négatifs en production EVP, associations exploratoires dans certaines séances et effets de contexte perceptif partiellement reproduits."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Conserver les fichiers bruts, vérifier les sources radio ou logicielles, coder les réponses en aveugle et compter aussi les réponses erronées ou non interprétables."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Dispositif, opérateur, type de bruit, familiarité avec une voix et consignes d'écoute peuvent modifier le résultat ; les corpus ne sont pas directement interchangeables."
+        ],
+        [
+          "Portée des conclusions",
+          "Une anomalie instrumentale, une phrase intelligible, une information exacte et une communication post mortem correspondent à des propositions distinctes."
+        ]
+      ],
+      "readingGuide": [
+        [
+          "Signal",
+          "Le son ou le texte est-il présent dans les données brutes et son origine technique a-t-elle été examinée ?"
+        ],
+        [
+          "Message",
+          "Plusieurs personnes retrouvent-elles le même contenu sans être orientées par une transcription ?"
+        ],
+        [
+          "Attribution",
+          "Que permet l'information obtenue pour départager hasard, information ordinaire et hypothèses psi ou de survie ?"
+        ]
+      ],
+      "sources": [
+        {
+          "id": "tci1",
+          "label": "TCI1 · Barušs, I. (2001). Failure to Replicate Electronic Voice Phenomenon. Journal of Scientific Exploration, 15(3), 355–367.",
+          "url": "https://priory-of-sion.com/biblios/links/baruss.pdf",
+          "status": "Résumé et passages du texte original consultés dans une copie PDF ; la notice du dépôt de Western University confirme la référence."
+        },
+        {
+          "id": "tci2",
+          "label": "TCI2 · Barušs, I. (2007). An Experimental Test of Instrumental Transcommunication. Journal of Scientific Exploration, 21(1), 89–98.",
+          "url": "https://www.sgha.net/library/jse_21_1_baruss.pdf",
+          "status": "Méthodes, tableau des questions vérifiables, calculs et résultats audio consultés dans le PDF original. Aucun recalcul des données effectué."
+        },
+        {
+          "id": "tci3",
+          "label": "TCI3 · Barušs, I., Padilla, E., Mandoki, M. J. & Ens, N. (2025). Testing Cell Phone Applications Used for After-Death Communication. Journal of Consciousness Exploration & Research, 16(5), 640–649.",
+          "url": "https://baruss.ca/jcer%202025.pdf",
+          "status": "Résumé, description des essais et limites consultés dans le PDF publié sur le site de l'auteur. Étude exploratoire publiée en novembre 2025, pas une réplication confirmatoire."
+        },
+        {
+          "id": "tci4",
+          "label": "TCI4 · Nees, M. A. & Phillips, C. (2015). Auditory Pareidolia: Effects of Contextual Priming on Perceptions of Purportedly Paranormal and Ambiguous Auditory Stimuli. Applied Cognitive Psychology, 29(1), 129–134.",
+          "url": "https://doi.org/10.1002/acp.3068",
+          "status": "Résumé éditeur et manuscrit des auteurs consultés (copie PDF). Publication en ligne en 2014 ; volume daté de 2015."
+        },
+        {
+          "id": "tci5",
+          "label": "TCI5 · Williams, J. M. & Blagrove, M. (2022). Paranormal experiences, sensory-processing sensitivity, and the priming of pareidolia. PLOS ONE, 17(9), e0274595.",
+          "url": "https://doi.org/10.1371/journal.pone.0274595",
+          "status": "Résumé, méthodes et discussion consultés dans le texte intégral ouvert. Réplication partielle, avec données déposées ; absence d'audit des fichiers ici."
+        }
+      ],
+      "handbook": "",
+      "related": [
+        "mediumnite-mentale",
+        "macro-pk",
+        "micro-pk",
+        "clinique-experiences-exceptionnelles"
+      ],
+      "chart": null,
+      "landscape": [],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "resultsTitle": "Études et documents retenus",
+      "id": "transcommunication-instrumentale",
+      "title": "Transcommunication instrumentale et voix électroniques",
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "subtitle": "Enregistrements, générateurs de texte et applications : distinguer signal, message et attribution.",
+      "direction": "Observations exploratoires, résultats nuls et rôle mesurable de la perception",
+      "summary": "Des expériences cherchent à obtenir des messages par des dispositifs électroniques. Le corpus comprend des essais négatifs, des réponses ponctuelles jugées pertinentes et des études montrant combien l'écoute et les attentes influencent leur identification.",
+      "question": "La transcommunication instrumentale (TCI, ou ITC) inclut ici les tentatives provoquées avec enregistrements, générateurs de texte et applications. Les voix électroniques (EVP) en constituent le volet sonore. Les contacts téléphoniques spontanés attribués à un défunt relèvent d'un corpus documentaire distinct.",
+      "studyGroups": [
+        {
+          "id": "tci-perception",
+          "title": "Écoute, attentes et identification du message",
+          "intro": "Ces expériences portent sur l'interprétation des sons. Elles n'examinent pas directement l'origine physique de tous les enregistrements présentés comme EVP.",
+          "rows": [
+            [
+              "Nees et Phillips, 2015",
+              "Manipulation du contexte annoncé aux auditeurs",
+              "27 participants analysés ; 136 extraits de quatre catégories",
+              "La présentation paranormale augmente la détection de voix dans les EVP et la parole dégradée ; l'accord sur les mots entendus dans les EVP reste faible.",
+              "Petit échantillon étudiant, globalement sceptique. Le résultat porte sur la perception d'extraits sélectionnés, pas sur toutes les formes de TCI.",
+              "tci4"
+            ],
+            [
+              "Williams et Blagrove, 2022",
+              "Réplication du protocole perceptif",
+              "61 participants ; contexte paranormal ou neutre",
+              "Réplication partielle : pas d'augmentation générale de détection entre groupes comme dans l'étude précédente, mais une différence entre catégories sonores dans le groupe amorcé.",
+              "L'effet de contexte n'est pas uniforme. La détection subjective d'une voix doit rester séparée de l'identification exacte de son contenu.",
+              "tci5"
+            ]
+          ]
+        }
+      ],
+      "openQuestion": "Des auditeurs indépendants, sans transcription suggérée, peuvent-ils reconnaître le même message et l'associer à une cible inconnue avec un score fixé à l'avance ?",
+      "interpretation": "Trois étapes demandent des contrôles différents : isoler un signal, établir un contenu partagé par les auditeurs, puis déterminer son origine. Un message reconnu comme personnel n'identifie pas à lui seul un défunt comme émetteur. Les tests d'écoute et les contrôles instrumentaux sont complémentaires.",
+      "next": "Pré-enregistrer cibles et critères, inclure des séances témoins, documenter le fonctionnement des applications et organiser une transcription indépendante en aveugle. Publier l'ensemble des essais, avec leurs fichiers bruts, permettrait d'évaluer la sélection des passages.",
+      "searchTerms": "transcommunication instrumentale TCI ITC EVP voix électroniques applications téléphone Baruss Barušs Nees Phillips paréidolie"
+    },
+    {
+      "metrics": [
+        [
+          "440",
+          "participants de la seconde étude de validation SAMD"
+        ],
+        [
+          "282",
+          "dossiers avant/après appariés dans Butzer et al."
+        ],
+        [
+          "3",
+          "études sur les coïncidences et la créativité en 2024"
+        ]
+      ],
+      "rows": [
+        [
+          "Russo-Netzer et Icekson, 2023",
+          "Développement et validation psychométrique",
+          "Deux études ; seconde enquête auprès de 440 adultes",
+          "L'échelle distingue la perception de synchronicités et le sens qui leur est attribué. Ces dimensions sont associées à des traits psychologiques et à des indicateurs de bien-être.",
+          "Questionnaires corrélationnels. Une échelle cohérente de vécu ne teste ni une causalité acausale ni une amélioration thérapeutique provoquée.",
+          "syn1"
+        ],
+        [
+          "Butzer, Kriegsman, Yount et Wahbeh, 2024",
+          "Enquêtes et tâches autour d'ateliers",
+          "725 observations initiales ; 282 dossiers avant/après appariés",
+          "La méditation est associée à davantage d'expériences et croyances rapportées. Les auteurs ne trouvent pas l'avantage correspondant dans les performances aux tâches objectives étudiées.",
+          "Recrutement en ateliers et données observationnelles. L'association aux expériences déclarées ne peut être transposée à une capacité mesurée ou à un effet causal de la méditation.",
+          "syn2"
+        ],
+        [
+          "Rominger, Fink et Perchtold-Stefan, 2024",
+          "Trois études, dont des journaux quotidiens",
+          "Échantillons analysés : 69, 93 et 80 personnes ; troisième étude pré-enregistrée",
+          "Les coïncidences rapportées sont associées aux activités et réalisations créatives. Leur fréquence varie quotidiennement ; les liens au potentiel créatif et à l'ouverture ne sont pas constants.",
+          "Les événements restent déclarés par les participants. Le pré-enregistrement concerne une association psychologique, sans démonstration d'un mécanisme psi.",
+          "syn3"
+        ],
+        [
+          "Roxburgh, Ridgway et Roe, 2016",
+          "Enquête auprès de praticiens",
+          "226 répondants : conseillers, psychologues et psychothérapeutes",
+          "100 répondants, soit 44 %, rapportent une synchronicité dans leur pratique ; 67 % pensent que ces expériences peuvent être utiles en thérapie.",
+          "Opinions et expériences de praticiens, sans comparaison des résultats de patients. L'utilité perçue n'est pas une mesure d'efficacité clinique.",
+          "syn4"
+        ]
+      ],
+      "profile": [
+        [
+          "Résultats observés",
+          "Associations entre coïncidences déclarées, sens, créativité et méditation. L'étude IONS ne retrouve pas l'association attendue avec les performances objectives étudiées."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Échelles structurées, échantillons distincts et journaux quotidiens améliorent la description du vécu. Ils ne fournissent pas automatiquement un taux de coïncidences supérieur au hasard."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Attention, contexte, affect et manière de définir une coïncidence influencent ce qui est relevé. Les différences individuelles et quotidiennes sont des objets d'étude."
+        ],
+        [
+          "Portée des conclusions",
+          "Le corpus retenu documente surtout la psychologie et les usages du sens. Il ne tranche pas entre causes ordinaires et hypothèses acausales des correspondances."
+        ]
+      ],
+      "readingGuide": [
+        [
+          "Expérience",
+          "Quels événements ont été rapportés, et à quelle fréquence ?"
+        ],
+        [
+          "Signification",
+          "Quelle importance ont-ils pour la personne et son parcours ?"
+        ],
+        [
+          "Correspondance",
+          "Quel test indépendant permettrait d'évaluer leur association au-delà des occasions ordinaires de coïncidence ?"
+        ]
+      ],
+      "sources": [
+        {
+          "id": "syn1",
+          "label": "SYN1 · Russo-Netzer, P. & Icekson, T. (2023). An underexplored pathway to life satisfaction: The development and validation of the synchronicity awareness and meaning-detecting scale. Frontiers in Psychology, 13, 1053296.",
+          "url": "https://doi.org/10.3389/fpsyg.2022.1053296",
+          "status": "Méthodes et résultats consultés dans le texte intégral. Publication le 16 janvier 2023, malgré 2022 dans le volume et le DOI. L'effectif indiqué ici est celui de la seconde étude."
+        },
+        {
+          "id": "syn2",
+          "label": "SYN2 · Butzer, B., Kriegsman, M., Yount, G. & Wahbeh, H. (2024). An Exploration of the Associations Between Meditation, Extended Human Capacities and Synchronistic Experiences. World Futures, 80(2), 133–152.",
+          "url": "https://noetic.org/publication/an-exploration-of-the-associations-between-meditation-extended-human-capacities-and-synchronistic-experiences/",
+          "status": "Résumé original publié par IONS consulté ; doi:10.1080/02604027.2024.2330289. Effectifs appariés et résultats des tâches précisés dans le compte rendu des auteurs (SYN5). Texte intégral éditeur non obtenu."
+        },
+        {
+          "id": "syn3",
+          "label": "SYN3 · Rominger, C., Fink, A. & Perchtold-Stefan, C. M. (2024). Experiencing more meaningful coincidences is associated with more real-life creativity? Insights from three empirical studies. PLOS ONE, 19(5), e0300121.",
+          "url": "https://doi.org/10.1371/journal.pone.0300121",
+          "status": "Résumé, méthodes et résultats consultés dans le texte intégral, dont la description du pré-enregistrement de l'étude 3. Registre et données non réanalysés."
+        },
+        {
+          "id": "syn4",
+          "label": "SYN4 · Roxburgh, E. C., Ridgway, S. & Roe, C. A. (2016). Synchronicity in the therapeutic setting: a survey of practitioners. Counselling and Psychotherapy Research, 16(1), 44–53.",
+          "url": "https://pure.northampton.ac.uk/en/publications/synchronicity-in-the-therapeutic-setting-a-survey-of-practitioner/",
+          "status": "Résumé original et notice institutionnelle consultés ; doi:10.1002/capr.12057. Mise en ligne le 15 décembre 2015 ; publication dans le volume de mars 2016."
+        },
+        {
+          "id": "syn5",
+          "label": "SYN5 · IONS (2024). Exploring the Link Between Meditation, Synchronicity, and Extended Human Abilities. Compte rendu de Butzer et al.",
+          "url": "https://noetic.org/blog/synchronicity/",
+          "status": "Compte rendu des chercheurs consulté pour les 725 observations initiales, les 282 dossiers appariés et les résultats non significatifs des tâches objectives. Même étude que SYN2, pas une source expérimentale supplémentaire."
+        },
+        {
+          "id": "iching-storm-2025",
+          "label": "Storm (2025), Meaningfulness in the I Ching Using a Q-Sort RNG Method, JSPR 89(2), 65–93 ; KPU 1082",
+          "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_1082_Published_Results.pdf",
+          "status": "Article original déposé au registre et protocole consultés. Étude distincte des enquêtes psychométriques sur les synchronicités."
+        }
+      ],
+      "handbook": "",
+      "related": [
+        "conditions-moderateurs",
+        "clinique-experiences-exceptionnelles",
+        "precognition",
+        "gcp"
+      ],
+      "chart": null,
+      "landscape": [],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "resultsTitle": "Études et documents retenus",
+      "id": "synchronicites",
+      "title": "Synchronicités et coïncidences significatives",
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "subtitle": "Fréquence rapportée, construction du sens et tests de correspondance : trois objets de recherche.",
+      "direction": "Associations psychologiques documentées, mécanisme causal non établi",
+      "summary": "Les enquêtes et journaux quotidiens étudient les coïncidences vécues comme significatives, leurs liens avec la créativité, la méditation et le bien-être. Ces associations renseignent l'expérience et sa signification sans mesurer, à elles seules, un écart objectif au hasard.",
+      "question": "Cette fiche porte sur l'étude empirique des synchronicités : questionnaires, suivis quotidiens et enquêtes en contexte thérapeutique. Elle distingue le vécu d'une coïncidence, sa valeur personnelle et la possibilité d'un lien causal ou acausal entre les événements.",
+      "openQuestion": "Un journal prospectif avec événements horodatés et cotation indépendante peut-il distinguer fréquence des correspondances, attention portée aux coïncidences et valeur personnelle attribuée ?",
+      "interpretation": "L'importance psychologique d'une coïncidence peut être étudiée sans présumer son mécanisme. Pour examiner une hypothèse psi, il faudrait aussi définir les correspondances admissibles, les occasions de rencontre et les non-correspondances. Pour examiner un bénéfice clinique, il faut mesurer les changements chez les personnes accompagnées.",
+      "next": "Associer journaux prospectifs, traces vérifiables, règles de correspondance annoncées à l'avance et évaluateurs indépendants. Étudier séparément les conséquences psychologiques et les hypothèses sur l'origine des événements.",
+      "searchTerms": "synchronicités synchronicites coïncidences coincidence sens meaningful synchronicity SAMD IONS méditation créativité Northampton",
+      "studyGroups": [
+        {
+          "id": "i-ching",
+          "title": "I Ching : un test expérimental du sens attribué au tirage",
+          "intro": "L'adéquation ressentie, la distinction entre lecture authentique et leurre, et la déviation d'un générateur ne sont pas des mesures équivalentes.",
+          "rows": [
+            [
+              "Storm, 2025 ; KPU 1082",
+              "Étude enregistrée, Q-sort et GNA",
+              "100 participants ; lecture authentique et lecture leurre de type Barnum.",
+              "Score Q-sort moyen proche de zéro dans le résultat rapporté.",
+              "Une lecture ressentie comme pertinente ne suffit pas à établir une correspondance anormale. Le corpus historique doit compléter ce premier repère.",
+              "iching-storm-2025"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "telepathie-telecommunications",
+      "title": "Télépathie et télécommunications",
+      "subtitle": "Identifier un appelant ou un expéditeur avant de connaître son identité",
+      "group": "Perception",
+      "kind": "experimental",
+      "summary": "Une méta-analyse de 2025 réunit les tests par téléphone, courriel et SMS. Les expériences récentes donnent des résultats différents selon le protocole et la population.",
+      "direction": "Synthèse positive, résultats récents contrastés",
+      "question": "Peut-on identifier l'appelant choisi au hasard, sans indice conventionnel, et quelles conditions modifient cette performance ?",
+      "rows": [
+        [
+          "Sheldrake, Stedall et Tressoldi, 2025",
+          "Méta-analyse à effets aléatoires",
+          "26 expériences, 15 articles, corpus décrit comme 2003–2024.",
+          "Écart global positif rapporté, p = 10⁻⁷ ; résultats plus élevés avec participants sélectionnés et liens affectifs.",
+          "Corpus majoritairement issu de Sheldrake et collaborateurs ; les variantes précognitives sont à distinguer. Les études détaillées ci-dessous ne constituent pas nécessairement des données supplémentaires.",
+          "tel-meta-2025"
+        ],
+        [
+          "Wahbeh et coll., 2023/2024 ; KPU 1062",
+          "Appels automatisés, deux conditions",
+          "177 participants ayant effectué au moins un essai ; 105 terminent la série.",
+          "Résumé : 50 % de réussite en pré-sélection contre 33,3 % attendus. Le texte reconnaît que ce seuil initial est inadéquat face au biais de réponse ; analyses post hoc corrigées rapportées.",
+          "Le choix rarement utilisé « personne » modifie le hasard pertinent. Après correction, 56 % contre 50 %, p = 0,02 pour les essais pré-sélectionnés analysés ; cela ne vaut pas validation confirmatoire du calcul initial.",
+          "tel-wahbeh-2024"
+        ],
+        [
+          "Stedall et Tressoldi, 2025 ; KPU 1048",
+          "Réplication préenregistrée en Italie",
+          "117 participants, 604 essais à deux appelants.",
+          "294 réponses correctes, soit 48,6 %, pour 50 % attendus.",
+          "Comparaison ultérieure entre stratégies intuitives et rationnelles exploratoire ; elle ne change pas le résultat principal.",
+          "tel-stedall-2025"
+        ]
+      ],
+      "sources": [
+        {
+          "id": "tel-meta-2025",
+          "label": "Sheldrake, Stedall et Tressoldi (2025), Telecommunication Telepathy: A Meta-Analysis, Journal of Anomalous Experience and Cognition, 5(1), 47–69.",
+          "url": "https://journals.lub.lu.se/jaex/article/view/25934",
+          "status": "Résumé et notice de la revue consultés. Méta-analyse, pas nouveau test unique ; données brutes non réanalysées."
+        },
+        {
+          "id": "tel-wahbeh-2024",
+          "label": "Wahbeh, Cannard, Radin et Delorme (2024 ; en ligne le 25 août 2023), Who's calling? Evaluating the accuracy of guessing who is on the phone, Explore, 20(2), 239–247. DOI : 10.1016/j.explore.2023.08.008.",
+          "url": "https://www.sheldrake.org/files/pdfs/papers/Whos-calling-evaluating-the-accuracy-of-guessing-who-is-on-the-phone.pdf",
+          "status": "Texte de l'article consulté, notamment la discussion du biais de réponse et les analyses corrigées p. 7–8. Le résultat du résumé ne suffit pas à rendre compte de cette correction."
+        },
+        {
+          "id": "tel-stedall-2025",
+          "label": "Stedall et Tressoldi (2025), Who is calling? An Independent Replication of a Telephone Telepathy Test, Journal of Scientific Exploration, 39(2), 203–206.",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/3543",
+          "status": "Résumé et notice de la revue consultés ; publication reliée à KPU 1048 dans le registre."
+        },
+        {
+          "id": "tel-kpu-1048",
+          "label": "Tressoldi et Sheldrake (3 novembre 2018), Telephone telepathy, an Italian independent exact replication, KPU 1048.",
+          "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_Registry_1048.pdf",
+          "status": "Protocole consulté ; enregistrement déclaré antérieur au premier participant."
+        },
+        {
+          "id": "tel-kpu-1062",
+          "label": "Wahbeh (2021, révision du 20 juillet 2022), A telephone telepathy study: Does genetic relatedness influence psychic abilities?, KPU 1062.",
+          "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_Registry_1062_4.pdf",
+          "status": "Protocole révisé consulté ; quatre versions sont liées dans le registre. Les modifications de recrutement et de procédure sont discutées dans la publication."
+        }
+      ],
+      "profile": [
+        [
+          "Résultats observés",
+          "Synthèse cumulative positive, réplication italienne au niveau du hasard, résultat IONS sensible au modèle de réponse."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Automatisation, horodatage, absence d'indices d'appel et calcul du hasard adapté aux choix effectivement proposés sont déterminants."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Nombre d'appelants, sélection des personnes, liens interpersonnels et moment du tirage changent entre protocoles."
+        ],
+        [
+          "Portée des conclusions",
+          "Une réussite au test ne suffit pas à isoler un mécanisme télépathique ; la pré-sélection et la post-sélection interrogent des hypothèses différentes."
+        ]
+      ],
+      "openQuestion": "L'écart subsiste-t-il avec des appels dont les indices temporels sont contrôlés et un modèle de réponse fixé avant les essais ?",
+      "interpretation": "Ce dossier porte sur des identifications contrôlées. Les impressions spontanées d'avoir pensé à quelqu'un avant son appel constituent un autre type d'observation.",
+      "related": [
+        "choix-force",
+        "ganzfeld",
+        "precognition",
+        "conditions-moderateurs"
+      ],
+      "searchTerms": "telephone telecommunication telepathie appel SMS email courriel Sheldrake Stedall Wahbeh KPU 1048 1062",
+      "metrics": [
+        [
+          "26",
+          "expériences dans la méta-analyse 2025"
+        ],
+        [
+          "48,6 %",
+          "réussite de la réplication italienne ; hasard 50 %"
+        ]
+      ],
+      "readingGuide": [],
+      "chart": null,
+      "studyGroups": [],
+      "landscape": [],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "handbook": "",
+      "next": "L'écart subsiste-t-il avec des appels dont les indices temporels sont contrôlés et un modèle de réponse fixé avant les essais ?",
+      "resultsTitle": "Études et documents retenus"
+    },
+    {
+      "id": "vision-distance-associative",
+      "title": "Vision à distance associative (ARV)",
+      "subtitle": "Transformer une description d'image en prévision d'un événement",
+      "group": "Anticipation",
+      "kind": "experimental",
+      "summary": "L'ARV associe des images aux issues possibles d'un événement. Ce corpus teste autant la description que son jugement, le retour d'information et les règles de décision.",
+      "direction": "Prévisions positives dans certaines séries, rôle du jugement documenté",
+      "question": "Une image associée à une issue future peut-elle être décrite et reconnue avant que l'événement soit connu ?",
+      "rows": [
+        [
+          "Müller, Müller et Wittmann, 2019",
+          "Étude exploratoire au sein de l'IGPP",
+          "48 prévisions valides du sens de variation du DAX.",
+          "38 prévisions correctes, soit 79,16 % ; p = 2,3 × 10⁻⁵. Pas de différence significative entre conditions avec et sans retour d'information.",
+          "Le moniteur connaissait les images candidates. Ce résultat circonscrit ne démontre pas une performance financière durable.",
+          "arv-mueller-2019"
+        ],
+        [
+          "Katz, Grgić, Tressoldi et Fendley, 2021 ; KPU 1034",
+          "Nouvelle cotation en aveugle d'archives",
+          "86 essais déjà réalisés, 220 comptes rendus ; nouvelles cotations et règles de décision.",
+          "Accord unanime des juges pour 6 essais sur 86. Réussite : 65 % pour les juges originaux, moyenne 51,5 % pour les nouveaux juges individuels.",
+          "Les séries réanalysées sont sélectionnées ; ce réexamen n'est pas une nouvelle collecte de perceptions. La différence globale rapportée p = 0,055 ne franchit pas 0,05.",
+          "arv-katz-2021"
+        ],
+        [
+          "Grgić, Katz et Tressoldi, 2017 ; KPU 1034",
+          "Protocole exploratoire préenregistré",
+          "Enregistrement du 10 avril 2017 avant la nouvelle cotation.",
+          "Hypothèses sur les juges, les échelles, le consensus et les décisions de passer un essai.",
+          "L'enregistrement précède le réexamen, pas les essais originaux. Le plan initial et le matériel finalement disponible doivent être distingués.",
+          "arv-kpu-1034"
+        ]
+      ],
+      "sources": [
+        {
+          "id": "arv-mueller-2019",
+          "label": "Müller, Müller et Wittmann (2019), Predicting the Stock Market: An Associative Remote Viewing Study, Zeitschrift für Anomalistik, 19, 326–346.",
+          "url": "https://www.anomalistik.de/images/pdf/zfa/zfa2019_3_326_mueller-mueller-wittmann.pdf",
+          "status": "PDF de la revue consulté : méthode, résultats et limites du rôle du moniteur. Étude exploratoire ; absence de différence entre conditions ne démontre pas leur équivalence."
+        },
+        {
+          "id": "arv-katz-2021",
+          "label": "Katz, Grgić, Tressoldi et Fendley (2021), Associative Remote Viewing Projects: Assessing Rater Reliability and Factors Affecting Successful Predictions, Journal of the Society for Psychical Research, 85(2), 65–90.",
+          "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_1034_Published_Results.pdf",
+          "status": "Article déposé dans le registre consulté, notamment tableau 3 et discussion. La mention de significativité pour p = 0,055 dans le texte est présentée ici avec sa valeur exacte, sans la reprendre comme conclusion."
+        },
+        {
+          "id": "arv-kpu-1034",
+          "label": "Grgić, Katz et Tressoldi (10 avril 2017), The Associative Remote Viewing Rejudging Project, KPU 1034.",
+          "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_Registry_1034.pdf",
+          "status": "Protocole consulté ; réévaluation de matériel antérieur, non collecte prospective des essais originaux."
+        }
+      ],
+      "profile": [
+        [
+          "Résultats observés",
+          "Certaines séries dépassent le hasard. La nouvelle cotation de mêmes comptes rendus donne des prévisions et des taux de réussite différents."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Fixer l'association image/issue, le calendrier, les règles de cotation et les exclusions avant l'événement ; conserver aussi les essais sans prévision."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Examiner séparément les participants, les juges, les images, le consensus et le retour d'information."
+        ],
+        [
+          "Portée des conclusions",
+          "La justesse d'une prévision et un gain financier sont des critères distincts. L'analyse porte sur le protocole et ses décisions intermédiaires."
+        ]
+      ],
+      "openQuestion": "Des juges indépendants, appliquant une règle publiée avant les essais, produisent-ils les mêmes prévisions ?",
+      "interpretation": "Une fiche dédiée permet de suivre les étapes entre description et décision. Elle complète la vision à distance sans compter deux fois les mêmes séries.",
+      "related": [
+        "vision-distance",
+        "precognition",
+        "conditions-moderateurs"
+      ],
+      "searchTerms": "ARV associative remote viewing vision distance prediction Katz Grgic Fendley Muller Wittmann KPU 1034",
+      "metrics": [
+        [
+          "86",
+          "essais soumis à une nouvelle cotation"
+        ],
+        [
+          "220",
+          "comptes rendus réévalués"
+        ]
+      ],
+      "readingGuide": [],
+      "chart": null,
+      "studyGroups": [],
+      "landscape": [],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "handbook": "",
+      "next": "Des juges indépendants, appliquant une règle publiée avant les essais, produisent-ils les mêmes prévisions ?",
+      "resultsTitle": "Études et documents retenus"
+    },
+    {
+      "id": "effets-experimentateur",
+      "title": "Effets expérimentateur",
+      "subtitle": "Attentes, relation expérimentale et différences entre équipes",
+      "group": "Transversal",
+      "kind": "transversal",
+      "summary": "Ce dossier examine si l'identité, les attentes ou les interactions de l'expérimentateur prédisent les résultats. Il distingue ces observations des mécanismes proposés pour les expliquer.",
+      "direction": "Différences historiques, hypothèses récentes diversement soutenues",
+      "question": "Quels facteurs liés à l'expérimentateur modifient une performance, et comment distinguer relation, biais de procédure et hypothèse psi ?",
+      "rows": [
+        [
+          "Schlitz, Wiseman, Watt et Radin, 2006",
+          "Collaboration entre chercheurs de positions différentes",
+          "Observation à distance et activité électrodermale.",
+          "La nouvelle étude ne retrouve pas les différences observées lors des deux premières collaborations.",
+          "Le protocole physiologique est distinct de la détection consciente du regard. Les écarts antérieurs ne suffisent pas à identifier leur mécanisme.",
+          "exp-schlitz-2006"
+        ],
+        [
+          "Schlitz et coll., 2021 ; KPU 1007 et 1016",
+          "Deux études préenregistrées d'amorçage rétroactif",
+          "Programme collaboratif ; croyances, langue et messages favorables ou défavorables au psi.",
+          "Hypothèses confirmatoires principales non soutenues ; résultats exploratoires selon la langue ou les messages, sans association significative des croyances déclarées à la mesure principale.",
+          "Un résultat de sous-groupe et une association aux attentes doivent être séparés du résultat global.",
+          "exp-schlitz-2021a"
+        ],
+        [
+          "Schlitz et Delorme, 2021 ; KPU 1051",
+          "Troisième étude, croyances implicites",
+          "32 expérimentateurs recrutent chacun 12 participants ; 384 participants avant exclusions.",
+          "Pas de confirmation de l'amorçage rétroactif attendu. Certaines associations concernent les croyances ou les temps de réponse.",
+          "Une variation de vitesse de réponse ne démontre pas une variation de l'effet psi. Les analyses dépendent aussi du traitement des temps de réaction.",
+          "exp-schlitz-2021b"
+        ]
+      ],
+      "sources": [
+        {
+          "id": "exp-schlitz-2006",
+          "label": "Schlitz, Wiseman, Watt et Radin (2006), Of two minds: Sceptic-proponent collaboration within parapsychology, British Journal of Psychology. DOI : 10.1348/000712605X80704.",
+          "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/cwatt/Documents/staringproofs.pdf",
+          "status": "Épreuves auteur déposées à la KPU et résumé de la revue consultés ; comparaison entre collaborations, pas mesure consciente du regard."
+        },
+        {
+          "id": "exp-schlitz-2021a",
+          "label": "Schlitz et coll. (2021), Two Replication Studies of a Time-Reversed (Psi) Priming Task and the Role of Expectancy in Reaction Times, Journal of Scientific Exploration, 35(1), 65–90.",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/1903",
+          "status": "Résumé original de la revue consulté ; publication reliée à KPU 1007 et 1016 dans le registre."
+        },
+        {
+          "id": "exp-schlitz-2021b",
+          "label": "Schlitz et Delorme (2021), Examining implicit beliefs in a replication attempt of a time-reversed priming task, F1000Research, 10:5, version 2.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8030106/",
+          "status": "Texte intégral de la version 2 consulté dans PMC, notamment les méthodes, résultats et limites ; publication reliée à KPU 1051."
+        },
+        {
+          "id": "exp-kpu-1007",
+          "label": "Schlitz, Delorme et Bem (19 novembre 2013), Experimenter Effect and Replication in Psi Research, KPU 1007.",
+          "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_Registry_1007.pdf",
+          "status": "Protocole consulté ; distinguer hypothèse psi confirmatoire et analyses annoncées exploratoires des attentes."
+        },
+        {
+          "id": "exp-kpu-1016",
+          "label": "Schlitz, Delorme et Bem (24 août 2015), Experimenter Effect and Replication in Psi Research: Round II of a Global Initiative, KPU 1016.",
+          "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_registry_1016.pdf",
+          "status": "Protocole consulté ; intervention sur les attentes et mesures de croyance."
+        },
+        {
+          "id": "exp-kpu-1051",
+          "label": "Schlitz, Delorme et Bem (13 février 2019), Experimenter Effect and Replication in Psi Research: Round III of a Global Initiative, KPU 1051.",
+          "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_Registry_1051.pdf",
+          "status": "Protocole identifié et lien aux résultats vérifié dans le registre."
+        }
+      ],
+      "profile": [
+        [
+          "Résultats observés",
+          "Le corpus comporte des différences entre expérimentateurs et des comparaisons qui ne les retrouvent pas. Les études récentes testent plusieurs formes d'attente."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Séparer qui recrute, accueille, connaît la cible et analyse ; comparer directement les groupes et modéliser les participants au sein des équipes."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Relation, langue, consignes, recrutement et attentes peuvent varier ensemble. Les manipulations contrôlées permettent de préciser leur contribution."
+        ],
+        [
+          "Portée des conclusions",
+          "L'expression « effet expérimentateur » désigne une dépendance observée ou supposée. Elle ne signifie pas, à elle seule, influence psi de l'expérimentateur."
+        ]
+      ],
+      "openQuestion": "Quelle variation liée à l'expérimentateur reste observable lorsque recrutement, consignes et analyse sont croisés ou rendus aveugles ?",
+      "interpretation": "Trois niveaux doivent rester distincts : différence entre équipes, effet psychologique ou procédural documenté, influence psi hypothétique. Une explication doit apporter des prédictions propres.",
+      "related": [
+        "conditions-moderateurs",
+        "precognition",
+        "influence-distance",
+        "gcp"
+      ],
+      "searchTerms": "effet experimentateur experimenter expectancy attentes Schlitz Wiseman Delorme Bem IAT KPU 1007 1016 1051",
+      "metrics": [],
+      "readingGuide": [
+        [
+          "Observation",
+          "Comparer des résultats selon les équipes et les contextes."
+        ],
+        [
+          "Mécanisme ordinaire",
+          "Tester attentes, interaction, sélection et décisions de procédure."
+        ],
+        [
+          "Hypothèse psi",
+          "Préciser une influence proposée et les observations qui la distinguent des mécanismes ordinaires."
+        ]
+      ],
+      "chart": null,
+      "studyGroups": [],
+      "landscape": [],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "handbook": "",
+      "next": "Quelle variation liée à l'expérimentateur reste observable lorsque recrutement, consignes et analyse sont croisés ou rendus aveugles ?",
+      "resultsTitle": "Études et documents retenus"
+    },
+    {
+      "id": "emissions-photoniques",
+      "title": "Émissions photoniques et intention",
+      "subtitle": "Mesurer les signaux optiques près du corps et dans un détecteur distant",
+      "group": "Interaction",
+      "kind": "experimental",
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "chart": null,
+      "landscape": [],
+      "studyGroups": [],
+      "resultsTitle": "Études et documents retenus",
+      "direction": "Variations optiques rapportées ; origine à caractériser",
+      "summary": "Ce dossier distingue les mesures près du corps des essais sur un photomultiplicateur distant. Les équipes rapportent des variations associées à l'intention. L'identification physique du signal reste une question distincte de son association statistique avec les consignes.",
+      "question": "L'intention s'accompagne-t-elle de variations optiques dépassant les effets physiologiques et instrumentaux attendus ?",
+      "metrics": [
+        [
+          "≈ 100",
+          "participants dans le programme publié en 2012"
+        ],
+        [
+          "10",
+          "séances dans la confirmation de 2016"
+        ],
+        [
+          "2",
+          "configurations : présence locale et intention distante"
+        ]
+      ],
+      "rows": [
+        [
+          "Joines, Baumann & Kruth, 2012",
+          "Étude instrumentale exploratoire",
+          "Environ 100 participants ; détecteurs infrarouge et ultraviolet, utilisés séparément.",
+          "Des variations sont rapportées chez certains participants et groupes de méditation.",
+          "Les durées pouvaient dépendre des résultats en cours. L'article annonce un compte rendu préliminaire et demande une analyse indépendante des images infrarouges.",
+          "ph-joines"
+        ],
+        [
+          "Tressoldi et al., 2016",
+          "Confirmation préenregistrée après deux séries explorées",
+          "4 participants sélectionnés ; 10 séances ; photomultiplicateur au Rhine, à environ 7 300 km.",
+          "Les auteurs rapportent un excès dans les salves de plus de 10 photons, avec une fenêtre incluant 35 minutes après l'intention.",
+          "Les deux séries antérieures avaient échoué sur leurs hypothèses initiales. Cette troisième série teste le critère issu de leur exploration ; même équipe, pas une confirmation indépendante.",
+          "ph-tressoldi"
+        ],
+        [
+          "Rhine Research Center, page de programme consultée en 2026",
+          "Programme institutionnel",
+          "La page décrit 103 séances de durées et de configurations différentes.",
+          "Le centre annonce la poursuite des mesures et l'analyse des données.",
+          "La page ne fournit pas de nouvelle estimation agrégée publiée. Ces séances ne doivent pas être additionnées au corpus de 2012 sans vérifier leurs dates et recouvrements.",
+          "ph-rhine"
+        ]
+      ],
+      "profile": [
+        [
+          "Résultats observés",
+          "Des fluctuations sont rapportées dans deux configurations. Les résultats exploratoires et leur confirmation ciblée doivent rester identifiables."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Mesurer les sources lumineuses parasites, le bruit du détecteur, la température et les mouvements ; fixer les seuils et fenêtres avant l'enregistrement."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Les séries utilisent des participants et groupes sélectionnés. Présence dans la chambre noire et intention à distance impliquent des contrôles différents."
+        ],
+        [
+          "Portée des conclusions",
+          "Un comptage optique ne localise pas automatiquement la source du signal. Il ne démontre ni une transmission depuis le corps ni une efficacité thérapeutique."
+        ]
+      ],
+      "openQuestion": "Des détecteurs témoins synchronisés et une caractérisation spectrale permettraient-ils de séparer les variations propres à l'appareil d'un signal lié aux consignes ?",
+      "interpretation": "La fiche porte sur une mesure instrumentale et ses contrôles. Les expressions employées par les auteurs pour expliquer les résultats, telles que l'intrication mentale, ne constituent pas une mesure indépendante du mécanisme.",
+      "readingGuide": [
+        [
+          "Mesure locale",
+          "Séparer chaleur corporelle, émission lumineuse et effets du dispositif."
+        ],
+        [
+          "Détecteur distant",
+          "Le signal est enregistré au détecteur ; son origine corporelle ou son trajet ne sont pas établis par ce comptage."
+        ],
+        [
+          "Analyse",
+          "Distinguer les hypothèses initiales, l'exploration des salves et le test ultérieur préenregistré."
+        ]
+      ],
+      "next": "Publier les séries complètes, l'étalonnage, les consignes horodatées et les critères d'exclusion ; comparer des appareils témoins et des séances attribuées à l'aveugle.",
+      "sources": [
+        {
+          "id": "ph-joines",
+          "label": "Joines, W. T., Baumann, S. B. & Kruth, J. G. (2012). Electromagnetic emission from humans during focused intent. Journal of Parapsychology, 76(2), 275–294.",
+          "url": "https://scholars.duke.edu/publication/953389",
+          "status": "Notice institutionnelle et texte de l'article consultés, notamment méthode et limites. Texte disponible en reproduction : https://static1.squarespace.com/static/6718c2e726e07f4bdf59676e/t/6733730248f22905e63ca1d7/1731425027221/2012_Electromagnetic_Emission_from_Humans_during_Focused_intent%29.pdf. Données brutes non réanalysées."
+        },
+        {
+          "id": "ph-tressoldi",
+          "label": "Tressoldi, P., Pederzoli, L., Matteoli, M., Prati, E. & Kruth, J. G. (2016). Can Our Minds Emit Light at 7300 km Distance? NeuroQuantology, 14(3), 447–455. DOI : 10.14704/nq.2016.14.3.906.",
+          "url": "https://www.researchgate.net/publication/308486315_Can_Our_Minds_Emit_Light_at_Distance_A_Pre-Registered_Confirmatory_Experiment_of_Mental_Entanglement_with_a_Photomultiplier",
+          "status": "Texte déposé par l'auteur consulté : historique, participants, protocole, tableaux et discussion. L'article indique le préenregistrement OSF 7h3d8 ; archive de préenregistrement non auditée et données non réanalysées."
+        },
+        {
+          "id": "ph-rhine",
+          "label": "Rhine Research Center. Bioenergy research, page institutionnelle consultée le 24 octobre 2026.",
+          "url": "https://www.rhineonline.org/bioenergy",
+          "status": "Description institutionnelle consultée. Page non datée, décrivant 103 séances et des analyses annoncées ; ce document ne vaut pas publication de nouveaux résultats."
+        }
+      ],
+      "handbook": "Complément documentaire consacré aux dispositifs optiques. À lire avec les dossiers sur la micro-PK, l'interférométrie et l'intention de soin.",
+      "related": [
+        "micro-pk",
+        "interferometrie-double-fente",
+        "intention-soin",
+        "conditions-moderateurs"
+      ],
+      "searchTerms": "biophotons photomultiplicateur emission photonique ultraviolets infrarouge bioenergy Rhine Joines Baumann Kruth Tressoldi"
+    },
+    {
+      "id": "marques-naissance",
+      "title": "Marques de naissance et anomalies physiques",
+      "subtitle": "Examiner les correspondances corporelles associées aux récits de vies antérieures",
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "chart": null,
+      "landscape": [],
+      "studyGroups": [],
+      "resultsTitle": "Études et documents retenus",
+      "direction": "Correspondances anatomiques documentées dans des séries de cas",
+      "summary": "Certains dossiers rapprochent une marque de naissance ou une anomalie congénitale d'une blessure attribuée à une personne décédée. Ce corpus demande des documents médicaux, une chronologie et des critères anatomiques distincts de la seule vérification des récits.",
+      "question": "Quelles correspondances corporelles sont documentées avant les rapprochements entre familles, et comment les comparer à des ressemblances attendues ?",
+      "metrics": [
+        [
+          "19",
+          "cas dans la revue de publications de 2023"
+        ],
+        [
+          "75",
+          "cas de tête et cou réexaminés dans les livres en 2024"
+        ],
+        [
+          "3",
+          "cas présents dans les deux corpus"
+        ]
+      ],
+      "rows": [
+        [
+          "Kirschnick et al., 2023",
+          "Revue systématique, recherche bibliographique en avril 2022",
+          "6 études ; 19 cas concernant la tête ou le cou.",
+          "Les auteurs décrivent les marques, les récits et leur documentation ; 9 cas comportent un document officiel vérifié.",
+          "Corpus de cas publiés, sans groupe de comparaison. Il ne mesure ni la fréquence dans la population ni une probabilité globale de correspondance.",
+          "mn-review"
+        ],
+        [
+          "Matlock, 2024 (en ligne 2023)",
+          "Réexamen documentaire",
+          "75 cas de tête ou de cou dans les deux volumes de Stevenson ; comparaison avec les 19 cas de la revue.",
+          "Les livres contiennent des descriptions plus détaillées et un échantillon différent. Trois cas se retrouvent dans les deux ensembles.",
+          "Élargissement du corpus publié, pas 75 observations nouvelles ni une réplication indépendante. Les monographies et les articles doivent être recherchés, puis dédoublonnés.",
+          "mn-matlock"
+        ],
+        [
+          "Pasricha, Keil, Tucker & Stevenson, 2005",
+          "Série de cas",
+          "12 dossiers de marques cutanées ou de malformations.",
+          "Entretiens avec des informateurs directs et examen de documents médicaux lorsqu'ils existent ; correspondances jugées suggestives par les auteurs.",
+          "Les auteurs qualifient eux-mêmes les éléments de non conclusifs. La disponibilité des pièces et l'antériorité des observations diffèrent selon les cas.",
+          "mn-pasricha"
+        ]
+      ],
+      "profile": [
+        [
+          "Résultats observés",
+          "Des rapprochements anatomiques sont décrits avec une documentation variable. Les revues réutilisent des cas déjà publiés."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Photographies datées, dossier de naissance, documents concernant les blessures et évaluation anatomique aveugle sont des éléments distincts à vérifier."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Nature des marques, contexte familial, délais d'enquête et disponibilité des archives médicales modifient ce qui peut être vérifié."
+        ],
+        [
+          "Portée des conclusions",
+          "Une ressemblance anatomique documentée ne suffit pas à déterminer son mécanisme ni à établir la transmission d'une blessure entre deux vies."
+        ]
+      ],
+      "openQuestion": "Une cotation anatomique aveugle distingue-t-elle les correspondances proposées de celles obtenues avec plusieurs dossiers témoins ?",
+      "interpretation": "Ce dossier complète celui des souvenirs allégués en isolant les observations corporelles. Les explications développementales, génétiques, les informations accessibles aux familles et le choix du défunt correspondant doivent être examinés avec la chronologie du cas.",
+      "readingGuide": [
+        [
+          "Observation corporelle",
+          "Établir quand et par qui la marque a été décrite, photographiée ou examinée."
+        ],
+        [
+          "Correspondance",
+          "Comparer localisation et forme selon des critères fixés avant le jugement, en conservant les discordances."
+        ],
+        [
+          "Interprétation",
+          "Séparer ressemblance, documentation de la blessure et hypothèse explicative."
+        ]
+      ],
+      "next": "Constituer des dossiers datés avant l'identification d'un défunt, demander une expertise dermatologique et anatomique indépendante, et tester les appariements parmi plusieurs dossiers comparables.",
+      "sources": [
+        {
+          "id": "mn-review",
+          "label": "Kirschnick, L. B., Schuch, L. F., Rocha, A. C., Ávila Pires, E. V., Martins, M. D. & Santos-Silva, A. R. (2023). Birthmarks and birth defects in the head and neck region and claims of past-life memories: A systematic review. Explore, 19(5), 663–668.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/36781320/",
+          "status": "Notice et résumé primaire consultés. DOI : 10.1016/j.explore.2023.02.002. Revue descriptive de cas, pas une méta-analyse d'un effet expérimental."
+        },
+        {
+          "id": "mn-matlock",
+          "label": "Matlock, J. G. (2024). Birthmarks and birth defects in the head and neck region and claims of past-life memories: Cases in Ian Stevenson's Reincarnation and Biology. Explore, 20(3), 306–312.",
+          "url": "https://jamesgmatlock.com/wp-content/uploads/2024/06/Matlock-2024-Birthmarks-and-birth-defects-in-the-head-and-neck-region.pdf",
+          "status": "Texte intégral déposé par l'auteur consulté : introduction, tableaux et discussion. DOI : 10.1016/j.explore.2023.10.011 ; publication en ligne le 31 octobre 2023. Dossiers médicaux originaux non audités."
+        },
+        {
+          "id": "mn-pasricha",
+          "label": "Pasricha, S. K., Keil, J., Tucker, J. B. & Stevenson, I. (2005). Some Bodily Malformations Attributed to Previous Lives. Journal of Scientific Exploration, 19(3), 359–383.",
+          "url": "https://citeseerx.ist.psu.edu/document?doi=9e6034f41e41b5e36c03f04de4a7470d225612d5&repid=rep1&type=pdf",
+          "status": "Résumé et introduction de l'article original conservé en archive consultés. Douze cas, sans audit indépendant des documents médicaux."
+        }
+      ],
+      "handbook": "Complément au dossier des souvenirs allégués de vies antérieures, avec une lecture anatomique et documentaire propre.",
+      "related": [
+        "vies-anterieures",
+        "xenoglossie"
+      ],
+      "searchTerms": "birthmarks birth defects marques naissance anomalies congenitales malformations Stevenson Keil Tucker Pasricha Matlock Kirschnick"
+    },
+    {
+      "id": "frequence-profils-experiences",
+      "title": "Fréquence et profils des expériences exceptionnelles",
+      "group": "Transversal",
+      "kind": "transversal",
+      "subtitle": "Enquêtes de population et questionnaires : ce qui est vécu, rapporté et mesuré.",
+      "direction": "Des vécus fréquents ; des mesures et des recrutements à distinguer",
+      "summary": "Les enquêtes de population documentent la fréquence des vécus déclarés. Les questionnaires décrivent leur organisation et leurs différences individuelles. Ces deux approches justifient un dossier propre, distinct des tests de performance psi.",
+      "question": "Qui rapporte quelles expériences, à quelle fréquence, avec quel retentissement ? Comment les mesurer sans confondre fréquence du vécu, croyance et exactitude d'une information ?",
+      "handbook": "",
+      "readingGuide": [
+        [
+          "Population",
+          "Un taux dépend du pays, du recrutement, de la période et des formulations proposées."
+        ],
+        [
+          "Mesure",
+          "La cohérence et la stabilité d'un questionnaire renseignent sa mesure des déclarations."
+        ],
+        [
+          "Performance",
+          "La capacité à obtenir une information exacte demande un test indépendant, avec cible et cotation définies."
+        ]
+      ],
+      "metrics": [
+        [
+          "> 2 050",
+          "adultes : enquête IGPP 2024"
+        ],
+        [
+          "44 items",
+          "questionnaire NSI"
+        ],
+        [
+          "3 884",
+          "participants : normes NSI 2025"
+        ]
+      ],
+      "chart": null,
+      "landscape": [],
+      "resultsTitle": "Études et documents retenus",
+      "rows": [
+        [
+          "Schmied-Knittel et Anton, 2025 : Everyday Miracles 2.0",
+          "Enquête allemande par quotas ; résultats présentés à la PA",
+          "Plus de 2 050 adultes interrogés en ligne en décembre 2024 ; 50 items.",
+          "L'IGPP rapporte qu'environ trois quarts des répondants ont vécu au moins une expérience exceptionnelle.",
+          "Quotas de sexe, âge et Land ; données déclaratives. La communication de congrès et la présentation institutionnelle ne remplacent pas un rapport méthodologique complet.",
+          "population-igpp-2025"
+        ],
+        [
+          "Wahbeh, Fry et Speirn, 2022",
+          "Développement et validation initiale du Noetic Signature Inventory",
+          "Trois études ; instrument final de 44 items et 12 dimensions.",
+          "Les analyses soutiennent une structure multidimensionnelle et une stabilité des réponses dans le temps.",
+          "Participants volontaires, notamment issus du réseau IONS. La validation psychométrique concerne les expériences rapportées ; elle ne valide pas leur mécanisme.",
+          "population-nsi-2022"
+        ],
+        [
+          "Wahbeh, Glick et Kriegsman, 2025",
+          "Normes et regroupements de profils NSI",
+          "3 884 participants ; analyses de 12 dimensions.",
+          "L'étude décrit des différences démographiques et des profils ; la structure à 12 facteurs est mieux soutenue que les regroupements proposés.",
+          "Les normes de cet échantillon ne sont pas une prévalence nationale. Publication JCS confirmée ; résultats consultés dans le résumé IONS, encore lié au préprint.",
+          "population-nsi-2025"
+        ]
+      ],
+      "interpretation": "Ces travaux rendent les vécus décrits plus comparables et peuvent aider à construire des échantillons cliniques ou expérimentaux. Une fréquence de déclaration et un score élevé au NSI ne mesurent pas, à eux seuls, une capacité psi. Les enquêtes IGPP et IONS ne doivent pas être fusionnées en un taux unique.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Des enquêtes documentent de nombreuses expériences déclarées ; les instruments psychométriques distinguent plusieurs formes de vécu."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Examiner la couverture de la population, la non-réponse, la formulation des items et les propriétés du questionnaire dans chaque langue. Les quotas et le volontariat ont des limites différentes."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "L'âge, le contexte culturel, l'intérêt préalable pour le sujet et les catégories proposées peuvent modifier les réponses. Une évolution temporelle exige des questions et recrutements comparables."
+        ],
+        [
+          "Portée des conclusions",
+          "Ces résultats portent sur la distribution et la mesure des vécus. Leur rapport avec une performance vérifiée et avec les besoins de consultation reste une question empirique distincte."
+        ]
+      ],
+      "next": "Comparer les mêmes instruments dans plusieurs populations, publier les questionnaires et les données de recrutement, puis étudier séparément leur lien avec le retentissement clinique et des tâches contrôlées.",
+      "openQuestion": "Quels profils de vécu prédisent des besoins d'accompagnement, et lesquels sont associés à une performance sur une tâche indépendante ?",
+      "related": [
+        "clinique-experiences-exceptionnelles",
+        "conditions-moderateurs",
+        "neurosciences-psi",
+        "experiences-hors-corps"
+      ],
+      "sources": [
+        {
+          "id": "population-igpp-2025",
+          "label": "IGPP : Alltägliche Wunder 2.0 ; Schmied-Knittel et Anton, communication PA 2025, p. 138-139",
+          "url": "https://igpp.de/Forschungsprojekt/alltaegliche-wunder-2-0/",
+          "status": "Présentation institutionnelle consultée ; résultat approximatif et référence du résumé de congrès. Aucun article final de cette enquête n'est présumé à partir de cette page."
+        },
+        {
+          "id": "population-igpp-methode",
+          "label": "IGPP : Spread and Reception of the Paranormal, méthode de la nouvelle enquête",
+          "url": "https://igpp.de/en/research-project/spread-and-reception-of-the-paranormal/",
+          "status": "Page du projet consultée : collecte de décembre 2024, plus de 2 050 adultes, quotas et 50 items. Source institutionnelle décrivant l'enquête."
+        },
+        {
+          "id": "population-nsi-2022",
+          "label": "Wahbeh, Fry et Speirn (2022), The Noetic Signature Inventory: Development, Exploration, and Initial Validation, Frontiers in Psychology 13:838582",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.838582/full",
+          "status": "Article publié ; texte intégral consulté. DOI : 10.3389/fpsyg.2022.838582."
+        },
+        {
+          "id": "population-nsi-2025",
+          "label": "Wahbeh, Glick et Kriegsman (2025), Investigating Individual Intuitive Expression: Norms and Patterns in the Noetic Signature Inventory",
+          "url": "https://noetic.org/publication/norms-and-patterns-noetic-signature/",
+          "status": "Résumé original IONS consulté, N = 3 884. Cette page renvoie encore au préprint 10.31219/osf.io/fx7y2 ; une publication finale existe dans JCS 32(11-12), 121-158, DOI : 10.53765/20512201.32.11.121."
+        },
+        {
+          "id": "population-nsi-editeur-2025",
+          "label": "Journal of Consciousness Studies 32(11-12), novembre-décembre 2025 : sommaire officiel",
+          "url": "https://www.imprint.co.uk/table-of-contents-jcs-vol-32-no-11-12-november-december-2025/",
+          "status": "Publication finale vérifiée dans la rubrique des articles évalués, à partir de la p. 121. Sommaire consulté ; texte intégral final non consulté."
+        }
+      ],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "searchTerms": "prevalence frequence population enquete profils experiences exceptionnelles IGPP Everyday Miracles Schmied-Knittel Anton IONS noetic signature inventory NSI Wahbeh"
+    },
+    {
+      "id": "paralysie-sommeil-presences",
+      "title": "Paralysie du sommeil et présences ressenties",
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "subtitle": "Vécu au seuil du sommeil, interprétations et retentissement.",
+      "direction": "Phénoménologie documentée ; interprétation et accompagnement à examiner séparément",
+      "summary": "La paralysie du sommeil peut associer immobilité, présence ressentie, perceptions inhabituelles et parfois impression de sortie du corps. Le dossier étudie leur description, leurs associations psychologiques et leur retentissement, sans les confondre avec les tests de cibles hors du corps.",
+      "question": "Comment les épisodes sont-ils vécus et interprétés ? Quels facteurs sont associés à la peur, à la répétition et à une éventuelle demande d'aide ?",
+      "handbook": "",
+      "readingGuide": [
+        [
+          "Épisode",
+          "Décrire le moment du sommeil, l'immobilité, les perceptions et les émotions avant d'en proposer une explication."
+        ],
+        [
+          "Interprétation",
+          "Une présence ressentie et l'attribution d'une origine extérieure constituent deux observations distinctes."
+        ],
+        [
+          "Accompagnement",
+          "Mesurer la détresse et la fréquence des épisodes ; l'amélioration clinique ne tranche pas leur interprétation métaphysique."
+        ]
+      ],
+      "metrics": [
+        [
+          "380",
+          "expérients : une collecte IGPP"
+        ],
+        [
+          "10",
+          "participants : pilote clinique"
+        ]
+      ],
+      "chart": null,
+      "landscape": [],
+      "resultsTitle": "Études et documents retenus",
+      "rows": [
+        [
+          "Mayer et Fuhrmann, 2021 en ligne / 2022 en volume",
+          "Enquête allemande en ligne",
+          "380 personnes ayant vécu au moins un épisode.",
+          "Description des formes de paralysie du sommeil et de leurs associations avec la fréquence des épisodes et le sexe.",
+          "Échantillon sélectionné d'expérients : ne permet pas d'estimer la fréquence en population générale. Données rétrospectives.",
+          "sommeil-mayer-jsr-2022"
+        ],
+        [
+          "Mayer et Fuhrmann, 2022 : expériences exceptionnelles",
+          "Analyses du même échantillon",
+          "Les mêmes 380 participants ; questionnaires de vécu, croyances et absorption.",
+          "Les 55 % déclarant des expériences dites paranormales pendant les épisodes obtiennent des scores plus élevés aux trois questionnaires. Les liens avec la fréquence des épisodes ne sont que partiellement confirmés.",
+          "Même collecte que l'article JSR, donc pas une réplication indépendante. Associations déclaratives, sans test d'information vérifiable.",
+          "sommeil-mayer-jaex-2022"
+        ],
+        [
+          "Jalal et al., 2020",
+          "Pilote clinique ouvert ; méditation-relaxation et comparaison active",
+          "10 personnes atteintes de narcolepsie : 6 dans le traitement, 4 dans la comparaison ; 8 semaines.",
+          "Dans le groupe traité, le nombre d'épisodes diminue de 54 % entre le mois de référence et le dernier mois de traitement.",
+          "Variation interne au groupe, pas taux d'efficacité comparatif. Très petit effectif, absence d'aveugle ; généralisation à la paralysie isolée non établie.",
+          "sommeil-jalal-2020"
+        ]
+      ],
+      "interpretation": "Ce corpus justifie une lecture à l'interface entre phénoménologie, sommeil et clinique. L'expérience peut être intense et significative, sans qu'un récit suffise à établir une perception extérieure vérifiée. Les résultats sur la narcolepsie et ceux sur les épisodes isolés doivent rester identifiables.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Les études décrivent plusieurs configurations de perceptions et d'émotions. Le petit pilote thérapeutique rapporte une réduction des épisodes dans son groupe traité."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Les questionnaires de l'IGPP détaillent le vécu mais restent rétrospectifs. Deux publications reposent sur les mêmes participants. Le pilote clinique ne permet pas une estimation précise de l'effet du traitement."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Fréquence des épisodes, émotions, croyances et absorption ne varient pas toutes ensemble. Le contexte du sommeil et la présence d'une narcolepsie doivent être précisés."
+        ],
+        [
+          "Portée des conclusions",
+          "Le corpus renseigne les expériences et leur retentissement. Il ne comporte pas ici de démonstration de perception psi ; il ne suffit pas non plus à expliquer chaque récit individuel."
+        ]
+      ],
+      "next": "Associer journaux prospectifs, mesures du sommeil et entretiens ; évaluer les accompagnements avec comparaison, suivi et critères de détresse définis avant l'analyse.",
+      "openQuestion": "Quels facteurs permettent de prévoir le passage d'un épisode effrayant à une expérience tolérée, sans confondre habituation et effet d'un accompagnement ?",
+      "related": [
+        "experiences-hors-corps",
+        "telepathie-reve",
+        "clinique-experiences-exceptionnelles",
+        "neurosciences-psi"
+      ],
+      "sources": [
+        {
+          "id": "sommeil-mayer-jsr-2022",
+          "label": "Mayer et Fuhrmann (2022 ; en ligne 2021), A German online survey of people who have experienced sleep paralysis, Journal of Sleep Research 31(3):e13509",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34676599/",
+          "status": "Notice bibliographique et résumé original consultés. DOI : 10.1111/jsr.13509. Article distinct exploitant le même échantillon que la publication JAEX."
+        },
+        {
+          "id": "sommeil-mayer-jaex-2022",
+          "label": "Mayer et Fuhrmann (2022), Sleep Paralysis and Extraordinary Experiences, Journal of Anomalous Experience and Cognition 2(1), 111-143",
+          "url": "https://journals.lub.lu.se/jaex/article/view/23534",
+          "status": "Article publié ; résumé original et références de l'éditeur consultés. DOI : 10.31156/jaex.23534. Les pourcentages portent sur les participants sélectionnés."
+        },
+        {
+          "id": "sommeil-jalal-2020",
+          "label": "Jalal et al. (2020), Meditation-Relaxation (MR Therapy) for Sleep Paralysis: A Pilot Study in Patients With Narcolepsy, Frontiers in Neurology 11:922",
+          "url": "https://www.frontiersin.org/journals/neurology/articles/10.3389/fneur.2020.00922/full",
+          "status": "Article publié ; texte intégral consulté. DOI : 10.3389/fneur.2020.00922. Étude ouverte exploratoire ; résultats d'abord internes aux groupes."
+        }
+      ],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "searchTerms": "paralysie sommeil presence ressentie intrus hypnagogique hypnopompique narcolepsie sleep paralysis IGPP Mayer Fuhrmann Jalal"
+    },
+    {
+      "id": "imagerie-guidee-psi",
+      "title": "Imagerie guidée et exploration mentale",
+      "group": "Perception",
+      "kind": "experimental",
+      "subtitle": "Imagery Cultivation : inductions inspirées du voyage chamanique et identification de cibles.",
+      "direction": "Résultats dépendant du critère ; synthèse de congrès positive à examiner",
+      "summary": "L'Imagery Cultivation sollicite activement l'imagination après relaxation. Le programme dispose de protocoles propres, d'une étude enregistrée à la KPU et d'une synthèse présentée en 2026. Il teste notamment l'identification d'images futures.",
+      "question": "Une induction d'imagerie guidée améliore-t-elle l'identification d'une cible, et quels changements subjectifs sont associés à la performance ?",
+      "handbook": "",
+      "readingGuide": [
+        [
+          "Induction",
+          "Identifier les composantes : instructions, musique ou tambour, durée et attentes."
+        ],
+        [
+          "Cible",
+          "Distinguer cible déjà déterminée et cible tirée après le classement des images."
+        ],
+        [
+          "Critère",
+          "Réussites directes, rang moyen et somme des rangs correspondent à des tests distincts ; conserver leurs résultats séparés."
+        ]
+      ],
+      "metrics": [
+        [
+          "100",
+          "participants : Storm 2023"
+        ],
+        [
+          "21 %",
+          "réussites, hasard à 20 %"
+        ],
+        [
+          "KPU 1069",
+          "plan enregistré consultable"
+        ]
+      ],
+      "chart": null,
+      "landscape": [],
+      "resultsTitle": "Études et documents retenus",
+      "rows": [
+        [
+          "Storm, 2019",
+          "Plan à quatre groupes : imagerie et induction de réactance",
+          "240 participants ; imagerie présente ou absente, réactance présente ou absente.",
+          "L'avantage psi de la condition d'imagerie sur la comparaison n'est pas significatif ; l'induction de réactance produit certains changements psychologiques.",
+          "Un effet psychologique de la manipulation ne démontre pas un effet psi. Plusieurs hypothèses et sous-groupes sont examinés.",
+          "imagerie-storm-2019"
+        ],
+        [
+          "Storm, 2023",
+          "Identification d'une image future après induction",
+          "100 participants ; un essai à cinq images, hasard à 20 % ; enregistrement KPU 1069.",
+          "21 réussites sur 100 : p = 0,441. Rang moyen : p = 0,148. Somme des rangs : z = -1,64 ; p = 0,05, tests unilatéraux.",
+          "Les trois critères étaient annoncés. Le résultat à la limite du seuil doit se lire avec les autres tests, et non comme une confirmation uniforme du protocole.",
+          "imagerie-storm-2023"
+        ],
+        [
+          "KPU 1069, dépôt du 18 mai 2022",
+          "Plan enregistré de la même étude",
+          "Collecte principale annoncée pour juin 2022 ; 30 bêta-tests déjà réalisés lors du dépôt.",
+          "H1 à H4 annoncées confirmatoires ; H5 et H6 exploratoires, dont liens entre phénoménologie et performance.",
+          "Le formulaire précise que les données des bêta-tests restent utilisables. Leur statut invite à vérifier la chronologie et leur éventuelle inclusion ; ce dépôt n'ajoute aucun échantillon.",
+          "imagerie-kpu-1069"
+        ],
+        [
+          "Storm, PA-AIPR 2026",
+          "Comparaison et synthèse de travaux existants",
+          "10 études IC, N = 509 dans le regroupement présenté ; inclut un travail encore soumis.",
+          "La communication rapporte 24,4 % de réussites contre 20 % attendus, p = 0,009.",
+          "Résumé de congrès ; pas une nouvelle réplication ni un essai direct IC contre Ganzfeld. Faible diversité des expérimentateurs signalée par l'auteur.",
+          "imagerie-storm-2026"
+        ]
+      ],
+      "interpretation": "La stimulation de l'imagerie et la performance sur les cibles doivent être évaluées séparément. Les résultats 2023 diffèrent selon le critère, tandis que la synthèse 2026 rapporte un écart cumulé. Ce rapprochement motive un examen des protocoles, des dépendances et des conditions d'obtention.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Des écarts favorables sont rapportés dans le programme et son regroupement de 2026. L'étude 2023 ne dépasse pas le hasard sur les réussites directes ; un autre critère atteint p = 0,05."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Le plan enregistré rend les hypothèses consultables. La présence de bêta-tests antérieurs, la pluralité des critères et l'inclusion d'un travail soumis dans la synthèse doivent être suivies explicitement."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Durée, composantes de l'induction, croyances, états subjectifs et expérimentateurs diffèrent. Un changement de vécu ne garantit pas une meilleure identification de cible."
+        ],
+        [
+          "Portée des conclusions",
+          "Le dossier teste un ensemble d'inductions et des tâches précises. Les comparaisons indirectes avec le Ganzfeld ne permettent pas de conclure à leur équivalence ou à leur supériorité."
+        ]
+      ],
+      "next": "Comparer directement des inductions avec une condition témoin active, préciser le critère principal et le traitement des pilotes, puis publier les résultats de chaque équipe et les données nécessaires à la synthèse.",
+      "openQuestion": "Quels éléments de l'induction prédisent une amélioration de la performance au-delà de leur effet sur la vivacité des images mentales ?",
+      "related": [
+        "ganzfeld",
+        "conditions-moderateurs",
+        "precognition",
+        "telepathie-reve"
+      ],
+      "sources": [
+        {
+          "id": "imagerie-storm-2019",
+          "label": "Storm (2019), Imagination and Reactance in a Psi Task Using the Imagery Cultivation Model and a Fuzzy Set Encoded Target Pool, Journal of Scientific Exploration 33(2), 197-212",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/1374/909",
+          "status": "Article publié ; texte original consulté. DOI : 10.31275/2019.1374."
+        },
+        {
+          "id": "imagerie-storm-2023",
+          "label": "Storm (2023), The Effects of Imagery Cultivation on Phenomenological and Paranormal Experience, JSPR 87(1), 1-21",
+          "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_1069_Published_Results.pdf",
+          "status": "Article publié, version déposée à la KPU consultée ; résultats planifiés H1-H3 lus dans le texte, p. 10-11."
+        },
+        {
+          "id": "imagerie-kpu-1069",
+          "label": "KPU Registry 1069 : The Effects of Imagery-Cultivation on Phenomenological and Paranormal Experience",
+          "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_Registry_1069.pdf",
+          "status": "Formulaire original du 18 mai 2022 consulté. Il distingue hypothèses confirmatoires et exploratoires et déclare 30 bêta-tests antérieurs au dépôt."
+        },
+        {
+          "id": "imagerie-storm-2026",
+          "label": "Storm (2026), The Imagery Cultivation Model: An Alternative to the Ganzfeld, PA-AIPR, p. 73-77",
+          "url": "https://parapsychological.org/wp-content/uploads/2026/07/2026-PA-AIPR-Abstracts-of-Presented-Papers-Web.pdf",
+          "status": "Texte de congrès consulté, août 2026 ; synthèse de travaux existants, dont un article indiqué comme soumis. Ne pas compter cette présentation comme une expérience indépendante."
+        }
+      ],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "searchTerms": "imagerie guidee imagery cultivation IC shamanic-like journeying voyage chamanique Storm Rock KPU1069 relaxation reactance"
+    },
+    {
+      "id": "psychedeliques-psi",
+      "title": "Psychédéliques et expériences psi",
+      "group": "Transversal",
+      "kind": "transversal",
+      "subtitle": "Vécus inhabituels, comparaisons phénoménologiques et tests d'information.",
+      "direction": "Corpus surtout descriptif ; épreuve objective à isoler",
+      "summary": "Cette littérature rassemble enquêtes, observations et recherches expérimentales sur des états associés à différentes substances. Les sentiments de télépathie, de présence ou de sortie du corps demandent une lecture distincte des performances vérifiées sur des cibles.",
+      "question": "Quelles expériences sont associées à ces états et que montrent les protocoles évaluant effectivement l'acquisition d'une information ?",
+      "handbook": "",
+      "readingGuide": [
+        [
+          "Vécu",
+          "Décrire l'expérience, son contexte et sa temporalité, sans déduire son mécanisme de son intensité."
+        ],
+        [
+          "Comparaison",
+          "Une ressemblance avec une EMI ou une expérience psi est une comparaison de phénoménologie."
+        ],
+        [
+          "Information",
+          "L'exactitude demande une cible indépendante, une cotation prévue et des contrôles de l'information disponible."
+        ]
+      ],
+      "metrics": [
+        [
+          "139",
+          "répondants : enquête 2005"
+        ],
+        [
+          "13",
+          "participants : DMT/placebo 2018"
+        ]
+      ],
+      "chart": null,
+      "landscape": [],
+      "resultsTitle": "Études et documents retenus",
+      "rows": [
+        [
+          "Luke et Kittenis, 2005",
+          "Enquête rétrospective en ligne",
+          "139 répondants recrutés dans des réseaux intéressés par la parapsychologie ou les psychédéliques.",
+          "Des associations entre certains vécus et certaines substances sont décrites ; aucune corrélation importante entre vécu psi et usage d'une substance particulière n'est trouvée.",
+          "Sélection des répondants et souvenirs rétrospectifs ; aucune tâche contrôlée d'acquisition d'information.",
+          "psychedeliques-luke-kittenis-2005"
+        ],
+        [
+          "Luke, 2012",
+          "Revue narrative multidisciplinaire",
+          "Modèles neurochimiques, récits, enquêtes et recherches expérimentales.",
+          "La revue organise les travaux sur ESP, sorties du corps et EMI et discute leurs méthodes.",
+          "Notice et résumé consultés : pas de calcul d'effet cumulé repris ici, ni de conclusion chiffrée tirée du corpus historique.",
+          "psychedeliques-luke-2012"
+        ],
+        [
+          "Timmermann et al., 2018",
+          "Comparaison DMT/placebo et questionnaire EMI",
+          "13 participants dans une étude contrôlée.",
+          "Les scores de type EMI augmentent sous DMT ; tous les participants atteignent le seuil conventionnel du questionnaire dans cette condition.",
+          "Petit effectif et mesure subjective. Le protocole porte sur la similarité des vécus, sans test de perception vérifiable ni démonstration d'identité des mécanismes.",
+          "psychedeliques-timmermann-2018"
+        ],
+        [
+          "Luke, 2020 en ligne / 2022 en volume",
+          "Revue et analyse multidisciplinaires",
+          "Dix familles de vécus, dont présences, sorties du corps, EMI et expériences psi.",
+          "Mise en relation de descriptions subjectives et de modèles psychologiques ou neurochimiques.",
+          "Article de synthèse ; ne constitue pas un nouvel essai contrôlé ni une méta-analyse de performance psi.",
+          "psychedeliques-luke-2022"
+        ]
+      ],
+      "interpretation": "L'intérêt scientifique du dossier est de confronter phénoménologie, contexte et mesures objectives. Les résultats sur l'intensité ou la similarité des vécus n'établissent pas, à eux seuls, un gain d'information extrasensorielle. Les travaux retenus ne permettent pas d'assigner un effet psi commun à toutes les substances et à tous les contextes.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Les enquêtes et comparaisons expérimentales documentent des vécus inhabituels. Les sources retenues ne fournissent pas une estimation commune de performance psi."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Distinguer enquête volontaire, revue narrative et expérience contrôlée. L'aveugle, les attentes et les critères objectifs sont particulièrement importants pour une étude de performance."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Substance, contexte, attentes, histoire de la personne et instruments de mesure diffèrent. Les phénomènes subjectifs regroupés sous une même étiquette peuvent être hétérogènes."
+        ],
+        [
+          "Portée des conclusions",
+          "Une proximité de description entre deux états renseigne leur phénoménologie ; elle ne démontre ni une même cause ni une perception extérieure exacte."
+        ]
+      ],
+      "next": "Rattacher chaque résultat au type de mesure réellement utilisé ; pour les tests psi, examiner les plans enregistrés, les critères objectifs, les comparaisons et les résultats complets.",
+      "openQuestion": "Les impressions de connaissance inhabituelle sont-elles associées à une exactitude accrue sur des cibles indépendantes, ou surtout à un changement du sentiment de certitude ?",
+      "related": [
+        "experiences-hors-corps",
+        "perceptions-emi",
+        "neurosciences-psi",
+        "conditions-moderateurs",
+        "clinique-experiences-exceptionnelles"
+      ],
+      "sources": [
+        {
+          "id": "psychedeliques-luke-kittenis-2005",
+          "label": "Luke et Kittenis (2005), A Preliminary Survey of Paranormal Experiences with Psychoactive Drugs, Journal of Parapsychology 69(2), 305-327",
+          "url": "https://www.parapsychologypress.org/jparticle/jp-69-2-305-327",
+          "status": "Publication et résumé original consultés chez Parapsychology Press, liée au Rhine Research Center. Résultats déclaratifs, pas tests objectifs de psi."
+        },
+        {
+          "id": "psychedeliques-luke-2012",
+          "label": "Luke (2012), Psychoactive Substances and Paranormal Phenomena: A Comprehensive Review, IJTS 31(1), 97-156",
+          "url": "https://digitalcommons.ciis.edu/ijts-transpersonalstudies/vol31/iss1/12/",
+          "status": "Notice et résumé original consultés ; texte intégral non consulté. DOI : 10.24972/ijts.2012.31.1.97. Source utilisée pour délimiter le corpus, sans reprise d'un bilan quantitatif."
+        },
+        {
+          "id": "psychedeliques-timmermann-2018",
+          "label": "Timmermann et al. (2018), DMT Models the Near-Death Experience, Frontiers in Psychology 9:1424",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.01424/full",
+          "status": "Article publié ; texte intégral consulté. DOI : 10.3389/fpsyg.2018.01424. Mesure de phénoménologie EMI."
+        },
+        {
+          "id": "psychedeliques-luke-2022",
+          "label": "Luke (2022 ; en ligne 2020), Anomalous Psychedelic Experiences: At the Neurochemical Juncture of the Humanistic and Parapsychological, Journal of Humanistic Psychology 62(2), 257-297",
+          "url": "https://gala.gre.ac.uk/id/eprint/28017/13/28017%20LUKE_Anomalous_Psychedelic_Experiences_Neurochemical_Juncture_Parapsychological_(OA)_2020.pdf",
+          "status": "Version publiée déposée à l'Université de Greenwich consultée pour le périmètre et la distinction des vécus. DOI : 10.1177/0022167820917767. Aucun bilan quantitatif repris."
+        }
+      ],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "searchTerms": "psychedeliques psychedelics psi Luke Kittenis DMT phenomenologie substances psychoactives EMI perceptions"
+    },
+    {
+      "id": "tests-prospectifs-survie",
+      "title": "Tests prospectifs de survie",
+      "group": "Lecture spécifique",
+      "kind": "specific",
+      "subtitle": "Messages scellés, codes secrets et cadenas à combinaison.",
+      "direction": "Protocoles explicites ; réussites post mortem non établies dans les documents retenus",
+      "summary": "Ces tests définissent une information ou une action attendue avant le décès. Ils possèdent des critères et des contraintes différents des récits spontanés ou des lectures médiumniques : secret, conservation, contrôle des tentatives et vérification différée.",
+      "question": "Une information préparée avant le décès peut-elle être transmise ensuite dans des conditions excluant les voies ordinaires, et quelle interprétation autoriserait un résultat positif ?",
+      "handbook": "",
+      "readingGuide": [
+        [
+          "Préparation",
+          "Définir le secret, sa conservation, les personnes informées et les critères de réussite avant les tentatives."
+        ],
+        [
+          "Vérification",
+          "Comptabiliser toutes les réponses et les accès possibles ; une solution trouvée par cryptanalyse n'est pas une communication médiumnique."
+        ],
+        [
+          "Interprétation",
+          "Même une information exacte demanderait de comparer fuite d'information, hasard, psi des vivants et hypothèse de survie."
+        ]
+      ],
+      "metrics": [],
+      "chart": null,
+      "landscape": [],
+      "resultsTitle": "Études et documents retenus",
+      "rows": [
+        [
+          "Stevenson, 1968 ; Stevenson, Oram et Markwick, 1989, relus par Willin et Matlock, 2026",
+          "Cadenas à combinaison : proposition puis suivi historique",
+          "Secrets préparés par des chercheurs, notamment Thouless et Pratt.",
+          "La synthèse SPR rapporte des tentatives sans combinaison correctement transmise après le décès. Le cadenas de Thouless a ensuite été ouvert par une autre voie.",
+          "Les originaux de 1968 et 1989 n'ont pas été lus intégralement ici ; résultat attribué à la synthèse SPR, avec sa bibliographie. Aucun taux global n'est calculé.",
+          "survie-tests-spr-2026"
+        ],
+        [
+          "Bean, 2020",
+          "Cryptanalyse du message de Thouless",
+          "Passage II, resté non résolu après les deux autres passages.",
+          "Le texte est déchiffré par recherche informatique dans des livres et analyse statistique des séquences de lettres.",
+          "Succès d'une méthode ordinaire : un code ancien réputé secret ne suffit pas à garantir l'origine d'une future réponse correcte.",
+          "survie-tests-bean-2020"
+        ],
+        [
+          "Pallikari, 2021",
+          "Étude d'archives du protocole de Tanagras",
+          "Six actions physiques annoncées dans des enveloppes déposées en 1936 ; ouverture des archives en 2007.",
+          "Aucune confirmation documentaire des actions attendues n'est identifiée ; plusieurs difficultés de conservation, de calendrier et de vérification sont discutées.",
+          "Test d'actions physiques plutôt que de lecture d'un message. L'examen tardif ne permet pas un contrôle continu de tous les lieux concernés.",
+          "survie-tests-pallikari-2021"
+        ]
+      ],
+      "interpretation": "La valeur de ces protocoles tient à la possibilité de fixer une cible avant l'événement. Les archives consultées n'établissent pas de réussite post mortem conforme au projet. Cela renseigne les tests réalisés et leurs contraintes ; une absence de réponse ne départage pas toutes les hypothèses concernant la survie.",
+      "profile": [
+        [
+          "Résultats observés",
+          "Les bilans historiques retenus rapportent des échecs de communication ou une absence de vérification. Des codes ont été résolus par des méthodes cryptographiques documentées."
+        ],
+        [
+          "Robustesse méthodologique",
+          "La précision de la cible est un atout. Il faut aussi connaître les fuites possibles, le nombre d'essais, la sécurité du dispositif et la conservation des documents sur plusieurs décennies."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Les protocoles sollicitent mémoire d'un code, communication verbale ou action physique. Le délai, les intermédiaires et les critères de réussite changent ; leurs résultats ne se combinent pas en un taux homogène."
+        ],
+        [
+          "Portée des conclusions",
+          "Un échec concerne une procédure donnée. Un succès bien contrôlé établirait d'abord une correspondance informationnelle ou physique ; l'attribution à un défunt demanderait un argument supplémentaire."
+        ]
+      ],
+      "next": "Établir un registre durable des cibles et des tentatives, un contrôle indépendant de la sécurité et une règle de décision publiée ; distinguer le résultat observé des hypothèses sur sa source.",
+      "openQuestion": "Quel dispositif rendrait une réussite à la fois vérifiable et discriminante entre communication attribuée au défunt et autres voies d'accès à l'information ?",
+      "related": [
+        "mediumnite-mentale",
+        "vies-anterieures",
+        "fin-de-vie",
+        "perceptions-emi",
+        "macro-pk"
+      ],
+      "sources": [
+        {
+          "id": "survie-tests-spr-2026",
+          "label": "Willin et Matlock (2026), Envelope, Cipher and Lock Tests of Survival, Psi Encyclopedia, SPR",
+          "url": "https://psi-encyclopedia.spr.ac.uk/articles/envelope-cipher-and-lock-tests-of-survival/",
+          "status": "Synthèse historique consultée, créée le 21 octobre et mise à jour le 23 octobre 2026. Cite notamment Stevenson (1968), JASPR 62, 246-254, et Stevenson, Oram et Markwick (1989), JSPR 55, 329-336. Ces originaux ne sont pas présentés comme intégralement consultés."
+        },
+        {
+          "id": "survie-tests-bean-2020",
+          "label": "Bean (2020), The Use of Project Gutenberg and Hexagram Statistics to Help Solve Famous Unsolved Ciphers, HistoCrypt, p. 31-35",
+          "url": "https://ep.liu.se/ecp/171/005/ecp2020_171_005.pdf",
+          "status": "Publication originale de cryptanalyse consultée, notamment section 4 sur Thouless. DOI : 10.3384/ecp2020171005."
+        },
+        {
+          "id": "survie-tests-pallikari-2021",
+          "label": "Pallikari (2021), Angelos Tanagras: An Experiment to Test Survival, Journal of Anomalistics 21, 223-242",
+          "url": "https://www.anomalistik.de/images/pdf/zfa/zfa2021_1_223_pallikari.pdf",
+          "status": "Étude originale d'archives consultée, avec reproduction des documents historiques et discussion des résultats. DOI : 10.23793/zfa.2021.223."
+        }
+      ],
+      "new": true,
+      "reviewed": "24 octobre 2026",
+      "editorialUpdated": "24 octobre 2026",
+      "searchTerms": "survie prospective codes enveloppes cadenas combinaison Stevenson Thouless Pratt Tanagras Pallikari Bean cipher lock survival SPR"
     }
   ],
   "schemaVersion": 4,
-  "editorialRevision": "24 octobre 2026 : sélection de références révisée ; études retirées et synthèses ajustées dans les dossiers concernés."
+  "editorialRevision": "24 octobre 2026 : extension documentaire, registre KPU, centres de recherche et réanalyses Ganzfeld de 2026.",
+  "watchlist": [
+    {
+      "title": "Psi implicite / First Sight",
+      "registry": "KPU 1080, 1091, 1099",
+      "status": "Résumé PA 2025 ; protocoles complémentaires",
+      "note": "Premier résultat ajouté à Précognition. Rapport détaillé du second essai à retrouver ; aucun résultat lié pour 1099. Le registre seul ne dit pas si une collecte se poursuit.",
+      "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_Registry_1080.pdf",
+      "related": "precognition"
+    },
+    {
+      "title": "Apprentissage et résonance morphique",
+      "registry": "KPU 1046",
+      "status": "Article publié en 2021",
+      "note": "Prédictions non soutenues dans le test de caractères chinois de Vernon, Hitchman et Roe. Candidat à une fiche propre après examen du corpus antérieur.",
+      "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_1046_Published_Results.pdf",
+      "related": "conditions-moderateurs"
+    },
+    {
+      "title": "Divination expérimentale / I Ching",
+      "registry": "KPU 1082",
+      "status": "Article publié en 2025",
+      "note": "Premier volet intégré à Synchronicités. Étendre aux travaux historiques avant de décider d'une fiche autonome.",
+      "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_1082_Published_Results.pdf",
+      "related": "synchronicites"
+    },
+    {
+      "title": "Flottation et réduction des stimulations",
+      "registry": "KPU 1073",
+      "status": "Protocole exploratoire ; résultats non liés",
+      "note": "Vérifier les résultats et comparer la flottation aux autres conditions de réduction des stimulations.",
+      "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_Registry_1073.pdf",
+      "related": "conditions-moderateurs"
+    },
+    {
+      "title": "Intention, poids apparent et horloges atomiques",
+      "registry": "KPU 1105, 1106",
+      "status": "Protocole exploratoire ; résultats non liés",
+      "note": "Séparer dérive des instruments, poids apparent et interprétation gravitationnelle. Aucun résultat lié dans le registre consulté.",
+      "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_Registry_1105.pdf",
+      "related": "micro-pk"
+    },
+    {
+      "title": "Modèles de langage et vision à distance",
+      "registry": "KPU 1100",
+      "status": "Protocole exploratoire ; résultats non liés",
+      "note": "Examiner les versions du modèle, les cibles, les fuites d'information et les résultats ; le protocole ne démontre ni conscience ni psi.",
+      "url": "https://www.koestler-parapsychology.psy.ed.ac.uk/Documents/KPU_Registry_1100.pdf",
+      "related": "vision-distance"
+    },
+    {
+      "title": "Ganzfeld adapté et automatisé",
+      "registry": "Rhine Research Center",
+      "status": "Description de programme",
+      "note": "La page décrit un projet sans résultats. Suivre un rapport expérimental daté.",
+      "url": "https://www.rhineonline.org/extrasensory-perception",
+      "related": "ganzfeld"
+    },
+    {
+      "title": "ARV au Rhine",
+      "registry": "Rhine Research Center",
+      "status": "Étude annoncée achevée en 2018",
+      "note": "La page ne fournit pas de résultat chiffré publié. Ne pas confondre avec KPU 1020, annulé faute de financement en 2025.",
+      "url": "https://www.rhineonline.org/extrasensory-perception",
+      "related": "vision-distance-associative"
+    }
+  ],
+  "registryReview": {
+    "date": "24 octobre 2026",
+    "url": "https://koestlerunit.wordpress.com/study-registry/registered-studies/",
+    "scope": "Repérage des entrées KPU 1001 à 1107, puis lecture ciblée des protocoles et résultats des candidats retenus. Dernière entrée visible : 1107, 30 septembre 2026. Cet audit n'est pas une revue systématique de toutes les publications de chaque thème.",
+    "notes": [
+      "Le registre héberge les documents soumis ; l'enregistrement ne vaut pas approbation du protocole, des statistiques ou des conclusions par la KPU.",
+      "La mention C ou E concerne le statut annoncé des hypothèses, pas la qualité ni la confirmation des résultats.",
+      "Absence de lien de résultats ne signifie ni résultat nul, ni étude toujours en cours.",
+      "Distinguer première soumission, révisions, résumé de congrès, résumé de résultats et article publié."
+    ]
+  }
 }
