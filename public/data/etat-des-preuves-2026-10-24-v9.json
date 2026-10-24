@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-24-bilan-9",
+  "version": "2026-10-24-bilan-9-revision-1",
   "date": "24 octobre 2026",
   "topics": [
     {
@@ -509,12 +509,6 @@
           "status": "Dépôt des auteurs ; pas de nouvel échantillon."
         },
         {
-          "id": "psychometrie-parra-2007",
-          "label": "Parra et Argibay (2007), test à choix forcé avec objet, JSPR 71(2), 80-90",
-          "url": "https://www.alipsi.com.ar/investigaciones/pdf/parra_argibay_jspr-71-2-887-Apr07.pdf",
-          "status": "PDF original sur le site des auteurs obtenu ; première page et résumé lus après reconnaissance de caractères. Détails des analyses du texte intégral non audités."
-        },
-        {
           "id": "psychometrie-simmonds-2024",
           "label": "Simmonds-Moore (2024), enquête sur les interactions subjectives avec des objets, Frontiers in Psychology 15, 1365144",
           "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1365144/full",
@@ -559,16 +553,8 @@
         {
           "id": "psychometrie-archeologie",
           "title": "Psychométrie et archéologie intuitive",
-          "intro": "La psychométrie utilise un objet comme support de la recherche d'information. Les applications archéologiques ajoutent une vérification de terrain, avec des enjeux de datation des descriptions et de jugement indépendant. Ces applications ne sont pas nécessairement incluses dans la méta-analyse présentée plus haut.",
+          "intro": "La psychométrie utilise un objet comme support de la recherche d'information. Les deux références retenues ici portent sur une enquête de vécu et un compte rendu archéologique ; elles ne constituent pas une évaluation contrôlée de la psychométrie. Les applications archéologiques demandent de vérifier la datation des descriptions et l'indépendance du jugement. Ces travaux ne sont pas nécessairement inclus dans la méta-analyse présentée plus haut.",
           "rows": [
-            [
-              "Parra et Argibay (2007)",
-              "Test de psychométrie à choix forcé",
-              "74 participants, objets codés et recodés en aveugle ; comparaison selon les capacités déclarées.",
-              "Le groupe déclarant une capacité obtient de meilleurs scores que celui déclarant seulement des expériences : p = 0,041, test unilatéral.",
-              "Groupes constitués par déclaration personnelle. Le résultat ne permet pas d'identifier un mécanisme propre à l'objet.",
-              "psychometrie-parra-2007"
-            ],
             [
               "Simmonds-Moore (2024)",
               "Enquête phénoménologique",
@@ -3921,5 +3907,6 @@
       "resultsTitle": "Études et documents retenus"
     }
   ],
-  "schemaVersion": 4
+  "schemaVersion": 4,
+  "editorialRevision": "24 octobre 2026 : sélection de références révisée ; études retirées et synthèses ajustées dans les dossiers concernés."
 }

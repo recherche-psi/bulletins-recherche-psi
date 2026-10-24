@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-24-bilan-10",
+  "version": "2026-10-24-bilan-10-revision-1",
   "date": "24 octobre 2026",
   "topics": [
     {
@@ -509,12 +509,6 @@
           "status": "Dépôt des auteurs ; pas de nouvel échantillon."
         },
         {
-          "id": "psychometrie-parra-2007",
-          "label": "Parra et Argibay (2007), test à choix forcé avec objet, JSPR 71(2), 80-90",
-          "url": "https://www.alipsi.com.ar/investigaciones/pdf/parra_argibay_jspr-71-2-887-Apr07.pdf",
-          "status": "PDF original sur le site des auteurs obtenu ; première page et résumé lus après reconnaissance de caractères. Détails des analyses du texte intégral non audités."
-        },
-        {
           "id": "psychometrie-simmonds-2024",
           "label": "Simmonds-Moore (2024), enquête sur les interactions subjectives avec des objets, Frontiers in Psychology 15, 1365144",
           "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1365144/full",
@@ -559,16 +553,8 @@
         {
           "id": "psychometrie-archeologie",
           "title": "Psychométrie et archéologie intuitive",
-          "intro": "La psychométrie utilise un objet comme support de la recherche d'information. Les applications archéologiques ajoutent une vérification de terrain, avec des enjeux de datation des descriptions et de jugement indépendant. Ces applications ne sont pas nécessairement incluses dans la méta-analyse présentée plus haut.",
+          "intro": "La psychométrie utilise un objet comme support de la recherche d'information. Les deux références retenues ici portent sur une enquête de vécu et un compte rendu archéologique ; elles ne constituent pas une évaluation contrôlée de la psychométrie. Les applications archéologiques demandent de vérifier la datation des descriptions et l'indépendance du jugement. Ces travaux ne sont pas nécessairement inclus dans la méta-analyse présentée plus haut.",
           "rows": [
-            [
-              "Parra et Argibay (2007)",
-              "Test de psychométrie à choix forcé",
-              "74 participants, objets codés et recodés en aveugle ; comparaison selon les capacités déclarées.",
-              "Le groupe déclarant une capacité obtient de meilleurs scores que celui déclarant seulement des expériences : p = 0,041, test unilatéral.",
-              "Groupes constitués par déclaration personnelle. Le résultat ne permet pas d'identifier un mécanisme propre à l'objet.",
-              "psychometrie-parra-2007"
-            ],
             [
               "Simmonds-Moore (2024)",
               "Enquête phénoménologique",
@@ -3931,7 +3917,7 @@
       "kind": "clinical",
       "subtitle": "Accompagnements et résultats : détresse, intégration du vécu et qualité de vie.",
       "direction": "Des bénéfices rapportés, une évaluation comparative encore limitée",
-      "summary": "Les consultations spécialisées documentent les besoins et les processus thérapeutiques. Quelques études mesurent les changements après accompagnement ; les corpus voisins apportent des essais et une méta-analyse, avec des populations et des objectifs distincts.",
+      "summary": "La sélection retient une étude de cas avec mesures cliniques et plusieurs travaux sur les besoins et les processus thérapeutiques. Les corpus voisins apportent des essais et une méta-analyse, avec des populations et des objectifs distincts.",
       "question": "Quels accompagnements aident les personnes à vivre avec leurs expériences exceptionnelles ? La fiche porte sur les bénéfices cliniques, leur durée et les effets indésirables. Elle distingue les évaluations directes, les travaux qualitatifs et les recherches voisines sur les perceptions inhabituelles ou le deuil. Une expérience exceptionnelle ne suffit pas à définir un trouble ; l'évaluation porte sur les besoins de la personne. L'évolution clinique ne tranche pas l'origine de l'expérience.",
       "handbook": "Chapitre 9, Approche clinique du psi, par Renaud Evrard et Thomas Rabeyron : centres de consultation, modèles d'accompagnement et enjeux d'évaluation. Complété par les publications originales ci-dessous.",
       "metrics": [],
@@ -3951,16 +3937,8 @@
           "Un comparateur aide à distinguer l'effet du dispositif de l'évolution spontanée, des attentes et des bénéfices communs de l'accompagnement."
         ]
       ],
-      "resultsTitle": "Évaluations directes de l'accompagnement",
+      "resultsTitle": "Évaluation directe : une étude de cas",
       "rows": [
-        [
-          "Parra & Corbetta, 2014",
-          "Groupe humaniste ; mesures avant et après",
-          "20 personnes évaluées sur 41 recrutées ; séances hebdomadaires pendant cinq mois",
-          "Amélioration de la satisfaction émotionnelle, de la compréhension des expériences et du sentiment d'être écouté. Pas de changement significatif de l'intégration dans la vie (p = 0,655), ni de l'item d'émotion désagréable (p = 0,631).",
-          "Sans groupe témoin ; questionnaire exploratoire et échantillon final réduit. Le résumé évoque une baisse du malaise, mais le tableau distingue des résultats positifs et nuls : satisfaction et détresse ne sont pas interchangeables.",
-          "clin-parra-2014"
-        ],
         [
           "Scimeca, 2024",
           "Étude de cas avec mesures psychométriques ; EMDR",
@@ -4076,11 +4054,11 @@
           "Suivi après la fin des séances, recours à d'autres soins et évolution des difficultés initiales."
         ]
       ],
-      "interpretation": "Il existe des résultats cliniques documentés, mais ils portent sur des objets différents : vécu de la consultation, compréhension de l'expérience, détresse ou symptômes. Les améliorations observées sans comparateur renseignent l'évolution des personnes sans isoler l'effet propre du traitement. Les essais et la méta-analyse des corpus voisins complètent cette lecture sous réserve de préciser à qui et à quoi leurs résultats s'appliquent. L'objectif clinique se définit avec la personne ; la disparition de l'expérience n'est pas un critère universel de réussite.",
+      "interpretation": "Les travaux retenus documentent les besoins des personnes, le vécu des consultations et les processus thérapeutiques. Une étude de cas rapporte une amélioration de symptômes, sans permettre d'isoler l'effet propre du traitement. Les essais et la méta-analyse des corpus voisins complètent cette lecture sous réserve de préciser à qui et à quoi leurs résultats s'appliquent. L'objectif clinique se définit avec la personne ; la disparition de l'expérience n'est pas un critère universel de réussite.",
       "profile": [
         [
           "Résultats observés",
-          "Des bénéfices sont rapportés sur la satisfaction, la compréhension et certains symptômes ; des critères restent inchangés. Les études de processus renseignent la manière dont l'accompagnement est vécu."
+          "Une étude de cas rapporte une amélioration de symptômes. Les entretiens documentent l'écoute et la relation thérapeutique ; les corpus voisins mesurent des changements de détresse, d'appréciation du vécu ou de deuil, avec des résultats dépendant du critère étudié."
         ],
         [
           "Robustesse méthodologique",
@@ -4098,12 +4076,6 @@
       "openQuestion": "Quels accompagnements améliorent durablement la vie des personnes, pour quels vécus et au-delà des bénéfices communs d'une écoute attentive ?",
       "next": "Définir avec les personnes les objectifs et les critères de changement ; mener des suivis prospectifs, documenter les abandons et les effets indésirables, puis comparer des accompagnements crédibles. Décrire les bénéfices à plusieurs mois et les conditions dans lesquelles ils apparaissent.",
       "sources": [
-        {
-          "id": "clin-parra-2014",
-          "label": "Parra, A., & Corbetta, J. M. (2014). Examen de post-efecto para experiencias anómalo/paranormales con un abordaje humanista. Psicogente, 17(32), 397–405.",
-          "url": "https://www.researchgate.net/publication/317497655_EXAMEN_DE_POST-EFECTO_PARA_EXPERIENCIAS_ANOMALOPARANORMALES_CON_UN_ABORDAJE_HUMANISTA",
-          "status": "Texte publié déposé par l'auteur consulté, notamment méthodes et tableau 3. Le résumé et les résultats détaillés ne décrivent pas de façon identique la détresse. Une version anglaise déposée par les auteurs précise le caractère exploratoire du questionnaire, sans validation ni fidélité établies. Les tests sont annoncés unilatéraux."
-        },
         {
           "id": "clin-scimeca-2024",
           "label": "Scimeca, G. (2024). Eye Movement Desensitization and Reprocessing of Maleficium: Case Study of a 'Cursed' Woman Suffering From Unexplained Pain. Clinical Case Studies, 23(6).",
@@ -4165,11 +4137,12 @@
         "mediumnite-mentale",
         "fin-de-vie"
       ],
-      "searchTerms": "psychotherapie clinique accompagnement counselling counseling therapie experiences exceptionnelles CIRCEE IGPP Rabeyron Evrard Belz Fach Roxburgh Evenden Parra Corbetta Scimeca EMDR TCC CBT Soneson Radez Nehmy IADC deuil souffrance detresse integration qualite de vie",
+      "searchTerms": "psychotherapie clinique accompagnement counselling counseling therapie experiences exceptionnelles CIRCEE IGPP Rabeyron Evrard Belz Fach Roxburgh Evenden Scimeca EMDR TCC CBT Soneson Radez Nehmy IADC deuil souffrance detresse integration qualite de vie",
       "new": true,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026"
     }
   ],
-  "schemaVersion": 4
+  "schemaVersion": 4,
+  "editorialRevision": "24 octobre 2026 : sélection de références révisée ; études retirées et synthèses ajustées dans les dossiers concernés."
 }

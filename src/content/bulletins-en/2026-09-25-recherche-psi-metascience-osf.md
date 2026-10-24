@@ -237,7 +237,7 @@ The lesson for psi research is precise: preregistration does not prohibit explor
 
 ### Fraud prevention begins with the protocol
 
-James E. Kennedy, Researcher Fraud in Experimental Parapsychology, Psi Encyclopedia, updated on 23 September 2026. This synthesis revisits the Levy and Soal cases and the Parra case. It distinguishes established facts, suspicions and undetected fraud, whose frequency cannot be inferred from known cases alone. Fabrication or falsification of findings must also be distinguished from plagiarism.
+James E. Kennedy, Researcher Fraud in Experimental Parapsychology, Psi Encyclopedia, updated on 23 September 2026. This synthesis discusses, among others, the Levy and Soal cases. It distinguishes established facts, suspicions and undetected fraud, whose frequency cannot be inferred from known cases alone. Fabrication or falsification of findings must also be distinguished from plagiarism.
 
 The central argument concerns whether a researcher acting alone can alter results without independent oversight. Kennedy advocates prevention built into the protocol rather than trust resting primarily on subsequent investigations. His companion article, Preventing Researcher Fraud, updated on 9 July 2026, discusses raw-data archiving, audit trails, access controls and shared responsibilities.
 
