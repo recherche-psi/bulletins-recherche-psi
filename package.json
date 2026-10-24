@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "test:assistant": "node --test assistant/test.mjs",
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview"

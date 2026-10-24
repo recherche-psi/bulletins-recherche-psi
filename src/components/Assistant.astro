@@ -1,0 +1,114 @@
+---
+interface Props { lang?: 'fr' | 'en' }
+const { lang = 'fr' } = Astro.props;
+const en = lang === 'en';
+const endpoint = import.meta.env.PUBLIC_ASSISTANT_URL || '';
+---
+<section class="shell assistant" data-assistant data-lang={lang} data-corpus={`${import.meta.env.BASE_URL}assistant/corpus.json`} data-endpoint={endpoint}>
+  <p class="section-label">{en ? 'Documented answers' : 'Réponses documentées'}</p>
+  <h1>{en ? 'Research assistant' : 'Assistant de recherche'}</h1>
+  <p class="intro">{en ? 'Explore the methods, findings and limitations of psi studies through reviewed research notes.' : 'Explorez les méthodes, les résultats et les limites des études psi à partir de fiches relues.'}</p>
+  <p data-status role="status">{en ? 'Loading research notes…' : 'Chargement des fiches…'}</p>
+  <form>
+    <label for="question">{en ? 'Your question' : 'Votre question'}</label>
+    <textarea id="question" name="question" maxlength="1200" rows="3" required disabled placeholder={en ? 'What do the recall replication studies report?' : 'Que rapportent les réplications sur le rappel de mots ?'}></textarea>
+    <p id="privacy" class="note">{en ? 'Do not include personal information. Search runs in your browser. If you choose an AI answer, your question and the selected notes are sent through Cloudflare to OpenAI.' : 'Ne saisissez pas de données personnelles. La recherche s’effectue dans votre navigateur. Si vous choisissez une réponse IA, votre question et les fiches sélectionnées sont transmises via Cloudflare à OpenAI.'}</p>
+    <p class="note">{en ? 'OpenAI excludes API exchanges from model training unless data sharing is enabled. Security logs may retain their content for up to 30 days, with exceptions.' : 'OpenAI exclut les échanges API de l’entraînement, sauf partage volontaire. Des journaux de sécurité peuvent conserver leur contenu jusqu’à 30 jours, avec exceptions.'} <a href="https://developers.openai.com/api/docs/guides/your-data">{en ? 'OpenAI data policy' : 'Politique de données OpenAI'}</a>.</p>
+    <div class="actions">
+      <button type="submit" class="button" disabled>{en ? 'Find research notes' : 'Rechercher des fiches'}</button>
+      <button type="button" class="button ai" data-generate disabled>{en ? 'Ask the AI' : 'Demander à l’IA'}</button>
+    </div>
+  </form>
+  <section data-answer aria-live="polite" aria-atomic="true"></section>
+  <section data-results aria-label={en ? 'Research notes' : 'Fiches documentaires'}></section>
+  <aside class="scope">
+    <h2>{en ? 'Scope and limitations' : 'Périmètre et limites'}</h2>
+    <p>{en ? 'The assistant uses only the notes available here. Coverage grows as notes are reviewed; it is not an exhaustive account of the literature. AI answers can contain errors: check the cited notes and original publications.' : 'L’assistant utilise uniquement les fiches disponibles ici. La couverture s’enrichit au fil des relectures ; elle ne représente pas toute la littérature. Les réponses IA peuvent comporter des erreurs : vérifiez les fiches citées et les publications originales.'}</p>
+    <p>{en ? 'The monthly AI allowance is shared by all visitors. When it is exhausted, research-note search remains available. The service does not provide full articles or personal assessments.' : 'Le quota mensuel de réponses IA est partagé entre tous les visiteurs. Lorsqu’il est épuisé, la recherche dans les fiches reste disponible. Le service ne fournit ni articles intégraux ni évaluation personnelle.'}</p>
+  </aside>
+  <noscript>{en ? 'Enable JavaScript to search research notes.' : 'Activez JavaScript pour rechercher dans les fiches.'}</noscript>
+</section>
+<script>
+  import { validateCorpus, searchFiches, doiUrl } from '../../assistant/shared.mjs';
+  const root = document.querySelector<HTMLElement>('[data-assistant]')!;
+  const en = root.dataset.lang === 'en';
+  const t = (fr: string, english: string) => en ? english : fr;
+  const status = root.querySelector<HTMLElement>('[data-status]')!;
+  const answer = root.querySelector<HTMLElement>('[data-answer]')!;
+  const results = root.querySelector<HTMLElement>('[data-results]')!;
+  const form = root.querySelector('form')!;
+  const question = root.querySelector('textarea')!;
+  const search = root.querySelector<HTMLButtonElement>('button[type=submit]')!;
+  const generate = root.querySelector<HTMLButtonElement>('[data-generate]')!;
+  type Fiche = {id: string; doi: string; texte_candidat_markdown: string};
+  let fiches: Fiche[] = [];
+  let busy = false;
+  const endpoint = root.dataset.endpoint || '';
+  const remote = /^https:\/\//.test(endpoint);
+  question.setAttribute('aria-describedby', 'privacy');
+  function showFiches(selected: Fiche[]) {
+    results.replaceChildren();
+    for (const f of selected) {
+      const article = document.createElement('article');
+      const title = document.createElement('h2'); title.textContent = f.id;
+      const text = document.createElement('p'); text.className = 'fiche-text'; text.textContent = f.texte_candidat_markdown;
+      const link = document.createElement('a'); link.href = doiUrl(f.doi); link.textContent = `DOI : ${f.doi}`;
+      article.append(title, text, link); results.append(article);
+    }
+  }
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const selected = searchFiches(fiches, question.value.trim());
+    showFiches(selected);
+    status.textContent = selected.length ? t(`${selected.length} fiche(s) correspondante(s).`, `${selected.length} matching note(s).`) : t('Aucune fiche correspondante dans ce corpus.', 'No matching notes in this collection.');
+  });
+  generate.addEventListener('click', async () => {
+    if (busy || !remote || !form.reportValidity() || !question.value.trim()) return;
+    busy = true; generate.disabled = true;
+    answer.textContent = t('Préparation de la réponse…', 'Preparing an answer…');
+    const messages: Record<string, string> = {
+      unavailable: t('Les réponses IA ne sont pas encore activées.', 'AI answers are not yet enabled.'),
+      budget: t('Le quota mensuel est atteint. La recherche dans les fiches reste disponible.', 'The monthly allowance has been reached. You can still search the notes.'),
+      busy: t('Le service est occupé. Réessayez plus tard.', 'The service is busy. Please try again later.'),
+      no_sources: t('Les fiches disponibles ne permettent pas de répondre.', 'The available notes do not support an answer.'),
+      scope: t('Le service explique les faits des fiches ; il ne reproduit pas les articles.', 'The service explains the notes; it does not reproduce articles.'),
+    };
+    try {
+      const response = await fetch(endpoint, { method: 'POST', headers: {'Content-Type': 'application/json'}, credentials: 'omit', body: JSON.stringify({question: question.value.trim(), lang: en ? 'en' : 'fr'}), signal: AbortSignal.timeout(40000) });
+      const data = await response.json();
+      if (!response.ok) { answer.textContent = messages[data.code] || t('Réponse indisponible. Vous pouvez consulter les fiches.', 'Answer unavailable. You can read the notes.'); return; }
+      if (typeof data.answer !== 'string' || !Array.isArray(data.sources)) throw new Error('Invalid answer');
+      const selected = data.sources.map((id: string) => fiches.find(f => f.id === id));
+      if (!selected.length || selected.some((f: Fiche | undefined) => !f)) throw new Error('Unknown source');
+      const heading = document.createElement('h2'); heading.textContent = t('Réponse générée par IA — à vérifier', 'AI-generated answer — please verify');
+      const text = document.createElement('p'); text.textContent = data.answer;
+      answer.replaceChildren(heading, text); showFiches(selected);
+    } catch { answer.textContent = t('Connexion interrompue ou réponse indisponible. Aucune relance automatique.', 'Connection interrupted or answer unavailable. No automatic retry.'); }
+    finally { busy = false; generate.disabled = !remote || !fiches.length; }
+  });
+  try {
+    const response = await fetch(root.dataset.corpus!);
+    if (!response.ok) throw new Error('Corpus unavailable');
+    fiches = validateCorpus(await response.json());
+    status.textContent = fiches.length ? t(`${fiches.length} fiche(s) disponible(s).`, `${fiches.length} note(s) available.`) : t('Le corpus est en préparation. Les premières fiches seront accessibles après leur validation.', 'The collection is being prepared. The first notes will appear after review.');
+    question.disabled = search.disabled = !fiches.length;
+    generate.disabled = !remote || !fiches.length;
+    if (fiches.length && !remote) status.textContent += t(' La recherche est disponible ; les réponses IA ne sont pas encore activées.', ' Search is available; AI answers are not yet enabled.');
+  } catch { status.textContent = t('Impossible de charger les fiches. Réessayez ultérieurement.', 'Could not load the notes. Please try again later.'); }
+</script>
+<style>
+  .assistant { max-width: 920px; padding-top: 4rem; padding-bottom: 4rem; }
+  h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+  .intro { font-size: 1.25rem; }
+  form, .scope { margin-top: 2rem; padding: 1.5rem; border: 1px solid var(--line, #ccc); }
+  label { display: block; font-weight: bold; margin-bottom: .6rem; }
+  textarea { width: 100%; box-sizing: border-box; font: inherit; padding: .8rem; background: white; color: #182520; border: 1px solid #66736c; border-radius: 4px; }
+  textarea:focus-visible, button:focus-visible { outline: 3px solid #9a542f; outline-offset: 3px; }
+  .note { font-size: .9rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+  button { font: inherit; cursor: pointer; }
+  button:disabled { opacity: .55; cursor: not-allowed; }
+  [data-answer]:not(:empty), [data-results] :global(article) { margin-top: 2rem; border-top: 1px solid #ccc; padding-top: 1rem; }
+  [data-answer], :global(.fiche-text) { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .scope h2 { font-size: 1.3rem; }
+</style>
