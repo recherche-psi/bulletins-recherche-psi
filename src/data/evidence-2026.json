@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-21-brouillon-1",
-  "date": "21 octobre 2026",
+  "version": "2026-10-24-brouillon-2",
+  "date": "24 octobre 2026",
   "topics": [
     {
       "id": "ganzfeld",
@@ -165,6 +165,276 @@
           "url": "https://ganzfeld.study/",
           "status": "Page officielle du projet, consultée le 21 octobre 2026 ; collecte annoncée close."
         }
+      ],
+      "reviewed": "21 octobre 2026",
+      "group": "Perception",
+      "new": false,
+      "handbook": "",
+      "landscape": [],
+      "blocker": "Généralisation et réplication prospective"
+    },
+    {
+      "reviewed": "24 octobre 2026",
+      "new": true,
+      "landscape": [],
+      "id": "telepathie-reve",
+      "title": "Télépathie dans le rêve",
+      "group": "Perception",
+      "subtitle": "Rapprocher un récit de rêve d'une cible tenue à l'écart des sens",
+      "confidence": "Faible",
+      "direction": "Signal positif, sensible à la méthode",
+      "summary": "La synthèse sur le psi dans les rêves est favorable ; l'effet propre à la télépathie reste incertain.",
+      "blocker": "Pondération des études et réplications récentes",
+      "question": "Les rêves correspondent-ils à une cible plus souvent que prévu par le hasard ? Les synthèses réunissent télépathie, clairvoyance et précognition : leur résultat global ne démontre pas spécifiquement la télépathie.",
+      "handbook": "Mario Varvoglis, chapitre 3, section « La perception extra-sensorielle en rêve ».",
+      "metrics": [
+        [
+          "50",
+          "études dans la synthèse 2017"
+        ],
+        [
+          "1966–2016",
+          "période du corpus synthétisé"
+        ],
+        [
+          "21",
+          "études de télépathie réanalysées en 2018"
+        ]
+      ],
+      "rows": [
+        [
+          "Storm et al., 2017",
+          "Méta-analyse",
+          "50 études : 14 Maimonides, 36 hors Maimonides",
+          "ES moyen non pondéré = 0,20 ; Z = 5,32 ; p = 5,19 × 10⁻⁸",
+          "Plusieurs modes de psi regroupés ; déclin de l'effet au fil des années.",
+          "r1"
+        ],
+        [
+          "Howard, 2018",
+          "Réanalyse",
+          "44 études après exclusions ; 1 708 essais",
+          "r pondéré = 0,07 ; IC 95 % [0,02 ; 0,12]. Télépathie : 0,07 [−0,03 ; 0,17].",
+          "Les choix de pondération et d'exclusion modifient l'estimation. Même base d'études, pas une réplication.",
+          "r2"
+        ],
+        [
+          "Storm et al., 2019",
+          "Réponse méthodologique",
+          "Discussion de la réanalyse de Howard",
+          "Contestations sur les valeurs atypiques et les biais de publication ; réanalyses proposées",
+          "Désaccord analytique à conserver dans l'évaluation. Pas de nouveau corpus indépendant.",
+          "r3"
+        ]
+      ],
+      "assessment": [
+        [
+          "Résultat statistique",
+          "Favorable mais variable",
+          "L'effet global ne suffit pas à isoler un mécanisme télépathique."
+        ],
+        [
+          "Robustesse",
+          "Discutée",
+          "Pondération, exclusions et petits échantillons influencent les conclusions."
+        ],
+        [
+          "Reproductibilité",
+          "À consolider",
+          "Une réanalyse n'ajoute aucune observation indépendante. Le corpus de référence s'arrête en 2016."
+        ],
+        [
+          "Attribution au psi",
+          "Incertaine",
+          "Contrôles de la cible, datation du récit et jugement à l'aveugle à auditer."
+        ]
+      ],
+      "reason": "Confiance faible proposée : le signal historique mérite un suivi, mais la sensibilité aux analyses et le manque de confirmation récente dans cette sélection limitent l'attribution à un psi reproductible.",
+      "next": "Une réplication indépendante préenregistrée, avec récits horodatés avant révélation, cibles randomisées, juges aveugles et analyse fixée à l'avance.",
+      "chart": {
+        "title": "Ce que change la réanalyse",
+        "axis": "Corrélation pondérée r et IC à 95 %",
+        "min": -0.05,
+        "max": 0.2,
+        "nullValue": 0,
+        "ticks": [
+          -0.05,
+          0,
+          0.05,
+          0.1,
+          0.15,
+          0.2
+        ],
+        "rows": [
+          {
+            "label": "Ensemble du corpus",
+            "value": 0.07,
+            "low": 0.02,
+            "high": 0.12,
+            "display": "0,07 [0,02 ; 0,12]"
+          },
+          {
+            "label": "Sous-ensemble télépathie",
+            "value": 0.07,
+            "low": -0.03,
+            "high": 0.17,
+            "display": "0,07 [-0,03 ; 0,17]"
+          }
+        ],
+        "note": "Howard (2018), tableau 2. Le sous-ensemble est inclus dans l'ensemble : ces lignes ne sont pas indépendantes. Ce graphique illustre une réanalyse discutée par Storm et al. (2019)."
+      },
+      "sources": [
+        {
+          "id": "r1",
+          "label": "Storm et al. (2017). On the correspondence between dream content and target material under laboratory conditions. IJoDR, 10(2), 120–140.",
+          "url": "https://doi.org/10.11588/ijodr.2017.2.34888",
+          "status": "Méta-analyse ; résumé et chiffres vérifiés dans le dépôt de l'université de Northampton."
+        },
+        {
+          "id": "r2",
+          "label": "Howard (2018). A meta-reanalysis of dream-ESP studies: Comment on Storm et al. (2017). IJoDR, 11(2), 224–229.",
+          "url": "https://mattchoward.com/wp-content/uploads/2018/11/howard_ijodr_2018.pdf",
+          "status": "Réanalyse ; texte intégral et tableau 2 consultés sur le site de l'auteur."
+        },
+        {
+          "id": "r3",
+          "label": "Storm et al. (2019). Response to Howard (2018). IJoDR, 12(1), 147–152.",
+          "url": "https://doi.org/10.11588/ijodr.2019.1.59265",
+          "status": "Commentaire publié ; notice et résumé vérifiés dans le dépôt de l'université de New England. Pas d'audit de ses calculs."
+        }
+      ]
+    },
+    {
+      "reviewed": "24 octobre 2026",
+      "new": true,
+      "landscape": [],
+      "id": "vision-distance",
+      "title": "Vision à distance",
+      "group": "Perception",
+      "subtitle": "Décrire une cible inaccessible, avec évaluation à l'aveugle",
+      "confidence": "Faible",
+      "direction": "Moyenne positive, forte hétérogénéité",
+      "summary": "Une synthèse favorable, mais des protocoles très variables et des résultats récents contrastés.",
+      "blocker": "Stabilité de l'effet entre protocoles et équipes",
+      "question": "Les descriptions permettent-elles d'identifier des cibles cachées ou futures ? Les protocoles de clairvoyance et de précognition doivent être distingués ; les résultats ne valident pas à eux seuls des applications pratiques.",
+      "handbook": "Mario Varvoglis, chapitre 3, section sur la vision à distance ; Julia Mossbridge, chapitre 4, section sur la vision à distance précognitive.",
+      "metrics": [
+        [
+          "36",
+          "études dans la synthèse 2023"
+        ],
+        [
+          "0,34",
+          "ES après exclusion d'une valeur atypique"
+        ],
+        [
+          "100 %",
+          "I² rapporté, arrondi par la source"
+        ]
+      ],
+      "rows": [
+        [
+          "Tressoldi & Katz, 2023",
+          "Méta-analyse ; 1974–2022",
+          "36 études ; 40 effets, puis 39 après exclusion",
+          "ES = 0,34 ; IC 95 % [0,22 ; 0,45] après exclusion ; I² = 100 %",
+          "Hétérogénéité extrême. Les analyses de biais restent favorables, sans garantir l'absence de biais.",
+          "v1"
+        ],
+        [
+          "Mossbridge, Cameron & Boccuzzi, 2024",
+          "Deux expériences en ligne",
+          "Exp. 1 : 682 participants, 5 432 essais ; exp. 2 : 307 participants, un essai chacun",
+          "Exp. 1, choix forcé : résultat global non significatif. Exp. 2, réponse libre : résultat significatif",
+          "Tâches et modes de jugement différents. L'analyse préenregistrée mentionnée concerne l'intérêt des cibles, pas une validation préenregistrée de tous les résultats.",
+          "v2"
+        ],
+        [
+          "Tressoldi & Katz, 2023",
+          "Données et code ouverts",
+          "Base associée à la méta-analyse",
+          "Matériel et analyses déposés sur Figshare",
+          "Permet une réanalyse ; ne constitue pas une réplication indépendante.",
+          "v3"
+        ]
+      ],
+      "assessment": [
+        [
+          "Résultat statistique",
+          "Favorable en moyenne",
+          "La méta-analyse rapporte un effet positif."
+        ],
+        [
+          "Robustesse",
+          "Hétérogénéité majeure",
+          "L'effet moyen décrit mal à lui seul une prochaine expérience."
+        ],
+        [
+          "Reproductibilité",
+          "Variable selon la tâche",
+          "Les deux expériences de 2024 ne donnent pas le même résultat global."
+        ],
+        [
+          "Attribution au psi",
+          "À consolider",
+          "L'indépendance des juges et l'absence d'indices sur les cibles sont déterminantes."
+        ]
+      ],
+      "reason": "Confiance faible proposée malgré la moyenne positive : la diversité des tâches et l'hétérogénéité extrême empêchent de déduire une performance stable et généralisable.",
+      "next": "Un protocole commun préenregistré, répété par plusieurs équipes indépendantes, avec juges aveugles, règles de correspondance fixées et prédiction de la performance attendue.",
+      "chart": {
+        "title": "Sensibilité à une valeur atypique",
+        "axis": "ES standardisé selon la source et IC à 95 %",
+        "min": -0.1,
+        "max": 0.6,
+        "nullValue": 0,
+        "ticks": [
+          -0.1,
+          0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6
+        ],
+        "rows": [
+          {
+            "label": "Tous les effets (40)",
+            "value": 0.36,
+            "low": 0.23,
+            "high": 0.48,
+            "display": "0,36 [0,23 ; 0,48]"
+          },
+          {
+            "label": "Après exclusion (39)",
+            "value": 0.34,
+            "low": 0.22,
+            "high": 0.45,
+            "display": "0,34 [0,22 ; 0,45]"
+          }
+        ],
+        "note": "Tressoldi & Katz (2023), tableau 2. Deux analyses du même corpus, et non deux réplications. L'IC décrit la moyenne ; ce n'est pas un intervalle de prédiction pour une nouvelle étude."
+      },
+      "sources": [
+        {
+          "id": "v1",
+          "label": "Tressoldi & Katz (2023). Remote Viewing: A 1974–2022 Systematic Review and Meta-Analysis. JSE, 37(3), 467–489.",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/2931",
+          "status": "Texte intégral ; tableaux 2 et 3 consultés."
+        },
+        {
+          "id": "v2",
+          "label": "Mossbridge, Cameron & Boccuzzi (2024). State, Trait, and Target Parameters Associated with Accuracy in Two Online Tests of Precognitive Remote Viewing.",
+          "url": "https://journals.lub.lu.se/jaex/article/view/24743",
+          "status": "Article JAEX ; résultats et effectifs vérifiés dans le résumé publié."
+        },
+        {
+          "id": "v3",
+          "label": "Tressoldi & Katz (2023). Remote Viewing Meta-Analysis : base, matériel et code.",
+          "url": "https://figshare.com/articles/dataset/Remote_Viewing_Meta-Analysis/22298266",
+          "status": "Dépôt des auteurs ; pas de nouvel échantillon."
+        }
       ]
     },
     {
@@ -294,6 +564,158 @@
           "label": "P3 · Walleczek et al. (2025). Metascientific replication project with the advanced meta-experimental protocol of the transparent psi project procedures for testing the precognitive effect claimed by Bem. PLOS ONE, 20, e0335330.",
           "url": "https://doi.org/10.1371/journal.pone.0335330",
           "status": "Article évalué par les pairs ; distingue analyses confirmatoires et exploratoires."
+        }
+      ],
+      "reviewed": "21 octobre 2026",
+      "group": "Anticipation",
+      "new": false,
+      "handbook": "",
+      "landscape": [],
+      "blocker": "Résultats confirmatoires discordants"
+    },
+    {
+      "reviewed": "24 octobre 2026",
+      "new": true,
+      "landscape": [],
+      "id": "pressentiment",
+      "title": "Pressentiment physiologique",
+      "group": "Anticipation",
+      "subtitle": "Mesurer l'activité du corps avant un stimulus aléatoire",
+      "confidence": "Faible",
+      "direction": "Synthèses favorables, interprétation discutée",
+      "summary": "Des différences pré-stimulus sont rapportées, y compris dans des travaux préenregistrés ; leur origine reste à établir.",
+      "blocker": "Traitement du signal et validation prospective",
+      "question": "L'activité physiologique précédant un événement aléatoire permet-elle d'anticiper sa catégorie ? Ce dossier porte sur les mesures corporelles, distinctes des choix conscients étudiés dans la fiche précognition.",
+      "handbook": "Julia Mossbridge, chapitre 4, section « Le pressentiment ».",
+      "metrics": [
+        [
+          "19",
+          "rapports inclus dans la mise à jour 2018"
+        ],
+        [
+          "27",
+          "expériences, soit 36 effets"
+        ],
+        [
+          "0,28",
+          "effet global estimé"
+        ]
+      ],
+      "rows": [
+        [
+          "Duggan & Tressoldi, 2018 (v2)",
+          "Méta-analyse ; 2008–juin 2018",
+          "19 rapports ; 27 expériences ; 36 effets",
+          "g = 0,28 ; IC 95 % [0,18 ; 0,38] ; I² = 81,9 %",
+          "Mesures et protocoles variés ; critères élargis par rapport à la synthèse de 2012.",
+          "s1"
+        ],
+        [
+          "Duggan & Tressoldi, 2018 (v2)",
+          "Sous-ensemble préenregistré",
+          "14 estimations d'effet du même corpus",
+          "ES = 0,31 ; IC 95 % [0,18 ; 0,45]",
+          "Résultat favorable à prendre en compte ; ce sous-ensemble n'est pas un nouveau test multisite indépendant.",
+          "s1"
+        ],
+        [
+          "Schwarzkopf, 2014 ; Mossbridge et al., 2015",
+          "Critique et réponse",
+          "Ordre des essais, attentes et corrections de ligne de base",
+          "Explications conventionnelles discutées ; les auteurs défendent l'interprétation du signal",
+          "Débat méthodologique, pas de nouvelle réplication.",
+          "s2"
+        ],
+        [
+          "Levin, 2024",
+          "Proposition théorique",
+          "Deux canaux de mesure simultanés",
+          "Propose un test du lien entre pressentiment et choix",
+          "Aucun nouveau résultat expérimental dans cet article.",
+          "s4"
+        ]
+      ],
+      "assessment": [
+        [
+          "Résultat statistique",
+          "Favorable",
+          "L'effet reste positif dans le sous-ensemble préenregistré."
+        ],
+        [
+          "Robustesse",
+          "Hétérogène",
+          "Plusieurs signaux et traitements statistiques ; portée des corrections de biais à examiner."
+        ],
+        [
+          "Reproductibilité",
+          "À standardiser",
+          "Le préenregistrement ne remplace pas la réplication d'un même protocole par plusieurs équipes."
+        ],
+        [
+          "Attribution au psi",
+          "Discutée",
+          "Écarter les effets de séquence et les artefacts de traitement avant une interprétation précognitive."
+        ]
+      ],
+      "reason": "Confiance faible proposée : les synthèses soutiennent un signal, mais l'attribution au psi exige un contrôle prospectif des effets de séquence et du traitement physiologique.",
+      "next": "Une étude multicentrique préenregistrée qui verrouille le code avant collecte, vérifie la randomisation et teste des prédictions sur des données nouvelles.",
+      "chart": {
+        "title": "Estimation globale et préenregistrement",
+        "axis": "ES standardisé selon la source et IC à 95 %",
+        "min": -0.1,
+        "max": 0.5,
+        "nullValue": 0,
+        "ticks": [
+          -0.1,
+          0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5
+        ],
+        "rows": [
+          {
+            "label": "Ensemble",
+            "value": 0.28,
+            "low": 0.18,
+            "high": 0.38,
+            "display": "0,28 [0,18 ; 0,38]"
+          },
+          {
+            "label": "Effets préenregistrés",
+            "value": 0.31,
+            "low": 0.18,
+            "high": 0.45,
+            "display": "0,31 [0,18 ; 0,45]"
+          }
+        ],
+        "note": "Duggan & Tressoldi (2018), v2, tableaux 1 et 4. Les lignes se recouvrent : le sous-ensemble préenregistré est inclus dans l'ensemble. Aucune différence entre sous-groupes n'est démontrée ici."
+      },
+      "sources": [
+        {
+          "id": "s1",
+          "label": "Duggan & Tressoldi (2018), version 2. Predictive physiological anticipatory activity preceding seemingly unpredictable stimuli. F1000Research, 7:407.",
+          "url": "https://doi.org/10.12688/f1000research.14330.2",
+          "status": "Version 2 évaluée par les pairs ; texte intégral vérifié via Europe PMC (PMC6124390)."
+        },
+        {
+          "id": "s2",
+          "label": "Schwarzkopf (2014). We should have seen this coming. Frontiers in Human Neuroscience, 8:332.",
+          "url": "https://doi.org/10.3389/fnhum.2014.00332",
+          "status": "Commentaire critique ; texte intégral consulté."
+        },
+        {
+          "id": "s3",
+          "label": "Mossbridge et al. (2015). We Did See This Coming: Response to Schwarzkopf.",
+          "url": "https://arxiv.org/abs/1501.03179",
+          "status": "Réponse des auteurs déposée sur arXiv ; ne constitue pas une réplication."
+        },
+        {
+          "id": "s4",
+          "label": "Levin (2024). Parallel Presentiment Tests Can Verify the Effectiveness of Our Free-Choices. JAEX, 4(2), 174–191.",
+          "url": "https://journals.lub.lu.se/jaex/article/view/25274",
+          "status": "Proposition théorique, distinguée des résultats empiriques."
         }
       ]
     },
@@ -445,6 +867,145 @@
           "label": "M5 · Maier, M. A., Dechamps, M. C. & Rabeyron, T. (2026). Observer Effects on (s)Objective Reality Formation: A Failed Replication. Journal of Anomalous Experience and Cognition, 6(2), 187–208.",
           "url": "https://doi.org/10.31156/jaex.26236",
           "status": "Article évalué ; réplication préenregistrée."
+        }
+      ],
+      "reviewed": "21 octobre 2026",
+      "group": "Interaction",
+      "new": false,
+      "handbook": "",
+      "landscape": [],
+      "blocker": "Effet moyen fragile et dépendance des séries"
+    },
+    {
+      "reviewed": "24 octobre 2026",
+      "new": true,
+      "landscape": [
+        [
+          "Cas spontanés",
+          "Décrire et recouper",
+          "Témoignages, traces, chronologie",
+          "Le mécanisme causal"
+        ],
+        [
+          "Essais instrumentés",
+          "Tester des effets physiques",
+          "Mesures, témoins, contrôles",
+          "La généralisation sans réplication"
+        ],
+        [
+          "Modèles théoriques",
+          "Formuler des tests",
+          "Prédictions à départager",
+          "La réalité de l'effet proposé"
+        ]
+      ],
+      "id": "macro-pk",
+      "title": "Macro-PK et poltergeists",
+      "group": "Interaction",
+      "subtitle": "Distinguer les effets physiques rapportés et leur mise à l'épreuve",
+      "confidence": "Très faible",
+      "direction": "Observations et essais exploratoires",
+      "summary": "Des cas et des expériences sont publiés ; leur attribution à une action psi reproductible reste très incertaine.",
+      "blocker": "Contrôles physiques et réplication indépendante",
+      "question": "Une intention ou un contexte humain provoque-t-il un mouvement physique inexpliqué ? La fiche distingue les cas spontanés de poltergeist et les essais volontaires sur objets ; elle ne couvre pas toute la médiumnité physique.",
+      "handbook": "Pascale Catala et Éric Dullin, chapitre 7, section sur les poltergeists. Le volet expérimental est complété par les publications originales.",
+      "metrics": [
+        [
+          "Cas",
+          "documentation rétrospective"
+        ],
+        [
+          "Essais",
+          "protocoles exploratoires"
+        ],
+        [
+          "Pas d'ES",
+          "pas d'estimation globale retenue"
+        ]
+      ],
+      "rows": [
+        [
+          "Dullin & Jamet, 2018",
+          "Méthodologie expérimentale",
+          "Mobiles en rotation ; mesure des flux d'air",
+          "Distingue rotation entraînée par l'air et rotation motorisée",
+          "Cet article porte sur la validation de la méthode ; il ne démontre pas un effet psi.",
+          "k1"
+        ],
+        [
+          "McClenon, 2024",
+          "Observation participante ; 2019–2023",
+          "Groupe en ligne ; 44 expériences avec caméra à détection de mouvement",
+          "Davantage d'activations rapportées pendant les réunions que durant des périodes témoins",
+          "Protocole évolutif et observation participante ; l'auteur signale des limites à la vérification et à la reproductibilité.",
+          "k2"
+        ],
+        [
+          "Dullin, 2024",
+          "Synthèse phénoménologique",
+          "105 cas illustratifs tirés d'un répertoire d'environ 1 250 cas",
+          "Classe les événements rapportés et discute témoignages, fraudes et validité",
+          "Un inventaire de cas ne fournit ni taux de réussite expérimental ni estimation causale.",
+          "k3"
+        ],
+        [
+          "Graboi, 2026",
+          "Proposition théorique",
+          "Hypothèse « Responsive Universe »",
+          "Propose des tests reliant sens des consignes et résultats physiques",
+          "Pas de nouvelle expérience confirmatoire ; ne relève pas le niveau de confiance.",
+          "k4"
+        ]
+      ],
+      "assessment": [
+        [
+          "Résultat statistique",
+          "Non synthétisable ici",
+          "Pas de méta-analyse homogène vérifiée dans cette sélection."
+        ],
+        [
+          "Robustesse",
+          "Contrôles déterminants",
+          "Courants d'air, gradients thermiques, vibrations, électrostatique et interventions humaines à contrôler."
+        ],
+        [
+          "Reproductibilité",
+          "Non établie dans le corpus retenu",
+          "Aucune série confirmatoire multisite indépendante identifiée par cette recherche ciblée."
+        ],
+        [
+          "Attribution au psi",
+          "Très incertaine",
+          "L'absence d'explication identifiée dans un récit ne démontre pas une cause psychique."
+        ]
+      ],
+      "reason": "Confiance très faible proposée dans ce périmètre : les observations justifient une investigation, mais ne forment pas encore une démonstration contrôlée et reproductible d'une action psi.",
+      "next": "Des cibles instrumentées et scellées, un contrôle continu de l'environnement, des périodes témoins randomisées, une expertise en illusionnisme et une réplication indépendante préenregistrée.",
+      "chart": null,
+      "sources": [
+        {
+          "id": "k1",
+          "label": "Dullin & Jamet (2018). A Methodology Proposal for Conducting a Macro-PK Test on Light Spinning Objects, in a Non-Confined Environment. JSE, 32(3).",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/1266",
+          "status": "Article méthodologique ; portée vérifiée dans le résumé publié."
+        },
+        {
+          "id": "k2",
+          "label": "McClenon (2024). Online Group PK Experiments: Hypothesis Testing and Theory Development. JSE, 38(2), 299–316.",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/3089",
+          "status": "Article d'observation participante ; résumé publié consulté."
+        },
+        {
+          "id": "k3",
+          "label": "Dullin (2024). A Detailed Phenomenology of Poltergeist Events. JSE, 38(3), 427–460.",
+          "url": "https://journalofscientificexploration.org/index.php/jse/article/view/3263",
+          "status": "Synthèse descriptive ; résumé publié consulté."
+        },
+        {
+          "id": "k4",
+          "label": "Graboi (2026). Responsive Universe Hypothesis for Macro-PK. JSE, 40(3), 412–428.",
+          "url": "https://doi.org/10.31275/20263703",
+          "status": "Article théorique ; notice éditoriale et bulletin du 2 octobre 2026 consultés."
         }
       ]
     }

@@ -2,21 +2,81 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import data from '../../data/evidence-2026.json';
 import '../../styles/evidence.css';
-const base=import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL;
+const groups = [
+  {name:'Perception', description:'Cibles cachées et correspondances'},
+  {name:'Anticipation', description:'Événements futurs et signaux pré-stimulus'},
+  {name:'Interaction', description:'Intention et systèmes physiques'},
+];
+const confidenceClass = (level:string) => level === 'Modérée' ? 'moderate' : level === 'Très faible' ? 'very-low' : 'low';
 ---
-<BaseLayout title="État des preuves : trois dossiers pilotes" description="Ganzfeld, précognition et micro-PK : résultats, réplications et confiance. Brouillon scientifique à discuter, version du 21 octobre 2026." alternatePath={null}>
+<BaseLayout title="État des preuves en recherche psi" description="Sept dossiers : synthèses, réplications et confiance proposée. Ganzfeld, rêve, vision à distance, précognition, pressentiment, micro-PK et macro-PK." alternatePath={null}>
 <div class="shell evidence">
-<header class="mast"><p class="eyebrow">Espace chercheurs · Édition pilote 2026</p><h1>État des preuves<br/><em>en recherche psi</em></h1><p class="intro">Trois dossiers pour comparer les résultats, leur reproductibilité et la confiance qu'ils permettent.</p><p class="meta">Sources vérifiées le {data.date} · Version {data.version}</p></header>
-<nav class="jump" aria-label="Sommaire"><a href="#comparaison">Vue comparative</a><a href="#dossiers">Les trois fiches</a><a href="#grille">Grille de confiance</a><a href="#edition">Édition annuelle</a><a href="#discussion">À discuter</a></nav>
-<section id="comparaison"><h2>En un regard</h2><p class="small">La confiance concerne l'attribution à un effet psi reproductible dans le périmètre de chaque fiche. Elle n'est ni une probabilité, ni un classement de valeurs p.</p>
-<div class="table-scroll" tabindex="0" role="region" aria-label="Tableau comparatif défilable"><table class="comparison"><thead><tr><th scope="col">Dossier</th><th scope="col">Résultats du corpus</th><th scope="col">Confiance proposée</th><th scope="col">Point décisif à résoudre</th></tr></thead><tbody>
-{data.topics.map(t=><tr><th scope="row"><a href={`${base}etat-des-preuves/${t.id}/`}>{t.title}</a></th><td>{t.direction}<small>{t.summary}</small></td><td><span class={`pill ${t.confidence==='Modérée'?'moderate':'low'}`}>{t.confidence}</span><small>Provisoire</small></td><td>{t.next}</td></tr>)}
-</tbody></table></div></section>
-<section id="dossiers"><h2>Examiner les données</h2><div class="cards">{data.topics.map((t,i)=><article class="card"><span class="eyebrow">Dossier 0{i+1}</span><h2>{t.title}</h2><p>{t.subtitle}</p><p>{t.summary}</p><a class="text-link" href={`${base}etat-des-preuves/${t.id}/`}>Tableau, graphique et sources →</a></article>)}</div><p class="small">Les graphiques figurent les estimations et leurs incertitudes à l'intérieur de chaque protocole. Les échelles des trois dossiers ne sont pas directement comparables.</p></section>
-<section id="grille"><h2>Une appréciation, quatre critères</h2><div class="table-scroll"><table><thead><tr><th>Critère</th><th>Ce qui est examiné</th></tr></thead><tbody><tr><th>Résultat statistique</th><td>Taille d'effet, incertitude et sens du résultat ; pas seulement le seuil p &lt; 0,05.</td></tr><tr><th>Robustesse</th><td>Risques de biais, hétérogénéité, analyses de sensibilité et dépendance entre études.</td></tr><tr><th>Reproductibilité</th><td>Réplications indépendantes, préenregistrées et assez précises pour tester l'effet annoncé.</td></tr><tr><th>Attribution au psi</th><td>Qualité des contrôles sensoriels, techniques et analytiques ; explications alternatives effectivement testées.</td></tr></tbody></table></div>
-<details><summary>Comment lire les niveaux de confiance ?</summary><div class="table-scroll"><table><thead><tr><th>Niveau proposé</th><th>Règle de lecture</th></tr></thead><tbody><tr><th>Élevée</th><td>Résultat convergent, robuste et reproduit prospectivement par des équipes indépendantes ; aucune limite majeure identifiée dans les contrôles pertinents.</td></tr><tr><th>Modérée</th><td>Résultat étayé, avec des incertitudes importantes qui pourraient encore modifier son interprétation.</td></tr><tr><th>Faible</th><td>Résultats fragiles, discordants ou insuffisamment reproduits pour une attribution fiable au psi.</td></tr><tr><th>Très faible</th><td>Limites majeures empêchant une conclusion fiable.</td></tr><tr><th>Non évaluée</th><td>Corpus trop incomplet ou non encore expertisé.</td></tr></tbody></table></div><p>Grille éditoriale proposée pour discussion, sans score arithmétique ni prétention à une méthode de cotation déjà validée. Le sens du résultat est renseigné séparément. Une étude nulle précise peut être informative ; une étude nulle imprécise peut rester indécise.</p></details>
-<details><summary>Périmètre et recherche documentaire de ce brouillon</summary><p>Recherche ciblée le 21 octobre 2026 : publications originales et versions corrigées identifiées via PubMed/Europe PMC, F1000Research, PLOS, Frontiers, JAEX, registre KPU et rapport LMU. Requêtes : « ganzfeld meta-analysis preregistered replication », « precognition Bem transparent psi project replication », « micro-PK meta-analysis replication 2025 2026 ». Vérification des titres, dates, versions et chiffres dans les sources primaires accessibles.</p><p>Inclusion pilote : synthèses de référence, réplications structurantes et travaux récents directement pertinents. Les trois fiches ne prétendent pas recenser chaque publication. Pas de nouvelle méta-analyse calculée ici. Pas de double lecture indépendante effectuée. Les corpus qui se recouvrent ne doivent pas être additionnés.</p></details></section>
-<section id="edition"><h2>Une photographie annuelle traçable</h2><div class="table-scroll"><table><thead><tr><th>Édition</th><th>Statut</th><th>Évolution</th><th>Accès</th></tr></thead><tbody><tr><th>21 octobre 2026 · v0.1</th><td>Brouillon pilote</td><td>Création des trois dossiers. Aucun changement de confiance mesurable : première version.</td><td><a href={`${base}data/etat-des-preuves-2026-10-21.json`} download>Instantané JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-21.csv`} download>Données des graphiques CSV</a></td></tr></tbody></table></div><p class="small">Cycle proposé à valider : veille pendant l'année, clôture au 31 décembre, double lecture, publication datée et conservation des éditions précédentes. Ce brouillon d'octobre n'est pas le bilan complet de 2026.</p></section>
-<section id="discussion"><h2>Trois décisions pour la relecture</h2><div class="review"><div><h3>01 · Valider le corpus</h3><p>Quelles études manquent ? Quels résultats sont déjà inclus dans une synthèse ? Quelles équipes sont réellement indépendantes ?</p></div><div><h3>02 · Discuter les appréciations</h3><p>Les niveaux proposés sont-ils justifiés ? Quelle observation précise ferait monter ou baisser chaque niveau ?</p></div><div><h3>03 · Organiser l'édition annuelle</h3><p>Désigner deux lecteurs par dossier, déclarer les liens avec les études évaluées et conserver les désaccords argumentés.</p></div><div><h3>Un précédent utile</h3><p>Le <a href="https://mrzdcmps.github.io/labreport/">rapport micro-PK de la LMU</a> associe résultats, analyses et versions archivées à l'échelle d'un laboratoire.</p></div></div></section>
-<p class="actions"><a class="action" href="https://github.com/recherche-psi/bulletins-recherche-psi/tree/main/src/data">Consulter les données sources sur GitHub</a></p>
-</div></BaseLayout>
+  <header class="mast">
+    <p class="eyebrow">Espace chercheurs · Édition pilote 2026</p>
+    <h1>État des preuves<br/><em>en recherche psi</em></h1>
+    <p class="intro">Sept dossiers pour comparer les résultats et leur reproductibilité.</p>
+    <p class="meta">Mise à jour : {data.date} · Quatre nouveaux dossiers</p>
+  </header>
+  <nav class="jump" aria-label="Sommaire"><a href="#dossiers">Les dossiers</a><a href="#grille">Lire les niveaux</a><a href="#edition">Éditions et méthode</a></nav>
+
+  <section id="dossiers" class="directory">
+    <div class="section-heading"><h2>En un regard</h2><span class="small">Ouvrir une fiche pour les données et les sources</span></div>
+    <p class="small reading-note">La confiance proposée concerne l'attribution à un <strong>effet psi reproductible</strong>. Une moyenne positive ne suffit pas à établir cette attribution. <a href="#grille">Voir la grille</a>.</p>
+    {groups.map(group => <div class="dossier-group">
+      <h3>{group.name}<span>{group.description}</span></h3>
+      <div class="table-scroll directory-table"><table class="comparison">
+        <caption class="sr-only">Dossiers : {group.name}</caption>
+        <thead><tr><th scope="col">Dossier</th><th scope="col">État du corpus</th><th scope="col">Confiance proposée</th></tr></thead>
+        <tbody>{data.topics.filter(t=>t.group===group.name).map(t=><tr>
+          <th scope="row"><a href={`${base}etat-des-preuves/${t.id}/`}>{t.title}<span aria-hidden="true"> ↗</span></a>{t.new && <span class="new-label">Nouveau</span>}</th>
+          <td data-label="État du corpus"><strong class="result-label">{t.direction}</strong><small>À résoudre : {t.blocker.toLowerCase()}.</small></td>
+          <td data-label="Confiance proposée"><span class={`pill ${confidenceClass(t.confidence)}`}>{t.confidence}</span></td>
+        </tr>)}</tbody>
+      </table></div>
+    </div>)}
+    <p class="small">Les corpus peuvent se recouvrir. Les effets des différentes fiches ne doivent pas être additionnés ni comparés sans tenir compte de leurs échelles.</p>
+  </section>
+
+  <section id="grille">
+    <h2>Comment lire la confiance ?</h2>
+    <p class="small">Appréciations éditoriales provisoires, à discuter lors de la relecture. Ce ne sont ni des probabilités, ni une cotation validée collectivement.</p>
+    <dl class="confidence-key">
+      <div><dt><span class="pill moderate">Modérée</span></dt><dd>Résultat étayé, avec des incertitudes importantes.</dd></div>
+      <div><dt><span class="pill low">Faible</span></dt><dd>Résultats fragiles, discordants ou insuffisamment reproduits.</dd></div>
+      <div><dt><span class="pill very-low">Très faible</span></dt><dd>Limites majeures pour une attribution fiable au psi.</dd></div>
+    </dl>
+    <details><summary>Les quatre critères et l'échelle complète</summary>
+      <div class="table-scroll"><table><thead><tr><th scope="col">Critère</th><th scope="col">Ce qui est examiné</th></tr></thead><tbody>
+      <tr><th scope="row">Résultat statistique</th><td>Taille d'effet, incertitude et sens du résultat.</td></tr>
+      <tr><th scope="row">Robustesse</th><td>Biais possibles, hétérogénéité, sensibilité des analyses et dépendance entre études.</td></tr>
+      <tr><th scope="row">Reproductibilité</th><td>Réplications indépendantes, préenregistrées et suffisamment précises.</td></tr>
+      <tr><th scope="row">Attribution au psi</th><td>Contrôles sensoriels, physiques et analytiques ; alternatives effectivement testées.</td></tr>
+      </tbody></table></div>
+      <p>Deux autres niveaux sont possibles : <strong>élevée</strong> si les résultats convergent, résistent aux contrôles et sont reproduits prospectivement par des équipes indépendantes ; <strong>non évaluée</strong> si le corpus est trop incomplet ou n'a pas été expertisé. Aucun score arithmétique n'est calculé.</p>
+      <p>Le sens du résultat est renseigné séparément. Une étude nulle précise peut être informative ; une étude nulle imprécise peut rester indécise.</p>
+    </details>
+  </section>
+
+  <section id="edition">
+    <h2>Éditions et méthode</h2>
+    <details><summary>Ce qui change le 24 octobre 2026</summary>
+      <p>Ajout de quatre dossiers : rêve, vision à distance, pressentiment et macro-PK. Les trois premières appréciations sont conservées ; leur dernière vérification reste datée du 21 octobre. La vue d'ensemble est resserrée, sans répétition des fiches.</p>
+      <p><a href={`${base}data/etat-des-preuves-2026-10-24.json`} download>Instantané du 24 octobre (JSON)</a> · <a href={`${base}data/etat-des-preuves-2026-10-24.csv`} download>Données des graphiques (CSV)</a></p>
+      <p>Édition initiale, trois dossiers, 21 octobre 2026 : <a href={`${base}data/etat-des-preuves-2026-10-21.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-21.csv`} download>CSV</a>.</p>
+    </details>
+    <details><summary>Sources, périmètre et limites de cette sélection</summary>
+      <p>Le <a href="https://www.dunod.com/sciences-humaines-et-sociales/grand-manuel-parapsychologie-scientifique">Grand manuel de parapsychologie scientifique</a> (Évrard, Berghmans et Rabeyron, dir., Dunod, 2025) sert de point de départ : chapitres 3, 4 et 7. Les fiches renvoient aux études originales et distinguent résultats, réanalyses, commentaires et propositions théoriques.</p>
+      <p>Recherche ciblée le 24 octobre 2026 : « dream ESP meta-analysis replication », « remote viewing meta-analysis replication », « presentiment meta-analysis preregistered », « macro psychokinesis replication », complétées par les noms et références du manuel. Sources consultées : IJoDR et dépôts universitaires, JSE, JAEX, F1000Research/Europe PMC, Frontiers et dépôts des auteurs. Chaque référence précise le niveau de consultation, résumé ou texte intégral.</p>
+      <p>Pour les trois fiches initiales : recherche du 21 octobre 2026 via PubMed/Europe PMC, F1000Research, PLOS, Frontiers, JAEX, registre KPU et rapport LMU, sur les méta-analyses et réplications de ganzfeld, précognition et micro-PK.</p>
+      <p>Sélection documentée, pas encore une revue systématique exhaustive. Pas de nouvelle méta-analyse ni de double lecture indépendante. « Non identifié » décrit les limites de cette recherche et ne signifie pas qu'un travail n'existe pas. Les archives du manuel ne sont pas diffusées ici.</p>
+    </details>
+    <details><summary>Préparer la photographie annuelle</summary>
+      <p>Cycle proposé : veille pendant l'année, clôture au 31 décembre, double lecture par dossier, version datée et conservation des éditions précédentes. Ce brouillon d'octobre n'est pas le bilan complet de 2026.</p>
+      <ol><li>Compléter les références et vérifier les chevauchements de corpus.</li><li>Discuter chaque appréciation et préciser ce qui la ferait évoluer.</li><li>Désigner deux lecteurs, déclarer les liens avec les études et conserver les désaccords argumentés.</li></ol>
+      <p>Un exemple de publication avec analyses et archives : le <a href="https://mrzdcmps.github.io/labreport/">rapport micro-PK de la LMU</a>, à l'échelle d'un laboratoire.</p>
+    </details>
+  </section>
+  <p class="actions"><a class="action" href="https://github.com/recherche-psi/bulletins-recherche-psi/tree/main/src/data">Données sources sur GitHub</a></p>
+</div>
+</BaseLayout>
