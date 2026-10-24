@@ -1,0 +1,8 @@
+---
+interface Props { rows: string[][]; }
+const { rows } = Astro.props;
+---
+<div class="table-scroll"><table class="studies">
+  <thead><tr><th scope="col">Référence / type</th><th scope="col">Périmètre</th><th scope="col">Résultat</th><th scope="col">Portée et limite</th></tr></thead>
+  <tbody>{rows.map(r=><tr><th scope="row"><a href={`#${r[5]}`}>{r[0]}</a><small>{r[1]}</small></th><td data-label="Périmètre">{r[2]}</td><td data-label="Résultat">{r[3]}</td><td data-label="Portée et limite">{r[4]}</td></tr>)}</tbody>
+</table></div>

@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-24-bilan-6",
+  "version": "2026-10-24-bilan-7",
   "date": "24 octobre 2026",
   "topics": [
     {
@@ -553,11 +553,11 @@
       "id": "mediumnite-mentale",
       "title": "Médiumnité mentale",
       "group": "Perception",
-      "subtitle": "Évaluer la précision d'informations en conditions aveugles",
-      "direction": "Synthèse favorable, confirmation partielle",
-      "summary": "Des lectures dépassent les contrôles dans plusieurs travaux. Les résultats prospectifs restent mixtes et ne déterminent pas la source de l'information.",
-      "question": "Précision de descriptions associées à des personnes décédées, évaluées à l'aveugle par leurs proches. Cette fiche ne couvre ni la médiumnité physique ni tous les arguments sur la survie. Une information exacte, même inexpliquée, ne suffit pas à départager psi des vivants et communication post-mortem.",
-      "handbook": "Chapitre 8, « Aux frontières de la vie », section sur la médiumnité mentale (Maryne Mutis et Claude Berghmans).",
+      "subtitle": "Sitters, lectures aveugles, psychographie et recherches brésiliennes",
+      "direction": "Résultats favorables dans plusieurs protocoles",
+      "summary": "Les études de précision comprennent des résultats positifs et nuls. Les enquêtes brésiliennes, les mesures de la transe et les recherches sur le deuil apportent des éclairages complémentaires.",
+      "question": "Cette fiche distingue les tests de précision des lectures, les enquêtes sur des lettres médiumniques et les recherches sur la transe, le vécu et le deuil. Les sitters sont les proches d'un défunt qui évaluent les informations produites ; ils peuvent être absents lors de la séance. La médiumnité physique et l'ensemble des arguments sur la survie restent hors de ce périmètre. La sélection est documentée, mais non exhaustive.",
+      "handbook": "Chapitre 8, « Aux frontières de la vie », section sur la médiumnité mentale (Maryne Mutis et Claude Berghmans), notamment les travaux de Schwartz, Beischel et les protocoles avec sitters. Les publications originales complètent ce point de départ.",
       "metrics": [
         [
           "18",
@@ -606,62 +606,334 @@
           "mm4"
         ]
       ],
-      "next": "Comparer les modes de cotation sur des lectures anonymisées, documenter les accès possibles à l'information et concevoir des prédictions distinguant les hypothèses causales.",
+      "next": "Comparer les conditions de séance en conservant des règles de cotation explicites ; vérifier les détails spécifiques par des documents et des évaluateurs indépendants. Distinguer les nouvelles collectes des réanalyses. Pour le deuil, étudier séparément bénéfices, effets indésirables et facteurs associés, sans déduire l'origine des informations de l'effet psychologique d'une consultation.",
       "sources": [
         {
           "id": "mm1",
-          "label": "Sarraf, Woodley of Menie & Tressoldi (2021). Anomalous information reception by mediums: A meta-analysis of the scientific evidence. Explore, 17(5), 396–402.",
+          "label": "MM1 · Sarraf, Woodley of Menie & Tressoldi (2021). Anomalous information reception by mediums: A meta-analysis of the scientific evidence. Explore, 17(5), 396–402.",
           "url": "https://doi.org/10.1016/j.explore.2020.04.002",
           "status": "Article évalué par les pairs, en ligne en juillet 2020. Résumé PubMed consulté ; le graphique reprend uniquement son estimation publiée."
         },
         {
           "id": "mm2",
-          "label": "Tressoldi, Liberale & Sinesio (2025 ; en ligne 2022). Is There Someone in the Hereafter? Mediumship Accuracy of 100 Readings. OMEGA, 91(2), 955–963.",
+          "label": "MM2 · Tressoldi, Liberale & Sinesio (2025 ; en ligne 2022). Is There Someone in the Hereafter? Mediumship Accuracy of 100 Readings. OMEGA, 91(2), 955–963.",
           "url": "https://doi.org/10.1177/00302228221146376",
           "status": "Article évalué par les pairs. Résumé et dates de publication consultés chez l'éditeur. La parution en numéro en 2025 n'est pas une nouvelle collecte."
         },
         {
           "id": "mm3",
-          "label": "Tressoldi, Liberale & Sinesio (2024). Stage 2 Registered Report: Testing mediumship accuracy with a triple-blind protocol.",
+          "label": "MM3 · Tressoldi, Liberale & Sinesio (2024). Stage 2 Registered Report: Testing mediumship accuracy with a triple-blind protocol.",
           "url": "https://osf.io/preprints/psyarxiv/a756f",
-          "status": "Prépublication. Texte intégral de la version du 22 février 2024 consulté dans la copie déposée par les auteurs sur Academia ; statut de publication finale non établi ici."
+          "status": "Prépublication. Texte intégral de la version du 22 février 2024 consulté dans la copie déposée par les auteurs sur Academia ; statut de publication finale non établi ici. Toujours classé parmi les prépublications sur le site de l'équipe consulté le 24 octobre 2026."
         },
         {
           "id": "mm4",
-          "label": "O'Keeffe & Wiseman (2005). Testing alleged mediumship: methods and results. British Journal of Psychology, 96, 165–179.",
+          "label": "MM4 · O'Keeffe & Wiseman (2005). Testing alleged mediumship: methods and results. British Journal of Psychology, 96, 165–179.",
           "url": "https://doi.org/10.1348/000712605X36361",
           "status": "Article évalué par les pairs. Résumé PubMed consulté ; pas de réanalyse des données."
         },
         {
           "id": "mm5",
-          "label": "Tressoldi et al. Mediumship : données et documents de plusieurs protocoles.",
+          "label": "MM5 · Tressoldi et al. Mediumship : données et documents de plusieurs protocoles.",
           "url": "https://figshare.com/articles/dataset/Mediumship/13311710",
           "status": "Notice du dépôt consultée. Elle distingue les fichiers RRDatabase et 100ReadingResults. Les données brutes n'ont pas été réanalysées pour cette fiche."
+        },
+        {
+          "id": "mm6",
+          "label": "MM6 · Beischel, J., & Schwartz, G. E. (2007). Anomalous information reception by research mediums demonstrated using a novel triple-blind protocol. Explore, 3(1), 23–27.",
+          "url": "https://www.windbridge.org/papers/BeischelEXPLORE2007vol3.pdf",
+          "status": "Résumé et sections du texte intégral sur le protocole consultés ; notice PubMed vérifiée. DOI : 10.1016/j.explore.2006.10.004."
+        },
+        {
+          "id": "mm7",
+          "label": "MM7 · Beischel, J., Boccuzzi, M., Biuso, M., & Rock, A. J. (2015). Anomalous information reception by research mediums under blinded conditions II: replication and extension. Explore, 11(2), 136–142.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25666383/",
+          "status": "Notice et résumé de l'article consultés dans PubMed. Résultats repris des auteurs, sans réanalyse des données. Distinguer les 86 lectures réalisées des sous-ensembles analysés. DOI : 10.1016/j.explore.2015.01.001."
+        },
+        {
+          "id": "mm8",
+          "label": "MM8 · Kelly, E. W., & Arcangel, D. (2011). An investigation of mediums who claim to give information about deceased persons. Journal of Nervous and Mental Disease, 199(1), 11–17.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21206241/",
+          "status": "Notice et résumé de l'article consultés dans PubMed. Résultats repris des auteurs, sans réanalyse des données. Les deux études rapportées sont distinguées. DOI : 10.1097/NMD.0b013e31820439da."
+        },
+        {
+          "id": "mm9",
+          "label": "MM9 · Beischel, J., & Conboy, L. (2021). Correlating Mediums' Accuracy with Learning Styles and Sensory Modality Preferences. Threshold, 4(1), 1–20.",
+          "url": "https://tjics.org/index.php/TJICS/article/download/33/26/",
+          "status": "Résumé et sections du texte intégral sur la provenance des données, les cinq niveaux d'aveugle et les résultats consultés. Les lectures proviennent du corpus étudié en 2015."
+        },
+        {
+          "id": "mm10",
+          "label": "MM10 · Rocha, A. C., et al. (2014). Investigating the fit and accuracy of alleged mediumistic writing: a case study of Chico Xavier's letters. Explore, 10(5), 300–308.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25103071/",
+          "status": "Notice et résumé de l'article consultés dans PubMed. Résultats repris des auteurs, sans réanalyse des données. DOI : 10.1016/j.explore.2014.06.002."
+        },
+        {
+          "id": "mm11",
+          "label": "MM11 · Paraná, D., et al. (2019). An Empirical Investigation of Alleged Mediumistic Writing: A Case Study of Chico Xavier's Letters. Journal of Nervous and Mental Disease, 207(6), 497–504.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/31158111/",
+          "status": "Notice et résumé de l'article consultés dans PubMed. Résultats repris des auteurs, sans réanalyse des données. DOI : 10.1097/NMD.0000000000000999."
+        },
+        {
+          "id": "mm12",
+          "label": "MM12 · Freire, E. S., et al. (2022 ; en ligne 2020). Testing alleged mediumistic writing: An experimental controlled study. Explore, 18(1), 82–87.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32917531/",
+          "status": "Notice et résumé de l'article consultés dans PubMed. Résultats repris des auteurs, sans réanalyse des données. DOI : 10.1016/j.explore.2020.08.017."
+        },
+        {
+          "id": "mm13",
+          "label": "MM13 · Gomide, M., et al. (2022 ; en ligne 2021). Controlled semi-naturalistic protocol to investigate anomalous information reception in mediumship: Description and preliminary findings. Explore, 18(5), 539–544.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/34602351/",
+          "status": "Notice et résumé de l'article consultés dans PubMed. Résultats repris des auteurs, sans réanalyse des données. Les pourcentages portent sur l'attribution des lettres par les sitters, non sur une cotation factuelle aveugle. DOI : 10.1016/j.explore.2021.08.011."
+        },
+        {
+          "id": "mm14",
+          "label": "MM14 · Silva, J., et al. (2023). Evaluation of the Occurrence of Anomalous Information Reception in Messages in an Allegedly Mediumistic Process. Explore, 19(6), 785–791.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/37286468/",
+          "status": "Résumé PubMed et passages Méthodes, Résultats et Discussion chez l'éditeur consultés. Même collecte que Gomide et al. ; le texte de 2023 mentionne 27 lettres, contre 26 dans le résumé de 2022, écart non résolu ici. DOI : 10.1016/j.explore.2023.03.010."
+        },
+        {
+          "id": "mm15",
+          "label": "MM15 · Wainstock, B. C., et al. (2025). Investigation of mediumistic letter: A deceased son supposedly writes to his parents. Transcultural Psychiatry, 62(4), 528–538.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/40767330/",
+          "status": "Notice et résumé de l'article consultés dans PubMed. Résultats repris des auteurs, sans réanalyse des données. Les différents types d'éléments et les limites de la comparaison des signatures sont conservés. DOI : 10.1177/13634615251357998."
+        },
+        {
+          "id": "mm16",
+          "label": "MM16 · Pereira, C. M., et al. (2026). Analysis of the occurrence of mediumistic anomalous information reception: The case of Chico Xavier and Isidoro Santos. Explore, 22(3), 103391.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41923690/",
+          "status": "Notice et résumé PubMed, introduction chez l'éditeur consultés. La conclusion sur la survie est celle des auteurs. Commentaire et réponse signalés ci-dessous, sans examen de leurs arguments. DOI : 10.1016/j.explore.2026.103391."
+        },
+        {
+          "id": "mm17",
+          "label": "MM17 · Peres, J. F., et al. (2012). Neuroimaging during trance state: a contribution to the study of dissociation. PLOS ONE, 7(11), e49360.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23166648/",
+          "status": "Notice et résumé de l'article consultés dans PubMed. Résultats repris des auteurs, sans réanalyse des données. DOI : 10.1371/journal.pone.0049360."
+        },
+        {
+          "id": "mm18",
+          "label": "MM18 · Delorme, A., Beischel, J., Michel, L., Boccuzzi, M., Radin, D., & Mills, P. J. (2013). Electrocortical activity associated with subjective communication with the deceased. Frontiers in Psychology, 4, 834.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/24312063/",
+          "status": "Notice et résumé de l'article consultés dans PubMed. Résultats repris des auteurs, sans réanalyse des données. Les limites concernant l'activité musculaire sont indiquées dans le résumé original. DOI : 10.3389/fpsyg.2013.00834."
+        },
+        {
+          "id": "mm19",
+          "label": "MM19 · Mainieri, A. G., et al. (2017). Neural correlates of psychotic-like experiences during spiritual-trance state. Psychiatry Research: Neuroimaging, 266, 101–107.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/28644996/",
+          "status": "Notice et résumé de l'article consultés dans PubMed. Résultats repris des auteurs, sans réanalyse des données. DOI : 10.1016/j.pscychresns.2017.06.006."
+        },
+        {
+          "id": "mm20",
+          "label": "MM20 · Maraldi, E. O., et al. (2026). Investigating Mediumship/Possession-Relevant Experiences: Contributions from a Feature-Based, Subject-Dependent Approach to Definition and Measurement. Transcultural Psychiatry, 63(4), 347–366.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42390453/",
+          "status": "Notice et résumé de l'article consultés dans PubMed. Résultats repris des auteurs, sans réanalyse des données. DOI : 10.1177/13634615261459751."
+        },
+        {
+          "id": "mm21",
+          "label": "MM21 · Beischel, J., Mosher, C., & Boccuzzi, M. (2014). Effets possibles des consultations médiumniques sur le deuil [titre abrégé et traduit]. OMEGA, 70(2), 169–194.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25628023/",
+          "status": "Notice et résumé consultés. Article de cadrage, données exploratoires et propositions de recherche ; ne pas le présenter comme un essai thérapeutique confirmatoire. DOI : 10.2190/OM.70.2.b."
+        },
+        {
+          "id": "mm22",
+          "label": "MM22 · Visoni, V. M. (2026). Re: « Analysis of the occurrence of mediumistic anomalous information reception: The case of Chico Xavier and Isidoro Santos » (Pereira et al., EXPLORE 22, 2026). Explore, 22(4), 103451.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42184720/",
+          "status": "Notice vérifiée ; lettre sans résumé, texte intégral non consulté. Sa présence signale le débat, sans préjuger du bien-fondé des arguments. DOI : 10.1016/j.explore.2026.103451."
+        },
+        {
+          "id": "mm23",
+          "label": "MM23 · Pereira, C. M., et al. (2026). Response to « Re: Analysis of the occurrence of mediumistic anomalous information reception: The case of Chico Xavier and Isidoro Santos ». Explore, 22(5), 103476.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42447839/",
+          "status": "Notice vérifiée ; lettre sans résumé, texte intégral non consulté. DOI : 10.1016/j.explore.2026.103476."
         }
       ],
-      "openQuestion": "Comment vérifier la précision des informations et en déterminer la source ?",
-      "interpretation": "Plusieurs travaux rapportent des lectures mieux reconnues que les contrôles. La précision de ces lectures, les conditions de leur obtention et leur origine sont trois questions distinctes.",
+      "openQuestion": "Quelles conditions favorisent la précision des lectures, et comment en déterminer la source ?",
+      "interpretation": "Les tests avec sitters absents et cotation aveugle, les enquêtes documentaires et les études de la transe répondent à des questions différentes. Plusieurs tests rapportent des lectures mieux reconnues que les contrôles ; d'autres ne trouvent pas cet écart. Les cas brésiliens permettent d'examiner la précision de détails et les accès possibles à l'information. Les corrélats cérébraux et le vécu du deuil décrivent d'autres aspects du phénomène. Ces résultats ne déterminent pas, à eux seuls, la source de l'information.",
       "profile": [
         [
           "Résultats observés",
-          "Synthèse positive et étude de 100 lectures favorable ; un des trois critères principaux est confirmé dans la prépublication de 2024."
+          "Méta-analyse favorable ; résultats positifs dans plusieurs protocoles américains et italiens, résultats nuls dans d'autres tests, dont un protocole brésilien de psychographie. Enquêtes documentaires positives à examiner cas par cas."
         ],
         [
           "Robustesse méthodologique",
-          "Règles de cotation, dépendances entre lectures et recouvrements des échantillons doivent être examinés."
+          "Identifier qui connaît le défunt, qui conduit la séance et qui cote les lectures. Examiner leurres, informations transmises, éléments génériques, vérifications documentaires, données manquantes et dépendances entre lectures."
         ],
         [
           "Variabilité et conditions d'obtention",
-          "Les deux travaux récents retenus proviennent de la même équipe. Plusieurs lectures peuvent concerner un même défunt ou un même médium."
+          "Présélection des médiums, présence ou absence des sitters, communication orale ou écrite, séances naturelles ou protocoles contraints : ces différences doivent être documentées avant de comparer les résultats."
         ],
         [
           "Portée des conclusions",
-          "L'aveugle contrôle certains échanges ordinaires. Une information exacte ne départage pas, à elle seule, psi des vivants et communication post-mortem."
+          "Séparer précision factuelle, vécu subjectif, activité cérébrale et effets sur le deuil. Une information exacte ne départage pas automatiquement acquisition psi par les vivants et communication post-mortem."
         ]
       ],
       "kind": "experimental",
-      "readingGuide": [],
-      "editorialUpdated": "24 octobre 2026"
+      "readingGuide": [
+        [
+          "Précision des informations",
+          "Les proches reconnaissent-ils mieux une lecture qui leur est destinée qu'une lecture témoin ? Les détails sont-ils vérifiables et spécifiques ?"
+        ],
+        [
+          "Expérience et conditions",
+          "Que décrivent les médiums et les sitters ? Comment varient les états cérébraux, le vécu et les résultats selon les conditions de séance ?"
+        ],
+        [
+          "Origine de l'information",
+          "Accès ordinaires, acquisition psi par les vivants et communication avec les défunts sont des hypothèses à comparer par leurs prédictions."
+        ]
+      ],
+      "editorialUpdated": "24 octobre 2026",
+      "studyGroups": [
+        {
+          "id": "sitters",
+          "title": "Sitters et protocoles aveugles : Schwartz, Beischel, Kelly",
+          "intro": "Dans ces protocoles, le sitter connaît le défunt et évalue les lectures. Un représentant ignorant les informations personnelles peut conduire la séance à sa place. L'aveugle porte aussi sur la cotation de lectures cibles et témoins. Les publications successives peuvent réutiliser les mêmes données.",
+          "rows": [
+            [
+              "Beischel & Schwartz, 2007",
+              "Triple aveugle",
+              "8 médiums présélectionnés ; 8 sitters absents",
+              "Cotation des lectures cibles supérieure aux témoins (p = 0,007) ; choix entre lectures également favorable (p = 0,01).",
+              "Petit échantillon sélectionné. Le protocole contrôle les échanges ordinaires avec le sitter ; il ne départage pas toutes les hypothèses psi.",
+              "mm6"
+            ],
+            [
+              "Kelly & Arcangel, 2011",
+              "Deux études avec représentant du sitter",
+              "Lectures évaluées ensuite à l'aveugle par les proches",
+              "Première étude non significative ; seconde favorable (p < 0,0001).",
+              "Les auteurs discutent deux faiblesses possibles de la seconde étude. Résultat à lire avec le protocole et les contrôles employés.",
+              "mm8"
+            ],
+            [
+              "Beischel et al., 2015",
+              "Réplication et extension ; plusieurs niveaux d'aveugle",
+              "20 médiums ; 86 lectures réalisées ; 58 pour les notes globales",
+              "Notes globales favorables aux cibles (d = 0,57 ; p = 0,001) ; choix forcé favorable (p = 0,01).",
+              "Les effectifs varient selon l'indicateur : 31 lectures pour certaines cotations détaillées. Les 86 lectures ne sont pas toutes utilisées dans chaque analyse.",
+              "mm7"
+            ],
+            [
+              "Beischel & Conboy, 2021",
+              "Analyse des conditions et caractéristiques individuelles",
+              "12 médiums ; 21 lectures issues du corpus antérieur",
+              "Pas de corrélation significative entre précision et préférences sensorielles ou styles d'apprentissage mesurés.",
+              "Réanalyse de données présentées en 2015, avec questionnaires complémentaires ; ce n'est pas une nouvelle confirmation indépendante de la précision.",
+              "mm9"
+            ]
+          ]
+        },
+        {
+          "id": "bresil",
+          "title": "Brésil : psychographie, tests contrôlés et enquêtes documentaires",
+          "intro": "La psychographie désigne l'écriture attribuée par le médium à un défunt. Les travaux ci-dessous associent notamment NUPES/UFJF, PROSER/USP et UFRJ. Le contrôle expérimental des accès à l'information et la reconstitution documentaire d'un cas apportent des éléments différents.",
+          "rows": [
+            [
+              "Rocha et al., 2014",
+              "Enquête rétrospective : Chico Xavier",
+              "13 lettres attribuées à un même défunt ; 99 informations vérifiables",
+              "98 % des éléments sont jugés précis et concordants ; les auteurs estiment les explications ordinaires peu plausibles.",
+              "La cotation s'appuie sur des documents et des entretiens. Ce pourcentage décrit un cas sélectionné, pas un taux de réussite en test aveugle.",
+              "mm10"
+            ],
+            [
+              "Paraná et al., 2019",
+              "Enquête documentaire : Chico Xavier",
+              "Une lettre ; 29 informations vérifiables",
+              "29 éléments jugés précis et concordants ; 14 concernent des informations très privées.",
+              "Reconstitution rétrospective des accès possibles. Des items d'une même lettre ne constituent pas 29 essais indépendants.",
+              "mm11"
+            ],
+            [
+              "Freire et al., 2022",
+              "Test contrôlé ; en ligne en 2020",
+              "8 médiums ; 94 sitters ; 18 séances",
+              "Pas de différence entre lettres cibles et témoins pour la note globale ou la précision des éléments.",
+              "Chaque sitter cote à l'aveugle une cible et cinq témoins. Les auteurs interrogent l'équilibre entre contrôle et conditions habituelles de pratique.",
+              "mm12"
+            ],
+            [
+              "Gomide et al., 2022",
+              "Protocole semi-naturaliste ; en ligne en 2021",
+              "3 médiums ; 142 sitters ; 26 lettres à 21 destinataires",
+              "96,2 % des lettres sont jugées probablement ou certainement issues du proche décédé, puis 92,3 % au suivi.",
+              "Il s'agit d'une appréciation des destinataires, pas d'un taux de précision factuelle. Les brefs échanges préalables sont filmés pour analyser les informations transmises.",
+              "mm13"
+            ],
+            [
+              "Silva et al., 2023",
+              "Analyse détaillée d'un cas du programme semi-naturaliste",
+              "57 éléments répartis selon leur précision et leur accessibilité",
+              "30 éléments sont classés corrects, spécifiques, non divulgués et difficilement déductibles ; les autres catégories sont conservées dans le bilan.",
+              "Cas issu de la collecte de Gomide et al. ; ne pas le compter comme un nouveau programme indépendant. Les possibilités d'accès ordinaires sont évaluées par enquête.",
+              "mm14"
+            ],
+            [
+              "Wainstock et al., 2025",
+              "Observation contrôlée et entretiens",
+              "Une lettre après 43 secondes d'échange filmé ; 19 éléments",
+              "6 éléments spécifiques, 9 génériques, 2 déductibles, 1 non reconnu et 1 non évaluable. La signature présente des ressemblances générales et des différences fines.",
+              "Étude de cas examinant aussi le sens de l'expérience pour la famille. La ressemblance de signature ne suffit pas à identifier son auteur.",
+              "mm15"
+            ],
+            [
+              "Pereira et al., 2026",
+              "Enquête sur une séance enregistrée de Chico Xavier",
+              "54 minutes ; 65 éléments vérifiables ; 30 personnes identifiées",
+              "87,7 % des éléments classés corrects ; 30,8 % jugés improbables ou très improbables à obtenir par des voies ordinaires.",
+              "Les auteurs défendent la survie comme explication. Ces classements documentaires ne sont pas des probabilités calculées de cette hypothèse. Un échange critique a suivi (sources MM22–MM23).",
+              "mm16"
+            ]
+          ]
+        },
+        {
+          "id": "experience",
+          "title": "Transe, vécu et deuil : des questions complémentaires",
+          "intro": "Ces études examinent les conditions et la nature de l'expérience. Une différence cérébrale, la fréquence d'un vécu ou un effet sur le deuil ne constitue pas, en soi, un test de la précision des informations.",
+          "rows": [
+            [
+              "Peres et al., 2012",
+              "Imagerie SPECT de psychographes brésiliens",
+              "10 médiums, dont 5 expérimentés",
+              "Chez les expérimentés, activité réduite dans plusieurs régions pendant la psychographie, malgré une complexité textuelle supérieure à l'écriture témoin.",
+              "Comparaison entre états d'écriture ; la complexité d'un texte ne vérifie pas son origine ni l'exactitude d'informations sur un défunt.",
+              "mm17"
+            ],
+            [
+              "Delorme et al., 2013",
+              "EEG, précision et comparaison d'états mentaux",
+              "6 médiums ; précision évaluable chez 4",
+              "3 des 4 médiums évaluables dépassent le hasard ; lien précision–activité thêta chez un participant. Différences EEG entre états mentaux.",
+              "Petit échantillon et résultats individuels. Les auteurs indiquent que certaines différences en bande gamma pourraient être musculaires.",
+              "mm18"
+            ],
+            [
+              "Mainieri et al., 2017",
+              "IRM fonctionnelle ; collaboration Brésil–Allemagne",
+              "8 médiums et 8 témoins",
+              "Différences d'activation et de connectivité entre transe, imagination et repos ; pas de différence des réseaux au repos entre les groupes.",
+              "Étudie les états mentaux et leur contrôle chez des participants en bonne santé. Ce protocole ne teste pas la réception d'informations vérifiables.",
+              "mm19"
+            ],
+            [
+              "Maraldi et al., 2026",
+              "Psychométrie et enquêtes au Brésil",
+              "4 études : construction, validation et fréquence des vécus",
+              "Validation de 10 caractéristiques d'expériences liées à la médiumnité ou à la possession, avec prise en compte des interprétations culturelles.",
+              "Mesure des expériences déclarées ; les fréquences ne mesurent ni la précision des médiums ni la fréquence d'un psi démontré.",
+              "mm20"
+            ],
+            [
+              "Beischel, Mosher & Boccuzzi, 2014",
+              "Deuil et consultations médiumniques",
+              "Article de cadrage et données exploratoires",
+              "Examine les effets possibles des lectures sur le deuil et la continuité du lien avec le défunt.",
+              "Le texte ne constitue pas un essai établissant une efficacité thérapeutique. Soulagement éventuel et exactitude des informations doivent être évalués séparément.",
+              "mm21"
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "precognition",
@@ -1962,5 +2234,5 @@
       }
     }
   ],
-  "schemaVersion": 3
+  "schemaVersion": 4
 }

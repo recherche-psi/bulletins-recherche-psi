@@ -1,0 +1,5 @@
+---
+interface Props { sources: { id: string; url: string; label: string; status: string }[]; }
+const { sources } = Astro.props;
+---
+<ol class="sources">{sources.map(s=><li id={s.id}><a href={s.url}>{s.label}</a><small>{s.status}</small></li>)}</ol>
