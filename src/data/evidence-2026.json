@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-24-bilan-11",
-  "date": "24 octobre 2026",
+  "version": "2026-10-25-bilan-12",
+  "date": "25 octobre 2026",
   "topics": [
     {
       "id": "ganzfeld",
@@ -638,8 +638,9 @@
       ],
       "kind": "experimental",
       "readingGuide": [],
-      "editorialUpdated": "24 octobre 2026",
+      "editorialUpdated": "25 octobre 2026",
       "related": [
+        "parapsychologie-theories-perception",
         "vision-distance-associative",
         "ganzfeld",
         "conditions-moderateurs"
@@ -1934,7 +1935,7 @@
       "kind": "specific",
       "new": false,
       "reviewed": "24 octobre 2026",
-      "editorialUpdated": "24 octobre 2026",
+      "editorialUpdated": "25 octobre 2026",
       "id": "neurosciences-psi",
       "title": "Neurosciences et psi",
       "subtitle": "EEG, potentiels évoqués, IRM et interventions cérébrales",
@@ -2082,6 +2083,7 @@
       ],
       "next": "Définir les contrastes et les traitements avant l'analyse, publier les signaux et les contrôles, documenter les conditions vécues par les participants, puis confronter les signatures proposées à des données nouvelles. Pour la rTMS, comparer explicitement les modèles temporels et mesurer les effets de la stimulation.",
       "related": [
+        "parapsychologie-theories-perception",
         "correlations-cerebrales",
         "pressentiment",
         "micro-pk",
@@ -4011,7 +4013,7 @@
       "metrics": [],
       "new": false,
       "reviewed": "24 octobre 2026",
-      "editorialUpdated": "24 octobre 2026",
+      "editorialUpdated": "25 octobre 2026",
       "sources": [
         {
           "id": "moderateurs-storm-2017",
@@ -4112,6 +4114,7 @@
         ]
       ],
       "related": [
+        "parapsychologie-theories-perception",
         "imagerie-guidee-psi",
         "effets-experimentateur",
         "ganzfeld",
@@ -4344,6 +4347,7 @@
         }
       ],
       "related": [
+        "parapsychologie-theories-perception",
         "experiences-hors-corps",
         "perceptions-emi",
         "mediumnite-mentale",
@@ -4352,7 +4356,7 @@
       "searchTerms": "psychotherapie clinique accompagnement counselling counseling therapie experiences exceptionnelles CIRCEE IGPP Rabeyron Evrard Belz Fach Roxburgh Evenden Scimeca EMDR TCC CBT Soneson Radez Nehmy IADC deuil souffrance detresse integration qualite de vie",
       "new": false,
       "reviewed": "24 octobre 2026",
-      "editorialUpdated": "24 octobre 2026"
+      "editorialUpdated": "25 octobre 2026"
     },
     {
       "id": "contacts-defunts",
@@ -4472,7 +4476,7 @@
       ],
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "resultsTitle": "Enquêtes et synthèses retenues",
@@ -4640,7 +4644,7 @@
       ],
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "resultsTitle": "Terrain, laboratoire et synthèse critique",
@@ -4769,7 +4773,7 @@
       ],
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "resultsTitle": "Études contemporaines et réexamen des archives",
@@ -4921,7 +4925,7 @@
       ],
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "resultsTitle": "Études et documents retenus",
@@ -5069,7 +5073,7 @@
       ],
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "resultsTitle": "Études et documents retenus",
@@ -5239,7 +5243,7 @@
       ],
       "chart": null,
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "resultsTitle": "Études et documents retenus",
@@ -5381,7 +5385,7 @@
       "chart": null,
       "studyGroups": [],
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "handbook": "",
@@ -5483,7 +5487,7 @@
       "chart": null,
       "studyGroups": [],
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "handbook": "",
@@ -5608,7 +5612,7 @@
       "chart": null,
       "studyGroups": [],
       "landscape": [],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "handbook": "",
@@ -5621,7 +5625,7 @@
       "subtitle": "Mesurer les signaux optiques près du corps et dans un détecteur distant",
       "group": "Interaction",
       "kind": "experimental",
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "chart": null,
@@ -5741,7 +5745,7 @@
       "subtitle": "Examiner les correspondances corporelles associées aux récits de vies antérieures",
       "group": "Lecture spécifique",
       "kind": "specific",
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "chart": null,
@@ -5979,7 +5983,7 @@
           "status": "Publication finale vérifiée dans la rubrique des articles évalués, à partir de la p. 121. Sommaire consulté ; texte intégral final non consulté."
         }
       ],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "searchTerms": "prevalence frequence population enquete profils experiences exceptionnelles IGPP Everyday Miracles Schmied-Knittel Anton IONS noetic signature inventory NSI Wahbeh"
@@ -6094,7 +6098,7 @@
           "status": "Article publié ; texte intégral consulté. DOI : 10.3389/fneur.2020.00922. Étude ouverte exploratoire ; résultats d'abord internes aux groupes."
         }
       ],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "searchTerms": "paralysie sommeil presence ressentie intrus hypnagogique hypnopompique narcolepsie sleep paralysis IGPP Mayer Fuhrmann Jalal"
@@ -6227,7 +6231,7 @@
           "status": "Texte de congrès consulté, août 2026 ; synthèse de travaux existants, dont un article indiqué comme soumis. Ne pas compter cette présentation comme une expérience indépendante."
         }
       ],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "searchTerms": "imagerie guidee imagery cultivation IC shamanic-like journeying voyage chamanique Storm Rock KPU1069 relaxation reactance"
@@ -6357,7 +6361,7 @@
           "status": "Version publiée déposée à l'Université de Greenwich consultée pour le périmètre et la distinction des vécus. DOI : 10.1177/0022167820917767. Aucun bilan quantitatif repris."
         }
       ],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "searchTerms": "psychedeliques psychedelics psi Luke Kittenis DMT phenomenologie substances psychoactives EMI perceptions"
@@ -6464,14 +6468,387 @@
           "status": "Étude originale d'archives consultée, avec reproduction des documents historiques et discussion des résultats. DOI : 10.23793/zfa.2021.223."
         }
       ],
-      "new": true,
+      "new": false,
       "reviewed": "24 octobre 2026",
       "editorialUpdated": "24 octobre 2026",
       "searchTerms": "survie prospective codes enveloppes cadenas combinaison Stevenson Thouless Pratt Tanagras Pallikari Bean cipher lock survival SPR"
+    },
+    {
+      "id": "parapsychologie-theories-perception",
+      "title": "Parapsychologie et théories de la perception",
+      "subtitle": "Apports historiques, recherches sur l'expérience et modèles à mettre à l'épreuve",
+      "group": "Transversal",
+      "kind": "conceptual",
+      "direction": "Apports historiques et expérimentaux documentés, extensions théoriques à tester",
+      "summary": "Les recherches psychiques ont contribué à l'étude des processus non conscients et des expériences perceptives inhabituelles. Les travaux sur le Ganzfeld, la confiance et les perceptions ambiguës apportent des résultats précis. Les modèles psi proposent aussi des extensions de la théorie de la perception, dont la validation doit être examinée séparément.",
+      "question": "En quoi les recherches psychiques et parapsychologiques ont-elles aidé à comprendre comment une impression devient perception, jugement et conviction ? Cette fiche distingue une contribution historique attestée, un résultat sur la perception, un emprunt à un modèle existant et une hypothèse nouvelle. Elle inclut des travaux voisins en neurosciences en précisant leur provenance. Les performances psi du Ganzfeld et du RV sont évaluées dans leurs fiches dédiées.",
+      "readingGuide": [
+        [
+          "Influence historique",
+          "Un texte, une citation ou une collaboration doit montrer qu'une recherche a effectivement nourri un autre travail. Une ressemblance entre deux idées ne suffit pas à établir cette filiation."
+        ],
+        [
+          "Expérience vécue",
+          "Une impression peut être fragmentaire, corporelle ou très convaincante. Décrire sa forme renseigne sur l'expérience ; établir son exactitude demande une comparaison indépendante à la cible."
+        ],
+        [
+          "Acquisition et construction",
+          "La transformation d'une information en représentation est distincte de son acquisition. Un modèle de l'imagerie ou de la catégorisation ne fournit pas, à lui seul, le canal d'accès à une cible cachée."
+        ],
+        [
+          "Apport et validation",
+          "Une théorie peut clarifier une question et proposer des tests avant d'être confirmée. Son utilité conceptuelle, ses résultats empiriques et sa réception dans d'autres disciplines sont trois bilans distincts."
+        ]
+      ],
+      "rows": [
+        [
+          "Myers lu par James, 1901",
+          "Document historique primaire",
+          "Subliminal, automatismes sensoriels et moteurs, symbolisation.",
+          "James reconnaît explicitement l'apport de Myers à une psychologie qui étudie des activités mentales hors de la conscience habituelle.",
+          "Influence intellectuelle directement attestée. L'hommage ne prouve ni la totalité du modèle de Myers ni une filiation exclusive de la psychologie de l'inconscient.",
+          "per-james-1901"
+        ],
+        [
+          "Wackermann et coll., IGPP, 2002",
+          "Comparaison psychophysiologique",
+          "12 participantes ; Ganzfeld, endormissement et veille détendue ; 241 comptes rendus associés à l'EEG.",
+          "Le Ganzfeld produit davantage d'absorption, avec un EEG proche de la veille et sans baisse de vigilance comparable à l'endormissement.",
+          "Apport à la distinction entre imagerie spontanée et hypnagogie. Petit échantillon ; plusieurs comptes rendus par personne ne constituent pas autant de participants.",
+          "per-wack-2002"
+        ],
+        [
+          "Wackermann, Pütz et Allefeld, 2008",
+          "Synthèse et réanalyse, IGPP",
+          "Phénoménologie du Ganzfeld et corrélats électrophysiologiques.",
+          "L'imagerie induite peut survenir dans un état activé ; les variations alpha renseignent sur l'attention et la formation des percepts.",
+          "Résultats sur la perception sans structure sensorielle riche. Ils ne mesurent pas une transmission d'information à distance ; la synthèse réutilise des travaux antérieurs.",
+          "per-wack-2008"
+        ],
+        [
+          "Simmonds-Moore, 2014",
+          "Expérience de perception ambiguë",
+          "95 participants ; bruit visuel et auditif, stimuli dégradés et essais ESP ; groupes selon les croyances.",
+          "Détection des stimuli dégradés comparable entre croyants et non-croyants ; confiance et erreurs d'identification plus élevées chez les croyants. Résultats ESP au niveau du hasard.",
+          "Apport direct : distinguer sensibilité perceptive, interprétation et certitude. Ces groupes ne représentent pas toutes les personnes rapportant des expériences exceptionnelles.",
+          "per-simmonds-2014"
+        ],
+        [
+          "Powers, Mathys et Corlett, 2017",
+          "Neurosciences cognitives voisines",
+          "59 personnes en quatre groupes : audition de voix et diagnostic psychotique croisés ; conditionnement, IRMf et modèle computationnel.",
+          "Les personnes entendant des voix sont plus sensibles aux sons illusoires induits, avec ou sans diagnostic ; le modèle distingue poids des attentes et mise à jour des croyances.",
+          "Inclure des personnes sans trouble permet de dissocier expérience perceptive et besoin de soins. Pas de test psi ni de preuve que le codage prédictif dérive de la parapsychologie.",
+          "per-powers-2017"
+        ],
+        [
+          "Blanke et coll., 2014",
+          "Neurologie et manipulation sensorimotrice",
+          "Présences ressenties chez des patients et induction par conflit sensorimoteur chez des volontaires.",
+          "Une discordance entre mouvement et toucher peut provoquer le sentiment qu'une autre personne est proche : contribution à l'étude des limites entre soi et autrui.",
+          "Mécanisme causal pour la condition induite. Il ne résout pas à lui seul tous les récits de présence ; recherche voisine, sans filiation parapsychologique établie ici.",
+          "per-blanke-2014"
+        ]
+      ],
+      "studyGroups": [
+        {
+          "id": "rv-preconscient",
+          "title": "Vision à distance, impressions fragmentaires et conscience de la justesse",
+          "intro": "Le RV a produit un vocabulaire d'observation et des questions sur la construction du compte rendu. Leur intérêt peut être étudié en comparant, à l'aveugle, impressions, interprétations et exactitude.",
+          "rows": [
+            [
+              "Warcollier, 1948 / 1963",
+              "Recueil expérimental et interprétation",
+              "Transmission de dessins ; dissociation des formes, transformations et associations.",
+              "Il décrit une décomposition des impressions puis leur réorganisation. Cela attire l'attention sur les étapes entre impression et dessin final.",
+              "Les exemples illustrent une hypothèse de traitement. Ils ne démontrent pas une loi universelle ni l'identité du RV et de la perception subliminale.",
+              "per-warcollier"
+            ],
+            [
+              "Swann et Targ, réédition 2001",
+              "Réception historique dans le milieu RV",
+              "Préface de Swann et introduction de Targ à Mind to Mind.",
+              "Lien documentaire explicite entre le travail de Warcollier et des acteurs du RV moderne.",
+              "Cette réception ne suffit pas à attribuer à Warcollier l'ensemble des étapes du CRV ni une transformation de la psychologie générale.",
+              "per-warcollier-edition"
+            ],
+            [
+              "Manuel CRV, section théorique",
+              "Méthode et modèle des praticiens",
+              "Analytic overlay (AOL) : interprétation ajoutée aux impressions ; séparation des descriptions et des identifications.",
+              "La méthode demande de repérer les catégorisations prématurées. Son apport potentiel est une procédure d'observation du passage de l'impression au jugement.",
+              "La « ligne de signal » reste postulée. Un protocole de formation ne démontre ni l'existence du signal ni l'efficacité propre de la mise à distance de l'AOL.",
+              "per-crv"
+            ],
+            [
+              "Carpenter, First Sight",
+              "Théorie psychologique du psi",
+              "Processus implicites, mémoire, perception subliminale et orientation de l'activité.",
+              "Le psi est proposé comme une participation continue et non consciente à la construction de l'expérience, plutôt que comme une faculté occasionnelle.",
+              "Hypothèse génératrice de prédictions sur les réponses implicites. Les analogies avec la cognition non consciente n'établissent pas que toute perception commence par du psi.",
+              "per-carpenter"
+            ],
+            [
+              "Katz, Prather et Akin, 2026",
+              "Enquête phénoménologique exploratoire",
+              "122 réponses de praticiens recrutés par réseau ; souvenirs de leurs séances.",
+              "89 % déclarent connaître un sentiment de justesse ; indices rapportés : surprise, répétition, soudaineté, vivacité ou émotion.",
+              "Aucun essai en temps réel pour mesurer la calibration confiance/exactitude. L'étude publiée ne fonde pas l'attribution d'une théorie merleau-pontienne du RV à ses auteurs.",
+              "per-katz-2026"
+            ]
+          ]
+        },
+        {
+          "id": "modeles-neurocognitifs",
+          "title": "Modèles neurocognitifs : synesthésie, associations et prédictions",
+          "intro": "Ces modèles explicitent différentes étapes possibles du traitement. Le rapprochement avec un mécanisme connu est une hypothèse ; il faut vérifier ce qu'il prédit et ce qui a effectivement été mesuré.",
+          "rows": [
+            [
+              "Marwaha et May, 2015",
+              "Modèle multiphasique, MMPC",
+              "Deux domaines : origine et transfert de l'information ; transduction, traitement cortical puis cognition.",
+              "Proposition d'un mécanisme hyper-associatif apparenté à la synesthésie ; prédictions sur les liens entre profils synesthésiques et performances précognitives.",
+              "Le transducteur est inconnu et le couplage proposé n'est pas identifié expérimentalement dans cet article. La multimodalité d'un récit ne démontre pas une synesthésie corticale.",
+              "per-marwaha-2015"
+            ],
+            [
+              "Simmonds-Moore, 2020 / 2022",
+              "Analyse théorique",
+              "Synesthésie, expérience exceptionnelle et accès conscient à des contenus habituellement peu accessibles.",
+              "Propose que les associations entre modalités rendent perceptibles des contenus abstraits ou préconscients, et envisage aussi des sources non locales.",
+              "Le résumé expose une proposition. Les contenus implicites ordinaires et l'acquisition d'information inaccessible doivent être testés séparément.",
+              "per-simmonds-2022"
+            ],
+            [
+              "Rabeyron et Massicotte, 2020",
+              "Analyse conceptuelle",
+              "Association libre, processus primaires et secondaires, énergie libre et symbolisation.",
+              "Articulation entre organisation du vécu, transformations associatives et modèles génératifs ; proposition de « transmodalité symbolisante ».",
+              "Ce texte éclaire la transformation des représentations. Il ne mesure pas la conversion cérébrale d'un signal psi ni un mécanisme propre au RV.",
+              "per-rabeyron-2020"
+            ],
+            [
+              "Rao et Ballard, 1999",
+              "Modèle computationnel de la vision",
+              "Prédictions descendantes et erreurs ascendantes dans un réseau hiérarchique exposé à des images.",
+              "Un cadre précis pour examiner comment attentes et données se combinent. Le rapprocher de l'AOL est une comparaison proposée ici, pas une filiation démontrée.",
+              "Une erreur de prédiction est un écart calculé, pas un canal d'information cachée. Son existence en RV et l'effet d'une modification de sa pondération restent à établir.",
+              "per-rao-1999"
+            ]
+          ]
+        },
+        {
+          "id": "philosophie-perception",
+          "title": "Philosophie : sélection, transmission et portée des arguments",
+          "intro": "Ces approches ne constituent pas une théorie unique. Elles posent des questions différentes : rôle du corps dans la sélection perceptive, rapport cerveau-conscience et conditions causales de l'accès à un objet.",
+          "rows": [
+            [
+              "Bergson, 1896",
+              "Théorie philosophique de la perception",
+              "Perception, mémoire et action possible du corps.",
+              "La perception sélectionne ce qui importe à l'action ; son contenu ne se comprend pas comme une copie exhaustive du monde.",
+              "Texte antérieur au RV moderne. Cette fonction sélective ne prouve pas, à elle seule, que des informations distantes deviennent accessibles par relaxation.",
+              "per-bergson-1896"
+            ],
+            [
+              "James, 1898",
+              "Hypothèse de transmission",
+              "Dépendance cerveau-conscience et expériences étudiées par les recherches psychiques.",
+              "James distingue la dépendance empirique et l'interprétation de cette dépendance : production ou transmission de la conscience.",
+              "Les recherches psychiques nourrissent explicitement son argument. La possibilité logique d'un modèle transmissif ne constitue pas sa confirmation expérimentale.",
+              "per-james-1898"
+            ],
+            [
+              "Kelly et coll., 2007",
+              "Synthèse théorique et empirique",
+              "Irreducible Mind ; reprise de Myers et James.",
+              "Les auteurs défendent un modèle de transmission ou de filtration pour rendre compte de différents phénomènes psychologiques.",
+              "Thèse du livre vérifiée dans sa présentation institutionnelle. Il faut des prédictions discriminantes pour départager filtre et autres modèles ; le vécu du RV ne les tranche pas seul.",
+              "per-kelly-2007"
+            ],
+            [
+              "Kelly, Crabtree et Marshall, dir., 2015",
+              "Programme philosophique collectif",
+              "Beyond Physicalism ; propositions sur les rapports esprit, cerveau et réalité.",
+              "Les observations examinées dans les recherches psychiques servent de contraintes proposées à la construction de modèles de l'esprit.",
+              "Diversité de modèles, sans déduction automatique vers un monisme, un dualisme ou une théorie particulière à partir d'un résultat psi.",
+              "per-kelly-2015"
+            ],
+            [
+              "Smith, 2009",
+              "Argument philosophique fondé sur des données psi",
+              "Thèse sur la clôture causale du domaine physique ; RV, ARV, pressentiment et DMILS.",
+              "Cherche à déterminer ce qu'impliquerait l'acceptation des résultats psi pour une formulation universelle du physicalisme.",
+              "L'argument dépend des données et de ses prémisses causales. Le résumé consulté ne suffit pas à lui attribuer une théorie détaillée de l'intentionnalité ou de la référence.",
+              "per-smith-2009"
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "per-james-1901",
+          "label": "James, W. (1901). Frederic Myers's Service to Psychology. Popular Science Monthly, 59.",
+          "url": "https://en.wikisource.org/wiki/Popular_Science_Monthly/Volume_59/August_1901/Frederic_Myers%27s_Service_to_Psychology",
+          "status": "Texte primaire numérisé ; passages sur le subliminal, les automatismes et leur réception par James consultés. Témoignage historique engagé, pas bilan historiographique indépendant."
+        },
+        {
+          "id": "per-wack-2002",
+          "label": "Wackermann, Pütz, Büchi, Strauch et Lehmann (2002). Brain electrical activity and subjective experience during altered states of consciousness: ganzfeld and hypnagogic states. International Journal of Psychophysiology, 46(2), 123–146. DOI : 10.1016/S0167-8760(02)00070-3.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/12433389/",
+          "status": "Résumé original consulté : 12 participantes, 241 comptes rendus, EEG à 19 canaux et comparaison de trois états. Pas de lecture intégrale."
+        },
+        {
+          "id": "per-wack-2008",
+          "label": "Wackermann, Pütz et Allefeld (2008). Ganzfeld-induced hallucinatory experience, its phenomenology and cerebral electrophysiology. Cortex, 44(10), 1364–1378. DOI : 10.1016/j.cortex.2007.05.003.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/18621366/",
+          "status": "Résumé original consulté. Synthèse avec travaux des auteurs et réanalyse ; pas une nouvelle réplication indépendante de toutes les observations de 2002."
+        },
+        {
+          "id": "per-simmonds-2014",
+          "label": "Simmonds-Moore, C. (2014). Exploring the perceptual biases associated with believing and disbelieving in paranormal phenomena. Consciousness and Cognition, 28, 30–46. DOI : 10.1016/j.concog.2014.06.004.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/25036936/",
+          "status": "Résumé original consulté : effectif, conditions, résultats sur la perception et résultat ESP. Pas de lecture intégrale ni de réanalyse."
+        },
+        {
+          "id": "per-powers-2017",
+          "label": "Powers, A. R., Mathys, C. et Corlett, P. R. (2017). Pavlovian conditioning-induced hallucinations result from overweighting of perceptual priors. Science, 357(6351), 596–600. DOI : 10.1126/science.aan3458.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5802347/",
+          "status": "Texte auteur accessible par indexation PMC ; méthodes, groupes, résultats et modèle consultés. Étude de neurosciences cognitives, pas test d'information psi."
+        },
+        {
+          "id": "per-blanke-2014",
+          "label": "Blanke et coll. (2014). Neurological and robot-controlled induction of an apparition. Current Biology, 24(22), 2681–2686. DOI : 10.1016/j.cub.2014.09.049.",
+          "url": "https://www.sciencedirect.com/science/article/pii/S0960982214012123",
+          "status": "Résumé et passages des résultats sur l'induction robotique consultés. Recherche neurologique voisine ; aucune filiation causale avec un programme parapsychologique n'est établie ici."
+        },
+        {
+          "id": "per-warcollier",
+          "label": "Warcollier, R. (1948 ; édition augmentée 1963). Mind to Mind. Édition de 1963 : Collier Books, introduction de Gardner Murphy.",
+          "url": "https://archive.org/details/mindtomind_201912",
+          "status": "Édition de 1963 identifiée dans Internet Archive ; passages sur la dissociation (p. 36–38) lus dans une reproduction OCR du livre sur Scribd. Lecture partielle, sans audit des expériences ni des appariements de dessins."
+        },
+        {
+          "id": "per-warcollier-edition",
+          "label": "Warcollier, R. (réédition 2001). Mind to Mind. Préface d'Ingo Swann, introduction de Russell Targ. Hampton Roads, ISBN 9781571743114.",
+          "url": "https://redwheelweiser.com/book/mind-to-mind-9781571743114/",
+          "status": "Notice de l'éditeur consultée : contenu du recueil et participation de Swann et Targ vérifiés. Cette notice documente une réception dans le milieu RV, pas une influence démontrée sur les neurosciences."
+        },
+        {
+          "id": "per-crv",
+          "label": "Controlled (Coordinate) Remote Viewing Manual, section CRV Theory. Reproduction publiée par Paul H. Smith / RVIS.",
+          "url": "https://rviewer.com/introduction-to-the-controlled-coordinate-remote-viewing-manual/crv-theory-controlled-remote-viewing-manual/",
+          "status": "Texte de la section théorique consulté : signal hypothétique, seuil et analytic overlay. Source primaire de la méthode ; document de formation, pas validation expérimentale de son mécanisme."
+        },
+        {
+          "id": "per-carpenter",
+          "label": "Carpenter, J. C. First Sight: A Model and a Theory of Psi. Synthèse de l'auteur renvoyant aux articles de 2004, 2005 et 2008.",
+          "url": "https://carpenterpsychology.com/about/documents/FirstSightformindfield.pdf",
+          "status": "Document de quatre pages consulté, notamment les prémisses et leur articulation avec les processus implicites. Il expose une théorie et les recherches invoquées par son auteur."
+        },
+        {
+          "id": "per-katz-2026",
+          "label": "Katz, D. L., Prather, J. et Akin, J. (2026). Sensing Accuracy: A Survey of Experienced Remote Viewer's Awareness of Correctness & Being on Target. Journal of Anomalous Experience and Cognition, 6(1), 67–91. DOI : 10.31156/jaex.27505.",
+          "url": "https://journals.lub.lu.se/jaex/article/view/27505",
+          "status": "Résumé et passages du PDF, dont résultats, limites et bibliographie, consultés. 122 réponses dans la version publiée. L'ordre des deux derniers auteurs diffère entre la notice et le PDF ; celui de la notice est suivi ici. Aucun test prospectif de calibration de la confiance."
+        },
+        {
+          "id": "per-marwaha-2015",
+          "label": "Marwaha, S. B. et May, E. C. (2015). Rethinking Extrasensory Perception: Toward a Multiphasic Model of Precognition. SAGE Open, 5(1). DOI : 10.1177/2158244015576056.",
+          "url": "https://journals.sagepub.com/doi/10.1177/2158244015576056",
+          "status": "Passages du texte intégral sur les phases, le transducteur supposé, la synesthésie et les prédictions consultés. Nom dans cet article : Multiphasic Model of Precognition, MMPC."
+        },
+        {
+          "id": "per-simmonds-2022",
+          "label": "Simmonds-Moore, C. (2022 ; publication en ligne 2020). Synesthesia and the Perception of Unseen Realities. Journal of Humanistic Psychology, 62(2), 187–207. DOI : 10.1177/0022167820918691.",
+          "url": "https://journals.sagepub.com/doi/10.1177/0022167820918691",
+          "status": "Résumé original et métadonnées consultés ; argument théorique sur les expériences exceptionnelles. Texte intégral non consulté."
+        },
+        {
+          "id": "per-rabeyron-2020",
+          "label": "Rabeyron, T. et Massicotte, C. (2020). Entropy, Free Energy, and Symbolization: Free Association at the Intersection of Psychoanalysis and Neuroscience. Frontiers in Psychology, 11, 366. DOI : 10.3389/fpsyg.2020.00366.",
+          "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.00366/full",
+          "status": "Résumé et passages du texte intégral sur le modèle génératif, la symbolisation et les expériences exceptionnelles consultés. Article d'analyse conceptuelle ; pas expérience de vision à distance."
+        },
+        {
+          "id": "per-rao-1999",
+          "label": "Rao, R. P. N. et Ballard, D. H. (1999). Predictive coding in the visual cortex: a functional interpretation of some extra-classical receptive-field effects. Nature Neuroscience, 2, 79–87. DOI : 10.1038/4580.",
+          "url": "https://www.nature.com/articles/nn0199_79",
+          "status": "Résumé original consulté. Référence du modèle visuel utilisée pour préciser le sens du codage prédictif, sans lui attribuer une origine parapsychologique."
+        },
+        {
+          "id": "per-bergson-1896",
+          "label": "Bergson, H. (1896). Matière et mémoire, chapitre I : De la sélection des images pour la représentation. Le rôle du corps.",
+          "url": "https://fr.wikisource.org/wiki/Mati%C3%A8re_et_M%C3%A9moire/Chapitre_I",
+          "status": "Texte primaire numérisé d'une réédition ; passages sur la sélection, le corps et l'action possible consultés. Argument philosophique antérieur au RV moderne."
+        },
+        {
+          "id": "per-james-1898",
+          "label": "James, W. (1898). Human Immortality: Two Supposed Objections to the Doctrine.",
+          "url": "https://www.acsu.buffalo.edu/~jlawler/courses/phi280/assets/documents/Human%20Immortality%20by%20William%20James.pdf",
+          "status": "Texte primaire en reproduction universitaire ; passages sur production, transmission, seuil et recherches psychiques consultés. James y présente une possibilité explicative et un argument philosophique."
+        },
+        {
+          "id": "per-kelly-2007",
+          "label": "Kelly, E. F., Kelly, E. W., Crabtree, Gauld, Grosso et Greyson (2007). Irreducible Mind: Toward a Psychology for the 21st Century. Rowman & Littlefield.",
+          "url": "https://med.virginia.edu/clinical/psychiatry-neurobehavioral-sciences/perceptual-studies/publications/books-by-dops-faculty/study-of-the-mind-body-relationship/irreducible-mind-toward-a-psychology-for-the-21st-century",
+          "status": "Présentation institutionnelle des auteurs à l'UVA consultée : thèse du livre et reprise de Myers et James. Livre intégral non consulté pour cette fiche."
+        },
+        {
+          "id": "per-kelly-2015",
+          "label": "Kelly, E. F., Crabtree, A. et Marshall, P. (dir., 2015). Beyond Physicalism: Toward Reconciliation of Science and Spirituality. Rowman & Littlefield.",
+          "url": "https://med.virginia.edu/clinical/psychiatry-neurobehavioral-sciences/perceptual-studies/publications/books-by-dops-faculty/study-of-the-mind-body-relationship/beyond-physicalism-toward-reconciliation-of-science-and-spirituality",
+          "status": "Présentation UVA de la réédition 2019 consultée ; première publication en 2015 confirmée par la page UVA du groupe de recherche datée du 7 août 2024. Programme théorique collectif, pas essai expérimental."
+        },
+        {
+          "id": "per-smith-2009",
+          "label": "Smith, P. H. (2009). Is physicalism 'really' true?: an empirical argument against the universal construal of physicalism. Thèse de philosophie, University of Texas at Austin.",
+          "url": "https://rviewer.com/dissertation-abstract/",
+          "status": "Présentation de la thèse par son auteur consultée ; dépôt universitaire identifié mais texte intégral inaccessible lors de cette recherche. Le propos documenté porte sur la clôture causale du domaine physique."
+        }
+      ],
+      "profile": [
+        [
+          "Résultats observés",
+          "Influence documentée sur James ; résultats sur l'imagerie Ganzfeld et la confiance perceptive ; descriptions de l'expérience RV. Les travaux de neurosciences voisines sont identifiés comme tels."
+        ],
+        [
+          "Robustesse méthodologique",
+          "Une expérience contrôlée, un récit rétrospectif, un manuel de formation et un argument philosophique n'étayent pas le même type de conclusion. Les recouvrements et niveaux de consultation sont indiqués."
+        ],
+        [
+          "Variabilité et conditions d'obtention",
+          "Attention, absorption, attentes, modalités sensorielles, formation et mémoire du retour sur la cible peuvent modifier le récit. Leur rôle doit être mesuré sans supposer d'avance qu'ils favorisent ou inhibent le psi."
+        ],
+        [
+          "Portée des conclusions",
+          "La contribution la mieux documentée porte sur les objets d'étude, les processus non conscients et la distinction entre impression, jugement et exactitude. Une origine parapsychologique du codage prédictif ou une validation du cerveau-filtre n'est pas établie par les sources retenues."
+        ]
+      ],
+      "interpretation": "La parapsychologie a surtout contribué en rendant certaines expériences accessibles à l'enquête, en étudiant leur transformation en représentations et en formulant des hypothèses sur la continuité entre processus implicites et perception. Elle a aussi produit des recherches de perception ordinaire, notamment au sein de l'IGPP. Pour les modèles contemporains, l'échange va souvent de la psychologie et des neurosciences vers l'interprétation du psi. La valeur ajoutée d'un modèle se mesure alors aux différences observables qu'il prédit, au-delà d'une nouvelle description du même résultat.",
+      "openQuestion": "Quels indices vécus avant de connaître la cible prédisent réellement l'exactitude, et quel modèle explique ces liens mieux que ses concurrents ?",
+      "next": "Comparer, avec les mêmes règles de cotation, perception de stimuli dégradés, imagerie sans cible et RV à cible cachée. Recueillir impressions et confiance avant tout retour ; fixer les indices phénoménologiques à tester, contrôler les fuites d'information, puis évaluer la précision et la calibration sur de nouvelles séances. Tester séparément l'effet d'une consigne limitant les identifications prématurées. Ce protocole est une proposition de recherche, pas le résultat d'une étude déjà réalisée.",
+      "related": [
+        "vision-distance",
+        "ganzfeld",
+        "neurosciences-psi",
+        "conditions-moderateurs",
+        "clinique-experiences-exceptionnelles",
+        "experiences-hors-corps"
+      ],
+      "searchTerms": "perception theorie histoire concepts philosophie phenomenologie cognition implicite subliminal inconscient James Myers Bergson Warcollier Swann Puthoff Carpenter First Sight AOL overlay Katz Prather Akin synesthesie May Marwaha MMI MMPC Rabeyron Massicotte Kelly Smith Merleau Ponty predictive processing Friston Clark codage predictif filtre transmission embodied incarnation metacognition confiance IGPP Wackermann Blanke Powers",
+      "metrics": [],
+      "chart": null,
+      "landscape": [],
+      "new": true,
+      "reviewed": "25 octobre 2026",
+      "editorialUpdated": "25 octobre 2026",
+      "handbook": "",
+      "resultsTitle": "Apports documentés et recherches voisines"
     }
   ],
   "schemaVersion": 4,
-  "editorialRevision": "24 octobre 2026 : extension documentaire, registre KPU, centres de recherche et réanalyses Ganzfeld de 2026.",
+  "editorialRevision": "25 octobre 2026 : dossier transversal sur les contributions de la parapsychologie aux théories de la perception ; histoire, recherches perceptives, modèles et arguments philosophiques.",
   "watchlist": [
     {
       "title": "Psi implicite / First Sight",

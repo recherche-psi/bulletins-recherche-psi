@@ -15,10 +15,10 @@ const searchable = (t: (typeof data.topics)[number]) => [t.title, t.subtitle, t.
   <summary><span class="category-title">{title}</span> <span class="category-count" data-group-count>{topics.length} {topics.length===1?'dossier':'dossiers'}</span><span class="category-description">{description}</span></summary>
   <div class="table-scroll directory-table"><table class="comparison">
     <caption class="sr-only">Dossiers : {title}</caption>
-    <thead><tr><th scope="col">Dossier</th><th scope="col">Bilan empirique</th><th scope="col">Exemple de question ouverte</th></tr></thead>
+    <thead><tr><th scope="col">Dossier</th><th scope="col">Bilan du dossier</th><th scope="col">Exemple de question ouverte</th></tr></thead>
     <tbody>{topics.map(t=><tr data-topic-row data-search={searchable(t)}>
-      <th scope="row"><a href={`${base}etat-des-preuves/${t.id}/`}>{t.title}<span aria-hidden="true"> ↗</span></a>{t.new && <small class="new-topic">Ajout du 24 octobre</small>}</th>
-      <td data-label="Bilan empirique">{t.direction}</td>
+      <th scope="row"><a href={`${base}etat-des-preuves/${t.id}/`}>{t.title}<span aria-hidden="true"> ↗</span></a>{t.new && <small class="new-topic">Ajout du {t.reviewed}</small>}</th>
+      <td data-label="Bilan du dossier">{t.direction}</td>
       <td data-label="Exemple de question ouverte">{t.openQuestion}</td>
     </tr>)}</tbody>
   </table></div>
