@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import EvidenceChart from '../../../components/EvidenceChart.astro';
+import EvidenceStudyTable from '../../../components/EvidenceStudyTable.astro';
+import EvidenceSources from '../../../components/EvidenceSources.astro';
+import data from '../../../data/evidence-2026.en.json';
+import '../../../styles/evidence.css';
+export function getStaticPaths(){return data.topics.map(topic=>({params:{id:topic.id},props:{topic}}));}
+const {topic:t}=Astro.props;
+const conceptual=t.kind==='conceptual';
+const base=import.meta.env.BASE_URL;
+const root=`${base}en/evidence/`;
+const followup='followup' in t?t.followup:undefined;
+const resultsTitle='resultsTitle' in t?t.resultsTitle:undefined;
+const studyGroups=('studyGroups' in t?t.studyGroups:undefined)??[];
+const clinicalOutcomes=('clinicalOutcomes' in t?t.clinicalOutcomes:undefined)??[];
+const relatedIds=t.related??[];
+const relatedTopics=data.topics.filter(o=>o.id!==t.id&&(relatedIds.length?relatedIds.includes(o.id):o.group===t.group)).slice(0,6);
+---
+<BaseLayout lang="en" title={`${t.title}: state of the evidence`} description={`${t.summary} Bibliographic review: ${t.reviewed}.`} alternatePath={`etat-des-preuves/${t.id}/`}>
+<article class="shell evidence">
+  <header class="mast">
+    <a class="text-link" href={root}>← All reviews</a>
+    <p class="eyebrow">{t.group} · 2026 pilot edition</p><h1>{t.title}</h1><p class="intro">{t.subtitle}</p>
+    <p class="meta">Bibliographic review: {t.reviewed}{t.editorialUpdated!==t.reviewed && ` · Assessment updated: ${t.editorialUpdated}`} · English translation: 26 October 2026</p>
+  </header>
+  <div class="dossier-summary"><span class="summary-label">{conceptual?'Historical, empirical and theoretical assessment':'Empirical assessment'}</span><p><strong>{t.direction}.</strong> {t.summary}</p></div>
+  <details class="scope"><summary>What does this review cover?</summary><p>{t.question}</p>{t.handbook && <p class="small">Starting point in the <a href="https://www.dunod.com/sciences-humaines-et-sociales/grand-manuel-parapsychologie-scientifique">Grand manuel de parapsychologie scientifique</a> (Dunod, 2025): {t.handbook} References identified in the working version consulted.</p>}</details>
+  <nav class="jump" aria-label="Review contents"><a href="#resultats">{followup?'Original GCP':'Findings'}</a>{followup && <a href={`#${followup.id}`}>GCP 2.0</a>}{studyGroups.length>0 && <a href="#programmes">{t.id==='mediumnite-mentale'?'Sitters and Brazil':'Studies by approach'}</a>}{clinicalOutcomes.length>0 && <a href="#criteres-cliniques">Clinical outcomes</a>}<a href="#lecture">Assessment</a><a href="#sources">Sources</a></nav>
+  {t.readingGuide.length>0 && <section class="reading-guide" aria-labelledby="guide-title"><h2 id="guide-title">Distinctions to keep in mind</h2><div class="table-scroll"><table class="profile-table"><caption class="sr-only">How to read this evidence</caption><tbody>{t.readingGuide.map(r=><tr><th scope="row">{r[0]}</th><td>{r[1]}</td></tr>)}</tbody></table></div></section>}
+  {t.metrics.length>0 && <div class="cards metrics">{t.metrics.map(([value,label])=><div class="card stat"><strong>{value}</strong><span>{label}</span></div>)}</div>}
+  {t.chart && <EvidenceChart chart={t.chart} id={t.id} lang="en"/>}
+  {t.landscape.length>0 && <section class="evidence-map"><h2>Types of evidence</h2><div class="table-scroll"><table class="studies"><thead><tr><th scope="col">Body of evidence</th><th scope="col">Contribution</th><th scope="col">Material</th><th scope="col">What it does not establish on its own</th></tr></thead><tbody>{t.landscape.map(r=><tr><th scope="row">{r[0]}</th><td data-label="Contribution">{r[1]}</td><td data-label="Material">{r[2]}</td><td data-label="What remains to be established">{r[3]}</td></tr>)}</tbody></table></div><p class="small">No effect-size chart: the selected sources do not support a comparable overall estimate.</p></section>}
+  <section id="resultats"><h2>{resultsTitle??(t.chart?'Syntheses and findings':'Selected studies and documents')}</h2><EvidenceStudyTable rows={t.rows} lang="en"/></section>
+  {followup && <section id={followup.id} aria-labelledby={`${followup.id}-title`}><h2 id={`${followup.id}-title`}>{followup.title}</h2><p>{followup.intro}</p><EvidenceStudyTable rows={followup.rows} lang="en"/><p class="small"><strong>Example of an open question:</strong> {followup.question}</p></section>}
+  {studyGroups.length>0 && <section id="programmes"><h2>{conceptual?'Traditions, models and arguments':'Additional programmes and approaches'}</h2><p class="small">{conceptual?'Expand a section to examine the proposals, their contributions and the documents supporting them.':'Expand a section to read the studies, their findings and their limitations.'}</p>{studyGroups.map(g=><details id={g.id}><summary>{g.title} <span class="small">· {g.rows.length} {g.rows.length===1?'entry':'entries'}</span></summary><p>{g.intro}</p><EvidenceStudyTable rows={g.rows} lang="en"/></details>)}</section>}
+  {clinicalOutcomes.length>0 && <section id="criteres-cliniques"><details><summary>Which clinical outcomes should be monitored?</summary><p class="small">These criteria guide assessment; each study measures only some of them. Their selection should reflect the person's needs and goals.</p><div class="table-scroll"><table class="profile-table"><thead><tr><th scope="col">Criterion</th><th scope="col">What can be measured</th></tr></thead><tbody>{clinicalOutcomes.map(r=><tr><th scope="row">{r[0]}</th><td>{r[1]}</td></tr>)}</tbody></table></div></details></section>}
+  <section id="lecture"><h2>What this evidence supports</h2><p class="interpretation">{t.interpretation}</p><details><summary>The four dimensions of this review</summary><div class="table-scroll"><table class="profile-table"><thead><tr><th scope="col">Dimension</th><th scope="col">Assessment of the evidence</th></tr></thead><tbody>{t.profile.map(r=><tr><th scope="row">{r[0]}</th><td>{r[1]}</td></tr>)}</tbody></table></div></details><h3>Next research steps</h3><p>{t.next}</p><p class="small"><a href={`${root}#grille`}>Assessment method and the role of replications</a>. No independent audit of the raw data or new overall estimate was carried out for this page.</p></section>
+  <section id="sources"><h2>References and extent of consultation</h2>{studyGroups.length>0?<details><summary>View all {t.sources.length} references and how they were consulted</summary><EvidenceSources sources={t.sources}/></details>:<EvidenceSources sources={t.sources}/>}</section>
+  {conceptual && <details><summary>Terms to clarify</summary><p><strong>Preconscious or nonconscious:</strong> processing that contributes to a response without being directly accessible to the person. Subliminal perception involves a sensory stimulus; an inaccessible target raises an additional question about information acquisition.</p><p><strong>AOL:</strong> an interpretation that the CRV method asks participants to distinguish from their initial impression. <strong>Synaesthesia:</strong> an automatic and generally stable association between a stimulus and an additional experience; a report combining several sensations is not sufficient to identify it.</p><p><strong>Transduction:</strong> conversion of a signal into activity in a receiving system; the transducer proposed for psi remains hypothetical in the model discussed here. <strong>Confidence calibration:</strong> the measured correspondence between reported confidence and the proportion of answers that are actually correct.</p></details>}
+  {t.kind==='clinical'?<details><summary>Reading guide</summary><p>CI: confidence interval. A before-and-after effect size measures change in the same individuals; a between-group difference compares treatments or conditions. These estimates are not interchangeable. A non-significant result does not demonstrate equivalence; clinical relevance also depends on the magnitude of change, everyday functioning and how long the change lasts.</p></details>:t.kind!=='specific' && !conceptual && <details><summary>Reading guide</summary><p>CI: confidence interval. ES, r, d or g: effect size as defined by the source; these scales are not interchangeable. I²: estimated proportion of variability attributable to heterogeneity within the model. BF₀₁: evidence ratio in favour of the null model relative to the specified alternative; it depends on the models and their prior parameters. A p-value is not the probability that psi exists.</p></details>}
+  <nav class="jump" aria-label="Related reviews"><a href={root}>← Overview</a>{relatedTopics.map(o=><a href={`${root}${o.id}/`}>{o.title} →</a>)}</nav>
+</article>
+</BaseLayout>
+
+<script>
+  const revealReference = () => {
+    if (!window.location.hash) return;
+    let id: string;
+    try { id = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
+    const target = document.getElementById(id);
+    if (!target) return;
+    let parent = target.parentElement;
+    while (parent) {
+      if (parent instanceof HTMLDetailsElement) parent.open = true;
+      parent = parent.parentElement;
+    }
+    target.scrollIntoView({ block: 'start' });
+  };
+  window.addEventListener('hashchange', revealReference);
+  revealReference();
+</script>

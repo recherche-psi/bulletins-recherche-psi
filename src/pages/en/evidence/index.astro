@@ -1,0 +1,159 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import data from '../../../data/evidence-2026.en.json';
+import EvidenceDirectory from '../../../components/EvidenceDirectory.astro';
+import '../../../styles/evidence.css';
+const base = import.meta.env.BASE_URL;
+const root = `${base}en/evidence/`;
+const newTopicsCount = data.topics.filter(t=>t.new).length;
+const survivalIds = ['perceptions-emi', 'vies-anterieures', 'fin-de-vie', 'xenoglossie', 'contacts-defunts', 'mediumnite-physique', 'tests-prospectifs-survie', 'marques-naissance'];
+const specificTopics = data.topics.filter(t=>t.kind==='specific' && String(t.group)!=='Cross-cutting approaches');
+const groups = [
+  {name:'Perception', id:'perception', description:'Targets, dreams, mediumship, staring and animal psi'},
+  {name:'Anticipation', id:'anticipation', description:'Future events and pre-stimulus signals'},
+  {name:'Interaction', id:'interaction', description:'Micro-PK, retro-PK, optical and biological systems'},
+];
+---
+<BaseLayout lang="en" title="State of the evidence in psi research" description={`${data.topics.length} reviews: empirical findings, study conditions and open questions.`} alternatePath="etat-des-preuves/">
+<div class="shell evidence">
+  <header class="mast">
+    <p class="eyebrow">Research resources · 2026 pilot edition</p>
+    <h1>State of the evidence<br/><em>in psi research</em></h1>
+    <p class="intro">{data.topics.length} reviews to assess findings, their conditions and their implications.</p>
+    <p class="meta">Updated: {data.date} · {newTopicsCount} {newTopicsCount===1?'new review':'new reviews'} · English translation: 26 October 2026</p>
+  </header>
+  <nav class="jump" aria-label="Contents"><a href="#dossiers">Reviews</a><a href="#lecture-specifique">Specialised assessment</a><a href="#clinique">Clinical care</a><a href="#transversal">Cross-cutting approaches</a><a href="#veille">Research to follow</a><a href="#grille">How to read</a><a href="#edition">Editions and method</a></nav>
+
+  <section id="dossiers" class="directory">
+    <div class="section-heading"><h2>Explore the reviews</h2><span class="small">Choose a topic or search by keyword</span></div>
+    <p class="small reading-note">Each review distinguishes <strong>findings, robustness, study conditions and the scope of conclusions</strong>. The suggested questions are illustrative. <a href="#grille">Understand this approach</a>.</p>
+    <div class="directory-tools" id="directory-tools" hidden>
+      <label for="topic-search">Search for a review, topic or author</label>
+      <input id="topic-search" type="search" placeholder="E.g. hypnosis, double slit, psychometry…" autocomplete="off" aria-controls="topic-directory" />
+      <div class="directory-actions"><span id="topic-count" role="status" aria-live="polite">{data.topics.length} reviews</span><button type="button" id="expand-topics">Expand all</button><button type="button" id="collapse-topics">Collapse all</button></div>
+    </div>
+    <div id="topic-directory">
+      {groups.map(group => <EvidenceDirectory lang="en" id={`groupe-${group.id}`} title={group.name} description={group.description} topics={data.topics.filter(t=>t.group===group.name)}/>)}
+      <div id="lecture-specifique" class="directory-section" data-directory-section>
+        <EvidenceDirectory lang="en" id="groupe-survie" title="Survival, bereavement and physical mediumship" description="Observations, documentary checks and tests of survival" topics={specificTopics.filter(t=>survivalIds.includes(t.id))}/>
+        <EvidenceDirectory lang="en" id="groupe-specifique" title="Field research, lived experience and instrumental measurements" description="Exceptional experiences, neuroscience and measurement devices" topics={specificTopics.filter(t=>!survivalIds.includes(t.id))}/>
+      </div>
+      <div id="clinique" class="directory-section" data-directory-section>
+        <EvidenceDirectory lang="en" id="groupe-clinique" title="Clinical support" description="Distress, integration of experiences and outcomes of support" topics={data.topics.filter(t=>t.kind==='clinical')}/>
+      </div>
+      <div id="transversal" class="directory-section" data-directory-section>
+        <EvidenceDirectory lang="en" id="groupe-transversal" title="Cross-cutting approaches: methods and theories" description="Theories of perception, study conditions, experimenters and experience profiles" topics={data.topics.filter(t=>String(t.group)==='Cross-cutting approaches')}/>
+      </div>
+    </div>
+    <p class="small" id="no-topics" hidden>No review matches this search. Try a shorter term or another name.</p>
+    <p class="small">Bodies of evidence may overlap. Effects from different reviews should not be added together or compared without considering their measurement scales.</p>
+  </section>
+
+  <section id="veille">
+    <h2>Research to follow</h2>
+    <p class="small">{data.watchlist.length} leads for extending existing reviews or developing new ones. Each status describes the documents located, without assuming that a study is still underway.</p>
+    <details><summary>KPU registry and research centre programmes</summary>
+      <p class="small">The <a href={data.registryReview.url}>KPU registry</a> was reviewed on 24 October 2026, up to entry 1107 of 30 September 2026. Registration is neither KPU endorsement nor a finding.</p>
+      <div class="table-scroll"><table class="studies">
+        <thead><tr><th scope="col">Research lead / registry</th><th scope="col">Document located</th><th scope="col">Next check</th><th scope="col">Related review</th></tr></thead>
+        <tbody>{data.watchlist.map(w=><tr><th scope="row"><a href={w.url}>{w.title}</a><small>{w.registry}</small></th><td data-label="Document located">{w.status}</td><td data-label="Next check">{w.note}</td><td data-label="Related review"><a href={`${root}${w.related}/`}>{data.topics.find(t=>t.id===w.related)?.title}</a></td></tr>)}</tbody>
+      </table></div>
+      <p class="small">Publications already assessed appear in the reviews. Cancelled studies, null results and results not located are distinct statuses.</p>
+    </details>
+  </section>
+
+  <section id="grille">
+    <h2>Four dimensions of assessment</h2>
+    <p class="small">Reproducibility is examined alongside study conditions and variability. It contributes to the assessment without determining evidential value on its own. <a href={`${root}conditions-moderateurs/`}>Read the studies on conditions and moderators</a>.</p>
+    <details><summary>The four dimensions of each review</summary>
+      <div class="table-scroll"><table class="profile-table"><thead><tr><th scope="col">Dimension</th><th scope="col">What is examined</th></tr></thead><tbody>
+      <tr><th scope="row">Observed findings</th><td>Nature of the observations, direction and magnitude of effects, uncertainty; positive and null findings alike.</td></tr>
+      <tr><th scope="row">Methodological robustness</th><td>Controls, documentary quality, potential biases, sensitivity of analyses and independence of the data.</td></tr>
+      <tr><th scope="row">Variability and study conditions</th><td>Differences between participants, teams, contexts and protocols; stability of findings under specified conditions.</td></tr>
+      <tr><th scope="row">Scope of the conclusions</th><td>What the observations support, which explanations have actually been examined and what remains open.</td></tr>
+      </tbody></table></div>
+    </details>
+    <details><summary>What role do replications play?</summary>
+      <p>A replicated finding clarifies the stability of an observation under certain conditions; it does not necessarily identify its cause. A failure to replicate can provide information about an effect, a protocol or variability. Its contribution depends in particular on the precision of the test and the comparability of conditions.</p>
+      <p>Context dependence is a hypothesis to investigate. It is not sufficient as a retrospective explanation of a null result: its predictions must be testable. Disagreements between studies remain visible in each review.</p>
+      <p class="small">General methodological reference: <a href="https://www.ncbi.nlm.nih.gov/books/NBK547524/">National Academies, <em>Reproducibility and Replicability in Science</em> (2019), Chapter 5</a>.</p>
+    </details>
+  </section>
+
+  <section id="edition">
+    <h2>Editions and method</h2>
+    <details><summary>Latest additions and archives</summary>
+      <p><strong>English edition, 26 October 2026:</strong> translation of all 43 reviews in French version 12. Original bibliographic review dates and publication titles are retained. Translation does not constitute a new literature search.</p>
+      <p><a href={`${base}data/evidence-2026-10-26-v12.en.json`} download>Current English edition, {data.topics.length} reviews and research watchlist (JSON)</a> · <a href={`${base}data/evidence-2026-10-26-v12.en.csv`} download>Chart data in English (CSV, numerical values unchanged)</a></p>
+      <p><strong>25 October 2026, version 12:</strong> addition of <a href={`${root}parapsychologie-theories-perception/`}>Parapsychology and theories of perception</a> under cross-cutting approaches. Historical contributions, findings on perception and theoretical proposals are distinguished, with 20 references and their extent of consultation.</p>
+      <p><a href={`${base}data/etat-des-preuves-2026-10-25-v12.json`} download>French source edition (JSON)</a> · <a href={`${base}data/etat-des-preuves-2026-10-25-v12.csv`} download>French chart data (CSV, unchanged since version 11)</a></p>
+      <p><strong>24 October 2026, version 11:</strong> 42 reviews, including 16 additions. Coverage extended to field evidence, survival studies, states of consciousness and programmes identified through the KPU registry and research centres. Ganzfeld: 2026 reanalyses and exchanges, including Bierman and Spottiswoode and the preprint with Bancel and Bartoš. French archives: <a href={`${base}data/etat-des-preuves-2026-10-24-v11.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v11.csv`} download>CSV</a>.</p>
+      <p>Revised version 10, 26 reviews, 24 October: clinical care for exceptional experiences and evaluations of support. French archives: <a href={`${base}data/etat-des-preuves-2026-10-24-v10.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v10.csv`} download>CSV</a>.</p>
+      <p>Version 9, 25 reviews, 24 October: retro-PK, double slit, conscious detection of staring, FieldREG, animal psi, end-of-life experiences, xenoglossy and study conditions; a section on psychometry and intuitive archaeology. French archives: <a href={`${base}data/etat-des-preuves-2026-10-24-v9.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v9.csv`} download>CSV</a>.</p>
+      <p class="small">The JSON files for versions 9 and 10 were revised on 24 October 2026: reference selections were corrected and assessments adjusted in the relevant reviews. Chart data are unchanged.</p>
+      <p>Version 8, 17 reviews, 24 October: out-of-body experiences and the neuroscience of psi, drawing on the handbook and publications from 2025–2026. French archives: <a href={`${base}data/etat-des-preuves-2026-10-24-v8.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v8.csv`} download>CSV</a>.</p>
+      <p>Version 7, 15 reviews, 24 October: mediumship expanded to include sitter protocols, Schwartz, Beischel, Brazilian research and the study of trance. French archives: <a href={`${base}data/etat-des-preuves-2026-10-24-v7.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v7.csv`} download>CSV</a>.</p>
+      <p>Version 6, 15 reviews, 24 October: GCP 2.0 section and clarification of Bancel's psi-selection account. French archives: <a href={`${base}data/etat-des-preuves-2026-10-24-v6.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v6.csv`} download>CSV</a>.</p>
+      <p>Version 5, 15 reviews, 24 October: original GCP and Bancel's analyses added; heading changed to 'example of an open question'. French archives: <a href={`${base}data/etat-des-preuves-2026-10-24-v5.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v5.csv`} download>CSV</a>.</p>
+      <p>Version 4, 14 reviews, 24 October: brain correlations, NDEs and past-life memories added. French archives: <a href={`${base}data/etat-des-preuves-2026-10-24-v4.json`} download>JSON</a> · <a href={`${base}data/etat-des-preuves-2026-10-24-v4.csv`} download>CSV</a>.</p>
+    </details>
+    <details><summary>Sources, scope and limitations of this selection</summary>
+      <p>Version 12: targeted search on 25 October 2026 for contributions to theories of perception, starting with Warcollier, CRV, First Sight, multiphasic models, synaesthesia and transmission theories. Checks used texts by James and Bergson, IGPP publications, PubMed, journals, authors' documents and institutional records. The 2026 'Sensing Accuracy' study is distinguished from a prospective test of accuracy. Related neuroscience research addresses the same questions without being automatically attributed to parapsychology. The extent of consultation is specified; no bibliometric study is used here to quantify the field's influence.</p>
+      <p>Version 11: targeted search on 24 October 2026 in publications and resources from the PA, SPR, IONS, IGPP, KPU registry, University of Virginia (DOPS), Rhine Research Center and Northampton. The Duke repository also helps locate articles. The Rhine is an institution separate from Duke. Research centre pages and conference abstracts guide the search; their status is stated when they are the only source consulted.</p>
+      <p>New entries address a distinct body of evidence or specific controls. Reports of experiences, case verification, instrumental measurements and tests of psi information remain distinct. A sample reanalysed or described in several publications is not counted as several confirmations.</p>
+      <p>The KPU watchlist links each selected protocol to its results when accessible. Study registration, publication of results and compliance with the analysis plan are three separate checks. The absence of a results link in the registry does not establish that results are unavailable elsewhere.</p>
+      <p>The <a href="https://www.dunod.com/sciences-humaines-et-sociales/grand-manuel-parapsychologie-scientifique">Grand manuel de parapsychologie scientifique</a> (Évrard, Berghmans and Rabeyron, eds., Dunod, 2025) provides a starting point: Chapters 3, 4, 5, 6, 7, 8, 9, 13 and 14. Reviews link to original studies and distinguish findings, reanalyses, commentaries and theoretical proposals.</p>
+      <p>For clinical care for exceptional experiences, targeted searches on 24 October 2026 used 'anomalous experiences', 'exceptional experiences', 'clinical parapsychology', 'counselling', 'therapy outcomes' and 'evaluation', as well as IGPP and CIRCEE. Chapter 9 of the handbook and identified articles guide the search. Direct evaluations are distinguished from qualitative studies, activity reports and related evidence on unusual perceptions or bereavement. Clinical benefits do not test whether an experience is psi in nature.</p>
+      <p>For the first three reviews requiring specialised assessment, targeted searches on 24 October 2026 used 'isolated EEG correlations systematic review', 'AWARE II veridical near-death experiences' and 'claimed past-life memories scoping review', supplemented by handbook references. Verification used PubMed, Europe PMC, F1000Research, Frontiers, journal archives and university repositories. The neuroimaging review published in 2026 and the 2025 vNDE documentation tool are included.</p>
+      <p>For version 9 additions, targeted searches on 24 October 2026 used 'retro-PK', 'double slit', 'conscious staring', 'FieldREG', 'animal psi', 'terminal lucidity', 'xenoglossy', 'hypnosis ESP', 'meditation ESP', 'sheep-goat', 'correlation matrix' and 'psychometry'. Reviews distinguish quantitative synthesis, controlled experiment, field observation, case study and theoretical proposal. Previously recorded data do not constitute protocol preregistration; the latter is mentioned only when documented.</p>
+      <p>For OBEs and neuroscience, targeted searches on 24 October 2026 started from Chapters 13 and 14: 'out-of-body experiences', 'visual targets', 'EEG', 'event-related potentials', 'fMRI' and 'frontal inhibition', supplemented by the names Acunzo and Freedman. Verification used PubMed, Frontiers, authors' texts, ASPR and university repositories. References specify whether an abstract, excerpts or the full text was consulted.</p>
+      <p>For GCP, targeted searches on 24 October 2026 used the titles of Bancel's analyses and Nelson's responses. Verification used PubMed, authors' texts, the Journal of Nonlocality and JAEX. The selection includes Nelson's 2024 synthesis; it distinguishes text consulted from a verified bibliographic reference.</p>
+      <p>Other targeted searches on 24 October covered forced-choice ESP, DMILS, healing intention, mediumship, dreams, remote viewing, presentiment and macro-PK, with the terms 'meta-analysis', 'replication' and 'preregistered'. Sources: JSE, JAEX, IJoDR, PubMed, F1000Research/Europe PMC, Frontiers and authors' repositories. Preprints and the extent of consultation are specified in the reviews.</p>
+      <p>For the three initial reviews: search on 21 October 2026 via PubMed/Europe PMC, F1000Research, PLOS, Frontiers, JAEX, the KPU registry and the LMU report, covering meta-analyses and replications of Ganzfeld, precognition and micro-PK. Their bibliographic review dates are retained.</p>
+      <p>This is a documented selection, not yet an exhaustive systematic review. No new meta-analysis or independent double review has been conducted. 'Not identified' describes the limits of this search and does not mean that a work does not exist. The handbook archives are not distributed here.</p>
+    </details>
+    <details><summary>Preparing the annual assessment</summary>
+      <p>Proposed cycle: monitoring throughout the year, a 31 December cutoff, two reviewers per topic, a dated edition and retention of previous editions. This October draft is not the complete assessment for 2026.</p>
+      <ol><li>Complete the references and check for overlapping bodies of evidence.</li><li>Discuss the assessment of each topic and clarify the questions that future work could resolve.</li><li>Appoint two reviewers, declare connections with the studies and retain reasoned disagreements.</li></ol>
+      <p>An example of a publication with analyses and archives at the laboratory level: the <a href="https://mrzdcmps.github.io/labreport/">LMU micro-PK report</a>.</p>
+    </details>
+  </section>
+  <p class="actions"><a class="action" href="https://github.com/recherche-psi/bulletins-recherche-psi/tree/main/src/data">Source data on GitHub</a></p>
+</div>
+</BaseLayout>
+
+<script>
+  const input = document.querySelector<HTMLInputElement>('#topic-search');
+  const groups = Array.from(document.querySelectorAll<HTMLDetailsElement>('[data-topic-group]'));
+  const rows = Array.from(document.querySelectorAll<HTMLTableRowElement>('[data-topic-row]'));
+  const count = document.querySelector('#topic-count');
+  const normalize = (s: string) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  const index = new Map(rows.map(row => [row, normalize(row.dataset.search ?? '')]));
+  let previous = new Map(groups.map(group => [group, group.open]));
+  let filtering = false;
+  const filter = () => {
+    const words = normalize(input?.value ?? '').split(' ').filter(Boolean);
+    if (words.length && !filtering) previous = new Map(groups.map(group => [group, group.open]));
+    rows.forEach(row => { row.hidden = !words.every(word => index.get(row)?.includes(word)); });
+    groups.forEach(group => {
+      const n = Array.from(group.querySelectorAll<HTMLTableRowElement>('[data-topic-row]')).filter(row => !row.hidden).length;
+      group.hidden = n === 0;
+      const label = group.querySelector('[data-group-count]');
+      if (label) label.textContent = `${n} ${n===1?'review':'reviews'}`;
+      if (words.length) group.open = n > 0;
+      else if (filtering) group.open = previous.get(group) ?? false;
+    });
+    filtering = words.length > 0;
+    const n = rows.filter(row => !row.hidden).length;
+    if (count) count.textContent = `${n} ${n===1?'review':'reviews'}${filtering?' found':''}`;
+    const empty = document.querySelector<HTMLElement>('#no-topics');
+    if (empty) empty.hidden = n !== 0;
+  };
+  if (input) {
+    const toolbar = document.querySelector<HTMLElement>('#directory-tools');
+    if (toolbar) toolbar.hidden = false;
+    input.addEventListener('input', filter);
+    document.querySelector('#expand-topics')?.addEventListener('click', () => groups.forEach(g => { if (!g.hidden) g.open = true; }));
+    document.querySelector('#collapse-topics')?.addEventListener('click', () => groups.forEach(g => { g.open = false; }));
+  }
+</script>

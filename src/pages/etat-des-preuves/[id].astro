@@ -16,7 +16,7 @@ const clinicalOutcomes=('clinicalOutcomes' in t?t.clinicalOutcomes:undefined)??[
 const relatedIds=t.related??[];
 const relatedTopics=data.topics.filter(o=>o.id!==t.id&&(relatedIds.length?relatedIds.includes(o.id):o.group===t.group)).slice(0,6);
 ---
-<BaseLayout title={`${t.title} : état des preuves`} description={`${t.summary} Vérification bibliographique du ${t.reviewed}.`} alternatePath={null}>
+<BaseLayout title={`${t.title} : état des preuves`} description={`${t.summary} Vérification bibliographique du ${t.reviewed}.`} alternatePath={`en/evidence/${t.id}/`}>
 <article class="shell evidence">
   <header class="mast">
     <a class="text-link" href={`${base}etat-des-preuves/`}>← Tous les dossiers</a>

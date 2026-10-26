@@ -1,25 +1,41 @@
 ---
-import data from '../data/evidence-2026.json';
+interface DirectoryTopic {
+  id: string;
+  title: string;
+  subtitle: string;
+  summary: string;
+  direction: string;
+  openQuestion: string;
+  reviewed: string;
+  new: boolean;
+  searchTerms?: string;
+  sources: { label: string }[];
+}
 interface Props {
   id: string;
   title: string;
   description: string;
-  topics: (typeof data.topics)[number][];
+  topics: DirectoryTopic[];
   open?: boolean;
+  lang?: 'fr' | 'en';
 }
-const { id, title, description, topics, open = false } = Astro.props;
+const { id, title, description, topics, open = false, lang = 'fr' } = Astro.props;
+const en = lang === 'en';
 const base = import.meta.env.BASE_URL;
-const searchable = (t: (typeof data.topics)[number]) => [t.title, t.subtitle, t.summary, 'searchTerms' in t ? t.searchTerms : '', ...t.sources.map(s => s.label)].join(' ');
+const root = `${base}${en ? 'en/evidence' : 'etat-des-preuves'}/`;
+const assessment = en ? 'Evidence assessment' : 'Bilan du dossier';
+const question = en ? 'Example of an open question' : 'Exemple de question ouverte';
+const searchable = (t: DirectoryTopic) => [t.title, t.subtitle, t.summary, t.searchTerms ?? '', ...t.sources.map(s => s.label)].join(' ');
 ---
 <details id={id} class="dossier-group directory-disclosure" data-topic-group open={open}>
-  <summary><span class="category-title">{title}</span> <span class="category-count" data-group-count>{topics.length} {topics.length===1?'dossier':'dossiers'}</span><span class="category-description">{description}</span></summary>
+  <summary><span class="category-title">{title}</span> <span class="category-count" data-group-count>{topics.length} {en ? (topics.length===1?'review':'reviews') : (topics.length===1?'dossier':'dossiers')}</span><span class="category-description">{description}</span></summary>
   <div class="table-scroll directory-table"><table class="comparison">
-    <caption class="sr-only">Dossiers : {title}</caption>
-    <thead><tr><th scope="col">Dossier</th><th scope="col">Bilan du dossier</th><th scope="col">Exemple de question ouverte</th></tr></thead>
+    <caption class="sr-only">{en ? 'Evidence reviews' : 'Dossiers'}: {title}</caption>
+    <thead><tr><th scope="col">{en ? 'Topic' : 'Dossier'}</th><th scope="col">{assessment}</th><th scope="col">{question}</th></tr></thead>
     <tbody>{topics.map(t=><tr data-topic-row data-search={searchable(t)}>
-      <th scope="row"><a href={`${base}etat-des-preuves/${t.id}/`}>{t.title}<span aria-hidden="true"> ↗</span></a>{t.new && <small class="new-topic">Ajout du {t.reviewed}</small>}</th>
-      <td data-label="Bilan du dossier">{t.direction}</td>
-      <td data-label="Exemple de question ouverte">{t.openQuestion}</td>
+      <th scope="row"><a href={`${root}${t.id}/`}>{t.title}<span aria-hidden="true"> ↗</span></a>{t.new && <small class="new-topic">{en ? 'Added on' : 'Ajout du'} {t.reviewed}</small>}</th>
+      <td data-label={assessment}>{t.direction}</td>
+      <td data-label={question}>{t.openQuestion}</td>
     </tr>)}</tbody>
   </table></div>
 </details>

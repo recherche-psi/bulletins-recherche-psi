@@ -5,8 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview"
+    "build": "astro check && astro build && npm run check:evidence",
+    "preview": "astro preview",
+    "check:evidence": "node scripts/check-evidence-translations.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",

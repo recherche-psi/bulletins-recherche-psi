@@ -1,8 +1,9 @@
 ---
-interface Props { rows: string[][]; }
-const { rows } = Astro.props;
+interface Props { rows: string[][]; lang?: 'fr' | 'en'; }
+const { rows, lang = 'fr' } = Astro.props;
+const labels = lang === 'en' ? ['Reference / type', 'Scope', 'Finding', 'Implications and limitations'] : ['Référence / type', 'Périmètre', 'Résultat', 'Portée et limite'];
 ---
 <div class="table-scroll"><table class="studies">
-  <thead><tr><th scope="col">Référence / type</th><th scope="col">Périmètre</th><th scope="col">Résultat</th><th scope="col">Portée et limite</th></tr></thead>
-  <tbody>{rows.map(r=><tr><th scope="row"><a href={`#${r[5]}`}>{r[0]}</a><small>{r[1]}</small></th><td data-label="Périmètre">{r[2]}</td><td data-label="Résultat">{r[3]}</td><td data-label="Portée et limite">{r[4]}</td></tr>)}</tbody>
+  <thead><tr>{labels.map(label=><th scope="col">{label}</th>)}</tr></thead>
+  <tbody>{rows.map(r=><tr><th scope="row"><a href={`#${r[5]}`}>{r[0]}</a><small>{r[1]}</small></th><td data-label={labels[1]}>{r[2]}</td><td data-label={labels[2]}>{r[3]}</td><td data-label={labels[3]}>{r[4]}</td></tr>)}</tbody>
 </table></div>

@@ -1,11 +1,11 @@
 ---
-interface Props { chart: {title:string;axis:string;min:number;max:number;nullValue:number;ticks:number[];rows:{label:string;value:number;low:number;high:number;display:string}[];note:string}; id:string; }
-const {chart, id} = Astro.props;
+interface Props { chart: {title:string;axis:string;min:number;max:number;nullValue:number;ticks:number[];rows:{label:string;value:number;low:number;high:number;display:string}[];note:string}; id:string; lang?: 'fr' | 'en'; }
+const {chart, id, lang = 'fr'} = Astro.props;
 const x = (v:number) => `${4+(v-chart.min)/(chart.max-chart.min)*92}%`;
 ---
 <figure class="evidence-chart" aria-labelledby={`${id}-chart-title`}>
   <h2 id={`${id}-chart-title`}>{chart.title}</h2>
-  <p class="chart-axis">{chart.axis} · point = estimation, trait = intervalle</p>
+  <p class="chart-axis">{chart.axis} · {lang === 'en' ? 'point = estimate, line = interval' : 'point = estimation, trait = intervalle'}</p>
   <div class="plot">
     {chart.rows.map(r=><div class="plot-row">
       <div class="row-caption"><span>{r.label}</span><strong>{r.display}</strong></div>
@@ -18,7 +18,7 @@ const x = (v:number) => `${4+(v-chart.min)/(chart.max-chart.min)*92}%`;
         <circle cx={x(r.value)} cy="18" r="5" fill="#152c35"/>
       </svg>
     </div>)}
-    <div class="plot-ticks" aria-hidden="true">{chart.ticks.map(t=><span style={`left:${x(t)}`}>{t.toLocaleString('fr-FR')}</span>)}</div>
+    <div class="plot-ticks" aria-hidden="true">{chart.ticks.map(t=><span style={`left:${x(t)}`}>{t.toLocaleString(lang === 'en' ? 'en-GB' : 'fr-FR')}</span>)}</div>
   </div>
   <figcaption>{chart.note}</figcaption>
 </figure>
