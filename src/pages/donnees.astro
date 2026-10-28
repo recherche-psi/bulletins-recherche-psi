@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '../styles/research-data.css';
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Espace de données" description="Corpus de recherche partagé entre collègues : protocoles, documentation et données sources." noindex={true} alternatePath={null}>
+  <section class="data-hero">
+    <div class="shell">
+      <p class="eyebrow">Ressources · Espace de collaboration</p>
+      <h1>Explorer les données<br /><em>de la recherche.</em></h1>
+      <p class="data-intro">Des protocoles documentés, des fichiers identifiés et un accès direct aux sources pour préparer vos analyses.</p>
+    </div>
+  </section>
+  <div class="shell data-space" id="data-space" data-catalog={`${base}data/research/catalog.enc.json`}>
+    <section class="data-gate" id="data-gate" aria-labelledby="access-title">
+      <div>
+        <p class="eyebrow">Accès par mot de passe</p>
+        <h2 id="access-title">Bienvenue dans l’espace de données</h2>
+        <p>Cet espace rassemble les ressources partagées avec les collègues du projet. Saisissez le mot de passe qui vous a été communiqué.</p>
+        <p class="data-small">Les jeux empiriques proviennent de dépôts publics. L’accès aux fiches est protégé par un mot de passe partagé.</p>
+      </div>
+      <form id="data-unlock">
+        <label for="data-password">Mot de passe de l’espace</label>
+        <div class="password-line"><input id="data-password" type="password" autocomplete="current-password" required /><button id="show-password" type="button" aria-label="Afficher le mot de passe" aria-pressed="false">Afficher</button></div>
+        <button class="data-primary" id="unlock-button" type="submit">Ouvrir l’espace <span aria-hidden="true">→</span></button>
+        <p id="access-message" role="status" aria-live="polite"></p>
+        <noscript>Activez JavaScript pour déchiffrer les fiches dans votre navigateur.</noscript>
+      </form>
+    </section>
+    <section id="data-library" hidden aria-labelledby="library-title">
+      <div class="library-heading"><div><p class="eyebrow">Le catalogue</p><h2 id="library-title" tabindex="-1">Choisir un protocole</h2></div><button type="button" id="data-lock" class="data-secondary">Verrouiller l’espace</button></div>
+      <p class="data-method">La rubrique « relations induites » classe des protocoles consacrés à l’hypothèse psi ; ce classement ne préjuge pas de la présence d’un effet. Les jeux synthétiques servent à tester les méthodes d’analyse.</p>
+      <div class="category-grid" id="category-filters" role="group" aria-label="Catégories de données"></div>
+      <div class="data-toolbar"><div class="data-search"><label for="data-search">Rechercher dans les protocoles et les fichiers</label><input type="search" id="data-search" placeholder="Auteur, EEG, précognition, CSV…" /></div><div><label for="data-status">Disponibilité</label><select id="data-status"><option value="all">Toutes les fiches</option><option value="download">Avec téléchargement direct</option><option value="source">Dépôt source ou documentation</option></select></div><button type="button" id="reset-filters" class="data-secondary">Tout afficher</button></div>
+      <p id="data-count" role="status" aria-live="polite"></p>
+      <div id="protocol-list"></div>
+      <p id="no-results" hidden>Aucun protocole ne correspond à ces filtres. Essayez un autre terme ou affichez toutes les fiches.</p>
+      <aside class="data-notes"><h2>Lire et réutiliser les données</h2><p>Chaque fiche distingue les fichiers sources, les transformations locales et la documentation. Consultez le dépôt d’origine pour la version, la citation et les conditions de réutilisation : l’accès public n’implique pas une licence uniforme. Les téléchargements externes restent soumis à la disponibilité de leur hébergeur.</p><p>La documentation décrit les fichiers inventoriés le <time datetime="2026-10-28">28 octobre 2026</time>. Les différences entre une archive locale et la version actuelle d’un dépôt sont possibles.</p><p class="data-small">Le catalogue est déchiffré uniquement pour cette page. Verrouiller ou recharger la page ferme l’accès ; les fichiers déjà téléchargés restent sur votre appareil.</p></aside>
+    </section>
+  </div>
+  <script src="../scripts/research-data.ts"></script>
+</BaseLayout>
