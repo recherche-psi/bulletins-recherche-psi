@@ -2,7 +2,7 @@ import { decryptEnvelope } from '../lib/research-crypto';
 
 interface DataFile { name: string; role: string; format?: string; size?: string; url?: string; encrypted?: boolean; downloadName?: string }
 interface Source { label: string; url: string }
-interface Protocol { id: string; category: string; title: string; authors: string; intro: string; structure: string; note?: string; files: DataFile[]; sources: Source[] }
+interface Protocol { id: string; category: string; title: string; authors: string; intro: string; structure: string; note?: string; analysis?: string; granularity?: string; verified?: string; license?: string; files: DataFile[]; sources: Source[] }
 interface Category { id: string; title: string; description: string }
 interface Catalog { version: number; categories: Category[]; protocols: Protocol[] }
 const el = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -71,10 +71,12 @@ function card(protocol: Protocol) {
   const details = node('details', '', 'protocol'); details.id = protocol.id;
   const summary = node('summary'), heading = node('div');
   heading.append(node('span', catalog!.categories.find(c => c.id === protocol.category)!.title, 'protocol-tag'),node('h3', protocol.title),node('p',protocol.intro),node('p',protocol.authors,'protocol-meta'));
+  if(protocol.granularity) heading.append(node('p',protocol.granularity,'protocol-meta'));
   const plus = node('span','+','protocol-open'); plus.setAttribute('aria-hidden','true'); summary.append(heading,plus); details.append(summary);
   const body = node('div','','protocol-content');
   body.append(node('h4','Le protocole'),node('p',protocol.intro),node('h4','Comprendre la structure des données'),node('p',protocol.structure,'structure-text'));
   if(protocol.note) body.append(node('p',protocol.note,'protocol-note'));
+  if(protocol.analysis) body.append(node('h4','Pistes de réanalyse'),node('p',protocol.analysis));
   body.append(node('h4','Fichiers et téléchargements'));
   if(protocol.files.length) {
     const wrap=node('div','','file-table-wrap'), table=node('table','','file-table'), caption=node('caption',`Fichiers — ${protocol.title}`); caption.className='sr-only'; table.append(caption);
@@ -86,13 +88,15 @@ function card(protocol: Protocol) {
     });table.append(tbody);wrap.append(table);body.append(wrap);
   } else body.append(node('p','Les fichiers se consultent depuis le dépôt source ci-dessous. Aucun fichier brut local n’a été confirmé.'));
   body.append(node('h4','Sources et citation'));const sources=node('div','','protocol-sources');protocol.sources.forEach(source=>sources.append(link(source.label+' ↗',source.url)));body.append(sources);
+  if(protocol.license) body.append(node('p',protocol.license,'data-small'));
+  if(protocol.verified) body.append(node('p',`Fichiers et documentation vérifiés le ${new Intl.DateTimeFormat('fr-FR',{dateStyle:'long',timeZone:'UTC'}).format(new Date(protocol.verified+'T00:00:00Z'))}.`,'data-small'));
   if(!protocol.sources.length) body.append(node('p','Simulation locale : paramètres et méthode fournis dans l’archive.'));
   const anchor=link('Lien vers cette fiche',`#${protocol.id}`);const anchorLine=node('p');anchorLine.append(anchor);body.append(anchorLine);details.append(body);
   return details;
 }
 function render() {
   if(!catalog)return;const tokens=normalize(search.value).trim().split(/\s+/).filter(Boolean);
-  const matches=catalog.protocols.filter(p=>(selected==='all'||p.category===selected)&&tokens.every(token=>normalize([p.title,p.authors,p.intro,p.structure,...p.files.map(f=>f.name)].join(' ')).includes(token))&&(status.value==='all'||(p.files.some(f=>f.url)?'download':'source')===status.value));
+  const matches=catalog.protocols.filter(p=>(selected==='all'||p.category===selected)&&tokens.every(token=>normalize([p.title,p.authors,p.intro,p.structure,p.analysis||'',p.granularity||'',...p.files.map(f=>f.name)].join(' ')).includes(token))&&(status.value==='all'||(p.files.some(f=>f.url)?'download':'source')===status.value));
   list.replaceChildren(...matches.map(card));el('data-count').textContent=`${matches.length} fiche${matches.length===1?'':'s'} sur ${catalog.protocols.length} · Ouvrez une fiche pour consulter ses fichiers.`;el('no-results').hidden=matches.length>0;
 }
 function openHash(){if(!catalog||!location.hash)return;let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}const target=document.getElementById(id);if(target instanceof HTMLDetailsElement && list.contains(target)){target.open=true;target.scrollIntoView({block:'start'});}}

@@ -8,7 +8,7 @@ GitHub Pages reste un hébergement statique public : les fichiers chiffrés peuv
 
 ## Mettre à jour les fiches
 
-Conserver les sources éditoriales et les archives en clair hors du dépôt. Le catalogue JSON contient `version: 1`, `categories` (`id`, `title`, `description`) et `protocols` (`id`, `category`, `title`, `authors`, `intro`, `structure`, `note`, `sources`, `files`). Les sources ont `label` et `url`. Chaque fichier a `name`, `role`, éventuellement `format`, `size`, `url`, `encrypted` et `downloadName`.
+Conserver les sources éditoriales et les archives en clair hors du dépôt. Le catalogue JSON contient `version: 1`, `categories` (`id`, `title`, `description`) et `protocols` (`id`, `category`, `title`, `authors`, `intro`, `structure`, `note`, `sources`, `files`). Les champs facultatifs `analysis`, `granularity`, `license` et `verified` (date ISO) documentent les pistes de réanalyse, le niveau d'observation, les conditions de réutilisation et la vérification. Les sources ont `label` et `url`. Chaque fichier a `name`, `role`, éventuellement `format`, `size`, `url`, `encrypted` et `downloadName`.
 
 Les téléchargements publics utilisent les URL retournées par les dépôts originaux. Les copies locales sont des ZIP décrits dans un plan privé : liste d’objets avec `input` (chemin local) et `output` (`asset-<empreinte>.enc.json`). Leur URL dans le catalogue est `../data/research/<output>`.
 
@@ -25,3 +25,5 @@ Ne jamais placer le mot de passe dans un script, un fichier `.env` versionné, u
 ## Provenance et granularité
 
 L’édition initiale est fondée sur l’inventaire local et les métadonnées des dépôts vérifiées le 28 octobre 2026. Elle distingue données sources, formats dérivés, transcriptions de tables, code et documentation. Une ressource documentaire n’est pas présentée comme une série brute. Les téléchargements volumineux restent chez leurs hébergeurs. Les conditions de licence restent celles de chaque source, et les copies locales ne reçoivent pas automatiquement la licence des textes du site.
+
+L’enrichissement du 28 octobre 2026 porte le catalogue à 46 fiches (28 stables, 14 psi, 4 synthétiques). Les nouveaux liens renvoient aux fichiers publics d’origine. Les tables représentatives ont été téléchargées et inspectées ; les archives ECG volumineuses et les grands lots d’essais sont explicitement signalés comme inventoriés ou échantillonnés. Les journaux de vérification, la sauvegarde initiale et le script privé `extend_catalog.py` restent hors du dépôt. Appliquer cet enrichissement après une éventuelle régénération de la base initiale afin de ne pas perdre les nouvelles fiches.
