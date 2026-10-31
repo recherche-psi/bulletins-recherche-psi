@@ -1,0 +1,31 @@
+.theses-page .page-head h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+.theses-body { padding-top: 0; overflow-wrap: anywhere; }
+.theses-body #TOC {
+  display: block;
+  margin: 0 0 2.5rem;
+  padding: 1.4rem 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--white);
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: .9rem;
+}
+.theses-body #TOC h2 { margin: 0 0 .8rem; font-size: 1.6rem; }
+.theses-body #TOC ul { margin: 0; padding-left: 1.3rem; }
+.theses-body #TOC li { margin: .4rem 0; }
+.theses-body #TOC a:hover { text-decoration: underline; }
+.theses-body h2 { padding-top: 1.5rem; border-top: 1px solid var(--line); line-height: 1.2; }
+.theses-body h3 { padding-left: .8rem; border-left: 3px solid var(--teal); line-height: 1.25; }
+.theses-body [id], .theses-page h1 { scroll-margin-top: 1rem; }
+.theses-body a:focus-visible, .theses-back a:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+.theses-body table { font-size: .86rem; }
+.theses-back { margin-top: 3rem; font-family: 'DM Sans', system-ui, sans-serif; }
+@media (max-width: 480px) {
+  .theses-body #TOC { padding: 1rem; }
+  .theses-body h2 { font-size: 1.8rem; }
+}
+@media print { .theses-back { display: none; } }
