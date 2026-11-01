@@ -4,8 +4,10 @@ import notices from '../data/bibliography.json';
 import categories from '../data/bibliography-categories.json';
 const base = import.meta.env.BASE_URL;
 const groups = [...new Set(categories.map(c => c.groupe_navigation))];
-const byCategory = new Map(categories.map(c => [c.id, notices.filter(n => n.questions.includes(c.id))]));
-const years = notices.flatMap(n => { const match = n.reference.match(/\((1[6-9]\d{2}|20\d{2})\)/); return match ? [Number(match[1])] : []; });
+const publicationYear = (reference: string) => Number(reference.match(/^[^(]*\((1[6-9]\d{2}|20\d{2})(?=[),;\s])/)?.[1] ?? 0);
+const newestFirst = [...notices].sort((a, b) => publicationYear(b.reference) - publicationYear(a.reference));
+const byCategory = new Map(categories.map(c => [c.id, newestFirst.filter(n => n.questions.includes(c.id))]));
+const years = notices.map(n => publicationYear(n.reference)).filter(year => year > 0);
 const period = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '—';
 const covered = categories.filter(c => byCategory.get(c.id)!.length > 0).length;
 ---
@@ -20,7 +22,7 @@ const covered = categories.filter(c => byCategory.get(c.id)!.length > 0).length;
         <div><dt>Catégories couvertes</dt><dd>{covered}<span> / {categories.length}</span></dd></div>
         <div><dt>Période bibliographique</dt><dd>{period}</dd></div>
       </dl>
-      <p class="bib-note">Répertoire enrichi progressivement. Une référence peut relever de plusieurs questions. La période porte sur les références datées.</p>
+      <p class="bib-note">Répertoire enrichi progressivement. Une référence peut relever de plusieurs questions. Dans chaque rubrique, les références sont classées de la plus récente à la plus ancienne ; les références sans date figurent à la fin. La période porte sur les références datées.</p>
       <div class="bib-search">
         <label for="bib-search">Rechercher un auteur, une méthode ou un sujet</label>
         <div class="bib-search-row"><input id="bib-search" type="search" placeholder="Ex. : Ganzfeld, rêves, réplication…" /><button id="bib-reset" type="button">Tout afficher</button></div>
