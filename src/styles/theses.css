@@ -24,8 +24,12 @@
 .theses-body a:focus-visible, .theses-back a:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 .theses-body table { font-size: .86rem; }
 .theses-back { margin-top: 3rem; font-family: 'DM Sans', system-ui, sans-serif; }
+.theses-body .thesis-title-fr { margin-top: -.3rem; font-size: .94em; }
+.theses-body .theses-return { margin: 1.8rem 0 2rem; font-family: 'DM Sans', system-ui, sans-serif; font-size: .88rem; }
+.theses-body .theses-return a { display: inline-block; padding: .45rem .75rem; border: 1px solid var(--line); border-radius: 4px; text-decoration: none; }
+.theses-body .theses-return a:hover { text-decoration: underline; }
 @media (max-width: 480px) {
   .theses-body #TOC { padding: 1rem; }
   .theses-body h2 { font-size: 1.8rem; }
 }
-@media print { .theses-back { display: none; } }
+@media print { .theses-back, .theses-return { display: none; } }
