@@ -2,6 +2,15 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import directory from '../data/theses.html?raw';
 import '../styles/theses.css';
+const statsPattern = /<strong>(\d+) notices — (\d+) pays d’obtention du doctorat — (\d+) catégories\s+thématiques\.<\/strong>\s*/;
+const stats = directory.match(statsPattern);
+if (!stats) throw new Error('Indicateurs du répertoire des thèses introuvables');
+const directoryBody = directory.replace(statsPattern, '');
+const indicators = [
+  { value: stats[1], label: 'Notices de thèses' },
+  { value: stats[2], label: 'Pays représentés' },
+  { value: stats[3], label: 'Catégories thématiques' },
+];
 ---
 
 <BaseLayout
@@ -15,7 +24,15 @@ import '../styles/theses.css';
       <h1 id="thèses-sur-le-psi-et-les-expériences-exceptionnelles">Thèses sur le psi et les expériences exceptionnelles</h1>
       <p>Un répertoire thématique des doctorats de recherche et des thèses médicales en France et à l’étranger.</p>
     </header>
-    <div class="prose theses-body" set:html={directory} />
+    <dl class="theses-kpis" aria-label="Le répertoire en chiffres">
+      {indicators.map(({ value, label }) => (
+        <div class="theses-kpi">
+          <dt>{label}</dt>
+          <dd>{value}</dd>
+        </div>
+      ))}
+    </dl>
+    <div class="prose theses-body" set:html={directoryBody} />
     <p class="theses-back"><a href="#thèses-sur-le-psi-et-les-expériences-exceptionnelles">Revenir en haut de la page ↑</a></p>
   </article>
 </BaseLayout>

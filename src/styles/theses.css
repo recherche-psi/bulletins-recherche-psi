@@ -4,6 +4,22 @@
   text-wrap: balance;
 }
 .theses-body { padding-top: 0; overflow-wrap: anywhere; }
+.theses-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 auto 2.5rem;
+  padding: 1.6rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  text-align: center;
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+.theses-kpi { display: flex; flex-direction: column; align-items: center; gap: .5rem; }
+.theses-kpi + .theses-kpi { border-left: 1px solid var(--line); }
+.theses-kpi dt { font-size: .85rem; line-height: 1.4; }
+.theses-kpi dd { order: -1; margin: 0; color: var(--teal); font-size: clamp(2.3rem, 6vw, 3.5rem); font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
 .theses-body #TOC {
   display: block;
   margin: 0 0 2.5rem;
@@ -29,6 +45,8 @@
 .theses-body .theses-return a { display: inline-block; padding: .45rem .75rem; border: 1px solid var(--line); border-radius: 4px; text-decoration: none; }
 .theses-body .theses-return a:hover { text-decoration: underline; }
 @media (max-width: 480px) {
+  .theses-kpis { gap: .5rem; padding: 1.3rem .5rem; }
+  .theses-kpi dt { font-size: .72rem; }
   .theses-body #TOC { padding: 1rem; }
   .theses-body h2 { font-size: 1.8rem; }
 }
