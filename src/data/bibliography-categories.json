@@ -1,0 +1,303 @@
+[
+  {
+    "id": "ganzfeld",
+    "titre": "Ganzfeld",
+    "groupe": "Perception",
+    "question": "Le choix d'une cible dépasse-t-il le hasard lorsque l'information sensorielle ordinaire est contrôlée ? Le corpus réunit plusieurs variantes : il ne teste pas exclusivement la télépathie.",
+    "groupe_navigation": "Perception"
+  },
+  {
+    "id": "choix-force",
+    "titre": "Perception à choix forcé",
+    "groupe": "Perception",
+    "question": "Télépathie, clairvoyance et précognition testées par un choix entre plusieurs réponses possibles. Le corpus inclut des mesures de réussite et de temps de réaction. Il recoupe donc en partie la fiche Précognition ; leurs effectifs ne s'additionnent pas.",
+    "groupe_navigation": "Perception"
+  },
+  {
+    "id": "telepathie-reve",
+    "titre": "Télépathie dans le rêve",
+    "groupe": "Perception",
+    "question": "Les rêves correspondent-ils à une cible plus souvent que prévu par le hasard ? Les synthèses réunissent télépathie, clairvoyance et précognition : leur résultat global ne démontre pas spécifiquement la télépathie.",
+    "groupe_navigation": "Perception"
+  },
+  {
+    "id": "vision-distance",
+    "titre": "Vision à distance",
+    "groupe": "Perception",
+    "question": "Les descriptions permettent-elles d'identifier des cibles cachées ou futures ? Les protocoles de clairvoyance et de précognition doivent être distingués ; les résultats ne valident pas à eux seuls des applications pratiques. La lecture d'objets et les applications archéologiques sont présentées dans un volet distinct.",
+    "groupe_navigation": "Perception"
+  },
+  {
+    "id": "mediumnite-mentale",
+    "titre": "Médiumnité mentale",
+    "groupe": "Perception",
+    "question": "Cette fiche distingue les tests de précision des lectures, les enquêtes sur des lettres médiumniques et les recherches sur la transe, le vécu et le deuil. Les sitters sont les proches d'un défunt qui évaluent les informations produites ; ils peuvent être absents lors de la séance. La médiumnité physique et l'ensemble des arguments sur la survie restent hors de ce périmètre. La sélection est documentée, mais non exhaustive.",
+    "groupe_navigation": "Perception"
+  },
+  {
+    "id": "precognition",
+    "titre": "Précognition comportementale",
+    "groupe": "Anticipation",
+    "question": "Une réponse comportementale anticipe-t-elle un stimulus choisi ultérieurement au hasard ? Les réplications détaillées ici concernent surtout l'expérience 1 de Bem, pas toutes les formes de précognition.",
+    "groupe_navigation": "Anticipation"
+  },
+  {
+    "id": "pressentiment",
+    "titre": "Pressentiment physiologique",
+    "groupe": "Anticipation",
+    "question": "L'activité physiologique précédant un événement aléatoire permet-elle d'anticiper sa catégorie ? Ce dossier porte sur les mesures corporelles, distinctes des choix conscients étudiés dans la fiche précognition.",
+    "groupe_navigation": "Anticipation"
+  },
+  {
+    "id": "micro-pk",
+    "titre": "Micro-psychokinèse",
+    "groupe": "Interaction",
+    "question": "Les résultats d'un générateur aléatoire varient-ils avec une intention ou une condition psychologique ? Effet moyen directionnel, dynamique temporelle et rappel subjectif constituent des hypothèses distinctes.",
+    "groupe_navigation": "Interaction"
+  },
+  {
+    "id": "macro-pk",
+    "titre": "Macro-PK et poltergeists",
+    "groupe": "Interaction",
+    "question": "Une intention ou un contexte humain provoque-t-il un mouvement physique inexpliqué ? La fiche distingue les cas spontanés de poltergeist et les essais volontaires sur objets ; elle ne couvre pas toute la médiumnité physique.",
+    "groupe_navigation": "Interaction"
+  },
+  {
+    "id": "influence-distance",
+    "titre": "Influence mentale à distance",
+    "groupe": "Interaction",
+    "question": "DMILS : interaction mentale directe avec un système vivant. Cette fiche porte sur la physiologie et l'attention de personnes isolées. Le regard à distance est une variante distincte ; une variation cutanée ne prouve pas une perception consciente du regard. L'intention de soin dispose d'une fiche séparée.",
+    "groupe_navigation": "Interaction"
+  },
+  {
+    "id": "intention-soin",
+    "titre": "Intention de soin et systèmes biologiques",
+    "groupe": "Interaction",
+    "question": "Intentions de soin sans contact sur cellules, tissus, plantes, animaux ou personnes. Les systèmes biologiques de laboratoire et les essais chez l'humain sont analysés séparément. Un effet sur un organisme modèle ne démontre pas une efficacité thérapeutique ; un bénéfice clinique éventuel n'identifie pas à lui seul un mécanisme psi.",
+    "groupe_navigation": "Interaction"
+  },
+  {
+    "id": "neurosciences-psi",
+    "titre": "Neurosciences et psi",
+    "groupe": "Lecture spécifique",
+    "question": "Cette fiche reprend les approches du chapitre d'Acunzo : rythmes EEG associés aux performances, réponses aux cibles et aux leurres, IRM fonctionnelle, lésions frontales et stimulation magnétique. Les corrélations entre personnes isolées, le pressentiment, la médiumnité et les expériences hors du corps ont aussi leurs fiches. Les corpus se recouvrent : leurs études ne constituent pas autant de confirmations indépendantes.",
+    "groupe_navigation": "Terrain, vécu et mesures instrumentales"
+  },
+  {
+    "id": "correlations-cerebrales",
+    "titre": "Corrélations cérébrales entre personnes isolées",
+    "groupe": "Lecture spécifique",
+    "question": "Cette fiche porte sur les réponses EEG associées à la stimulation d'une autre personne isolée sensoriellement. Elle distingue ces travaux de l'hyperscanning pendant une interaction ordinaire et des études de perception extrasensorielle avec réponse consciente.",
+    "groupe_navigation": "Terrain, vécu et mesures instrumentales"
+  },
+  {
+    "id": "experiences-hors-corps",
+    "titre": "Expériences hors du corps",
+    "groupe": "Lecture spécifique",
+    "question": "L'expérience hors du corps (EHC, ou OBE en anglais) désigne le sentiment de se situer hors de son corps. Elle peut survenir en dehors d'une expérience de mort imminente, notamment pendant le sommeil ou lors de tentatives volontaires. Cette fiche distingue phénoménologie, induction, enregistrement physiologique et vérification de perceptions. Les perceptions pendant une réanimation sont traitées dans le dossier EMI.",
+    "groupe_navigation": "Terrain, vécu et mesures instrumentales"
+  },
+  {
+    "id": "perceptions-emi",
+    "titre": "Perceptions vérifiables pendant les EMI",
+    "groupe": "Lecture spécifique",
+    "question": "La fiche porte sur les informations rapportées au cours d'expériences de mort imminente (EMI), surtout autour d'un arrêt cardiaque. Un souvenir de réanimation n'est pas nécessairement une EMI ; une EMI n'inclut pas nécessairement une perception extérieure vérifiable.",
+    "groupe_navigation": "Survie, deuil et médiumnité physique"
+  },
+  {
+    "id": "vies-anterieures",
+    "titre": "Souvenirs allégués de vies antérieures",
+    "groupe": "Lecture spécifique",
+    "question": "Les souvenirs sont dits allégués pour décrire ce que rapportent les personnes, sans préjuger de leur origine. La fiche distingue vérification de correspondances, suivi psychologique et hypothèse de réincarnation ; elle ne traite pas les régressions sous hypnose comme un corpus équivalent.",
+    "groupe_navigation": "Survie, deuil et médiumnité physique"
+  },
+  {
+    "id": "gcp",
+    "titre": "Global Consciousness Project (GCP)",
+    "groupe": "Lecture spécifique",
+    "question": "Deux programmes sont distingués : l'expérience formelle historique de 1998–2015, suivie de réanalyses, et le GCP 2.0, déjà actif lors de sa présentation scientifique en 2023. La clôture des 500 événements en 2015 ne marque pas la fin des recherches GCP. Les essais de micro-PK avec intention explicite restent traités dans leur propre fiche.",
+    "groupe_navigation": "Terrain, vécu et mesures instrumentales"
+  },
+  {
+    "id": "retro-psychokinese",
+    "titre": "Rétro-psychokinèse",
+    "groupe": "Interaction",
+    "question": "Une intention dirigée vers des cibles déjà produites, mais encore inconnues, est-elle associée à leur distribution ?",
+    "groupe_navigation": "Interaction"
+  },
+  {
+    "id": "interferometrie-double-fente",
+    "titre": "Interférométrie et double fente",
+    "groupe": "Interaction",
+    "question": "L'attention dirigée vers un dispositif optique est-elle associée à une variation mesurable, au-delà des fluctuations de l'appareil et des choix d'analyse ?",
+    "groupe_navigation": "Interaction"
+  },
+  {
+    "id": "detection-regard",
+    "titre": "Détection consciente du regard",
+    "groupe": "Perception",
+    "question": "Peut-on identifier les périodes de regard sans utiliser d'indices sensoriels ni apprendre les séquences d'essais ?",
+    "groupe_navigation": "Perception"
+  },
+  {
+    "id": "fieldreg",
+    "titre": "FieldREG : générateurs de terrain",
+    "groupe": "Lecture spécifique",
+    "question": "Un générateur local pendant un événement : quelles associations avec le contexte collectif ?",
+    "groupe_navigation": "Terrain, vécu et mesures instrumentales"
+  },
+  {
+    "id": "psi-animal",
+    "titre": "Psi animal",
+    "groupe": "Perception",
+    "question": "Comment tester une information ou une anticipation inhabituelle chez un animal ? Le dossier comprend également les protocoles historiques automatisés chez les rongeurs : Duval et Montredon ont étudié en 1968 l'évitement d'une stimulation dans une cage à deux compartiments. Cette référence est signalée comme repère historique, sans résultat chiffré repris ici.",
+    "groupe_navigation": "Perception"
+  },
+  {
+    "id": "fin-de-vie",
+    "titre": "Expériences de fin de vie et lucidité",
+    "groupe": "Lecture spécifique",
+    "question": "Qu'observe-t-on près de la mort, et quelles informations peuvent être vérifiées indépendamment ?",
+    "groupe_navigation": "Survie, deuil et médiumnité physique"
+  },
+  {
+    "id": "xenoglossie",
+    "titre": "Xénoglossie et compétences inhabituelles",
+    "groupe": "Lecture spécifique",
+    "question": "Quelle compétence est réellement démontrée, et quelles possibilités d'apprentissage ont été examinées ?",
+    "groupe_navigation": "Survie, deuil et médiumnité physique"
+  },
+  {
+    "id": "conditions-moderateurs",
+    "titre": "Conditions d'obtention et modérateurs",
+    "groupe": "Transversal",
+    "question": "Quelles conditions et quels profils sont associés aux performances, et lesquels permettent de les prévoir ?",
+    "groupe_navigation": "Approches transversales, méthodes et théories"
+  },
+  {
+    "id": "clinique-experiences-exceptionnelles",
+    "titre": "Clinique des expériences exceptionnelles",
+    "groupe": "Clinique",
+    "question": "Quels accompagnements aident les personnes à vivre avec leurs expériences exceptionnelles ? La fiche porte sur les bénéfices cliniques, leur durée et les effets indésirables. Elle distingue les évaluations directes, les travaux qualitatifs et les recherches voisines sur les perceptions inhabituelles ou le deuil. Une expérience exceptionnelle ne suffit pas à définir un trouble ; l'évaluation porte sur les besoins de la personne. L'évolution clinique ne tranche pas l'origine de l'expérience.",
+    "groupe_navigation": "Accompagnements cliniques"
+  },
+  {
+    "id": "contacts-defunts",
+    "titre": "Contacts spontanés avec les défunts (ADC)",
+    "groupe": "Lecture spécifique",
+    "question": "Quelles formes prennent ces expériences spontanées, quelles conséquences ont-elles et quels éléments peuvent être vérifiés indépendamment ? Les contacts induits en thérapie relèvent du dossier clinique.",
+    "groupe_navigation": "Survie, deuil et médiumnité physique"
+  },
+  {
+    "id": "apparitions-hantises",
+    "titre": "Apparitions et lieux réputés hantés",
+    "groupe": "Lecture spécifique",
+    "question": "Pourquoi certaines expériences se concentrent-elles dans certains lieux ? Cette sélection porte surtout sur les hantises localisées ; les mouvements d'objets et poltergeists ont leur propre dossier.",
+    "groupe_navigation": "Terrain, vécu et mesures instrumentales"
+  },
+  {
+    "id": "mediumnite-physique",
+    "titre": "Médiumnité physique",
+    "groupe": "Lecture spécifique",
+    "question": "Quelles manifestations de séance sont documentées, dans quelles conditions de contrôle, et que renseignent les enquêtes auprès des participants ? Les lectures d'informations relèvent de la médiumnité mentale ; les poltergeists sont traités en macro-PK.",
+    "groupe_navigation": "Survie, deuil et médiumnité physique"
+  },
+  {
+    "id": "radiesthesie",
+    "titre": "Radiesthésie : terrain et carte",
+    "groupe": "Perception",
+    "question": "Cette fiche distingue la radiesthésie sur le terrain, les tests de localisation en aveugle et la radiesthésie sur carte. Elle examine l'exactitude des informations obtenues ; les usages diagnostiques et les affirmations sanitaires ne sont pas évalués ici.",
+    "groupe_navigation": "Perception"
+  },
+  {
+    "id": "transcommunication-instrumentale",
+    "titre": "Transcommunication instrumentale et voix électroniques",
+    "groupe": "Lecture spécifique",
+    "question": "La transcommunication instrumentale (TCI, ou ITC) inclut ici les tentatives provoquées avec enregistrements, générateurs de texte et applications. Les voix électroniques (EVP) en constituent le volet sonore. Les contacts téléphoniques spontanés attribués à un défunt relèvent d'un corpus documentaire distinct.",
+    "groupe_navigation": "Terrain, vécu et mesures instrumentales"
+  },
+  {
+    "id": "synchronicites",
+    "titre": "Synchronicités et coïncidences significatives",
+    "groupe": "Lecture spécifique",
+    "question": "Cette fiche porte sur l'étude empirique des synchronicités : questionnaires, suivis quotidiens et enquêtes en contexte thérapeutique. Elle distingue le vécu d'une coïncidence, sa valeur personnelle et la possibilité d'un lien causal ou acausal entre les événements.",
+    "groupe_navigation": "Terrain, vécu et mesures instrumentales"
+  },
+  {
+    "id": "telepathie-telecommunications",
+    "titre": "Télépathie et télécommunications",
+    "groupe": "Perception",
+    "question": "Peut-on identifier l'appelant choisi au hasard, sans indice conventionnel, et quelles conditions modifient cette performance ?",
+    "groupe_navigation": "Perception"
+  },
+  {
+    "id": "vision-distance-associative",
+    "titre": "Vision à distance associative (ARV)",
+    "groupe": "Anticipation",
+    "question": "Une image associée à une issue future peut-elle être décrite et reconnue avant que l'événement soit connu ?",
+    "groupe_navigation": "Anticipation"
+  },
+  {
+    "id": "effets-experimentateur",
+    "titre": "Effets expérimentateur",
+    "groupe": "Transversal",
+    "question": "Quels facteurs liés à l'expérimentateur modifient une performance, et comment distinguer relation, biais de procédure et hypothèse psi ?",
+    "groupe_navigation": "Approches transversales, méthodes et théories"
+  },
+  {
+    "id": "emissions-photoniques",
+    "titre": "Émissions photoniques et intention",
+    "groupe": "Interaction",
+    "question": "L'intention s'accompagne-t-elle de variations optiques dépassant les effets physiologiques et instrumentaux attendus ?",
+    "groupe_navigation": "Interaction"
+  },
+  {
+    "id": "marques-naissance",
+    "titre": "Marques de naissance et anomalies physiques",
+    "groupe": "Lecture spécifique",
+    "question": "Quelles correspondances corporelles sont documentées avant les rapprochements entre familles, et comment les comparer à des ressemblances attendues ?",
+    "groupe_navigation": "Survie, deuil et médiumnité physique"
+  },
+  {
+    "id": "frequence-profils-experiences",
+    "titre": "Fréquence et profils des expériences exceptionnelles",
+    "groupe": "Transversal",
+    "question": "Qui rapporte quelles expériences, à quelle fréquence, avec quel retentissement ? Comment les mesurer sans confondre fréquence du vécu, croyance et exactitude d'une information ?",
+    "groupe_navigation": "Approches transversales, méthodes et théories"
+  },
+  {
+    "id": "paralysie-sommeil-presences",
+    "titre": "Paralysie du sommeil et présences ressenties",
+    "groupe": "Lecture spécifique",
+    "question": "Comment les épisodes sont-ils vécus et interprétés ? Quels facteurs sont associés à la peur, à la répétition et à une éventuelle demande d'aide ?",
+    "groupe_navigation": "Terrain, vécu et mesures instrumentales"
+  },
+  {
+    "id": "imagerie-guidee-psi",
+    "titre": "Imagerie guidée et exploration mentale",
+    "groupe": "Perception",
+    "question": "Une induction d'imagerie guidée améliore-t-elle l'identification d'une cible, et quels changements subjectifs sont associés à la performance ?",
+    "groupe_navigation": "Perception"
+  },
+  {
+    "id": "psychedeliques-psi",
+    "titre": "Psychédéliques et expériences psi",
+    "groupe": "Transversal",
+    "question": "Quelles expériences sont associées à ces états et que montrent les protocoles évaluant effectivement l'acquisition d'une information ?",
+    "groupe_navigation": "Approches transversales, méthodes et théories"
+  },
+  {
+    "id": "tests-prospectifs-survie",
+    "titre": "Tests prospectifs de survie",
+    "groupe": "Lecture spécifique",
+    "question": "Une information préparée avant le décès peut-elle être transmise ensuite dans des conditions excluant les voies ordinaires, et quelle interprétation autoriserait un résultat positif ?",
+    "groupe_navigation": "Survie, deuil et médiumnité physique"
+  },
+  {
+    "id": "parapsychologie-theories-perception",
+    "titre": "Parapsychologie et théories de la perception",
+    "groupe": "Transversal",
+    "question": "En quoi les recherches psychiques et parapsychologiques ont-elles aidé à comprendre comment une impression devient perception, jugement et conviction ? Cette fiche distingue une contribution historique attestée, un résultat sur la perception, un emprunt à un modèle existant et une hypothèse nouvelle. Elle inclut des travaux voisins en neurosciences en précisant leur provenance. Les performances psi du Ganzfeld et du RV sont évaluées dans leurs fiches dédiées.",
+    "groupe_navigation": "Approches transversales, méthodes et théories"
+  }
+]
