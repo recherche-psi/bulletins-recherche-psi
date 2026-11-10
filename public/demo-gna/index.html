@@ -65,7 +65,7 @@ a{color:inherit}.eyebrow{font-size:.69rem;font-weight:800;letter-spacing:.17em;t
 const $=id=>document.getElementById(id);
 const digest="e920e8a0d767ef731004b4216f86ee1373d7c0dddb217e39229bc8b349d98dfc";
 const names={A:"Sans vu",B:"Avec vu",C:"Compensation intentionnelle"};
-const choices={A:["Concentrez-vous sur chaque geste.","Le numéro est enregistré sans être affiché. Il n'y a aucune consigne de mémorisation."],B:["Observez les nombres, un tirage après l'autre.","Chaque valeur apparaît à l'écran. Observez-la simplement, sans chercher à modifier la fréquence d'un numéro."],C:["Observez les résultats et gardez votre intention à l'esprit.","À la fin de chaque série, indiquez la face qui vous semble dominante. Essayez qu'elle apparaisse moins souvent dans la série suivante."]};
+const choices={A:["Concentrez-vous sur chaque geste.","Le numéro est enregistré sans être affiché. Aucune mémorisation ni compensation n'est demandée."],B:["Observez et estimez les fréquences.","Chaque valeur est visible. À la fin de chaque série sauf la dernière, indiquez le numéro qui semble dominant, sans intention de compensation."],C:["Observez et essayez de compenser.","Les valeurs sont visibles. À la fin de chaque série sauf la dernière, indiquez le numéro qui semble dominant, puis cherchez à réduire sa fréquence dans la suivante."]};
 let state=null, rolling=false, selected=null;
 function randomSix(){const a=new Uint32Array(1);do{crypto.getRandomValues(a)}while(a[0]>=4294967292);return a[0]%6+1}
 function stamp(){return new Date().toISOString()}
@@ -73,7 +73,7 @@ async function hash(s){const raw=await crypto.subtle.digest("SHA-256",new TextEn
 function open(){ $("gate").hidden=true;$("workspace").hidden=false;$("introduction").hidden=false;$("password").value=""}
 $("login-form").addEventListener("submit",async e=>{e.preventDefault();try{if(await hash($("password").value)===digest){sessionStorage.setItem("gna-demo-open","yes");$("login-error").textContent="";open()}else $("login-error").textContent="Mot de passe incorrect."}catch(err){$("login-error").textContent="Le navigateur ne permet pas cette vérification."}});
 if(sessionStorage.getItem("gna-demo-open")==="yes")open();
-function start(mode){const includeA=$("include-a").checked;const order=includeA?["A","B","C"]:["B","C"];for(let i=order.length-1;i>0;i--){const r=new Uint32Array(1);crypto.getRandomValues(r);const j=r[0]%(i+1);[order[i],order[j]]=[order[j],order[i]]}state={mode,includeA,perSeries:mode==="complet"?30:6,perBlock:mode==="complet"?7:3,order,blockIndex:0,seriesIndex:0,draws:[],target:null,data:{A:[],B:[],C:[]},started:stamp(),ended:null,notes:[]};$("progress-rail").style.gridTemplateColumns="repeat("+order.length+",1fr)";$("step2").hidden=order.length===2;$("introduction").hidden=true;$("results").hidden=true;$("lab").hidden=false;showStage()}
+function start(mode){const includeA=$("include-a").checked;const order=includeA?["A","B","C"]:["B","C"];for(let i=order.length-1;i>0;i--){const j=randomSix()%(i+1);[order[i],order[j]]=[order[j],order[i]]}state={mode,includeA,perSeries:mode==="complet"?30:6,perBlock:mode==="complet"?7:3,order,blockIndex:0,seriesIndex:0,draws:[],target:null,data:{A:[],B:[],C:[]},started:stamp(),ended:null,notes:[]};$("progress-rail").style.gridTemplateColumns="repeat("+order.length+",1fr)";$("step2").hidden=order.length===2;$("introduction").hidden=true;$("results").hidden=true;$("lab").hidden=false;showStage()}
 document.querySelectorAll("[data-mode]").forEach(b=>b.addEventListener("click",()=>start(b.dataset.mode)));
 function current(){return state.order[state.blockIndex]}
 function showStage(){
@@ -83,7 +83,7 @@ function showStage(){
  $("instruction-title").textContent=choices[c][0];$("instruction-copy").textContent=choices[c][1]+(c==="C"&&state.target!==null?" Vous souhaitez que le numéro "+state.target+" apparaisse moins souvent.":c==="B"&&state.target!==null?" Vous avez indiqué que le numéro "+state.target+" semblait dominant ; continuez sans chercher à le compenser.":"");
  for(let i=0;i<state.order.length;i++){$("step"+i).className=i<state.blockIndex?"done":i===state.blockIndex?"active":""}
  $("draw-status").textContent=n+" / "+state.perSeries+" tirages";$("meter").style.width=(100*n/state.perSeries)+"%";
- $("die").dataset.face=c==="A"?"hidden":n?String(state.draws[n-1]):"1";$("die").classList.remove("rolling");
+ $("die").dataset.face=c==="A"?"hidden":n?String(state.draws[n-1]):"hidden";$("die").classList.remove("rolling");
  $("response").hidden=true;$("next-wrap").hidden=true;$("roll").disabled=false;$("auto").disabled=false;rolling=false;selected=null;
  renderHistory();
 }
@@ -127,8 +127,8 @@ function nextPrompt(){
  $("next-wrap").hidden=false;
  let last=state.seriesIndex===state.perBlock-1;
  $("next-title").textContent=last?"Condition terminée":"Série terminée";
- $("next-description").textContent=last?(state.blockIndex===2?"Les trois conditions ont été parcourues.":"Le bloc de cette condition est complet. Vous allez découvrir une autre condition."):"Le résultat a été consigné. Poursuivez avec la série suivante.";
- $("next").textContent=last?(state.blockIndex===2?"Afficher la synthèse":"Changer de condition"):"Continuer";
+ $("next-description").textContent=last?(state.blockIndex===state.order.length-1?"Vous avez parcouru toutes les conditions choisies.":"Le bloc de cette condition est complet. Vous allez découvrir une autre condition."):"Le résultat a été consigné. Poursuivez avec la série suivante.";
+ $("next").textContent=last?(state.blockIndex===state.order.length-1?"Afficher la synthèse":"Changer de condition"):"Continuer";
 }
 $("next").addEventListener("click",()=>{
  if(state.seriesIndex<state.perBlock-1){state.seriesIndex++;state.draws=[];showStage()}
@@ -152,12 +152,13 @@ function finish(){
   cards.push('<div class="result-card"><h3>'+c+' · '+names[c]+'</h3><p>'+freq.reduce((a,b)=>a+b,0)+' tirages, six numéros</p><div class="barrows">'+bars+'</div><p>χ² : <strong>'+format(xx)+'</strong>'+(state.mode==="complet"?' · z : <strong>'+format(z)+'</strong>':'')+'</p></div>');
  });
  $("result-grid").innerHTML=cards.join("");
- const targeted=state.data.C.filter(s=>s.target!==null), k=targeted.reduce((sum,s)=>sum+s.values.filter(v=>v===s.target).length,0), N=targeted.reduce((sum,s)=>sum+s.values.length,0);
- $("stat-summary").innerHTML='<strong>Comment lire ces données ?</strong><p>Le numéro déclaré en C est celui désigné <em>avant</em> la série suivante. Dans cette démonstration, il est apparu '+k+' fois sur '+N+' tirages ciblés. La référence descriptive à équiprobabilité serait '+format(N/6)+' occurrences.</p>'+ (state.mode==="complet"?'<p>Contraste illustratif de scores z : z(C) − z(B) = <strong>'+format(zs.C-zs.B)+'</strong>. Dans une vraie étude, on comparerait les différences z au niveau des blocs randomisés et l\'on construirait un nul empirique par permutation. <strong>Un seul bloc ne fournit aucun test de confirmation.</strong></p>':'<p>Le parcours rapide (6 × 3) sert uniquement à expliquer l\'interface. Les χ² ne doivent pas être interprétés comme des tests valides avec ces effectifs.</p>')+'<p>Les fréquences finales et les regroupements servent à comprendre le protocole. Cette session ne démontre aucun effet.</p>';
+ const targeted=state.data.C.filter(s=>s.previousEstimate!==null), k=targeted.reduce((sum,s)=>sum+s.values.filter(v=>v===s.previousEstimate).length,0), N=targeted.reduce((sum,s)=>sum+s.values.length,0);
+ const referenceB=state.data.B.filter(s=>s.previousEstimate!==null), bCount=referenceB.reduce((sum,s)=>sum+s.values.filter(v=>v===s.previousEstimate).length,0), bN=referenceB.reduce((sum,s)=>sum+s.values.length,0);
+ $("stat-summary").innerHTML='<strong>Comment lire ces données ?</strong><p>Le numéro déclaré en C est celui désigné <em>avant</em> la série suivante. Dans C, il est apparu '+k+' fois sur '+N+' tirages concernés ; dans B, sans compensation, le numéro précédemment déclaré est apparu '+bCount+' fois sur '+bN+' tirages. La référence théorique à équiprobabilité serait '+format(N/6)+' occurrences dans chaque condition.</p>'+ (state.mode==="complet"?'<p>Contraste illustratif de scores z : z(C) − z(B) = <strong>'+format(zs.C-zs.B)+'</strong>. Dans l\'étude définitive, les différences de z entre blocs B et C appariés sont évaluées avec un nul empirique par permutation. <strong>Un seul bloc ne fournit aucun test de confirmation.</strong></p>':'<p>Le parcours rapide (6 × 3) sert uniquement à expliquer l\'interface. Les χ² ne doivent pas être interprétés comme des tests valides avec ces effectifs.</p>')+'<p>Les fréquences finales et les regroupements servent à comprendre le protocole. Cette session ne démontre aucun effet.</p>';
  window.scrollTo({top:0,behavior:"smooth"})
 }
 $("export").addEventListener("click",()=>{
- const exportable={prototype:"GNA-7 v0.1",generator:"crypto.getRandomValues + unbiased mapping to 1..6",note:"Données synthétiques locales, non expérimentales",...state};
+ const exportable={prototype:"GNA-7 v0.2",generator:"crypto.getRandomValues + unbiased mapping to 1..6",note:"Données synthétiques locales, non expérimentales",...state};
  const blob=new Blob([JSON.stringify(exportable,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="gna7-demo-"+Date.now()+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),500);
 });
 function restart(){state=null;$("lab").hidden=true;$("results").hidden=true;$("introduction").hidden=false;window.scrollTo({top:0,behavior:"smooth"})}
