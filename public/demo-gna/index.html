@@ -94,20 +94,23 @@ const $=id=>document.getElementById(id);
 const digest="e920e8a0d767ef731004b4216f86ee1373d7c0dddb217e39229bc8b349d98dfc";
 const names={A:"Sans vu",B:"Avec vu",C:"Compensation intentionnelle"};
 const choices={A:["Concentrez-vous sur chaque geste.","Le numéro est enregistré sans être affiché. Aucune mémorisation ni compensation n'est demandée."],B:["Observez et estimez les fréquences.","Chaque valeur est visible. À la fin de chaque série sauf la dernière, indiquez le numéro qui semble dominant, sans intention de compensation."],C:["Observez et essayez de compenser.","Les valeurs sont visibles. À la fin de chaque série sauf la dernière, indiquez le numéro qui semble dominant, puis cherchez à réduire sa fréquence dans la suivante."]};
-let state=null, rolling=false, selected=null;
+let state=null, rolling=false, selected=null,holdTimer=null,holdActive=false;
 function randomSix(){const a=new Uint32Array(1);do{crypto.getRandomValues(a)}while(a[0]>=4294967292);return a[0]%6+1}
 function stamp(){return new Date().toISOString()}
 async function hash(s){const raw=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s));return Array.from(new Uint8Array(raw)).map(v=>v.toString(16).padStart(2,"0")).join("")}
 function open(){ $("gate").hidden=true;$("workspace").hidden=false;$("introduction").hidden=false;$("password").value=""}
 $("login-form").addEventListener("submit",async e=>{e.preventDefault();try{if(await hash($("password").value)===digest){sessionStorage.setItem("gna-demo-open","yes");$("login-error").textContent="";open()}else $("login-error").textContent="Mot de passe incorrect."}catch(err){$("login-error").textContent="Le navigateur ne permet pas cette vérification."}});
 if(sessionStorage.getItem("gna-demo-open")==="yes")open();
-function start(mode){const includeA=$("include-a").checked;const order=includeA?["A","B","C"]:["B","C"];for(let i=order.length-1;i>0;i--){const j=randomSix()%(i+1);[order[i],order[j]]=[order[j],order[i]]}state={mode,includeA,perSeries:mode==="complet"?30:6,perBlock:mode==="complet"?7:3,order,blockIndex:0,seriesIndex:0,draws:[],target:null,data:{A:[],B:[],C:[]},started:stamp(),ended:null,notes:[]};$("progress-rail").style.gridTemplateColumns="repeat("+order.length+",1fr)";$("step2").hidden=order.length===2;$("introduction").hidden=true;$("results").hidden=true;$("lab").hidden=false;showStage()}
+function start(mode){const gesture=document.querySelector('input[name="gesture"]:checked').value;const includeA=$("include-a").checked;const order=includeA?["A","B","C"]:["B","C"];for(let i=order.length-1;i>0;i--){const j=randomSix()%(i+1);[order[i],order[j]]=[order[j],order[i]]}state={mode,gesture,includeA,gestures:[],shortcutUsed:false,perSeries:mode==="complet"?30:6,perBlock:mode==="complet"?7:3,order,blockIndex:0,seriesIndex:0,draws:[],target:null,data:{A:[],B:[],C:[]},started:stamp(),ended:null,notes:[]};$("progress-rail").style.gridTemplateColumns="repeat("+order.length+",1fr)";$("step2").hidden=order.length===2;$("introduction").hidden=true;$("results").hidden=true;$("lab").hidden=false;showStage()}
 document.querySelectorAll("[data-mode]").forEach(b=>b.addEventListener("click",()=>start(b.dataset.mode)));
 function current(){return state.order[state.blockIndex]}
 function showStage(){
  const c=current(),n=state.draws.length;
  $("block-title").textContent="Condition "+c+" · "+names[c];$("phase-pill").textContent=c+" / "+names[c].toLowerCase();$("phase-pill").dataset.condition=c;
  $("stage-label").textContent="Étape "+(state.blockIndex+1)+" sur "+state.order.length+" · Série "+(state.seriesIndex+1)+" sur "+state.perBlock;
+ $("gesture-indicator").textContent=state.gesture==="manual"?"Pression individuelle":"Bouton maintenu · 1 nombre/s";
+ $("gesture-hint").textContent=state.gesture==="manual"?"Appuyez une fois par résultat.":"Maintenez le bouton appuyé. Relâchez pour suspendre, puis maintenez à nouveau pour poursuivre.";
+ $("roll").hidden=state.gesture!=="manual";$("hold").hidden=state.gesture!=="hold";
  $("instruction-title").textContent=choices[c][0];$("instruction-copy").textContent=choices[c][1]+(c==="C"&&state.target!==null?" Vous souhaitez que le numéro "+state.target+" apparaisse moins souvent.":c==="B"&&state.target!==null?" Vous avez indiqué que le numéro "+state.target+" semblait dominant ; continuez sans chercher à le compenser.":"");
  for(let i=0;i<state.order.length;i++){$("step"+i).className=i<state.blockIndex?"done":i===state.blockIndex?"active":""}
  $("draw-status").textContent=n+" / "+state.perSeries+" tirages";$("meter").style.width=(100*n/state.perSeries)+"%";
@@ -116,31 +119,49 @@ function showStage(){
  renderHistory();
 }
 function renderHistory(){const c=current(),last=state.draws.slice(-7);$("history").innerHTML=last.length?last.map(v=>"<span>"+(c==="A"?"•":v)+"</span>").join(""):'<span style="width:auto;background:transparent;color:#67807d">Aucun tirage pour cette série</span>'}
-function draw(animated=true){
+function draw(animated=true,origin="pression"){
  if(!state||rolling||state.draws.length>=state.perSeries)return;
  rolling=true;$("roll").disabled=true;$("auto").disabled=true;
  const face=randomSix(),c=current();$("die").classList.add("rolling");
  window.setTimeout(()=>{
-  state.draws.push(face);
+  state.draws.push(face);state.gestures.push({event:"tirage",condition:c,serie:state.seriesIndex+1,numero:face,origine:origin,horodatage:stamp()});
   $("die").classList.remove("rolling");
   $("die").dataset.face=c==="A"?"hidden":String(face);
   $("draw-status").textContent=state.draws.length+" / "+state.perSeries+" tirages";
   $("meter").style.width=(100*state.draws.length/state.perSeries)+"%";renderHistory();rolling=false;
-  if(state.draws.length===state.perSeries)finishSeries();
+  if(state.draws.length===state.perSeries){stopHold();finishSeries();}
   else{$("roll").disabled=false;$("auto").disabled=false}
  },animated?570:55)
 }
-$("roll").addEventListener("click",()=>draw(true));
+$("roll").addEventListener("click",()=>{if(state?.gesture==="manual")draw(true,"pression");});
+function stopHold(){
+ if(holdTimer!==null){window.clearInterval(holdTimer);holdTimer=null;}
+ if(holdActive){state?.gestures.push({event:"maintien_fin",horodatage:stamp()});holdActive=false;}
+ $("hold").setAttribute("aria-pressed","false");$("hold").classList.remove("holding");
+}
+function beginHold(event){
+ if(!state||state.gesture!=="hold"||holdActive||rolling||state.draws.length>=state.perSeries||!$("response").hidden||!$("next-wrap").hidden)return;
+ if(event?.preventDefault)event.preventDefault();
+ if(event?.pointerId!==undefined){try{$("hold").setPointerCapture(event.pointerId)}catch(e){}}
+ holdActive=true;$("hold").setAttribute("aria-pressed","true");$("hold").classList.add("holding");
+ state.gestures.push({event:"maintien_debut",horodatage:stamp()});
+ draw(true,"maintien");
+ holdTimer=window.setInterval(()=>{if(state&&state.draws.length<state.perSeries)draw(true,"maintien");else stopHold();},1000);
+}
+$("hold").addEventListener("pointerdown",beginHold);
+["pointerup","pointercancel","lostpointercapture"].forEach(ev=>$("hold").addEventListener(ev,stopHold));
+$("hold").addEventListener("keydown",e=>{if((e.key===" "||e.key==="Enter")&&!e.repeat)beginHold(e)});
+$("hold").addEventListener("keyup",e=>{if(e.key===" "||e.key==="Enter"){e.preventDefault();stopHold();}});
 $("auto").addEventListener("click",()=>{
- if(rolling||!state)return;
+ if(rolling||!state)return;stopHold();state.shortcutUsed=true;
  const target=state.perSeries-state.draws.length,c=current();
  if(!target)return;
  // Les tirages simulés restent effectués un par un et enregistrés.
- for(let i=0;i<target;i++)state.draws.push(randomSix());
+ for(let i=0;i<target;i++){const v=randomSix();state.draws.push(v);state.gestures.push({event:"tirage",condition:c,serie:state.seriesIndex+1,numero:v,origine:"raccourci_visite",horodatage:stamp()});}
  $("die").dataset.face=c==="A"?"hidden":String(state.draws[state.draws.length-1]);
  $("draw-status").textContent=state.perSeries+" / "+state.perSeries+" tirages";$("meter").style.width="100%";renderHistory();finishSeries();
 });
-function finishSeries(){
+function finishSeries(){stopHold();
  const c=current();
  state.data[c].push({index:state.seriesIndex+1,values:state.draws.slice(),previousEstimate:state.target,intentionActive:c==="C"&&state.target!==null,finished:stamp(),reportedDominant:null});
  $("roll").disabled=true;$("auto").disabled=true;
@@ -151,7 +172,7 @@ function finishSeries(){
 }
 document.querySelectorAll(".faces button").forEach(b=>b.addEventListener("click",()=>{selected=Number(b.dataset.face);document.querySelectorAll(".faces button").forEach(e=>e.classList.toggle("selected",e===b));$("record-target").disabled=false}));
 $("record-target").addEventListener("click",()=>{if(selected===null)return;const rec=state.data[current()].at(-1);rec.reportedDominant=selected;state.target=selected;$("response").hidden=true;nextPrompt()});
-function nextPrompt(){
+function nextPrompt(){stopHold();
  $("next-wrap").hidden=false;
  let last=state.seriesIndex===state.perBlock-1;
  $("next-title").textContent=last?"Condition terminée":"Série terminée";
@@ -186,12 +207,12 @@ function finish(){
  window.scrollTo({top:0,behavior:"smooth"})
 }
 $("export").addEventListener("click",()=>{
- const exportable={prototype:"GNA-7 v0.2",generator:"crypto.getRandomValues + unbiased mapping to 1..6",note:"Données synthétiques locales, non expérimentales",...state};
+ const exportable={prototype:"GNA-7 pilote 0.3",avis:{lisibilite:$("rating-read").value,suiviMental:$("rating-memory").value,intention:$("rating-intention").value,fatigue:$("rating-fatigue").value,commentaires:$("feedback-notes").value},generator:"crypto.getRandomValues + unbiased mapping to 1..6",note:"Données synthétiques locales, non expérimentales",...state};
  const blob=new Blob([JSON.stringify(exportable,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="gna7-demo-"+Date.now()+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),500);
 });
-function restart(){state=null;$("lab").hidden=true;$("results").hidden=true;$("introduction").hidden=false;window.scrollTo({top:0,behavior:"smooth"})}
+function restart(){stopHold();state=null;$("lab").hidden=true;$("results").hidden=true;$("introduction").hidden=false;window.scrollTo({top:0,behavior:"smooth"})}
 $("restart").addEventListener("click",restart);$("again").addEventListener("click",restart);
-document.addEventListener("keydown",e=>{if((e.key===" "||e.key==="Enter")&&state&&!rolling&&!$("lab").hidden&&document.activeElement===document.body){e.preventDefault();draw(true)}});
+document.addEventListener("keydown",e=>{if((e.key===" "||e.key==="Enter")&&state&&state.gesture==="manual"&&!rolling&&!$("lab").hidden&&document.activeElement===document.body){e.preventDefault();draw(true,"pression")}});
 })();
 </script>
 </body>
