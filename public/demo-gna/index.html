@@ -73,15 +73,15 @@ async function hash(s){const raw=await crypto.subtle.digest("SHA-256",new TextEn
 function open(){ $("gate").hidden=true;$("workspace").hidden=false;$("introduction").hidden=false;$("password").value=""}
 $("login-form").addEventListener("submit",async e=>{e.preventDefault();try{if(await hash($("password").value)===digest){sessionStorage.setItem("gna-demo-open","yes");$("login-error").textContent="";open()}else $("login-error").textContent="Mot de passe incorrect."}catch(err){$("login-error").textContent="Le navigateur ne permet pas cette vérification."}});
 if(sessionStorage.getItem("gna-demo-open")==="yes")open();
-function start(mode){const order=["A","B","C"];for(let i=order.length-1;i>0;i--){const j=randomSix()%(i+1);[order[i],order[j]]=[order[j],order[i]]}state={mode,perSeries:mode==="complet"?30:6,perBlock:mode==="complet"?7:3,order,blockIndex:0,seriesIndex:0,draws:[],target:null,data:{A:[],B:[],C:[]},started:stamp(),ended:null,notes:[]};$("introduction").hidden=true;$("results").hidden=true;$("lab").hidden=false;showStage()}
+function start(mode){const includeA=$("include-a").checked;const order=includeA?["A","B","C"]:["B","C"];for(let i=order.length-1;i>0;i--){const r=new Uint32Array(1);crypto.getRandomValues(r);const j=r[0]%(i+1);[order[i],order[j]]=[order[j],order[i]]}state={mode,includeA,perSeries:mode==="complet"?30:6,perBlock:mode==="complet"?7:3,order,blockIndex:0,seriesIndex:0,draws:[],target:null,data:{A:[],B:[],C:[]},started:stamp(),ended:null,notes:[]};$("progress-rail").style.gridTemplateColumns="repeat("+order.length+",1fr)";$("step2").hidden=order.length===2;$("introduction").hidden=true;$("results").hidden=true;$("lab").hidden=false;showStage()}
 document.querySelectorAll("[data-mode]").forEach(b=>b.addEventListener("click",()=>start(b.dataset.mode)));
 function current(){return state.order[state.blockIndex]}
 function showStage(){
  const c=current(),n=state.draws.length;
  $("block-title").textContent="Condition "+c+" · "+names[c];$("phase-pill").textContent=c+" / "+names[c].toLowerCase();$("phase-pill").dataset.condition=c;
- $("stage-label").textContent="Étape "+(state.blockIndex+1)+" sur 3 · Série "+(state.seriesIndex+1)+" sur "+state.perBlock;
- $("instruction-title").textContent=choices[c][0];$("instruction-copy").textContent=choices[c][1]+(c==="C"&&state.target!==null?" Votre numéro visé est le "+state.target+".":"");
- for(let i=0;i<3;i++){$("step"+i).className=i<state.blockIndex?"done":i===state.blockIndex?"active":""}
+ $("stage-label").textContent="Étape "+(state.blockIndex+1)+" sur "+state.order.length+" · Série "+(state.seriesIndex+1)+" sur "+state.perBlock;
+ $("instruction-title").textContent=choices[c][0];$("instruction-copy").textContent=choices[c][1]+(c==="C"&&state.target!==null?" Vous souhaitez que le numéro "+state.target+" apparaisse moins souvent.":c==="B"&&state.target!==null?" Vous avez indiqué que le numéro "+state.target+" semblait dominant ; continuez sans chercher à le compenser.":"");
+ for(let i=0;i<state.order.length;i++){$("step"+i).className=i<state.blockIndex?"done":i===state.blockIndex?"active":""}
  $("draw-status").textContent=n+" / "+state.perSeries+" tirages";$("meter").style.width=(100*n/state.perSeries)+"%";
  $("die").dataset.face=c==="A"?"hidden":n?String(state.draws[n-1]):"1";$("die").classList.remove("rolling");
  $("response").hidden=true;$("next-wrap").hidden=true;$("roll").disabled=false;$("auto").disabled=false;rolling=false;selected=null;
@@ -114,15 +114,15 @@ $("auto").addEventListener("click",()=>{
 });
 function finishSeries(){
  const c=current();
- state.data[c].push({index:state.seriesIndex+1,values:state.draws.slice(),target:state.target,finished:stamp(),reportedDominant:null});
+ state.data[c].push({index:state.seriesIndex+1,values:state.draws.slice(),previousEstimate:state.target,intentionActive:c==="C"&&state.target!==null,finished:stamp(),reportedDominant:null});
  $("roll").disabled=true;$("auto").disabled=true;
- if(c==="C"&&state.seriesIndex<state.perBlock-1){
+ if((c==="B"||c==="C")&&state.seriesIndex<state.perBlock-1){$("response").querySelector("p:not(.eyebrow)").textContent=c==="C"?"Répondez selon votre ressenti. Dans la prochaine série, votre intention sera que ce numéro apparaisse moins souvent.":"Répondez selon votre ressenti. Dans la prochaine série, observez simplement les résultats : aucune intention de compensation n'est demandée.";
   $("response").hidden=false;$("record-target").disabled=true;
   document.querySelectorAll(".faces button").forEach(b=>b.classList.remove("selected"));
  }else nextPrompt()
 }
 document.querySelectorAll(".faces button").forEach(b=>b.addEventListener("click",()=>{selected=Number(b.dataset.face);document.querySelectorAll(".faces button").forEach(e=>e.classList.toggle("selected",e===b));$("record-target").disabled=false}));
-$("record-target").addEventListener("click",()=>{if(selected===null)return;const rec=state.data.C.at(-1);rec.reportedDominant=selected;state.target=selected;$("response").hidden=true;nextPrompt()});
+$("record-target").addEventListener("click",()=>{if(selected===null)return;const rec=state.data[current()].at(-1);rec.reportedDominant=selected;state.target=selected;$("response").hidden=true;nextPrompt()});
 function nextPrompt(){
  $("next-wrap").hidden=false;
  let last=state.seriesIndex===state.perBlock-1;
@@ -132,7 +132,7 @@ function nextPrompt(){
 }
 $("next").addEventListener("click",()=>{
  if(state.seriesIndex<state.perBlock-1){state.seriesIndex++;state.draws=[];showStage()}
- else if(state.blockIndex<2){state.blockIndex++;state.seriesIndex=0;state.draws=[];state.target=null;showStage()}
+ else if(state.blockIndex<state.order.length-1){state.blockIndex++;state.seriesIndex=0;state.draws=[];state.target=null;showStage()}
  else finish();
 });
 function count(values){const c=[0,0,0,0,0,0];values.forEach(v=>c[v-1]++);return c}
@@ -146,7 +146,7 @@ function format(x){return Number.isFinite(x)?x.toFixed(2).replace(".",","):"n.d.
 function finish(){
  state.ended=stamp();$("lab").hidden=true;$("results").hidden=false;
  const cards=[],zs={};
- ["A","B","C"].forEach(c=>{
+ state.order.forEach(c=>{
   const freq=count(state.data[c].flatMap(s=>s.values)),xx=chi2(freq),z=normInv(Math.max(1e-9,Math.min(1-1e-9,chiCdf5(xx))));zs[c]=z;
   const max=Math.max(...freq,1),bars=freq.map((v,i)=>'<div class="barrow"><span>'+(i+1)+'</span><span class="bar"><i style="width:'+(100*v/max)+'%"></i></span><span>'+v+'</span></div>').join("");
   cards.push('<div class="result-card"><h3>'+c+' · '+names[c]+'</h3><p>'+freq.reduce((a,b)=>a+b,0)+' tirages, six numéros</p><div class="barrows">'+bars+'</div><p>χ² : <strong>'+format(xx)+'</strong>'+(state.mode==="complet"?' · z : <strong>'+format(z)+'</strong>':'')+'</p></div>');
