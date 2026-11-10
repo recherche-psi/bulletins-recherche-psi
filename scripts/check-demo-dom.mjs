@@ -12,7 +12,6 @@ for (const id of referenced) {
 }
 
 for (const id of ['progress-rail', 'roll', 'hold', 'auto', 'next', 'results']) {
-  if (id === 'mode-quick') continue; // les modes sont repérés par data-mode
   assert.ok(ids.has(id), `Élément essentiel manquant : #${id}`);
 }
 
