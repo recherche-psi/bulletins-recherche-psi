@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#0d1c28">
+<title>GNA-7 | Prototype de l'expérience</title>
+<style>
+:root{--night:#0d1c28;--night2:#152b39;--ink:#20353b;--muted:#72848a;--sea:#156f6e;--mint:#a6e2d2;--cream:#f7f2e8;--gold:#e4b679;--line:#d8dfdc;--white:#fffefd}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.5}button,input{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.48}button:focus-visible,input:focus-visible{outline:3px solid #f2af58;outline-offset:3px}[hidden]{display:none!important}
+a{color:inherit}.eyebrow{font-size:.69rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase}.container{width:min(1190px,calc(100% - 38px));margin-inline:auto}.topline{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:24px 0}.logo{display:flex;align-items:center;gap:12px;font-weight:700;text-decoration:none}.logo-icon{display:grid;place-items:center;width:40px;height:40px;border:1px solid #8ab8ac;border-radius:50%;font:1.4rem Georgia,serif;color:#a8dccd}.topline .caption{color:#b6c7ce;font-size:.77rem}.dark-hero{background:radial-gradient(circle at 82% 18%,#23514e 0,transparent 45%),linear-gradient(145deg,#102633,#0b1b28 75%);color:#f0f4ee;padding-bottom:70px;position:relative;overflow:hidden}.dark-hero:after{content:"";position:absolute;width:430px;height:430px;border:1px solid #5d998341;transform:rotate(45deg);right:-240px;top:160px;pointer-events:none}.hero-content{display:grid;grid-template-columns:1.4fr .6fr;gap:50px;align-items:end;padding:65px 0 12px}.hero-content h1{font:normal clamp(2.8rem,6vw,5rem)/1.04 Georgia,"Times New Roman",serif;letter-spacing:-.045em;margin:15px 0 24px}.hero-content h1 em{font-style:normal;color:var(--mint)}.hero-content p{max-width:670px;color:#c1d1d2;font-size:1.05rem}.hero-aside{border-left:1px solid #416168;padding-left:25px;font-size:.91rem}.hero-aside strong{color:var(--mint)}.hero-aside p{margin:6px 0 20px;font-size:.85rem}.tagline{display:inline-flex;align-items:center;gap:9px;color:var(--mint)}.tagline:before{content:"";width:7px;height:7px;background:var(--mint);border-radius:50%}
+.main-content{position:relative;margin-top:-35px;padding-bottom:80px}.card{border:1px solid #d6dedb;background:var(--white);border-radius:19px;box-shadow:0 14px 40px #153b3212}.gate{max-width:710px;margin:0 auto;padding:clamp(24px,5vw,48px)}.gate h2,.intro h2{font:normal 2.1rem/1.1 Georgia,serif;margin:8px 0 16px}.gate p{color:#5d6f74}.gate form{margin-top:27px;display:flex;flex-wrap:wrap;gap:11px}.gate input{flex:1;min-width:190px;padding:15px 17px;border:1px solid #adc5be;border-radius:9px;background:#fafcfb}.primary,.secondary,.ghost{border-radius:10px;font-size:.91rem;font-weight:700;min-height:48px;padding:12px 19px}.primary{background:#136a64;color:#fff;border:1px solid #136a64}.primary:hover{background:#0d4f4d}.secondary{background:white;color:#1b615c;border:1px solid #a7c3bc}.secondary:hover{background:#eaf4ef}.ghost{background:transparent;color:inherit;border:1px solid #c6d7d2}.small{font-size:.78rem;color:#667b7d}.error{min-height:20px;color:#aa3c3c!important;font-weight:700}.intro{padding:clamp(24px,4vw,40px)}.intro p{color:#526e74}.mode-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:25px 0}.mode-card{padding:24px;text-align:left;background:#f9fcfa;border:1px solid #d4e0da;border-radius:13px;color:var(--ink)}.mode-card:hover{border-color:var(--sea);box-shadow:0 2px 15px #256b5a17}.mode-card strong{display:block;font-size:1.07rem;margin-bottom:9px}.mode-card span{display:block;font-size:.86rem;color:#5d7177}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:25px 0}.principle{padding:17px 17px 15px;border-left:3px solid #91bfad;background:#f2f8f4;border-radius:5px}.principle b{display:block;font-size:.88rem}.principle p{margin:5px 0 0;font-size:.79rem}.lab{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(275px,.75fr);gap:21px}.panel{border-radius:18px;overflow:hidden}.panel-head{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:21px 25px;border-bottom:1px solid #dce5e1}.panel-head h2{font:normal 1.45rem Georgia,serif;margin:4px 0}.phase-pill{background:#e8f5ef;color:#155d58;border:1px solid #c6e3d4;padding:6px 12px;border-radius:30px;font-size:.78rem;font-weight:750}.phase-pill[data-condition="C"]{background:#fff1dd;color:#855721;border-color:#ebc995}.phase-pill[data-condition="A"]{background:#eaf0f5;color:#345569;border-color:#c8d9e4}.progress-rail{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:19px 25px 10px}.progress-rail>div{height:7px;border-radius:20px;background:#e3e9e7}.progress-rail>div.active{background:#1b7770}.progress-rail>div.done{background:#93bfb4}.instruction{padding:16px 25px 0}.instruction h3{font:normal 1.3rem Georgia,serif;margin:3px 0 8px}.instruction p{font-size:.86rem;color:#587078;min-height:43px}.machine{padding:12px 25px 27px;text-align:center;background:radial-gradient(circle at 50% 42%,#e4f0e8 0,#f8faf6 49%,#fff 78%);margin:16px 18px 0;border-radius:15px;border:1px solid #e1e9e3}.machine .machine-top{color:#467468;font-size:.7rem;letter-spacing:.15em;font-weight:750;text-transform:uppercase}.sphere{width:240px;height:240px;margin:9px auto 0;display:grid;place-items:center;border:1px solid #b2d5c6;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fffdf7 0,#d8ebe2 48%,#a0c4b4 100%);box-shadow:inset 0 0 0 13px #ffffff50,0 16px 32px #194c401f;position:relative}.sphere:before{content:"";position:absolute;inset:10px;border-radius:50%;border:1px dashed #6fa69375}.die{width:126px;height:126px;border-radius:22px;background:linear-gradient(135deg,#fff,#f0f3ee);border:1px solid #bfd1cc;box-shadow:10px 15px 0 #a0beb389,16px 25px 28px #3667544f,inset 3px 3px 8px #fff;display:grid;grid-template:repeat(3,1fr)/repeat(3,1fr);padding:21px;gap:2px;transform:rotate(-8deg);transition:transform .22s}.die .pip{width:17px;height:17px;border-radius:50%;align-self:center;justify-self:center;background:#1c5c5b;box-shadow:inset 2px 3px 4px #112d3344;opacity:0}.die[data-face="1"] .pip:nth-child(5),.die[data-face="2"] .pip:nth-child(1),.die[data-face="2"] .pip:nth-child(9),.die[data-face="3"] .pip:nth-child(1),.die[data-face="3"] .pip:nth-child(5),.die[data-face="3"] .pip:nth-child(9),.die[data-face="4"] .pip:nth-child(1),.die[data-face="4"] .pip:nth-child(3),.die[data-face="4"] .pip:nth-child(7),.die[data-face="4"] .pip:nth-child(9),.die[data-face="5"] .pip:nth-child(1),.die[data-face="5"] .pip:nth-child(3),.die[data-face="5"] .pip:nth-child(5),.die[data-face="5"] .pip:nth-child(7),.die[data-face="5"] .pip:nth-child(9),.die[data-face="6"] .pip:nth-child(1),.die[data-face="6"] .pip:nth-child(3),.die[data-face="6"] .pip:nth-child(4),.die[data-face="6"] .pip:nth-child(6),.die[data-face="6"] .pip:nth-child(7),.die[data-face="6"] .pip:nth-child(9){opacity:1}.die[data-face="hidden"]{background:linear-gradient(145deg,#d8e3e4,#aec5c3);display:flex;align-items:center;justify-content:center;color:#37615c;font:normal 5rem Georgia,serif}.die[data-face="hidden"]:after{content:"?"}.die.rolling{animation:roll .55s cubic-bezier(.2,.6,.4,1)}@keyframes roll{0%{transform:rotate(-8deg) scale(1)}50%{transform:rotate(200deg) scale(.74)}100%{transform:rotate(712deg) scale(1)}}.draw-status{font-weight:800;font-size:1.25rem;margin:16px 0 4px}.meter{width:min(320px,100%);height:7px;border-radius:20px;background:#d7e4dc;margin:10px auto 20px;overflow:hidden}.meter>div{width:0;height:100%;background:#1d8176;transition:width .2s}.actionbar{display:flex;gap:9px;justify-content:center;flex-wrap:wrap}.actionbar button{min-width:190px}.last{display:flex;min-height:44px;align-items:center;justify-content:center;gap:8px;margin-top:15px;flex-wrap:wrap}.last span{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;background:#e1eee8;color:#245f5c;font-size:.8rem;font-weight:800}.response{padding:22px 25px;background:#fff8ec;border-top:1px solid #f0d8b3}.response h3{margin:0 0 9px;font:normal 1.28rem Georgia,serif}.response p{font-size:.86rem;color:#785e3b}.faces{display:flex;gap:9px;flex-wrap:wrap;margin:17px 0}.faces button{width:47px;height:47px;border:1px solid #d8bb88;border-radius:10px;background:white;color:#8a5c22;font-weight:800;font-size:1.08rem}.faces button:hover,.faces button.selected{background:#936b38;color:white;border-color:#936b38}.right-stack{display:grid;gap:20px;align-content:start}.note{padding:22px}.note h3{margin:0 0 9px;font:normal 1.42rem Georgia,serif}.note p,.note li{font-size:.84rem;color:#526d70}.note ul{padding-left:20px}.phase-list{display:grid;gap:11px;margin:18px 0}.phase-line{display:flex;gap:12px;align-items:flex-start;font-size:.84rem}.phase-line b{width:28px;height:28px;border:1px solid #aec8bf;color:#26675f;border-radius:8px;display:grid;place-items:center;flex-shrink:0}.phase-line span{color:#627678}.phase-line strong{color:#243f40}.technical{background:#eef6f1;border:1px solid #d5e5db}.technical summary{cursor:pointer;color:#205e56;font-weight:800;font-size:.86rem}.reset-row{display:flex;justify-content:flex-end;align-items:center;gap:15px;flex-wrap:wrap;margin-top:17px}.reset-row button{background:none;border:none;text-decoration:underline;color:#6b7877}.results{padding:30px}.results h2{font:normal 2.1rem Georgia,serif;margin:4px 0 15px}.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:23px 0}.result-card{padding:20px;background:#f6faf7;border:1px solid #dfebe2;border-radius:11px}.result-card h3{margin:0;font-size:1rem}.barrows{display:grid;gap:7px;margin-top:17px}.barrow{display:grid;grid-template-columns:12px 1fr 26px;gap:8px;align-items:center;font-size:.72rem;color:#6a7a7c}.bar{height:7px;background:#dbe8e1;border-radius:8px;overflow:hidden}.bar i{display:block;height:100%;background:#44897a}.result-card p{font-size:.83rem;color:#627477}.results .emphasis{padding:20px;background:#eef5f1;border-left:4px solid var(--sea);border-radius:7px}.results .emphasis p{font-size:.88rem;color:#4a6364}.site-bottom{background:var(--night);color:#b1c8c7;padding:24px 0;font-size:.77rem}.site-bottom .container{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.site-bottom a{color:#d0ece2}@media(max-width:860px){.hero-content,.lab{grid-template-columns:1fr}.hero-content{padding:40px 0 15px}.hero-aside{max-width:550px}.right-stack{grid-template-columns:1fr 1fr}.result-grid{grid-template-columns:1fr}}@media(max-width:600px){.topline .caption{display:none}.dark-hero{padding-bottom:60px}.main-content{margin-top:-25px}.mode-grid,.principles,.right-stack{grid-template-columns:1fr}.sphere{width:205px;height:205px}.machine{margin:12px 10px 0;padding:12px}.die{width:115px;height:115px}.panel-head,.instruction,.response{padding-left:17px;padding-right:17px}.hero-content h1{font-size:2.6rem}}
+@media(prefers-reduced-motion:reduce){.die.rolling{animation:none}*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="dark-hero">
+  <div class="container">
+    <nav class="topline"><a class="logo" href="../"><span class="logo-icon">Ψ</span><span>Recherche psi</span></a><span class="caption">PROTOTYPE INTERACTIF · GNA-7 · VERSION 0.1</span></nav>
+    <div class="hero-content"><div><p class="eyebrow tagline">Expérience pilote · Démonstration</p><h1>Observer, mémoriser,<br><em>compenser ?</em></h1><p>Un parcours interactif pour comprendre les conditions « sans vu », « avec vu » et « compensation intentionnelle » proposées pour l'expérience GNA-7.</p></div><div class="hero-aside"><strong>Une question scientifique précise</strong><p>La connaissance des résultats et l'intention de compenser peuvent-elles modifier les propriétés statistiques des nombres produits ?</p><strong>Ce que vous allez voir</strong><p>Un tirage animé de 1 à 6, des consignes distinctes, des séries regroupées et une synthèse pédagogique.</p></div></div>
+  </div>
+</header>
+<main class="container main-content" id="contenu">
+<section class="card gate" id="gate">
+ <p class="eyebrow" style="color:#137468">Accès à la démonstration</p>
+ <h2>Entrer dans le laboratoire</h2>
+ <p>Cette page est destinée à la présentation du protocole aux responsables de l'étude et à ses partenaires. Saisissez le mot de passe partagé pour découvrir le prototype.</p>
+ <form id="login-form"><input id="password" type="password" placeholder="Mot de passe" aria-label="Mot de passe" required autocomplete="off"><button class="primary" type="submit">Ouvrir le prototype</button></form>
+ <p class="error" role="status" id="login-error"></p>
+ <p class="small">Accès pédagogique uniquement : sur GitHub Pages, cet écran ne constitue pas une protection serveur et le code de la page est public.</p>
+</section>
+<section id="workspace" hidden>
+ <section class="card intro" id="introduction">
+   <p class="eyebrow" style="color:#16746a">Parcours commenté</p><h2>Une même source de nombres,<br>trois situations mentales.</h2>
+   <p>Dans chaque condition, un appui déclenche un pseudo-GNA qui produit un entier de 1 à 6. Ce qui change, ce sont les informations accessibles au participant et les consignes psychologiques.</p>
+   <div class="principles"><div class="principle"><b>A · Sans vu</b><p>Le résultat est enregistré mais jamais affiché pendant les tirages.</p></div><div class="principle"><b>B · Avec vu</b><p>Le résultat est visible, sans instruction de compensation.</p></div><div class="principle"><b>C · Compensation</b><p>Le résultat est visible. Le participant choisit ensuite un numéro à faire moins apparaître.</p></div></div>
+   <p><strong>Choisissez une démonstration :</strong> les trois conditions sont présentées dans un ordre tiré au sort.</p>
+   <div class="mode-grid"><button class="mode-card" data-mode="court"><strong>Découverte rapide <span aria-hidden="true">↗</span></strong><span>3 séries de 6 tirages par condition. Pour comprendre le parcours en quelques minutes. Le calcul statistique n'est pas interprétable.</span></button><button class="mode-card" data-mode="complet"><strong>Structure du protocole <span aria-hidden="true">↗</span></strong><span>7 séries de 30 tirages par condition, soit 210 valeurs. La fonction « simuler la fin » facilite la visite, sans remplacer un vrai participant.</span></button></div>
+   <p class="small">Les résultats affichés ici proviennent exclusivement du générateur pseudo-aléatoire du navigateur. Il ne s'agit ni d'un GNA physique, ni d'un recueil scientifique. Aucun résultat n'est transmis au site.</p>
+ </section>
+ <div id="lab" hidden>
+ <div class="lab">
+  <section class="card panel">
+   <div class="panel-head"><div><p class="eyebrow" style="color:#15746c;margin:0">Atelier du participant</p><h2 id="block-title">Condition A · Sans vu</h2></div><span class="phase-pill" id="phase-pill" data-condition="A">A / sans vu</span></div>
+   <div class="progress-rail" aria-label="Avancement des trois conditions"><div id="step0"></div><div id="step1"></div><div id="step2"></div></div>
+   <div class="instruction"><div class="small" id="stage-label">Étape 1 sur 3 · Série 1 sur 3</div><h3 id="instruction-title">Concentrez-vous sur chaque geste.</h3><p id="instruction-copy">Appuyez sur le bouton. Chaque valeur est enregistrée, sans être révélée.</p></div>
+   <div class="machine"><div class="machine-top">GNA · Simulation informatique</div><div class="sphere"><div class="die" id="die" data-face="hidden"><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span><span class="pip"></span></div></div><div class="draw-status" id="draw-status" aria-live="polite">0 / 6 tirages</div><div class="meter"><div id="meter"></div></div><div class="actionbar"><button class="primary" id="roll">Lancer le tirage</button><button class="secondary" id="auto" title="Simulation accélérée, non utilisable pour une expérience scientifique">Simuler la fin de la série</button></div><div class="last" id="history" aria-label="Derniers résultats visibles"></div></div>
+   <div class="response" id="response" hidden><p class="eyebrow" style="color:#a46a30;margin:0 0 7px">Question à renseigner avant la série suivante</p><h3>Quel numéro vous semble avoir été le plus fréquent ?</h3><p>Répondez selon votre ressenti, sans consulter un tableau de fréquences. Dans la prochaine série, votre intention sera qu'il apparaisse moins souvent.</p><div class="faces" id="faces"><button type="button" data-face="1">1</button><button type="button" data-face="2">2</button><button type="button" data-face="3">3</button><button type="button" data-face="4">4</button><button type="button" data-face="5">5</button><button type="button" data-face="6">6</button></div><button class="primary" id="record-target" disabled>Enregistrer mon choix et continuer</button></div>
+   <div class="response" id="next-wrap" hidden style="background:#f2f8f3"><h3 id="next-title">Série terminée</h3><p id="next-description">Les données ont été enregistrées. Vous pouvez poursuivre.</p><button class="primary" id="next">Passer à l'étape suivante</button></div>
+  </section>
+  <aside class="right-stack"><div class="card note"><p class="eyebrow" style="color:#15746c;margin-top:0">Repères pour l'équipe</p><h3>Les trois conditions</h3><div class="phase-list"><div class="phase-line"><b>A</b><span><strong>Retour absent.</strong> Ni résultats visibles, ni compensation demandée.</span></div><div class="phase-line"><b>B</b><span><strong>Retour présent.</strong> Les résultats sont visibles, sans intention de régulation.</span></div><div class="phase-line"><b>C</b><span><strong>Retour et intention.</strong> Le numéro jugé dominant est désigné avant la série suivante.</span></div></div><p>Les blocs sont attribués dans un ordre aléatoire. Dans l'étude définitive, cet ordre est fixé par un plan préenregistré équilibré, avec des contrôles d'effets d'ordre.</p></div>
+   <details class="card note technical" open><summary>Pourquoi ce découpage ?</summary><p>Comparer A à B permet d'examiner le rôle du retour visuel. Comparer B à C isole mieux la consigne de compensation, puisque les deux conditions affichent les tirages.</p><p>Sept séries de 30 forment un bloc de 210 tirages. On peut ainsi étudier les χ² et les scores z à l'échelle du bloc, puis comparer C et B par une permutation respectant les unités randomisées.</p><p>Dans C, l'intention porte sur un numéro choisi <strong>avant</strong> la nouvelle série. On peut alors mesurer directement sa fréquence ultérieure, sans interpréter a posteriori les excès et déficits.</p></details>
+   <div class="card note"><h3>État de cette version</h3><p>Le pseudo-GNA utilise <code>crypto.getRandomValues()</code> et un rejet des valeurs susceptibles de produire un biais modulo 6.</p><p><strong>Aucune collecte.</strong> Les données restent dans cet onglet. L'export final est local. Une expérience réelle nécessitera un GNA physique caractérisé, des journaux vérifiables et un préenregistrement.</p><div class="reset-row"><button id="restart" type="button">Recommencer la démonstration</button></div></div>
+  </aside>
+ </div>
+ </div>
+ <section class="card results" id="results" hidden><p class="eyebrow" style="color:#15746c">Fin de la démonstration</p><h2>Trois conditions, une même procédure de tirage.</h2><p>Voici ce qu'a enregistré le pseudo-GNA de votre navigateur. Les valeurs révélées ci-dessous ne doivent pas être interprétées comme des observations expérimentales.</p><div class="result-grid" id="result-grid"></div><div class="emphasis" id="stat-summary"></div><div class="actionbar" style="justify-content:flex-start;margin-top:22px"><button class="primary" id="export">Exporter le journal JSON</button><button class="secondary" id="again">Refaire la démonstration</button></div></section>
+</section>
+</main>
+<footer class="site-bottom"><div class="container"><span>GNA-7 · Prototype pédagogique · Projet de recherche IMI</span><span>Source de nombres : pseudo-GNA local · <a href="../">Retour au site recherche psi</a></span></div></footer>
+<script>
+(function(){
+"use strict";
+const $=id=>document.getElementById(id);
+const digest="e920e8a0d767ef731004b4216f86ee1373d7c0dddb217e39229bc8b349d98dfc";
+const names={A:"Sans vu",B:"Avec vu",C:"Compensation intentionnelle"};
+const choices={A:["Concentrez-vous sur chaque geste.","Le numéro est enregistré sans être affiché. Il n'y a aucune consigne de mémorisation."],B:["Observez les nombres, un tirage après l'autre.","Chaque valeur apparaît à l'écran. Observez-la simplement, sans chercher à modifier la fréquence d'un numéro."],C:["Observez les résultats et gardez votre intention à l'esprit.","À la fin de chaque série, indiquez la face qui vous semble dominante. Essayez qu'elle apparaisse moins souvent dans la série suivante."]};
+let state=null, rolling=false, selected=null;
+function randomSix(){const a=new Uint32Array(1);do{crypto.getRandomValues(a)}while(a[0]>=4294967292);return a[0]%6+1}
+function stamp(){return new Date().toISOString()}
+async function hash(s){const raw=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s));return Array.from(new Uint8Array(raw)).map(v=>v.toString(16).padStart(2,"0")).join("")}
+function open(){ $("gate").hidden=true;$("workspace").hidden=false;$("introduction").hidden=false;$("password").value=""}
+$("login-form").addEventListener("submit",async e=>{e.preventDefault();try{if(await hash($("password").value)===digest){sessionStorage.setItem("gna-demo-open","yes");$("login-error").textContent="";open()}else $("login-error").textContent="Mot de passe incorrect."}catch(err){$("login-error").textContent="Le navigateur ne permet pas cette vérification."}});
+if(sessionStorage.getItem("gna-demo-open")==="yes")open();
+function start(mode){const order=["A","B","C"];for(let i=order.length-1;i>0;i--){const j=randomSix()%(i+1);[order[i],order[j]]=[order[j],order[i]]}state={mode,perSeries:mode==="complet"?30:6,perBlock:mode==="complet"?7:3,order,blockIndex:0,seriesIndex:0,draws:[],target:null,data:{A:[],B:[],C:[]},started:stamp(),ended:null,notes:[]};$("introduction").hidden=true;$("results").hidden=true;$("lab").hidden=false;showStage()}
+document.querySelectorAll("[data-mode]").forEach(b=>b.addEventListener("click",()=>start(b.dataset.mode)));
+function current(){return state.order[state.blockIndex]}
+function showStage(){
+ const c=current(),n=state.draws.length;
+ $("block-title").textContent="Condition "+c+" · "+names[c];$("phase-pill").textContent=c+" / "+names[c].toLowerCase();$("phase-pill").dataset.condition=c;
+ $("stage-label").textContent="Étape "+(state.blockIndex+1)+" sur 3 · Série "+(state.seriesIndex+1)+" sur "+state.perBlock;
+ $("instruction-title").textContent=choices[c][0];$("instruction-copy").textContent=choices[c][1]+(c==="C"&&state.target!==null?" Votre numéro visé est le "+state.target+".":"");
+ for(let i=0;i<3;i++){$("step"+i).className=i<state.blockIndex?"done":i===state.blockIndex?"active":""}
+ $("draw-status").textContent=n+" / "+state.perSeries+" tirages";$("meter").style.width=(100*n/state.perSeries)+"%";
+ $("die").dataset.face=c==="A"?"hidden":n?String(state.draws[n-1]):"1";$("die").classList.remove("rolling");
+ $("response").hidden=true;$("next-wrap").hidden=true;$("roll").disabled=false;$("auto").disabled=false;rolling=false;selected=null;
+ renderHistory();
+}
+function renderHistory(){const c=current(),last=state.draws.slice(-7);$("history").innerHTML=last.length?last.map(v=>"<span>"+(c==="A"?"•":v)+"</span>").join(""):'<span style="width:auto;background:transparent;color:#67807d">Aucun tirage pour cette série</span>'}
+function draw(animated=true){
+ if(!state||rolling||state.draws.length>=state.perSeries)return;
+ rolling=true;$("roll").disabled=true;$("auto").disabled=true;
+ const face=randomSix(),c=current();$("die").classList.add("rolling");
+ window.setTimeout(()=>{
+  state.draws.push(face);
+  $("die").classList.remove("rolling");
+  $("die").dataset.face=c==="A"?"hidden":String(face);
+  $("draw-status").textContent=state.draws.length+" / "+state.perSeries+" tirages";
+  $("meter").style.width=(100*state.draws.length/state.perSeries)+"%";renderHistory();rolling=false;
+  if(state.draws.length===state.perSeries)finishSeries();
+  else{$("roll").disabled=false;$("auto").disabled=false}
+ },animated?570:55)
+}
+$("roll").addEventListener("click",()=>draw(true));
+$("auto").addEventListener("click",()=>{
+ if(rolling||!state)return;
+ const target=state.perSeries-state.draws.length,c=current();
+ if(!target)return;
+ // Les tirages simulés restent effectués un par un et enregistrés.
+ for(let i=0;i<target;i++)state.draws.push(randomSix());
+ $("die").dataset.face=c==="A"?"hidden":String(state.draws[state.draws.length-1]);
+ $("draw-status").textContent=state.perSeries+" / "+state.perSeries+" tirages";$("meter").style.width="100%";renderHistory();finishSeries();
+});
+function finishSeries(){
+ const c=current();
+ state.data[c].push({index:state.seriesIndex+1,values:state.draws.slice(),target:state.target,finished:stamp(),reportedDominant:null});
+ $("roll").disabled=true;$("auto").disabled=true;
+ if(c==="C"&&state.seriesIndex<state.perBlock-1){
+  $("response").hidden=false;$("record-target").disabled=true;
+  document.querySelectorAll(".faces button").forEach(b=>b.classList.remove("selected"));
+ }else nextPrompt()
+}
+document.querySelectorAll(".faces button").forEach(b=>b.addEventListener("click",()=>{selected=Number(b.dataset.face);document.querySelectorAll(".faces button").forEach(e=>e.classList.toggle("selected",e===b));$("record-target").disabled=false}));
+$("record-target").addEventListener("click",()=>{if(selected===null)return;const rec=state.data.C.at(-1);rec.reportedDominant=selected;state.target=selected;$("response").hidden=true;nextPrompt()});
+function nextPrompt(){
+ $("next-wrap").hidden=false;
+ let last=state.seriesIndex===state.perBlock-1;
+ $("next-title").textContent=last?"Condition terminée":"Série terminée";
+ $("next-description").textContent=last?(state.blockIndex===2?"Les trois conditions ont été parcourues.":"Le bloc de cette condition est complet. Vous allez découvrir une autre condition."):"Le résultat a été consigné. Poursuivez avec la série suivante.";
+ $("next").textContent=last?(state.blockIndex===2?"Afficher la synthèse":"Changer de condition"):"Continuer";
+}
+$("next").addEventListener("click",()=>{
+ if(state.seriesIndex<state.perBlock-1){state.seriesIndex++;state.draws=[];showStage()}
+ else if(state.blockIndex<2){state.blockIndex++;state.seriesIndex=0;state.draws=[];state.target=null;showStage()}
+ else finish();
+});
+function count(values){const c=[0,0,0,0,0,0];values.forEach(v=>c[v-1]++);return c}
+function chi2(freq){const e=freq.reduce((a,b)=>a+b,0)/6;return freq.reduce((s,n)=>s+(n-e)*(n-e)/e,0)}
+// Approximation classique de la fonction erf.
+function erf(x){const sign=x<0?-1:1;x=Math.abs(x);const t=1/(1+.3275911*x);return sign*(1-(((((1.061405429*t-1.453152027)*t)+1.421413741)*t-.284496736)*t+.254829592)*t*Math.exp(-x*x))}
+function chiCdf5(x){if(x<=0)return 0;const a=Math.sqrt(x/2);return Math.max(0,Math.min(1,erf(a)-Math.sqrt(2*x/Math.PI)*Math.exp(-x/2)*(1+x/3)))}
+function normInv(p){if(p<=0)return -Infinity;if(p>=1)return Infinity;
+ const a=[-39.6968302866538,220.946098424521,-275.928510446969,138.357751867269,-30.6647980661472,2.50662827745924],b=[-54.4760987982241,161.585836858041,-155.698979859887,66.8013118877197,-13.2806815528857],c=[-0.00778489400243029,-.322396458041136,-2.40075827716184,-2.54973253934373,4.37466414146497,2.93816398269878],d=[.00778469570904146,.32246712907004,2.44513413714299,3.75440866190742];let q,r;if(p<.02425){q=Math.sqrt(-2*Math.log(p));return (((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5])/((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1)}if(p>1-.02425){q=Math.sqrt(-2*Math.log(1-p));return -(((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5])/((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1)}q=p-.5;r=q*q;return (((((a[0]*r+a[1])*r+a[2])*r+a[3])*r+a[4])*r+a[5])*q/(((((b[0]*r+b[1])*r+b[2])*r+b[3])*r+b[4])*r+1)}
+function format(x){return Number.isFinite(x)?x.toFixed(2).replace(".",","):"n.d."}
+function finish(){
+ state.ended=stamp();$("lab").hidden=true;$("results").hidden=false;
+ const cards=[],zs={};
+ ["A","B","C"].forEach(c=>{
+  const freq=count(state.data[c].flatMap(s=>s.values)),xx=chi2(freq),z=normInv(Math.max(1e-9,Math.min(1-1e-9,chiCdf5(xx))));zs[c]=z;
+  const max=Math.max(...freq,1),bars=freq.map((v,i)=>'<div class="barrow"><span>'+(i+1)+'</span><span class="bar"><i style="width:'+(100*v/max)+'%"></i></span><span>'+v+'</span></div>').join("");
+  cards.push('<div class="result-card"><h3>'+c+' · '+names[c]+'</h3><p>'+freq.reduce((a,b)=>a+b,0)+' tirages, six numéros</p><div class="barrows">'+bars+'</div><p>χ² : <strong>'+format(xx)+'</strong>'+(state.mode==="complet"?' · z : <strong>'+format(z)+'</strong>':'')+'</p></div>');
+ });
+ $("result-grid").innerHTML=cards.join("");
+ const targeted=state.data.C.filter(s=>s.target!==null), k=targeted.reduce((sum,s)=>sum+s.values.filter(v=>v===s.target).length,0), N=targeted.reduce((sum,s)=>sum+s.values.length,0);
+ $("stat-summary").innerHTML='<strong>Comment lire ces données ?</strong><p>Le numéro visé en C est celui déclaré <em>avant</em> la série suivante. Dans cette démonstration, il est apparu '+k+' fois sur '+N+' tirages ciblés. La référence descriptive à équiprobabilité serait '+format(N/6)+' occurrences.</p>'+ (state.mode==="complet"?'<p>Contraste illustratif de scores z : z(C) − z(B) = <strong>'+format(zs.C-zs.B)+'</strong>. Dans une vraie étude, on comparerait les différences z au niveau des blocs randomisés et l\'on construirait un nul empirique par permutation. <strong>Un seul bloc ne fournit aucun test de confirmation.</strong></p>':'<p>Le parcours rapide (6 × 3) sert uniquement à expliquer l\'interface. Les χ² ne doivent pas être interprétés comme des tests valides avec ces effectifs.</p>')+'<p>Les fréquences finales et les regroupements servent à comprendre le protocole. Cette session ne démontre aucun effet.</p>';
+ window.scrollTo({top:0,behavior:"smooth"})
+}
+$("export").addEventListener("click",()=>{
+ const exportable={prototype:"GNA-7 v0.1",generator:"crypto.getRandomValues + unbiased mapping to 1..6",note:"Données synthétiques locales, non expérimentales",...state};
+ const blob=new Blob([JSON.stringify(exportable,null,2)],{type:"application/json"}),url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="gna7-demo-"+Date.now()+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),500);
+});
+function restart(){state=null;$("lab").hidden=true;$("results").hidden=true;$("introduction").hidden=false;window.scrollTo({top:0,behavior:"smooth"})}
+$("restart").addEventListener("click",restart);$("again").addEventListener("click",restart);
+document.addEventListener("keydown",e=>{if((e.key===" "||e.key==="Enter")&&state&&!rolling&&!$("lab").hidden&&document.activeElement===document.body){e.preventDefault();draw(true)}});
+})();
+</script>
+</body>
+</html>
